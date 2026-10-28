@@ -685,3 +685,10 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 
 
 - **Category refinement:** Ensured the catalog exposes a dedicated `Accessibility` category for website audit and web-guideline skills, alongside the previously agreed UI/UX, Animation & Motion, Micro-interactions, React & Frontend, SEO, and Testing groups.
+
+
+## Catalog payload verification phase — 2026-10-28
+- **Registry audit:** Recounted 221 unique registry entries across 20 categories (209 local bundled skills and 12 Git-backed skills). The README category count was corrected from 19 to 20.
+- **Local payload validation:** Added a registry test that walks every local-source entry and verifies that its configured skill directory contains `SKILL.md`. This catches broken local paths before release.
+- **Packaged-install CI coverage:** Updated the package smoke test to use the actual `UI/UX` category name, install a representative imported .NET skill from the packed CLI, verify its nested reference file, and install the complete small Accessibility category.
+- **Scope note:** This adds automated checks; the changes still need a new green GitHub Actions run. Third-party licenses, immutable upstream revisions, and content safety remain separate release blockers for any imported entry whose status is unknown.
