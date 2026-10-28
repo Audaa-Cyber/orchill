@@ -89,14 +89,17 @@ registryOption(program.command("install-category <category>").description("Previ
       rl.close();
       if (!/^y(es)?$/i.test(answer.trim())) { console.log("Cancelled."); return; }
     }
+    let failures = 0;
     for (const s of skills) {
       try {
         const dest = await installSkill(s, root, opts.target, path.resolve(opts.cwd), Boolean(opts.force));
         console.log(`✓ ${s.id} → ${dest}`);
       } catch (error) {
+        failures++;
         console.error(`✗ ${s.id}: ${error instanceof Error ? error.message : String(error)}`);
       }
     }
+    if (failures) process.exitCode = 1;
   });
 program.command("targets").description("Show supported installation targets").action(() => {
   console.log("project  .agents/skills (recommended cross-agent project location)\nagents   .agents/skills\nclaude   .claude/skills\ncodex    .codex/skills");
