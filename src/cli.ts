@@ -102,7 +102,7 @@ registryOption(program.command("install-category <category>").description("Previ
     if (failures) process.exitCode = 1;
   });
 program.command("targets").description("Show supported installation targets").action(() => {
-  console.log("project  .agents/skills (recommended cross-agent project location)\nagents   .agents/skills\nclaude   .claude/skills\ncodex    .codex/skills");
+  console.log("project  .agents/skills (recommended cross-agent project location)\nagents   .agents/skills\nclaude   .claude/skills\ncodex    .agents/skills (Codex project skills)");
 });
 program.command("registry").description("Show active registry location").option("-r, --registry <path>", "Registry file").action(async (opts: {registry?: string}) => {
   const {registry, file} = await getRegistry(opts.registry);
