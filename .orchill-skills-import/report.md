@@ -1,0 +1,174 @@
+# Orchill bulk import report
+
+Commands: 164
+Staged: 138
+Failed: 26
+
+## Results
+
+- IMPORTED line 1: design-taste-frontend — verify license before publishing
+- IMPORTED line 2: emil-design-eng — verify license before publishing
+- FAILED line 3: npx skills add MengTo/Skills@build-awwwards-quality-sites — Skills CLI exited with code 1
+- IMPORTED line 4: find-skills — verify license before publishing
+- IMPORTED line 5: vercel-react-best-practices — verify license before publishing
+- IMPORTED line 6: frontend-design
+- FAILED line 7: npx skills add coreyhaines31/marketingskills — Specify one skill with source@skill or --skill <name>.
+- FAILED line 8: npx skills add AgriciDaniel/claude-seo — Specify one skill with source@skill or --skill <name>.
+- FAILED line 9: npx skills add charlie947/social-media-skills — Specify one skill with source@skill or --skill <name>.
+- IMPORTED line 10: mcp-builder
+- IMPORTED line 11: claude-api
+- IMPORTED line 12: docx
+- IMPORTED line 13: shadcn — verify license before publishing
+- IMPORTED line 14: brainstorming — verify license before publishing
+- IMPORTED line 15: systematic-debugging — verify license before publishing
+- IMPORTED line 16: test-driven-development — verify license before publishing
+- IMPORTED line 17: requesting-code-review — verify license before publishing
+- IMPORTED line 18: subagent-driven-development — verify license before publishing
+- IMPORTED line 19: verification-before-completion — verify license before publishing
+- IMPORTED line 20: receiving-code-review — verify license before publishing
+- IMPORTED line 21: writing-plans — verify license before publishing
+- IMPORTED line 22: executing-plans — verify license before publishing
+- IMPORTED line 23: dispatching-parallel-agents — verify license before publishing
+- IMPORTED line 24: using-git-worktrees — verify license before publishing
+- IMPORTED line 25: using-superpowers — verify license before publishing
+- IMPORTED line 26: skill-creator
+- IMPORTED line 27: pdf
+- FAILED line 28: npx skills add anthropics/skills@webapp-testing — Skills CLI exited with code 1
+- FAILED line 29: npx skills add anthropics/skills@doc-coauthoring — Skills CLI exited with code 1
+- IMPORTED line 30: slack-gif-creator
+- IMPORTED line 31: web-artifacts-builder
+- IMPORTED line 32: internal-comms
+- IMPORTED line 33: canvas-design
+- IMPORTED line 34: algorithmic-art
+- IMPORTED line 35: theme-factory
+- IMPORTED line 36: brand-guidelines
+- IMPORTED line 37: pptx
+- IMPORTED line 38: ui-ux-pro-max — verify license before publishing
+- IMPORTED line 39: xlsx
+- IMPORTED line 40: tailwind-design-system — verify license before publishing
+- IMPORTED line 41: vercel-composition-patterns — verify license before publishing
+- IMPORTED line 42: vercel-react-view-transitions — verify license before publishing
+- IMPORTED line 43: seo-audit — verify license before publishing
+- FAILED line 44: npx skills add zarazhangrui/frontend-slides — Specify one skill with source@skill or --skill <name>.
+- FAILED line 45: npx skills add ibelick/ui-skills — Specify one skill with source@skill or --skill <name>.
+- IMPORTED line 46: remotion-best-practices — verify license before publishing
+- FAILED line 47: npx skills add CloudAI-X/threejs-skills — Specify one skill with source@skill or --skill <name>.
+- IMPORTED line 48: wp-block-development — verify license before publishing
+- IMPORTED line 49: wp-block-themes — verify license before publishing
+- IMPORTED line 50: openai-docs
+- IMPORTED line 51: supabase-postgres-best-practices — verify license before publishing
+- IMPORTED line 52: better-auth-best-practices — verify license before publishing
+- FAILED line 53: npx skills add better-auth/skills@create-auth-skill — Skills CLI exited with code 1
+- IMPORTED line 54: resend — verify license before publishing
+- IMPORTED line 55: sanity-best-practices — verify license before publishing
+- IMPORTED line 56: neon-postgres — verify license before publishing
+- IMPORTED line 57: tinybird — verify license before publishing
+- IMPORTED line 58: deploy-to-vercel — verify license before publishing
+- IMPORTED line 59: vercel-cli-with-tokens — verify license before publishing
+- IMPORTED line 60: cloudflare-deploy
+- IMPORTED line 61: netlify-deploy
+- IMPORTED line 62: render-deploy
+- IMPORTED line 63: wrangler — verify license before publishing
+- IMPORTED line 64: cloudflare — verify license before publishing
+- IMPORTED line 65: durable-objects — verify license before publishing
+- IMPORTED line 66: web-perf — verify license before publishing
+- FAILED line 67: npx skills add microsoft/skills — Specify one skill with source@skill or --skill <name>.
+- IMPORTED line 68: terraform-skill — verify license before publishing
+- IMPORTED line 69: terraform-style-guide — verify license before publishing
+- IMPORTED line 70: refactor-module — verify license before publishing
+- IMPORTED line 71: provider-resources — verify license before publishing
+- IMPORTED line 72: azure-functions — verify license before publishing
+- IMPORTED line 73: azure-app-service — verify license before publishing
+- IMPORTED line 74: azure-kubernetes-service — verify license before publishing
+- IMPORTED line 75: azure-container-apps — verify license before publishing
+- IMPORTED line 76: azure-static-web-apps — verify license before publishing
+- IMPORTED line 77: azure-devops — verify license before publishing
+- IMPORTED line 78: azure-pipelines — verify license before publishing
+- IMPORTED line 79: azure-monitor — verify license before publishing
+- FAILED line 80: npx skills add zxkane/aws-skills — Specify one skill with source@skill or --skill <name>.
+- IMPORTED line 81: gh-fix-ci
+- IMPORTED line 82: gh-address-comments
+- IMPORTED line 83: modern-python — verify license before publishing
+- IMPORTED line 84: playwright-skill — verify license before publishing
+- IMPORTED line 85: code-review — verify license before publishing
+- IMPORTED line 86: find-bugs — verify license before publishing
+- FAILED line 87: npx skills add omkamal/pypict-claude-skill — Specify one skill with source@skill or --skill <name>.
+- IMPORTED line 88: imagegen
+- FAILED line 89: npx skills add zechenzhangAGI/AI-research-SKILLs — Specify one skill with source@skill or --skill <name>.
+- IMPORTED line 90: hf-cli — verify license before publishing
+- IMPORTED line 91: huggingface-llm-trainer — verify license before publishing
+- IMPORTED line 92: huggingface-datasets — verify license before publishing
+- IMPORTED line 93: huggingface-community-evals — verify license before publishing
+- IMPORTED line 94: huggingface-trackio — verify license before publishing
+- IMPORTED line 95: microsoft-foundry — verify license before publishing
+- IMPORTED line 96: microsoft-foundry-classic — verify license before publishing
+- IMPORTED line 97: microsoft-foundry-local — verify license before publishing
+- IMPORTED line 98: microsoft-foundry-tools — verify license before publishing
+- IMPORTED line 99: azure-machine-learning — verify license before publishing
+- IMPORTED line 100: azure-cognitive-search — verify license before publishing
+- IMPORTED line 101: deep-research — verify license before publishing
+- FAILED line 102: npx skills add K-Dense-AI/claude-scientific-skills — Specify one skill with source@skill or --skill <name>.
+- IMPORTED line 103: jupyter-notebook
+- IMPORTED line 104: azure-databricks — verify license before publishing
+- FAILED line 105: npx skills add chrisvoncsefalvay/claude-d3js-skill — Specify one skill with source@skill or --skill <name>.
+- IMPORTED line 106: copywriting — verify license before publishing
+- IMPORTED line 107: marketing-psychology — verify license before publishing
+- IMPORTED line 108: content-strategy — verify license before publishing
+- IMPORTED line 109: product-marketing — verify license before publishing
+- IMPORTED line 110: marketing-ideas — verify license before publishing
+- IMPORTED line 111: social — verify license before publishing
+- IMPORTED line 112: copy-editing — verify license before publishing
+- IMPORTED line 113: launch — verify license before publishing
+- IMPORTED line 114: x-article-publisher — verify license before publishing
+- FAILED line 115: npx skills add CosmoBlk/email-marketing-bible — Specify one skill with source@skill or --skill <name>.
+- FAILED line 116: npx skills add SHADOWPR0/beautiful_prose — Specify one skill with source@skill or --skill <name>.
+- IMPORTED line 117: content-research-writer — verify license before publishing
+- IMPORTED line 118: programmatic-seo — verify license before publishing
+- IMPORTED line 119: pricing — verify license before publishing
+- IMPORTED line 120: cro — verify license before publishing
+- IMPORTED line 121: analytics — verify license before publishing
+- IMPORTED line 122: schema — verify license before publishing
+- FAILED line 123: npx skills add zubair-trabzada/geo-seo-claude — Specify one skill with source@skill or --skill <name>.
+- FAILED line 124: npx skills add Auriti-Labs/geo-optimizer-skill — Specify one skill with source@skill or --skill <name>.
+- FAILED line 125: npx skills add seo-skills/seo-audit-skill@seo-audit — Duplicate generated skill ID: seo-audit
+- IMPORTED line 126: seo-aeo-best-practices — verify license before publishing
+- IMPORTED line 127: web-design-guidelines — verify license before publishing
+- IMPORTED line 128: figma-implement-design
+- IMPORTED line 129: figma
+- IMPORTED line 130: web-design-engineer — verify license before publishing
+- IMPORTED line 131: interface-review — verify license before publishing
+- FAILED line 132: npx skills add jakubkrehel/skills — Specify one skill with source@skill or --skill <name>.
+- IMPORTED line 133: landing-page-design — verify license before publishing
+- FAILED line 134: npx skills add Owl-Listener/designer-skills — Specify one skill with source@skill or --skill <name>.
+- FAILED line 135: npx skills add ehmo/platform-design-skills — Specify one skill with source@skill or --skill <name>.
+- IMPORTED line 136: linear
+- IMPORTED line 137: notion-knowledge-capture
+- IMPORTED line 138: skill-builder — verify license before publishing
+- IMPORTED line 139: firecrawl — verify license before publishing
+- IMPORTED line 140: security-best-practices
+- IMPORTED line 141: security-threat-model
+- IMPORTED line 142: variant-analysis — verify license before publishing
+- IMPORTED line 143: semgrep-rule-creator — verify license before publishing
+- IMPORTED line 144: differential-review — verify license before publishing
+- IMPORTED line 145: property-based-testing — verify license before publishing
+- IMPORTED line 146: clawsec-clawhub-checker — verify license before publishing
+- IMPORTED line 147: azure-key-vault — verify license before publishing
+- IMPORTED line 148: audit-website — verify license before publishing
+- IMPORTED line 149: varlock — verify license before publishing
+- IMPORTED line 150: sentry
+- IMPORTED line 151: azure-cosmos-db — verify license before publishing
+- IMPORTED line 152: azure-sql-database — verify license before publishing
+- IMPORTED line 153: azure-blob-storage — verify license before publishing
+- FAILED line 154: npx skills add ClickHouse/agent-skills — Specify one skill with source@skill or --skill <name>.
+- IMPORTED line 155: postgres — verify license before publishing
+- IMPORTED line 156: vercel-react-native-skills — verify license before publishing
+- IMPORTED line 157: swiftui-expert-skill — verify license before publishing
+- IMPORTED line 158: expo-native-ui — verify license before publishing
+- IMPORTED line 159: eas-app-stores — verify license before publishing
+- IMPORTED line 160: expo-upgrade — verify license before publishing
+- IMPORTED line 161: ios-simulator-skill — verify license before publishing
+- IMPORTED line 162: agents-sdk — verify license before publishing
+- FAILED line 163: npx skills add asklokesh/claudeskill-loki-mode — Specify one skill with source@skill or --skill <name>.
+- IMPORTED line 164: recursive-decomposition — verify license before publishing
+
+Review every skill's instructions, scripts, provenance, metadata, and license. A license file's presence is not proof of permission to redistribute. The main registry is not modified automatically.

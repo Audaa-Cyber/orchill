@@ -1,0 +1,211 @@
+npx skills add Leonxlnx/taste-skill@design-taste-frontend
+npx skills add emilkowalski/skills@emil-design-eng
+npx skills add MengTo/Skills@build-awwwards-quality-sites
+npx skills add vercel-labs/skills@find-skills
+npx skills add vercel-labs/agent-skills@vercel-react-best-practices
+npx skills add anthropics/skills@frontend-design
+npx skills add coreyhaines31/marketingskills
+npx skills add AgriciDaniel/claude-seo
+npx skills add charlie947/social-media-skills
+npx skills add anthropics/skills@mcp-builder
+/plugin marketplace add trailofbits/skills
+/plugin install static-analysis@trailofbits
+npx skills add anthropics/skills@claude-api
+npx skills add anthropics/skills@docx
+npx skills add shadcn-ui/ui@shadcn
+npx skills add obra/superpowers@brainstorming
+npx skills add obra/superpowers@systematic-debugging
+npx skills add obra/superpowers@test-driven-development
+npx skills add obra/superpowers@requesting-code-review
+npx skills add obra/superpowers@subagent-driven-development
+npx skills add obra/superpowers@verification-before-completion
+npx skills add obra/superpowers@receiving-code-review
+npx skills add obra/superpowers@writing-plans
+npx skills add obra/superpowers@executing-plans
+npx skills add obra/superpowers@dispatching-parallel-agents
+npx skills add obra/superpowers@using-git-worktrees
+npx skills add obra/superpowers@using-superpowers
+npx skills add anthropics/skills@skill-creator
+npx skills add anthropics/skills@pdf
+npx skills add anthropics/skills@webapp-testing
+npx skills add anthropics/skills@doc-coauthoring
+npx skills add anthropics/skills@slack-gif-creator
+npx skills add anthropics/skills@web-artifacts-builder
+npx skills add anthropics/skills@internal-comms
+npx skills add anthropics/skills@canvas-design
+npx skills add anthropics/skills@algorithmic-art
+npx skills add anthropics/skills@theme-factory
+npx skills add anthropics/skills@brand-guidelines
+npx skills add anthropics/skills@pptx
+npx skills add nextlevelbuilder/ui-ux-pro-max-skill@ui-ux-pro-max
+npx skills add anthropics/skills@xlsx
+npx impeccable install
+npx skills add wshobson/agents@tailwind-design-system
+npx skills add vercel-labs/agent-skills@vercel-composition-patterns
+/plugin marketplace add blader/humanizer
+/plugin install humanizer@humanizer
+npx skills add vercel-labs/agent-skills@vercel-react-view-transitions
+npx skills add coreyhaines31/marketingskills@seo-audit
+npx skills add zarazhangrui/frontend-slides
+npx skills add ibelick/ui-skills
+npx skills add remotion-dev/skills@remotion-best-practices
+npx skills add CloudAI-X/threejs-skills
+npx skills add Automattic/agent-skills@wp-block-development
+npx skills add Automattic/agent-skills@wp-block-themes
+npx skills add openai/skills@openai-docs
+/plugin marketplace add dotnet/skills
+/plugin install dotnet@dotnet-agent-skills
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-aspnetcore@dotnet-agent-skills
+npx skills add supabase/agent-skills@supabase-postgres-best-practices
+npx skills add better-auth/skills@better-auth-best-practices
+npx skills add better-auth/skills@create-auth-skill
+npx skills add resend/resend-skills@resend
+npx skills add sanity-io/agent-toolkit@sanity-best-practices
+npx skills add neondatabase/agent-skills@neon-postgres
+npx skills add tinybirdco/tinybird-agent-skills@tinybird
+npx skills add vercel-labs/agent-skills@deploy-to-vercel
+npx skills add vercel-labs/agent-skills@vercel-cli-with-tokens
+npx skills add openai/skills@cloudflare-deploy
+npx skills add openai/skills@netlify-deploy
+npx skills add openai/skills@render-deploy
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-msbuild@dotnet-agent-skills
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-nuget@dotnet-agent-skills
+npx skills add cloudflare/skills@wrangler
+npx skills add cloudflare/skills@cloudflare
+npx skills add cloudflare/skills@durable-objects
+npx skills add cloudflare/skills@web-perf
+npx skills add microsoft/skills
+npx skills add antonbabenko/terraform-skill@terraform-skill
+/plugin marketplace add callstackincubator/agent-skills
+/plugin install testing-react-native-apps@callstack-agent-skills
+npx skills add hashicorp/agent-skills@terraform-style-guide
+npx skills add hashicorp/agent-skills@refactor-module
+npx skills add hashicorp/agent-skills@provider-resources
+npx skills add MicrosoftDocs/Agent-Skills@azure-functions
+npx skills add MicrosoftDocs/Agent-Skills@azure-app-service
+npx skills add MicrosoftDocs/Agent-Skills@azure-kubernetes-service
+npx skills add MicrosoftDocs/Agent-Skills@azure-container-apps
+npx skills add MicrosoftDocs/Agent-Skills@azure-static-web-apps
+npx skills add MicrosoftDocs/Agent-Skills@azure-devops
+npx skills add MicrosoftDocs/Agent-Skills@azure-pipelines
+npx skills add MicrosoftDocs/Agent-Skills@azure-monitor
+npx skills add zxkane/aws-skills
+npx skills add openai/skills@gh-fix-ci
+npx skills add openai/skills@gh-address-comments
+npx skills add trailofbits/skills@modern-python
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-diag@dotnet-agent-skills
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-test@dotnet-agent-skills
+npx skills add lackeyjb/playwright-skill@playwright-skill
+npx skills add getsentry/skills@code-review
+npx skills add getsentry/skills@find-bugs
+npx skills add omkamal/pypict-claude-skill
+npx skills add openai/skills@imagegen
+npx skills add zechenzhangAGI/AI-research-SKILLs
+npx skills add huggingface/skills@hf-cli
+npx skills add huggingface/skills@huggingface-llm-trainer
+npx skills add huggingface/skills@huggingface-datasets
+npx skills add huggingface/skills@huggingface-community-evals
+npx skills add huggingface/skills@huggingface-trackio
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-ai@dotnet-agent-skills
+npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry
+npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry-classic
+npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry-local
+npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry-tools
+npx skills add MicrosoftDocs/Agent-Skills@azure-machine-learning
+npx skills add MicrosoftDocs/Agent-Skills@azure-cognitive-search
+npx skills add sanjay3290/ai-skills@deep-research
+npx skills add K-Dense-AI/claude-scientific-skills
+npx skills add openai/skills@jupyter-notebook
+npx skills add MicrosoftDocs/Agent-Skills@azure-databricks
+npx skills add chrisvoncsefalvay/claude-d3js-skill
+npx skills add coreyhaines31/marketingskills@copywriting
+npx skills add coreyhaines31/marketingskills@marketing-psychology
+npx skills add coreyhaines31/marketingskills@content-strategy
+npx skills add coreyhaines31/marketingskills@product-marketing
+npx skills add coreyhaines31/marketingskills@marketing-ideas
+npx skills add coreyhaines31/marketingskills@social
+npx skills add coreyhaines31/marketingskills@copy-editing
+npx skills add coreyhaines31/marketingskills@launch
+npx skills add wshuyi/x-article-publisher-skill@x-article-publisher
+npx skills add CosmoBlk/email-marketing-bible
+npx skills add SHADOWPR0/beautiful_prose
+npx skills add ComposioHQ/awesome-claude-skills@content-research-writer
+npx skills add coreyhaines31/marketingskills@programmatic-seo
+npx skills add coreyhaines31/marketingskills@pricing
+npx skills add coreyhaines31/marketingskills@cro
+npx skills add coreyhaines31/marketingskills@analytics
+npx skills add coreyhaines31/marketingskills@schema
+npx skills add zubair-trabzada/geo-seo-claude
+npx skills add Auriti-Labs/geo-optimizer-skill
+npx skills add seo-skills/seo-audit-skill@seo-audit
+npx skills add sanity-io/agent-toolkit@seo-aeo-best-practices
+/plugin marketplace add anthropics/knowledge-work-plugins
+/plugin install design@knowledge-work-plugins
+npx skills add vercel-labs/agent-skills@web-design-guidelines
+npx skills add openai/skills@figma-implement-design
+npx skills add openai/skills@figma
+npx skills add ConardLi/garden-skills@web-design-engineer
+npx skills add jakubkrehel/skills@interface-review
+npx skills add jakubkrehel/skills
+npx skills add elayadesign/ai-design-skills@landing-page-design
+npx skills add Owl-Listener/designer-skills
+npx skills add ehmo/platform-design-skills
+npx skills add openai/skills@linear
+/plugin marketplace add mvanhorn/last30days-skill
+/plugin install last30days@last30days-skill
+npx skills add openai/skills@notion-knowledge-capture
+npx skills add yusufkaraaslan/Skill_Seekers@skill-builder
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-template-engine@dotnet-agent-skills
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-upgrade@dotnet-agent-skills
+npx skills add firecrawl/cli@firecrawl
+npx skills add openai/skills@security-best-practices
+npx skills add openai/skills@security-threat-model
+/plugin marketplace add trailofbits/skills
+/plugin install static-analysis@trailofbits
+npx skills add trailofbits/skills@variant-analysis
+npx skills add trailofbits/skills@semgrep-rule-creator
+/plugin marketplace add trailofbits/skills
+/plugin install building-secure-contracts@trailofbits
+npx skills add trailofbits/skills@differential-review
+npx skills add trailofbits/skills@property-based-testing
+npx skills add prompt-security/clawsec@clawsec-clawhub-checker
+npx skills add MicrosoftDocs/Agent-Skills@azure-key-vault
+npx skills add squirrelscan/skills@audit-website
+npx skills add wrsmith108/varlock-claude-skill@varlock
+npx skills add openai/skills@sentry
+/plugin marketplace add kreuzberg-dev/kreuzberg
+/plugin install xberg@xberg
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-data@dotnet-agent-skills
+npx skills add MicrosoftDocs/Agent-Skills@azure-cosmos-db
+npx skills add MicrosoftDocs/Agent-Skills@azure-sql-database
+npx skills add MicrosoftDocs/Agent-Skills@azure-blob-storage
+npx skills add ClickHouse/agent-skills
+npx skills add sanjay3290/postgres-skill@postgres
+npx skills add vercel-labs/agent-skills@vercel-react-native-skills
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-maui@dotnet-agent-skills
+npx skills add AvdLee/SwiftUI-Agent-Skill@swiftui-expert-skill
+npx skills add expo/skills@expo-native-ui
+npx skills add expo/skills@eas-app-stores
+npx skills add expo/skills@expo-upgrade
+/plugin marketplace add callstackincubator/agent-skills
+/plugin install building-react-native-apps@callstack-agent-skills
+/plugin marketplace add callstackincubator/agent-skills
+/plugin install building-react-native-apps@callstack-agent-skills
+/plugin marketplace add callstackincubator/agent-skills
+/plugin install migrating-to-react-native@callstack-agent-skills
+npx skills add conorluddy/ios-simulator-skill@ios-simulator-skill
+/plugin marketplace add OthmanAdi/planning-with-files
+/plugin install planning-with-files@planning-with-files
+npx skills add cloudflare/skills@agents-sdk
+npx skills add asklokesh/claudeskill-loki-mode
+npx skills add massimodeluisa/recursive-decomposition-skill@recursive-decomposition
