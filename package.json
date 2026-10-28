@@ -27,7 +27,9 @@
     "test": "tsx --test tests/audit.test.ts tests/safety.test.ts tests/install.test.ts tests/registry.test.ts tests/bulk-import.test.ts tests/marketplace-import.test.ts",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "prepack": "npm run build",
-    "catalog:generate": "tsx scripts/generate-catalog.ts"
+    "catalog:generate": "tsx scripts/generate-catalog.ts",
+    "release:check": "tsx scripts/check-release-readiness.ts",
+    "prepublishOnly": "npm run build && npm run release:check -- --strict"
   },
   "dependencies": {
     "commander": "^14.0.0"
