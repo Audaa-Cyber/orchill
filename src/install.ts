@@ -33,7 +33,7 @@ export function targetRoot(target: string, cwd = process.cwd()): string {
   switch (target) {
     case "project": return path.join(cwd, ".agents", "skills");
     case "claude": return path.join(cwd, ".claude", "skills");
-    case "codex": return path.join(cwd, ".codex", "skills");
+    case "codex": return path.join(cwd, ".agents", "skills");
     case "agents": return path.join(cwd, ".agents", "skills");
     default: throw new Error(`Unknown target "${target}". Use project, agents, claude, or codex.`);
   }
