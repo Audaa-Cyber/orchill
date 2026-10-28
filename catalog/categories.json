@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "generatedFrom": "registry/skills.json",
+  "categoryCount": 20,
+  "skillCount": 221,
+  "categories": [
+    {
+      "name": ".NET & Build Systems",
+      "slug": "net-and-build-systems",
+      "count": 40,
+      "index": "catalog/categories/net-and-build-systems/README.md"
+    },
+    {
+      "name": "Accessibility",
+      "slug": "accessibility",
+      "count": 2,
+      "index": "catalog/categories/accessibility/README.md"
+    },
+    {
+      "name": "Agent Tooling & Workflows",
+      "slug": "agent-tooling-and-workflows",
+      "count": 15,
+      "index": "catalog/categories/agent-tooling-and-workflows/README.md"
+    },
+    {
+      "name": "AI & Data",
+      "slug": "ai-and-data",
+      "count": 10,
+      "index": "catalog/categories/ai-and-data/README.md"
+    },
+    {
+      "name": "Animation & Motion",
+      "slug": "animation-and-motion",
+      "count": 2,
+      "index": "catalog/categories/animation-and-motion/README.md"
+    },
+    {
+      "name": "Backend & APIs",
+      "slug": "backend-and-apis",
+      "count": 12,
+      "index": "catalog/categories/backend-and-apis/README.md"
+    },
+    {
+      "name": "Cloud & DevOps",
+      "slug": "cloud-and-devops",
+      "count": 25,
+      "index": "catalog/categories/cloud-and-devops/README.md"
+    },
+    {
+      "name": "Content & Marketing",
+      "slug": "content-and-marketing",
+      "count": 19,
+      "index": "catalog/categories/content-and-marketing/README.md"
+    },
+    {
+      "name": "Creative Coding & Media",
+      "slug": "creative-coding-and-media",
+      "count": 1,
+      "index": "catalog/categories/creative-coding-and-media/README.md"
+    },
+    {
+      "name": "Design Systems & Components",
+      "slug": "design-systems-and-components",
+      "count": 3,
+      "index": "catalog/categories/design-systems-and-components/README.md"
+    },
+    {
+      "name": "Developer Tools",
+      "slug": "developer-tools",
+      "count": 15,
+      "index": "catalog/categories/developer-tools/README.md"
+    },
+    {
+      "name": "Documents & Productivity",
+      "slug": "documents-and-productivity",
+      "count": 7,
+      "index": "catalog/categories/documents-and-productivity/README.md"
+    },
+    {
+      "name": "Micro-interactions",
+      "slug": "micro-interactions",
+      "count": 1,
+      "index": "catalog/categories/micro-interactions/README.md"
+    },
+    {
+      "name": "Mobile Development",
+      "slug": "mobile-development",
+      "count": 14,
+      "index": "catalog/categories/mobile-development/README.md"
+    },
+    {
+      "name": "Performance & Optimization",
+      "slug": "performance-and-optimization",
+      "count": 2,
+      "index": "catalog/categories/performance-and-optimization/README.md"
+    },
+    {
+      "name": "React & Frontend",
+      "slug": "react-and-frontend",
+      "count": 8,
+      "index": "catalog/categories/react-and-frontend/README.md"
+    },
+    {
+      "name": "Security",
+      "slug": "security",
+      "count": 5,
+      "index": "catalog/categories/security/README.md"
+    },
+    {
+      "name": "SEO",
+      "slug": "seo",
+      "count": 4,
+      "index": "catalog/categories/seo/README.md"
+    },
+    {
+      "name": "Testing",
+      "slug": "testing",
+      "count": 26,
+      "index": "catalog/categories/testing/README.md"
+    },
+    {
+      "name": "UI/UX",
+      "slug": "ui-ux",
+      "count": 10,
+      "index": "catalog/categories/ui-ux/README.md"
+    }
+  ]
+}
