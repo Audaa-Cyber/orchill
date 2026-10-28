@@ -16,3 +16,9 @@ test("rejects traversal paths", () => {
 test("rejects NUL bytes", () => {
   assert.throws(() => safeRelativePath("skill\0name", "path"), /relative/);
 });
+
+test("rejects Windows absolute paths and cross-platform traversal", () => {
+  assert.throws(() => safeRelativePath("C:\\outside\\skill", "path"), /relative/);
+  assert.throws(() => safeRelativePath("\\\\server\\share\\skill", "path"), /relative/);
+  assert.throws(() => safeRelativePath("skills\\..\\..\\outside", "path"), /escape/);
+});
