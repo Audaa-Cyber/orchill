@@ -93,7 +93,7 @@ const allRows = allSkills.map(skill => {
 }).join("\n");
 await writeFile(path.join(outputRoot, "CATALOG.md"), `# Orchill Skill Catalog
 
-> Generated from \`registry/skills.json\`. Do not edit manually; update the registry and run `npm run catalog:generate`.
+> Generated from \`registry/skills.json\`. Do not edit manually; update the registry and run \`npm run catalog:generate\`.
 
 **${registry.skills.length} skills · ${categories.length} categories**
 
