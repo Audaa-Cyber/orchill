@@ -14,12 +14,24 @@ test("default registry is valid and IDs are unique", async () => {
 });
 
 
-test("every local registry entry points to a bundled skill directory with SKILL.md", async () => {
+function categorySlug(value: string): string {
+  return value.toLowerCase().normalize("NFKD").replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+test("every local registry entry maps to its category folder and bundled SKILL.md", async () => {
   const {registry, root} = await loadRegistry(defaultRegistryPath);
   const localSkills = registry.skills.filter(skill => skill.source.type === "local");
   assert.ok(localSkills.length > 0);
   for (const skill of localSkills) {
     assert.match(skill.source.path!, /^\.\.\/skills\/[a-z0-9-]+\/[a-z0-9-]+$/);
+    const segments = skill.source.path!.split("/");
+    assert.equal(segments[0], "..");
+    assert.equal(segments[1], "skills");
+    assert.equal(segments[2], categorySlug(skill.category),
+      `${skill.id} must live in the folder derived from category "${skill.category}"`);
+    assert.equal(segments[3], skill.id,
+      `${skill.id} must be the final directory name in its registry path`);
     const sourceRoot = path.resolve(root, skill.source.path!);
     const skillRoot = skill.skillPath === "." ? sourceRoot : path.resolve(sourceRoot, skill.skillPath);
     try {
