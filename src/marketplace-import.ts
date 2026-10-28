@@ -15,7 +15,6 @@ export interface MarketplaceRecord {
   error?: string;
 }
 
-const safeName = /^[a-zA-Z0-9][a-zA-Z0-9._-]*$/;
 const safeRepo = /^[a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+$/;
 
 export function parseMarketplaceCommand(text: string, line: number): MarketplaceCommand {
@@ -125,7 +124,7 @@ export async function runMarketplaceImport(inputFile: string, outputPath: string
   const seen = new Set<string>();
   const tempRoot = await mkdtemp(path.join(os.tmpdir(), "orchill-marketplaces-"));
   try {
-    const repos = new Map<string, { path: string; alias: string }>();
+    const repos = new Map<string, { path: string }>();
     for (const item of parsed) {
       if (item.error || item.command.kind !== "marketplace") continue;
       const cmd = item.command;
@@ -138,7 +137,7 @@ export async function runMarketplaceImport(inputFile: string, outputPath: string
         try { manifest = JSON.parse(await readFile(manifestPath, "utf8")) as typeof manifest; }
         catch { throw new Error("Marketplace manifest not found at .agents/plugins/marketplace.json."); }
         if (!manifest.name || !Array.isArray(manifest.plugins)) throw new Error("Marketplace manifest has no valid name/plugins list.");
-        repos.set(manifest.name, { path: repoPath, alias: manifest.name });
+        repos.set(manifest.name, { path: repoPath });
         records.push({ line: cmd.line, command: cmd.original, status: "imported" });
         console.log("Registered marketplace source " + cmd.repo + " as " + manifest.name + " (local staging only).");
       } catch (error) {
