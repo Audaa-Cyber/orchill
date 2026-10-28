@@ -639,3 +639,17 @@ The local container cannot reach GitHub due to network/DNS restrictions, so loca
 - Review all external skills for prompt injection, shell commands, data access, and network instructions before recommending them for trusted workflows.
 - Add installed-state / uninstall / update only if the MVP timebox permits; these are explicitly outside the current MVP scope.
 - Keep public npm publishing separate from source checkout verification; no npm package has been published yet.
+
+
+## 22. Cross-platform path and end-to-end package checks — 2026-10-29
+
+- Hardened relative path handling so Windows drive paths, UNC/rooted paths, and backslash traversal are rejected consistently across operating systems.
+- Added a test proving a symlink inside a source skill is rejected instead of copied/followed.
+- Expanded packaged CLI smoke coverage to include help, search, categories, category-filtered list, info, targets, registry details, dry-run, a real demo installation, and project-local registry initialization.
+- GitHub Actions run 40 passed on commit `8d5931b8d7ccd78ade3c36fe886ff6cf1113d0e3`, including the expanded CLI smoke suite.
+- GitHub Actions run 41 passed on commit `596b0e46403fe579a5a2539cb99078d2cab9d606`, including the new source-symlink test and all prior checks.
+- Current verified code includes the cross-platform path checks, source symlink rejection, destination symlink rejection, sparse checkout test, rollback test, and actual packaged CLI installation test.
+
+### Still intentionally out of scope
+
+No hosted MCP integration, auto-install based on natural language, public npm release, lockfile, dependency resolver, update/uninstall commands, or full security audit has been implemented. The project is a usable CLI MVP candidate, not a security-certified or publicly released package.
