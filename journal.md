@@ -708,3 +708,12 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Important scope note:** This adds real category-index folders and files. It deliberately does **not** relocate imported third-party payloads out of their original source directories; physically moving them would change registry paths and package layout and should be a separate migration with validation. The category index clearly documents this distinction.
 - **Counts:** 221 skills across 20 categories.
 - **Verification status:** Files generated from the current registry snapshot. CI has not yet verified this commit; run `npm run catalog:generate`, tests, and package smoke checks after the generator is added/validated.
+
+
+## 28. Human-browsable category catalogue — 2026-10-29
+- **Problem:** The 221-entry registry was machine-readable, but category organization was not browsable as a directory structure for humans.
+- **Implementation:** Added `catalog/README.md`, generated all-skills index `catalog/CATALOG.md`, machine-readable `catalog/categories.json`, and category index folders under `catalog/categories/<category-slug>/README.md` for all 20 categories. Each index lists skill IDs, source type, source/payload link, and license metadata without inventing unknown licenses.
+- **Regeneration:** Added `npm run catalog:generate` via `scripts/generate-catalog.ts`; generator validates duplicate/missing IDs and missing categories before writing indexes.
+- **Scope note:** Category folders currently contain indexes, while imported third-party payloads remain in their recorded source directories. This avoids silently rewriting third-party content or registry paths; physically relocating payloads is a separate migration.
+- **Counts:** 221 skills across 20 categories.
+- **Verification:** Generated files reflect the current registry snapshot. The generator and full test/package suite still require a green CI run before merge.
