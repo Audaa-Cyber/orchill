@@ -1,0 +1,18 @@
+{
+  "$schema": "./skills.schema.json",
+  "version": 1,
+  "skills": [
+    {
+      "id": "demo-focus",
+      "name": "Demo Focus Skill",
+      "description": "A minimal example skill that demonstrates Orchill's selective install workflow.",
+      "category": "Tooling & MCP Development",
+      "tags": ["example", "demo", "getting-started"],
+      "source": { "type": "local", "path": "../examples/demo-focus" },
+      "skillPath": ".",
+      "license": "MIT",
+      "provenance": "Bundled Orchill example; not a third-party skill.",
+      "targets": ["project", "claude", "codex", "agents"]
+    }
+  ]
+}
