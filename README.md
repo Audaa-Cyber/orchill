@@ -61,6 +61,7 @@ Use `--cwd /path/to/project` to select a destination project. Use `--force` to r
 - `orchill list [--category <name>]` — list catalog entries.
 - `orchill categories` — show categories and counts.
 - `orchill info <id>` — inspect metadata and provenance notes.
+- `orchill audit [--json] [--strict]` — review missing metadata, invalid local skill paths, and heuristic security flags.
 - `orchill install <id> [--target project|agents|claude|codex]` — install one skill.
 - `orchill install <id> --dry-run` — preview a single install.
 - `orchill install-category <category>` — show a plan, then ask for confirmation; use `--yes` in reviewed automation.
@@ -106,7 +107,7 @@ Default registry: `registry/skills.json`. Its format is documented by `registry/
 - Skill IDs and relative paths are validated; destination parent symlinks are rejected.
 - Existing installs are not overwritten unless `--force` is supplied.
 - Category installation prints the complete plan and asks for confirmation unless `--yes` is passed.
-- Source/license metadata is only as trustworthy as the registry maintainer. Orchill does not currently verify signatures or automatically audit skill instructions.
+- Source/license metadata is only as trustworthy as the registry maintainer. Orchill does not verify signatures or prove that skill instructions are safe. `orchill audit` provides limited heuristic triage only; remote Git source content is not downloaded by the audit.
 - Review third-party `SKILL.md` and referenced scripts before allowing an agent to use them.
 - Do not treat a URL, repository name, or license field as proof that a source is safe or correctly licensed.
 - MVP currently has no update/uninstall/lockfile, dependency resolution, remote hosted catalog, MCP server, or built-in agent auto-detection.
