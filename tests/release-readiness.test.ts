@@ -3,13 +3,14 @@ import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import { createRequire } from "node:module";
 import test from "node:test";
 
 const checker = fileURLToPath(new URL("../scripts/check-release-readiness.ts", import.meta.url));
 const require = createRequire(import.meta.url);
-const tsxLoader = require.resolve("tsx");
+// Node's --import option expects a URL on Windows; a raw C:\\ path is parsed as scheme "c:".
+const tsxLoader = pathToFileURL(require.resolve("tsx")).href;
 
 async function fixture(approvals: unknown) {
   const root = await mkdtemp(path.join(os.tmpdir(), "orchill-release-check-"));
