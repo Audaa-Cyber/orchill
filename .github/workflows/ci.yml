@@ -16,6 +16,8 @@ jobs:
       - run: npm run typecheck
       - name: Report bundled-skill release approval gaps (non-blocking until review is complete)
         run: npm run release:check
+      - name: Generate third-party provenance inventory
+        run: npm run provenance:inventory > provenance-inventory.json
       - run: npm test
       - run: npm run build
       - run: npm run catalog:generate
