@@ -33,13 +33,13 @@ jobs:
           orchill targets
           orchill registry
           orchill install frontend-design --dry-run
+          mkdir -p "$RUNNER_TEMP/orchill-smoke-project" "$RUNNER_TEMP/orchill-init-smoke" "$RUNNER_TEMP/orchill-category-smoke"
           orchill install analyzing-dotnet-performance --cwd "$RUNNER_TEMP/orchill-smoke-project"
           test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/analyzing-dotnet-performance/SKILL.md"
           test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/analyzing-dotnet-performance/references/critical-patterns.md"
           orchill install-category Accessibility --yes --cwd "$RUNNER_TEMP/orchill-category-smoke"
           test -f "$RUNNER_TEMP/orchill-category-smoke/.agents/skills/audit-website/SKILL.md"
           test -f "$RUNNER_TEMP/orchill-category-smoke/.agents/skills/web-design-guidelines/SKILL.md"
-          mkdir -p "$RUNNER_TEMP/orchill-smoke-project" "$RUNNER_TEMP/orchill-init-smoke"
           orchill install demo-focus --cwd "$RUNNER_TEMP/orchill-smoke-project"
           test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/demo-focus/SKILL.md"
           orchill init --cwd "$RUNNER_TEMP/orchill-init-smoke"
