@@ -682,3 +682,6 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Offline source paths:** Local source paths point to the staged skill directories in `.orchill-skills-import/skills` and `.orchill-marketplace-import-fixed/skills`. Added those directories to the npm package file allowlist so the local registry paths remain available in a packaged offline install.
 - **Catalog documentation:** Regenerated `docs/CATALOG.md` from the registry and updated README catalog status and import-review warnings.
 - **Safety/quality note:** Several imported metadata descriptions were only YAML block markers (for example `>-`); these received a clearly labeled generic fallback rather than pretending to know their contents. Missing license metadata remains unknown. The imported skill content has not been comprehensively audited. Build/tests were not run through this GitHub-only editing pass and must be verified in Codespaces before merging or publishing.
+
+
+- **Category refinement:** Ensured the catalog exposes a dedicated `Accessibility` category for website audit and web-guideline skills, alongside the previously agreed UI/UX, Animation & Motion, Micro-interactions, React & Frontend, SEO, and Testing groups.
