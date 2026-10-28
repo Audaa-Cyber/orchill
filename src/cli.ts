@@ -7,6 +7,7 @@ import { installSkill, targetRoot } from "./install.js";
 import type { Skill } from "./types.js";
 import { runBulkImport } from "./bulk-import.js";
 import { runMarketplaceImport } from "./marketplace-import.js";
+import { auditRegistry, auditSummary } from "./audit.js";
 
 const program = new Command();
 program.name("orchill").description("Find and selectively install AI agent skills.").version("0.1.0");
@@ -49,6 +50,26 @@ registryOption(program.command("categories").description("List skill categories"
   if (!groups.size) { console.log("Registry has no skills yet."); return; }
   for (const [category, count] of [...groups].sort(([a],[b]) => a.localeCompare(b))) console.log(`${category} (${count})`);
 });
+registryOption(program.command("audit").description("Audit catalog metadata and scan local skills for review-worthy patterns"))
+  .option("--json", "Output machine-readable JSON")
+  .option("--strict", "Exit non-zero when any audit finding exists")
+  .action(async (opts: {registry?: string; json?: boolean; strict?: boolean}) => {
+    const {registry, root} = await getRegistry(opts.registry);
+    const findings = await auditRegistry(registry, root);
+    const summary = auditSummary(findings, registry.skills.length);
+    if (opts.json) {
+      console.log(JSON.stringify({ summary, findings }, null, 2));
+    } else {
+      console.log(`Catalog audit: ${summary.totalSkills} skills; ${summary.totalFindings} findings (${summary.errors} errors, ${summary.warnings} warnings, ${summary.reviewItems} review items).`);
+      for (const finding of findings) {
+        const location = finding.file ? ` — ${path.relative(process.cwd(), finding.file)}${finding.line ? `:${finding.line}` : ""}` : "";
+        console.log(`[${finding.severity.toUpperCase()}] ${finding.skillId} ${finding.code}: ${finding.message}${location}`);
+      }
+      if (!findings.length) console.log("No audit findings. This is not a guarantee that skills are safe or correctly licensed.");
+      console.log("Heuristic matches require human review; remote Git content is not downloaded or scanned.");
+    }
+    if (summary.errors > 0 || (opts.strict && findings.length > 0)) process.exitCode = 1;
+  });
 registryOption(program.command("info <id>").description("Show a skill's metadata")).action(async (id: string, opts: {registry?: string}) => {
   const {registry} = await getRegistry(opts.registry);
   const skill = registry.skills.find(s => s.id === id);
@@ -138,6 +159,7 @@ program.addHelpText("after", `
 Examples:
   orchill search animation
   orchill categories
+  orchill audit
   orchill info demo-focus
   orchill install demo-focus --dry-run
   orchill install demo-focus --target claude
