@@ -124,22 +124,29 @@ export async function runMarketplaceImport(inputFile: string, outputPath: string
   const seen = new Set<string>();
   const tempRoot = await mkdtemp(path.join(os.tmpdir(), "orchill-marketplaces-"));
   try {
-    const repos = new Map<string, { path: string }>();
+    const repos = new Map<string, { path: string; repo: string }>();
+    const clonedRepos = new Map<string, { path: string; name: string; plugins: Array<{ name?: string; source?: string; description?: string }> }>();
+    let cloneIndex = 0;
     for (const item of parsed) {
       if (item.error || item.command.kind !== "marketplace") continue;
       const cmd = item.command;
       try {
-        const repoPath = path.join(tempRoot, "repo-" + repos.size);
-        const url = "https://github.com/" + cmd.repo + ".git";
-        await runGit(["clone", "--depth", "1", "--", url, repoPath], tempRoot);
-        const manifestPath = path.join(repoPath, ".agents", "plugins", "marketplace.json");
-        let manifest: { name?: string; plugins?: Array<{ name?: string; source?: string; description?: string }> };
-        try { manifest = JSON.parse(await readFile(manifestPath, "utf8")) as typeof manifest; }
-        catch { throw new Error("Marketplace manifest not found at .agents/plugins/marketplace.json."); }
-        if (!manifest.name || !Array.isArray(manifest.plugins)) throw new Error("Marketplace manifest has no valid name/plugins list.");
-        repos.set(manifest.name, { path: repoPath });
+        let cached = clonedRepos.get(cmd.repo.toLowerCase());
+        if (!cached) {
+          const repoPath = path.join(tempRoot, "repo-" + cloneIndex++);
+          const url = "https://github.com/" + cmd.repo + ".git";
+          await runGit(["clone", "--depth", "1", "--", url, repoPath], tempRoot);
+          const manifestPath = path.join(repoPath, ".agents", "plugins", "marketplace.json");
+          let manifest: { name?: string; plugins?: Array<{ name?: string; source?: string; description?: string }> };
+          try { manifest = JSON.parse(await readFile(manifestPath, "utf8")) as typeof manifest; }
+          catch { throw new Error("Marketplace manifest not found at .agents/plugins/marketplace.json."); }
+          if (!manifest.name || !Array.isArray(manifest.plugins)) throw new Error("Marketplace manifest has no valid name/plugins list.");
+          cached = { path: repoPath, name: manifest.name, plugins: manifest.plugins };
+          clonedRepos.set(cmd.repo.toLowerCase(), cached);
+        }
+        repos.set(cached.name, { path: cached.path, repo: cmd.repo });
         records.push({ line: cmd.line, command: cmd.original, status: "imported" });
-        console.log("Registered marketplace source " + cmd.repo + " as " + manifest.name + " (local staging only).");
+        console.log("Registered marketplace source " + cmd.repo + " as " + cached.name + " (local staging only; repository cloned once).");
       } catch (error) {
         records.push({ line: cmd.line, command: cmd.original, status: "failed", error: error instanceof Error ? error.message : String(error) });
       }
