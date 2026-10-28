@@ -5,7 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { pathToFileURL } from "node:url";
-import { installSkill } from "../src/install.js";
+import { installSkill, uninstallSkill, verifySkillInstallation } from "../src/install.js";
 import type { Skill } from "../src/types.js";
 
 test("installs a complete nested skill directory", async () => {
@@ -140,5 +140,48 @@ test("refuses to copy symlinks inside a skill source", async () => {
     await assert.rejects(() => readFile(path.join(cwd, ".agents", "skills", skill.id, "SKILL.md"), "utf8"), /ENOENT/);
   } finally {
     await rm(temp, {recursive: true, force: true});
+  }
+});
+
+
+test("verifies and safely uninstalls an Orchill-managed installation", async () => {
+  const temp = await mkdtemp(path.join(os.tmpdir(), "orchill-lifecycle-test-"));
+  try {
+    const registryRoot = path.join(temp, "registry");
+    const source = path.join(temp, "source-skill");
+    const cwd = path.join(temp, "project");
+    await mkdir(registryRoot, { recursive: true });
+    await mkdir(source, { recursive: true });
+    await mkdir(cwd, { recursive: true });
+    await writeFile(path.join(source, "SKILL.md"), "# Lifecycle skill\\n");
+    const skill: Skill = {
+      id: "lifecycle-skill", name: "Lifecycle skill", description: "Fixture", category: "Tests",
+      source: { type: "local", path: "../source-skill" }, skillPath: "."
+    };
+    await installSkill(skill, registryRoot, "project", cwd);
+    const verified = await verifySkillInstallation(skill.id, "project", cwd);
+    assert.equal(verified.installed, true);
+    assert.equal(verified.managed, true);
+    assert.equal(verified.hasSkillFile, true);
+    const removed = await uninstallSkill(skill.id, "project", cwd);
+    assert.equal(removed, path.join(cwd, ".agents", "skills", skill.id));
+    const after = await verifySkillInstallation(skill.id, "project", cwd);
+    assert.equal(after.installed, false);
+  } finally {
+    await rm(temp, { recursive: true, force: true });
+  }
+});
+
+test("refuses to uninstall an unmanaged directory", async () => {
+  const temp = await mkdtemp(path.join(os.tmpdir(), "orchill-unmanaged-test-"));
+  try {
+    const cwd = path.join(temp, "project");
+    const destination = path.join(cwd, ".agents", "skills", "user-skill");
+    await mkdir(destination, { recursive: true });
+    await writeFile(path.join(destination, "SKILL.md"), "# User-owned skill\\n");
+    await assert.rejects(() => uninstallSkill("user-skill", "project", cwd), /no valid Orchill installation marker/);
+    assert.equal(await readFile(path.join(destination, "SKILL.md"), "utf8"), "# User-owned skill\\n");
+  } finally {
+    await rm(temp, { recursive: true, force: true });
   }
 });
