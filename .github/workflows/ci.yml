@@ -17,6 +17,7 @@ jobs:
       - run: npm test
       - run: npm run build
       - run: node dist/cli.js import-commands --help
+      - run: node --input-type=module -e "import { parseMarketplaceCommand } from './dist/marketplace-import.js'; if (parseMarketplaceCommand('/plugin install dotnet-diag@dotnet-agent-skills', 1).plugin !== 'dotnet-diag') process.exit(1)"
       - run: node dist/cli.js --help
       - run: node dist/cli.js search demo
       - run: node dist/cli.js install demo-focus --dry-run
