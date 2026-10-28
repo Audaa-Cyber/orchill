@@ -109,4 +109,4 @@ npm test
 npm run build
 ```
 
-See [journal.md](./journal.md) for decisions, status, and the next milestones.
+See [docs/CATALOG.md](./docs/CATALOG.md) for the default catalog and provenance notes, [docs/SECURITY.md](./docs/SECURITY.md) for the trust model, [docs/MVP-SCOPE.md](./docs/MVP-SCOPE.md) for acceptance criteria, and [journal.md](./journal.md) for decisions and progress.
