@@ -124,8 +124,8 @@ export async function runMarketplaceImport(inputFile: string, outputPath: string
   const seen = new Set<string>();
   const tempRoot = await mkdtemp(path.join(os.tmpdir(), "orchill-marketplaces-"));
   try {
-    const repos = new Map<string, { path: string; repo: string }>();
-    const clonedRepos = new Map<string, { path: string; name: string; plugins: Array<{ name?: string; source?: string; description?: string }> }>();
+    const repos = new Map<string, { path: string; repo: string; manifestPath: string; plugins: Array<{ name?: string; source?: unknown; description?: string }> }>();
+    const clonedRepos = new Map<string, { path: string; name: string; manifestPath: string; plugins: Array<{ name?: string; source?: unknown; description?: string }> }>();
     let cloneIndex = 0;
     for (const item of parsed) {
       if (item.error || item.command.kind !== "marketplace") continue;
@@ -136,15 +136,30 @@ export async function runMarketplaceImport(inputFile: string, outputPath: string
           const repoPath = path.join(tempRoot, "repo-" + cloneIndex++);
           const url = "https://github.com/" + cmd.repo + ".git";
           await runGit(["clone", "--depth", "1", "--", url, repoPath], tempRoot);
-          const manifestPath = path.join(repoPath, ".agents", "plugins", "marketplace.json");
-          let manifest: { name?: string; plugins?: Array<{ name?: string; source?: string; description?: string }> };
-          try { manifest = JSON.parse(await readFile(manifestPath, "utf8")) as typeof manifest; }
-          catch { throw new Error("Marketplace manifest not found at .agents/plugins/marketplace.json."); }
-          if (!manifest.name || !Array.isArray(manifest.plugins)) throw new Error("Marketplace manifest has no valid name/plugins list.");
-          cached = { path: repoPath, name: manifest.name, plugins: manifest.plugins };
+          const manifestCandidates = [
+            path.join(repoPath, ".agents", "plugins", "marketplace.json"),
+            path.join(repoPath, ".claude-plugin", "marketplace.json"),
+            path.join(repoPath, "marketplace.json")
+          ];
+          let manifestPath = "";
+          let manifest: { name?: string; plugins?: Array<{ name?: string; source?: unknown; description?: string }> } | undefined;
+          for (const candidate of manifestCandidates) {
+            try {
+              const parsed = JSON.parse(await readFile(candidate, "utf8")) as typeof manifest;
+              if (parsed && typeof parsed.name === "string" && Array.isArray(parsed.plugins)) {
+                manifestPath = candidate;
+                manifest = parsed;
+                break;
+              }
+            } catch {}
+          }
+          if (!manifest || !manifestPath) {
+            throw new Error("Marketplace manifest not found in supported locations (.agents/plugins/marketplace.json, .claude-plugin/marketplace.json, or marketplace.json).");
+          }
+          cached = { path: repoPath, name: manifest.name!, manifestPath, plugins: manifest.plugins! };
           clonedRepos.set(cmd.repo.toLowerCase(), cached);
         }
-        repos.set(cached.name, { path: cached.path, repo: cmd.repo });
+        repos.set(cached.name, { path: cached.path, repo: cmd.repo, manifestPath: cached.manifestPath, plugins: cached.plugins });
         records.push({ line: cmd.line, command: cmd.original, status: "imported" });
         console.log("Registered marketplace source " + cmd.repo + " as " + cached.name + " (local staging only; repository cloned once).");
       } catch (error) {
@@ -156,9 +171,16 @@ export async function runMarketplaceImport(inputFile: string, outputPath: string
       try {
         const marketplace = repos.get(cmd.marketplace);
         if (!marketplace) throw new Error("Marketplace " + cmd.marketplace + " was not resolved. Use the exact marketplace name declared in its manifest.");
-        const manifest = JSON.parse(await readFile(path.join(marketplace.path, ".agents", "plugins", "marketplace.json"), "utf8")) as { plugins?: Array<{ name?: string; source?: string; description?: string }> };
-        const plugin = manifest.plugins?.find(p => p.name === cmd.plugin);
-        if (!plugin?.source || !plugin.source.startsWith("./plugins/") || plugin.source.includes("..")) throw new Error("Plugin not found in marketplace manifest: " + cmd.plugin);
+        const plugin = marketplace.plugins.find(p => p.name === cmd.plugin);
+        if (!plugin || plugin.source === undefined || plugin.source === null) {
+          throw new Error("Plugin not found in marketplace manifest: " + cmd.plugin);
+        }
+        if (typeof plugin.source !== "string") {
+          throw new Error("Plugin source uses a structured descriptor rather than a relative path; this importer currently supports local relative plugin paths only.");
+        }
+        if (!plugin.source.startsWith("./plugins/") || plugin.source.includes("..")) {
+          throw new Error("Plugin source must be a safe relative path under ./plugins/: " + cmd.plugin);
+        }
         const pluginRoot = path.resolve(marketplace.path, plugin.source);
         const skillDirs = await findSkillDirs(pluginRoot);
         if (!skillDirs.length) throw new Error("Plugin has no SKILL.md directories: " + cmd.plugin);
