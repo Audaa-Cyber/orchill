@@ -1,4 +1,4 @@
-import { cp, lstat, mkdtemp, mkdir, readdir, rename, rm, stat } from "node:fs/promises";
+import { cp, lstat, mkdtemp, mkdir, readdir, realpath, rename, rm, stat } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { spawn } from "node:child_process";
@@ -40,10 +40,12 @@ export function targetRoot(target: string, cwd = process.cwd()): string {
 }
 
 export async function installSkill(skill: Skill, registryRoot: string, target: string, cwd: string, force = false): Promise<string> {
-  const root = targetRoot(target, cwd);
+  const projectRoot = await realpath(cwd);
+  const root = targetRoot(target, projectRoot);
   const id = safeRelativePath(skill.id, "Skill id");
   if (id !== skill.id) throw new Error("Skill id must be a single directory name.");
   const destination = path.join(root, id);
+  await ensureNoSymlinkParents(root, destination);
   await mkdir(root, { recursive: true });
   await ensureNoSymlinkParents(root, destination);
 
