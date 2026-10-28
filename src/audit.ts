@@ -80,6 +80,14 @@ async function scanLocalSkill(skill: Skill, registryRoot: string, findings: Audi
     }
     for (const entry of entries) {
       if (entry.name === ".git" || entry.name === "node_modules") continue;
+      if (scannedFiles >= MAX_SCANNED_FILES_PER_SKILL) {
+        if (!limitReported) {
+          addFinding(findings, skill.id, "review", "FILE_COUNT_LIMIT", "Stopped scanning after " + MAX_SCANNED_FILES_PER_SKILL + " entries to bound audit resource use.", directory);
+          limitReported = true;
+        }
+        return;
+      }
+      scannedFiles++;
       const fullPath = path.join(directory, entry.name);
       let info;
       try {
