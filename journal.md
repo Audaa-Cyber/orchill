@@ -566,3 +566,46 @@ This is a recommendation to adopt—not a statement that these tools or language
 - **Recommendation:** TypeScript on Node.js, distributed through npm.
 - **Reasoning:** Strong fit for a cross-platform CLI, structured metadata, safe file operations, type checking, and a future MCP integration.
 - **Status:** Documented as recommended; implementation and dependency selection remain pending.
+
+
+## 19. MVP implementation log — 2026-10-29
+
+### Implemented in `main`
+
+The repository now contains an initial TypeScript/Node.js CLI implementation rather than documentation alone.
+
+- `package.json`, `tsconfig.json`, and `.gitignore`: package metadata, Node 22+ target, strict TypeScript configuration, npm scripts.
+- `src/cli.ts`: `search`, `list`, `categories`, `info`, `install`, `install-category`, `targets`, `registry`, and `init` commands.
+- `src/registry.ts` and `src/types.ts`: registry loading, required-field validation, and duplicate-ID rejection.
+- `src/safety.ts` and `src/install.ts`: relative-path checks, destination symlink protections, Git HTTPS source checks, sparse checkout, nested directory copying, staged install/replace, and explicit overwrite handling.
+- `registry/skills.json` and `registry/skills.schema.json`: versioned registry plus schema.
+- `examples/demo-focus/SKILL.md`: local example skill.
+- `tests/safety.test.ts`, `tests/install.test.ts`: path-safety and nested-install tests.
+- `.github/workflows/ci.yml`: Node 22 CI for typecheck, tests, build, and CLI smoke checks.
+- `docs/SECURITY.md`: trust model and known security gaps.
+- `README.md` and `LICENSE`: usage documentation and MIT license for Orchill's own code.
+
+### Initial catalog entries
+
+The default registry includes the bundled demo plus:
+- `frontend-design` — official `anthropics/skills`, `skills/frontend-design`; per-skill Apache-2.0 license file checked.
+- `mcp-builder` — official `anthropics/skills`, `skills/mcp-builder`; per-skill Apache-2.0 license file checked.
+- `claude-api` — official `anthropics/skills`, `skills/claude-api`; per-skill Apache-2.0 license file checked.
+
+These entries currently track upstream `main`, so they are not immutable or reproducible yet. Pin reviewed commit SHAs before a production-quality release. A checked license file does not constitute a security audit of a skill's instructions or scripts.
+
+### CI status at time of entry
+
+GitHub Actions run 6 completed successfully on commit `632610a69cc33fc9b66d86cf076d25123e7491ae`, including typecheck, tests, build, and smoke checks. Run 7 completed typecheck, tests, build, and help successfully; its final smoke checks were still in progress when checked. Run 8 was still installing dependencies. Recheck the latest run before declaring the latest `main` fully verified.
+
+### Known MVP gaps / next steps
+
+- Recheck CI after the most recent CLI and documentation commits.
+- Add a lockfile and verify the supported Node/npm version matrix.
+- Pin catalog sources to immutable commit SHAs and review each source's license/provenance.
+- Add update, uninstall, installed-state/manifest, integrity verification, and rollback tests.
+- Improve registry schema validation with a schema validator or keep runtime validation and schema parity tests.
+- Add tests for Git sparse checkout, symlink destinations, force-replace failure recovery, and category-install partial failures.
+- Add catalog search scoring and an explicit source-management workflow.
+- MCP integration is not implemented; a CLI alone does not make Orchill available inside hosted ChatGPT/Claude sessions.
+- No claim of production readiness until the latest CI is green and the security gaps are reviewed.
