@@ -7,12 +7,104 @@
       "name": "Demo Focus Skill",
       "description": "A minimal example skill that demonstrates Orchill's selective install workflow.",
       "category": "Tooling & MCP Development",
-      "tags": ["example", "demo", "getting-started"],
-      "source": { "type": "local", "path": "../examples/demo-focus" },
+      "tags": [
+        "example",
+        "demo",
+        "getting-started"
+      ],
+      "source": {
+        "type": "local",
+        "path": "../examples/demo-focus"
+      },
       "skillPath": ".",
       "license": "MIT",
       "provenance": "Bundled Orchill example; not a third-party skill.",
-      "targets": ["project", "claude", "codex", "agents"]
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "frontend-design",
+      "name": "Frontend Design",
+      "description": "Guidance for distinctive, intentional visual design, aesthetic direction, typography, and polished interfaces.",
+      "category": "UI/UX Design",
+      "tags": [
+        "frontend",
+        "ui",
+        "ux",
+        "visual-design",
+        "typography"
+      ],
+      "source": {
+        "type": "git",
+        "url": "https://github.com/anthropics/skills.git",
+        "ref": "main"
+      },
+      "skillPath": "skills/frontend-design",
+      "license": "Apache-2.0",
+      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Review upstream before use.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "mcp-builder",
+      "name": "MCP Builder",
+      "description": "Guidance for designing and implementing Model Context Protocol servers and tools.",
+      "category": "Tooling & MCP Development",
+      "tags": [
+        "mcp",
+        "tools",
+        "server",
+        "integration"
+      ],
+      "source": {
+        "type": "git",
+        "url": "https://github.com/anthropics/skills.git",
+        "ref": "main"
+      },
+      "skillPath": "skills/mcp-builder",
+      "license": "Apache-2.0",
+      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Review upstream before use.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "claude-api",
+      "name": "Claude API",
+      "description": "Reference and implementation guidance for the Claude API and Anthropic SDKs, including tool use and streaming.",
+      "category": "API & Backend",
+      "tags": [
+        "api",
+        "anthropic",
+        "sdk",
+        "tool-use",
+        "streaming"
+      ],
+      "source": {
+        "type": "git",
+        "url": "https://github.com/anthropics/skills.git",
+        "ref": "main"
+      },
+      "skillPath": "skills/claude-api",
+      "license": "Apache-2.0",
+      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Review upstream before use.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
     }
   ]
 }
