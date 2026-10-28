@@ -54,6 +54,7 @@ for (const approval of approvalFile.approvals) {
 
 const problems: string[] = [];
 const problemsBySkill = new Map<string, string[]>();
+const registryIds = new Set<string>();
 const addProblem = (skillId: string, message: string) => {
   problems.push(message);
   if (registryIds.has(skillId)) {
@@ -62,7 +63,6 @@ const addProblem = (skillId: string, message: string) => {
     problemsBySkill.set(skillId, current);
   }
 };
-const registryIds = new Set<string>();
 for (const skill of registry.skills) {
   if (registryIds.has(skill.id)) addProblem(skill.id, `${skill.id}: duplicate skill ID in registry`);
   registryIds.add(skill.id);
