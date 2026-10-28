@@ -69,10 +69,11 @@ export async function installSkill(skill: Skill, registryRoot: string, target: s
     } else {
       temporary = await mkdtemp(path.join(os.tmpdir(), "orchill-"));
       const cloneDir = path.join(temporary, "repo");
-      const args = ["clone", "--depth", "1", "--filter=blob:none", "--sparse"];
-      if (skill.source.ref) args.push("--branch", skill.source.ref);
-      args.push(skill.source.url!, cloneDir);
-      await run("git", args);
+      await run("git", ["clone", "--depth", "1", "--filter=blob:none", "--sparse", skill.source.url!, cloneDir]);
+      if (skill.source.ref) {
+        await run("git", ["-C", cloneDir, "fetch", "--depth", "1", "origin", skill.source.ref]);
+        await run("git", ["-C", cloneDir, "checkout", "--detach", "FETCH_HEAD"]);
+      }
       const relative = safeRelativePath(skill.skillPath, "Skill path");
       await run("git", ["-C", cloneDir, "sparse-checkout", "set", "--", relative]);
       await run("git", ["-C", cloneDir, "checkout"]);
