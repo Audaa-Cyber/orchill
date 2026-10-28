@@ -982,6 +982,54 @@
       ]
     },
     {
+      "id": "audit-website",
+      "name": "Audit Website",
+      "description": "Audit a website with the squirrelscan CLI and fix the findings in code. Runs SEO, performance, security, technical, content, accessibility, and 16 other rule categories (300+ rules), returns an LLM-optimized report, then drives an iterative fix loop, mapping issues to source files, applying fixes, and re-auditing until the site scores well. Use to discover and assess website or webapp issues and drive them to fixed.",
+      "category": "Accessibility",
+      "source": {
+        "type": "local",
+        "path": "../.orchill-skills-import/skills/audit-website"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from squirrelscan/skills; command: npx skills add squirrelscan/skills@audit-website. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "See LICENSE file in repository root",
+      "tags": [
+        "developer-tools",
+        "audit",
+        "website"
+      ]
+    },
+    {
+      "id": "web-design-guidelines",
+      "name": "Web Design Guidelines",
+      "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+      "category": "Accessibility",
+      "source": {
+        "type": "local",
+        "path": "../.orchill-skills-import/skills/web-design-guidelines"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@web-design-guidelines. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "tags": [
+        "ui-ux",
+        "web",
+        "design",
+        "guidelines"
+      ]
+    },
+    {
       "id": "brainstorming",
       "name": "Brainstorming",
       "description": "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation).",
@@ -3039,30 +3087,6 @@
       "tags": [
         "developer-tools",
         "sdk"
-      ]
-    },
-    {
-      "id": "audit-website",
-      "name": "Audit Website",
-      "description": "Audit a website with the squirrelscan CLI and fix the findings in code. Runs SEO, performance, security, technical, content, accessibility, and 16 other rule categories (300+ rules), returns an LLM-optimized report, then drives an iterative fix loop, mapping issues to source files, applying fixes, and re-auditing until the site scores well. Use to discover and assess website or webapp issues and drive them to fixed.",
-      "category": "Developer Tools",
-      "source": {
-        "type": "local",
-        "path": "../.orchill-skills-import/skills/audit-website"
-      },
-      "skillPath": ".",
-      "provenance": "Imported with Skills CLI from squirrelscan/skills; command: npx skills add squirrelscan/skills@audit-website. Verify source, pin, and license before publishing.",
-      "targets": [
-        "project",
-        "claude",
-        "codex",
-        "agents"
-      ],
-      "license": "See LICENSE file in repository root",
-      "tags": [
-        "developer-tools",
-        "audit",
-        "website"
       ]
     },
     {
@@ -5243,30 +5267,6 @@
         "web",
         "design",
         "engineer"
-      ]
-    },
-    {
-      "id": "web-design-guidelines",
-      "name": "Web Design Guidelines",
-      "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
-      "category": "UI/UX",
-      "source": {
-        "type": "local",
-        "path": "../.orchill-skills-import/skills/web-design-guidelines"
-      },
-      "skillPath": ".",
-      "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@web-design-guidelines. Verify source, pin, and license before publishing.",
-      "targets": [
-        "project",
-        "claude",
-        "codex",
-        "agents"
-      ],
-      "tags": [
-        "ui-ux",
-        "web",
-        "design",
-        "guidelines"
       ]
     }
   ]
