@@ -46,6 +46,26 @@ test("reports missing local skill roots as errors without crashing", async () =>
   }
 });
 
+test("bounds recursive scanning of deeply nested skill trees", async () => {
+  const temp = await mkdtemp(path.join(os.tmpdir(), "orchill-audit-depth-"));
+  try {
+    const registryRoot = path.join(temp, "registry");
+    const source = path.join(temp, "source-skill");
+    let deep = source;
+    for (let i = 0; i < 42; i++) deep = path.join(deep, "d");
+    await mkdir(deep, { recursive: true });
+    await writeFile(path.join(source, "SKILL.md"), "# Deep tree fixture\\n");
+    const skill: Skill = {
+      id: "deep-tree", name: "Deep tree", description: "Fixture", category: "Tests",
+      source: { type: "local", path: "../source-skill" }, skillPath: ".", license: "MIT", provenance: "Test fixture"
+    };
+    const findings = await auditRegistry({ version: 1, skills: [skill] }, registryRoot);
+    assert.ok(findings.some(f => f.code === "DIRECTORY_DEPTH_LIMIT"));
+  } finally {
+    await rm(temp, { recursive: true, force: true });
+  }
+});
+
 test("flags unpinned Git sources but clearly marks their content as unscanned", async () => {
   const skill: Skill = {
     id: "remote-demo", name: "Remote demo", description: "Fixture", category: "Tests",
