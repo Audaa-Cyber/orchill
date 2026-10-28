@@ -33,7 +33,7 @@ jobs:
           audit_status=$?
           set -e
           test "$audit_status" -le 1
-          node --input-type=module -e "import fs from 'node:fs'; const report = JSON.parse(fs.readFileSync(process.argv[1], 'utf8')); if (!report.summary || !Array.isArray(report.findings) || report.summary.totalSkills < 1) process.exit(1)" "$RUNNER_TEMP/orchill-audit.json"
+          node --input-type=module -e "import fs from 'node:fs'; const report = JSON.parse(fs.readFileSync(process.argv[1], 'utf8')); if (!report.summary || !Array.isArray(report.findings) || report.summary.totalSkills < 1) process.exit(1); console.log(JSON.stringify({ auditSummary: report.summary, findingsByCode: report.findings.reduce((counts, finding) => (counts[finding.code] = (counts[finding.code] || 0) + 1, counts), {}) }, null, 2))" "$RUNNER_TEMP/orchill-audit.json"
           orchill list --category "UI/UX"
           orchill info frontend-design
           orchill targets
