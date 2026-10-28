@@ -22,7 +22,7 @@ function slugify(value: string): string {
     .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 function cell(value: unknown): string {
-  return String(value ?? "").replace(/\|/g, "\\\\|").replace(/\r?\n/g, " ");
+  return String(value ?? "").replace(/\|/g, "\\|").replace(/\r?\n/g, " ");
 }
 function sourceLink(skill: Skill): string {
   if (skill.source?.type === "local" && skill.source.path) {
@@ -88,7 +88,7 @@ const allSkills = [...registry.skills].sort((a, b) => a.category.localeCompare(b
 const allRows = allSkills.map(skill => `| ${cell(skill.category)} | [${cell(skill.name)}](https://github.com/${repository}/tree/${branch}/${skill.source?.type === "local" ? (skill.source.path || "").replace(/^\.\.\//, "") : ""}) | \`${cell(skill.id)}\` | ${cell(skill.source?.type)} | ${sourceLink(skill)} |`).join("\n");
 await writeFile(path.join(outputRoot, "CATALOG.md"), `# Orchill Skill Catalog
 
-> Generated from `registry/skills.json`. Do not edit manually; update the registry and run `npm run catalog:generate`.
+> Generated from \`registry/skills.json\`. Do not edit manually; update the registry and run `npm run catalog:generate`.
 
 **${registry.skills.length} skills · ${categories.length} categories**
 
@@ -112,7 +112,7 @@ for (const category of categories) {
 
 **${byCategory.get(category)!.length} skills** · [All categories](../../CATALOG.md)
 
-Generated from `registry/skills.json`. Payloads remain in their recorded source directories.
+Generated from \`registry/skills.json\`. Payloads remain in their recorded source directories.
 
 | Skill | ID | Source | Payload/source | License metadata |
 |---|---|---|---|---|
