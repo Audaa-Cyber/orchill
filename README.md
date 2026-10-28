@@ -172,3 +172,12 @@ orchill import-commands marketplace-commands.txt --output .orchill-dotnet-import
 Orchill clones each registered marketplace repository into a temporary directory, resolves the marketplace's declared name from `.agents/plugins/marketplace.json`, verifies the requested plugin is listed in that manifest, and stages every nested `SKILL.md` directory in that plugin as an individual skill. This imports the plugin's skills, not its full agent-plugin runtime package: plugin-specific agents, hooks, commands, and other non-skill resources are not installed. The generated registry additions and reports are review artifacts; they do not change your agent's global plugin configuration or the canonical Orchill registry. Use the exact marketplace name declared by the repository manifest (for dotnet/skills, `dotnet-agent-skills`). The marketplace source is cloned at its current default branch, not pinned automatically; review and pin provenance before publishing.
 
 **Current limitation:** use one command file per command family. Do not mix `npx skills add` commands and `/plugin` commands in the same file yet. Orchill does not execute imported scripts, and imported instructions, source provenance, and licensing still require review.
+
+
+## Browse the catalog
+
+- [Human-readable catalog](catalog/CATALOG.md)
+- [Category folders](catalog/categories/)
+- [Machine-readable category manifest](catalog/categories.json)
+
+The catalogue is generated from `registry/skills.json` with `npm run catalog:generate`.
