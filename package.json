@@ -14,7 +14,9 @@
     "docs",
     "README.md",
     "LICENSE",
-    "journal.md"
+    "journal.md",
+    ".orchill-skills-import",
+    ".orchill-marketplace-import-fixed"
   ],
   "engines": {
     "node": ">=22"
