@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildProvenanceInventory } from "../src/provenance.js";
+import { buildProvenanceInventory } from "../scripts/build-provenance-inventory.js";
 
 test("provenance inventory keeps missing evidence explicit and never auto-approves", () => {
   const rows = buildProvenanceInventory({
