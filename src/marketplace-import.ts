@@ -98,25 +98,20 @@ export async function runMarketplaceImport(inputFile: string, outputPath: string
   const input = await readFile(path.resolve(inputFile), "utf8");
   const parsed = parseMarketplaceCommands(input);
   if (!parsed.length) throw new Error("No marketplace commands found in " + inputFile);
-  const marketplaces = new Map<string, { repo: string; alias: string }>();
   const records: MarketplaceRecord[] = [];
   for (const item of parsed) {
     const cmd = item.command;
     if (item.error) { records.push({ line: cmd.line, command: cmd.original, status: "failed", error: item.error }); continue; }
-    if (cmd.kind === "marketplace") {
-      // Marketplace aliases are read from the repository manifest during import. The repo folder
-      // name is not assumed to equal the marketplace's declared name.
-      const repoName = cmd.repo.split("/")[1]!;
-      marketplaces.set(repoName, { repo: cmd.repo, alias: repoName });
-      records.push({ line: cmd.line, command: cmd.original, status: dryRun ? "preview" : "imported" });
+    if (cmd.kind === "marketplace" && dryRun) {
+      records.push({ line: cmd.line, command: cmd.original, status: "preview" });
     }
   }
   const plugins = parsed.filter(item => !item.error && item.command.kind === "plugin");
   if (dryRun) {
     for (const item of plugins) {
       const cmd = item.command as Extract<MarketplaceCommand, { kind: "plugin" }>;
-      const registered = [...marketplaces.values()].some(m => m.alias === cmd.marketplace) || cmd.marketplace === "dotnet-agent-skills";
-      records.push({ line: cmd.line, command: cmd.original, status: registered ? "preview" : "failed", ...(registered ? {} : { error: "Marketplace is not registered in this input file." }) });
+      const hasMarketplace = parsed.some(p => !p.error && p.command.kind === "marketplace");
+      records.push({ line: cmd.line, command: cmd.original, status: hasMarketplace ? "preview" : "failed", ...(hasMarketplace ? {} : { error: "Add a marketplace before installing a plugin." }) });
     }
     for (const record of records) console.log((record.status === "failed" ? "FAIL " : "OK ") + record.command + (record.error ? " — " + record.error : ""));
     return records.sort((a, b) => a.line - b.line);
@@ -153,15 +148,8 @@ export async function runMarketplaceImport(inputFile: string, outputPath: string
     for (const item of plugins) {
       const cmd = item.command as Extract<MarketplaceCommand, { kind: "plugin" }>;
       try {
-        let marketplace = repos.get(cmd.marketplace);
-        // Some marketplace commands use a declared marketplace name different from the repository name.
-        if (!marketplace) {
-          const repoCommand = parsed.find(p => !p.error && p.command.kind === "marketplace" && p.command.repo.split("/")[1] === cmd.marketplace);
-          if (repoCommand && !repoCommand.error && repoCommand.command.kind === "marketplace") {
-            marketplace = [...repos.values()].find(r => path.basename(r.path) === "repo-" + [...repos.keys()].indexOf(r.alias));
-          }
-        }
-        if (!marketplace) throw new Error("Marketplace " + cmd.marketplace + " was not resolved. Add its marketplace command in the same file.");
+        const marketplace = repos.get(cmd.marketplace);
+        if (!marketplace) throw new Error("Marketplace " + cmd.marketplace + " was not resolved. Use the exact marketplace name declared in its manifest.");
         const manifest = JSON.parse(await readFile(path.join(marketplace.path, ".agents", "plugins", "marketplace.json"), "utf8")) as { plugins?: Array<{ name?: string; source?: string; description?: string }> };
         const plugin = manifest.plugins?.find(p => p.name === cmd.plugin);
         if (!plugin?.source || !plugin.source.startsWith("./plugins/") || plugin.source.includes("..")) throw new Error("Plugin not found in marketplace manifest: " + cmd.plugin);
