@@ -700,3 +700,11 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - Added conservative pattern-based review flags for possible prompt override language, secret/environment access, shell execution, remote-script piping, and destructive commands. These are triage signals, not a malware verdict.
 - Git-backed entries are explicitly reported as not scanned; the audit never silently claims to have reviewed remote content.
 - Added unit tests for metadata findings, prompt-language flags, missing local paths, and unpinned remote sources. CI is required to validate the new command.
+
+
+## 28. Human-browsable category catalogue — 2026-10-29
+- **Problem:** The 221-entry registry was machine-readable, but category organization was not browsable as a directory structure for humans.
+- **Implementation:** Added `catalog/README.md`, a generated all-skills index at `catalog/CATALOG.md`, a machine-readable `catalog/categories.json` manifest, and a `catalog/categories/<category-slug>/README.md` index for each of the 20 categories. Each category index lists its skills, source type, payload/source link, and license metadata without inventing unknown licenses.
+- **Important scope note:** This adds real category-index folders and files. It deliberately does **not** relocate imported third-party payloads out of their original source directories; physically moving them would change registry paths and package layout and should be a separate migration with validation. The category index clearly documents this distinction.
+- **Counts:** 221 skills across 20 categories.
+- **Verification status:** Files generated from the current registry snapshot. CI has not yet verified this commit; run `npm run catalog:generate`, tests, and package smoke checks after the generator is added/validated.
