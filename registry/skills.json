@@ -105,6 +105,233 @@
         "codex",
         "agents"
       ]
+    },
+    {
+      "id": "algorithmic-art",
+      "name": "Algorithmic Art",
+      "description": "Create original algorithmic art with p5.js, seeded randomness, and interactive parameter exploration.",
+      "category": "Creative Coding",
+      "tags": [
+        "generative-art",
+        "p5js",
+        "particles",
+        "flow-fields"
+      ],
+      "source": {
+        "type": "git",
+        "url": "https://github.com/anthropics/skills.git",
+        "ref": "dbd4588f9e1033efb41dad4bef2f7947c8993d44"
+      },
+      "skillPath": "skills/algorithmic-art",
+      "license": "Apache-2.0",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "brand-guidelines",
+      "name": "Brand Guidelines",
+      "description": "Apply Anthropic's official brand colors and typography to artifacts that need Anthropic styling.",
+      "category": "UI/UX Design",
+      "tags": [
+        "branding",
+        "typography",
+        "visual-design"
+      ],
+      "source": {
+        "type": "git",
+        "url": "https://github.com/anthropics/skills.git",
+        "ref": "dbd4588f9e1033efb41dad4bef2f7947c8993d44"
+      },
+      "skillPath": "skills/brand-guidelines",
+      "license": "Apache-2.0",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "canvas-design",
+      "name": "Canvas Design",
+      "description": "Create original static visual designs, posters, and art for PNG or PDF outputs.",
+      "category": "UI/UX Design",
+      "tags": [
+        "poster",
+        "graphic-design",
+        "visual-art"
+      ],
+      "source": {
+        "type": "git",
+        "url": "https://github.com/anthropics/skills.git",
+        "ref": "dbd4588f9e1033efb41dad4bef2f7947c8993d44"
+      },
+      "skillPath": "skills/canvas-design",
+      "license": "Apache-2.0",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "skill-creator",
+      "name": "Skill Creator",
+      "description": "Create, improve, and evaluate agent skills, including descriptions and trigger quality.",
+      "category": "Tooling & MCP Development",
+      "tags": [
+        "skill-authoring",
+        "evaluation",
+        "agent-skills"
+      ],
+      "source": {
+        "type": "git",
+        "url": "https://github.com/anthropics/skills.git",
+        "ref": "dbd4588f9e1033efb41dad4bef2f7947c8993d44"
+      },
+      "skillPath": "skills/skill-creator",
+      "license": "Apache-2.0",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "slack-gif-creator",
+      "name": "Slack GIF Creator",
+      "description": "Create and validate animated GIFs optimized for Slack constraints and workflows.",
+      "category": "Content & Social Media",
+      "tags": [
+        "gif",
+        "animation",
+        "slack"
+      ],
+      "source": {
+        "type": "git",
+        "url": "https://github.com/anthropics/skills.git",
+        "ref": "dbd4588f9e1033efb41dad4bef2f7947c8993d44"
+      },
+      "skillPath": "skills/slack-gif-creator",
+      "license": "Apache-2.0",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "theme-factory",
+      "name": "Theme Factory",
+      "description": "Apply reusable themes with colors and fonts to slides, documents, reports, and HTML landing pages.",
+      "category": "Design Systems & Components",
+      "tags": [
+        "themes",
+        "design-system",
+        "typography"
+      ],
+      "source": {
+        "type": "git",
+        "url": "https://github.com/anthropics/skills.git",
+        "ref": "dbd4588f9e1033efb41dad4bef2f7947c8993d44"
+      },
+      "skillPath": "skills/theme-factory",
+      "license": "Apache-2.0",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "web-artifacts-builder",
+      "name": "Web Artifacts Builder",
+      "description": "Build elaborate multi-component React, Tailwind, and shadcn/ui artifacts with state and routing.",
+      "category": "Frontend & React",
+      "tags": [
+        "react",
+        "tailwind",
+        "shadcn",
+        "web"
+      ],
+      "source": {
+        "type": "git",
+        "url": "https://github.com/anthropics/skills.git",
+        "ref": "dbd4588f9e1033efb41dad4bef2f7947c8993d44"
+      },
+      "skillPath": "skills/web-artifacts-builder",
+      "license": "Apache-2.0",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "webapp-testing",
+      "name": "Web App Testing",
+      "description": "Test local web applications with Playwright, inspect browser logs, and capture screenshots.",
+      "category": "Testing & Quality",
+      "tags": [
+        "playwright",
+        "e2e",
+        "browser-testing"
+      ],
+      "source": {
+        "type": "git",
+        "url": "https://github.com/anthropics/skills.git",
+        "ref": "dbd4588f9e1033efb41dad4bef2f7947c8993d44"
+      },
+      "skillPath": "skills/webapp-testing",
+      "license": "Apache-2.0",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "internal-comms",
+      "name": "Internal Communications",
+      "description": "Draft internal communications such as status reports, leadership updates, FAQs, and incident reports.",
+      "category": "Content & Social Media",
+      "tags": [
+        "writing",
+        "communications",
+        "reports"
+      ],
+      "source": {
+        "type": "git",
+        "url": "https://github.com/anthropics/skills.git",
+        "ref": "dbd4588f9e1033efb41dad4bef2f7947c8993d44"
+      },
+      "skillPath": "skills/internal-comms",
+      "license": "Apache-2.0",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
     }
   ]
 }
