@@ -121,5 +121,6 @@ if (strict && problems.length > 0) {
   console.error("Release blocked: every bundled skill needs a complete, evidence-backed approval.");
   process.exitCode = 1;
 } else if (problems.length > 0) {
-  console.log("Report only. Use --strict to block a release when any blocker remains.");
+  // Keep stdout valid JSON for CI and scripts that consume the report.
+  console.error("Report only. Use --strict to block a release when any blocker remains.");
 }
