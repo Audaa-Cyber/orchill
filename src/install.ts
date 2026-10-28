@@ -91,7 +91,7 @@ export async function installSkill(skill: Skill, registryRoot: string, target: s
     } catch (error) {
       if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
     }
-    await writeFile(markerPath, JSON.stringify({ version: 1, skillId: id, target }, null, 2) + "\\n", { flag: "wx" });
+    await writeFile(markerPath, JSON.stringify({ version: 1, skillId: id, target }, null, 2) + "\n", { flag: "wx" });
 
     // Recheck immediately before changing the live destination.
     try {
