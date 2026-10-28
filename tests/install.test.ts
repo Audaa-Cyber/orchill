@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { mkdtemp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdtemp, mkdir, readFile, readdir, rm, symlink, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
@@ -90,6 +90,30 @@ test("Git sparse checkout installs only the selected skill tree", async () => {
     assert.equal(await readFile(path.join(installed, "SKILL.md"), "utf8"), "# Demo from Git\n");
     assert.equal(await readFile(path.join(installed, "references", "guide.md"), "utf8"), "Nested file\n");
     await assert.rejects(() => readFile(path.join(cwd, ".agents", "skills", "unrelated", "SKILL.md"), "utf8"));
+  } finally {
+    await rm(temp, {recursive: true, force: true});
+  }
+});
+
+test("rejects a symlinked target root before creating outside directories", async () => {
+  const temp = await mkdtemp(path.join(os.tmpdir(), "orchill-symlink-test-"));
+  try {
+    const registryRoot = path.join(temp, "registry");
+    const source = path.join(temp, "source-skill");
+    const cwd = path.join(temp, "project");
+    const outside = path.join(temp, "outside");
+    await mkdir(registryRoot, {recursive: true});
+    await mkdir(source, {recursive: true});
+    await mkdir(cwd, {recursive: true});
+    await mkdir(outside, {recursive: true});
+    await writeFile(path.join(source, "SKILL.md"), "# Should not install\n");
+    await symlink(outside, path.join(cwd, ".agents"), "dir");
+    const skill: Skill = {
+      id: "symlink-test", name: "Symlink test", description: "Fixture", category: "Tests",
+      source: {type: "local", path: "../source-skill"}, skillPath: "."
+    };
+    await assert.rejects(() => installSkill(skill, registryRoot, "project", cwd), /symlink/i);
+    await assert.rejects(() => readdir(path.join(outside, "skills")), /ENOENT/);
   } finally {
     await rm(temp, {recursive: true, force: true});
   }
