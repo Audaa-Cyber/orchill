@@ -97,7 +97,10 @@ export async function installSkill(skill: Skill, registryRoot: string, target: s
       if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
     }
     await rename(staged, destination);
-    if (movedOld) await rm(backup, { recursive: true, force: true });
+    // The new install is now committed. Cleanup failures must not roll it back.
+    const hadBackup = movedOld;
+    movedOld = false;
+    if (hadBackup) await rm(backup, { recursive: true, force: true }).catch(() => undefined);
     return destination;
   } catch (error) {
     if (movedOld) {
@@ -111,7 +114,7 @@ export async function installSkill(skill: Skill, registryRoot: string, target: s
     }
     throw error;
   } finally {
-    await rm(stageParent, { recursive: true, force: true });
-    if (temporary) await rm(temporary, { recursive: true, force: true });
+    await rm(stageParent, { recursive: true, force: true }).catch(() => undefined);
+    if (temporary) await rm(temporary, { recursive: true, force: true }).catch(() => undefined);
   }
 }
