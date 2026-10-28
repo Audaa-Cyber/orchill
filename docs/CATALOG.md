@@ -1,6 +1,6 @@
 # Skill Catalog
 
-Orchill's registry is the source of truth for category labels and installation metadata. The catalog currently contains **221 skills** across **19 categories**.
+Orchill's registry is the source of truth for category labels and installation metadata. The catalog currently contains **221 skills** across **20 categories**.
 
 Categories are metadata used by `orchill search`, `orchill list --category`, `orchill categories`, and `orchill install-category`. Each skill's own directory remains intact when installed, including its nested references, scripts, and assets.
 
@@ -9,6 +9,7 @@ Categories are metadata used by `orchill search`, `orchill list --category`, `or
 ## Categories
 
 - **.NET & Build Systems** — 40 skills
+- **Accessibility** — 2 skills
 - **Agent Tooling & Workflows** — 15 skills
 - **AI & Data** — 10 skills
 - **Animation & Motion** — 2 skills
@@ -17,7 +18,7 @@ Categories are metadata used by `orchill search`, `orchill list --category`, `or
 - **Content & Marketing** — 19 skills
 - **Creative Coding & Media** — 1 skills
 - **Design Systems & Components** — 3 skills
-- **Developer Tools** — 16 skills
+- **Developer Tools** — 15 skills
 - **Documents & Productivity** — 7 skills
 - **Micro-interactions** — 1 skills
 - **Mobile Development** — 14 skills
@@ -26,7 +27,7 @@ Categories are metadata used by `orchill search`, `orchill list --category`, `or
 - **Security** — 5 skills
 - **SEO** — 4 skills
 - **Testing** — 26 skills
-- **UI/UX** — 11 skills
+- **UI/UX** — 10 skills
 
 ## Skills by category
 
@@ -191,6 +192,16 @@ Categories are metadata used by `orchill search`, `orchill list --category`, `or
 - **Thread Abort Migration** (`thread-abort-migration`) — Agent skill for Thread Abort Migration workflows. Review the skill instructions for its exact scope and usage.  
   License: MIT  
   Source: local import (../.orchill-marketplace-import-fixed/skills/thread-abort-migration)
+
+### Accessibility
+
+- **Audit Website** (`audit-website`) — Audit a website with the squirrelscan CLI and fix the findings in code. Runs SEO, performance, security, technical, content, accessibility, and 16 other rule categories (300+ rules), returns an LLM-optimized report, then drives an iterative fix loop, mapping issues to source files, applying fixes, and re-auditing until the site scores well. Use to discover and assess website or webapp issues and drive them to fixed.  
+  License: See LICENSE file in repository root  
+  Source: local import (../.orchill-skills-import/skills/audit-website)
+
+- **Web Design Guidelines** (`web-design-guidelines`) — Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design", "review UX", or "check my site against best practices".  
+  License: not verified in catalog  
+  Source: local import (../.orchill-skills-import/skills/web-design-guidelines)
 
 ### Agent Tooling & Workflows
 
@@ -561,10 +572,6 @@ Categories are metadata used by `orchill search`, `orchill list --category`, `or
 - **Agents Sdk** (`agents-sdk`) — Build, debug, or review Cloudflare Agents SDK applications using the agents package.  
   License: not verified in catalog  
   Source: local import (../.orchill-skills-import/skills/agents-sdk)
-
-- **Audit Website** (`audit-website`) — Audit a website with the squirrelscan CLI and fix the findings in code. Runs SEO, performance, security, technical, content, accessibility, and 16 other rule categories (300+ rules), returns an LLM-optimized report, then drives an iterative fix loop, mapping issues to source files, applying fixes, and re-auditing until the site scores well. Use to discover and assess website or webapp issues and drive them to fixed.  
-  License: See LICENSE file in repository root  
-  Source: local import (../.orchill-skills-import/skills/audit-website)
 
 - **Check Bin Obj Clash** (`check-bin-obj-clash`) — Detects MSBuild projects with conflicting OutputPath or IntermediateOutputPath. USE FOR: builds failing with 'Cannot create a file when that file already exists', 'The process cannot access the file because it is being used by another process', intermittent build failures that succeed on retry, or missing/overwritten outputs in multi-project or multi-targeting builds where bin/obj (or project.assets.json) collide. Common causes: shared OutputPath, missing AppendTargetFrameworkToOutputPath, extra global properties (e.g. PublishReadyToRun), or SetTargetFramework on a ProjectReference to a single-targeting project. DO NOT USE FOR: file access errors unrelated to MSBuild (OS-level locking), single-project single-TFM builds, non-MSBuild build systems.  
   License: MIT  
@@ -947,10 +954,6 @@ Categories are metadata used by `orchill search`, `orchill list --category`, `or
 - **Web Design Engineer** (`web-design-engineer`) — Build or redesign polished browser-rendered visual artifacts with HTML/CSS/JavaScript/React: pages, dashboards, prototypes, slide decks, animations, UI mockups, and data visualizations. Use for visual front-end creation, design-system exploration, design critique, or explicit browser acceptance / QA of a web artifact. Not for back-end, CLI, non-visual coding, source-to-longform article conversion, or narration-driven click-through video presentations.  
   License: not verified in catalog  
   Source: local import (../.orchill-skills-import/skills/web-design-engineer)
-
-- **Web Design Guidelines** (`web-design-guidelines`) — Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design", "review UX", or "check my site against best practices".  
-  License: not verified in catalog  
-  Source: local import (../.orchill-skills-import/skills/web-design-guidelines)
 
 ## Category behavior
 
