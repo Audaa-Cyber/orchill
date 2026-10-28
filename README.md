@@ -23,6 +23,17 @@ node dist/cli.js --help
 
 For local development: `npm run dev -- search focus`.
 
+To install the checked-out version as a global CLI on your own machine (without publishing to npm):
+
+```sh
+npm install
+npm run build
+npm install --global .
+orchill --help
+```
+
+To update that local global install after pulling changes, rerun `npm run build` and `npm install --global .` from the repository root. This is a local source install, not an npm registry release.
+
 ## Quick start
 
 ```sh
