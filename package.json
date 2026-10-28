@@ -4,9 +4,21 @@
   "description": "A selective, safety-conscious CLI for discovering and installing AI agent skills.",
   "license": "MIT",
   "type": "module",
-  "bin": { "orchill": "./dist/cli.js" },
-  "files": ["dist", "registry", "examples", "README.md", "LICENSE"],
-  "engines": { "node": ">=22" },
+  "bin": {
+    "orchill": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "registry",
+    "examples",
+    "docs",
+    "README.md",
+    "LICENSE",
+    "journal.md"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "start": "node dist/cli.js",
@@ -15,7 +27,9 @@
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "prepack": "npm run build"
   },
-  "dependencies": { "commander": "^14.0.0" },
+  "dependencies": {
+    "commander": "^14.0.0"
+  },
   "devDependencies": {
     "@types/node": "^22.15.0",
     "tsx": "^4.19.0",
