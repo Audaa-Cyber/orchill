@@ -144,3 +144,30 @@ orchill import-commands skill-commands.txt --output .orchill-import --category "
 \`\`\`
 
 The importer supplies non-interactive upstream CLI flags and uses Codex only as a deterministic staging destination inside a temporary directory. It does not install into your actual project or user profile. It processes commands sequentially, continues after individual failures, rejects unsafe command syntax and symlinks, and produces copied skill folders plus registry-additions.json, report.json, and report.md. The main registry is never changed automatically. Review metadata, source provenance, instructions, referenced scripts, and licensing before publishing; a license file's presence is not proof of permission to redistribute. Use a new output directory for each run.
+
+
+## Bulk-import agent plugin marketplace commands
+
+The same `orchill import-commands` command also accepts slash-command lists for agent plugin marketplaces. For example, create `marketplace-commands.txt`:
+
+```text
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-diag@dotnet-agent-skills
+/plugin install dotnet-msbuild@dotnet-agent-skills
+```
+
+Preview the syntax before downloading:
+
+```sh
+orchill import-commands marketplace-commands.txt --dry-run
+```
+
+Then stage the selected plugin bundles:
+
+```sh
+orchill import-commands marketplace-commands.txt --output .orchill-dotnet-import --category ".NET Development"
+```
+
+Orchill clones each registered marketplace repository into a temporary directory, resolves the marketplace's declared name from `.agents/plugins/marketplace.json`, verifies the requested plugin is listed in that manifest, and stages every nested `SKILL.md` directory in that plugin as an individual skill. The generated registry additions and reports are review artifacts; they do not change your agent's global plugin configuration or the canonical Orchill registry. Use the exact marketplace name declared by the repository manifest (for dotnet/skills, `dotnet-agent-skills`). The marketplace source is cloned at its current default branch, not pinned automatically; review and pin provenance before publishing.
+
+**Current limitation:** use one command file per command family. Do not mix `npx skills add` commands and `/plugin` commands in the same file yet. Orchill does not execute imported scripts, and imported instructions, source provenance, and licensing still require review.
