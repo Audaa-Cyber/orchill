@@ -653,3 +653,12 @@ The local container cannot reach GitHub due to network/DNS restrictions, so loca
 ### Still intentionally out of scope
 
 No hosted MCP integration, auto-install based on natural language, public npm release, lockfile, dependency resolver, update/uninstall commands, or full security audit has been implemented. The project is a usable CLI MVP candidate, not a security-certified or publicly released package.
+
+
+## 23. Bulk import from Skills CLI commands — 2026-10-29
+
+- **Context:** The owner has many skills available through commands such as npx skills add Leonxlnx/taste-skill@design-taste-frontend and wants to avoid repeated agent/scope prompts.
+- **Decision:** Add an Orchill bulk-import command that parses a command list, runs the upstream Skills CLI with non-interactive flags in an isolated temporary project, stages skill folders, prepares registry metadata, and reports per-line failures. It does not alter the canonical registry or execute skill scripts.
+- **Files:** src/bulk-import.ts, tests/bulk-import.test.ts, src/cli.ts, package.json, README.md, CI workflow.
+- **Safety:** Only supported npx skills add syntax is accepted; source URLs are validated; imports are staged, symlinks rejected, and existing output directories are not overwritten. Metadata and license still require review.
+- **Verification:** Implementation committed to a feature branch; CI has not yet verified it.
