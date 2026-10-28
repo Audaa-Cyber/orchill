@@ -21,7 +21,11 @@ test("every local registry entry points to a bundled skill directory with SKILL.
   for (const skill of localSkills) {
     const sourceRoot = path.resolve(root, skill.source.path!);
     const skillRoot = skill.skillPath === "." ? sourceRoot : path.resolve(sourceRoot, skill.skillPath);
-    await assert.doesNotReject(() => access(path.join(skillRoot, "SKILL.md")), `${skill.id} must have a bundled SKILL.md at ${skillRoot}`);
+    try {
+      await access(path.join(skillRoot, "SKILL.md"));
+    } catch {
+      assert.fail(`${skill.id} must have a bundled SKILL.md at ${skillRoot}`);
+    }
   }
 });
 
