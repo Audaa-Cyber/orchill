@@ -36,3 +36,26 @@ test("installs a complete nested skill directory", async () => {
     await rm(temp, {recursive: true, force: true});
   }
 });
+
+test("failed forced replacement keeps the previous install", async () => {
+  const temp = await mkdtemp(path.join(os.tmpdir(), "orchill-rollback-test-"));
+  try {
+    const registryRoot = path.join(temp, "registry");
+    const source = path.join(temp, "source-skill");
+    const cwd = path.join(temp, "project");
+    await mkdir(registryRoot, {recursive: true});
+    await mkdir(source, {recursive: true});
+    await mkdir(cwd, {recursive: true});
+    await writeFile(path.join(source, "SKILL.md"), "known-good\n");
+    const skill: Skill = {
+      id: "safe-skill", name: "Safe skill", description: "Fixture", category: "Tests",
+      source: {type: "local", path: "../source-skill"}, skillPath: "."
+    };
+    const installed = await installSkill(skill, registryRoot, "project", cwd);
+    const broken: Skill = {...skill, source: {type: "local", path: "../missing-source"}};
+    await assert.rejects(() => installSkill(broken, registryRoot, "project", cwd, true));
+    assert.equal(await readFile(path.join(installed, "SKILL.md"), "utf8"), "known-good\n");
+  } finally {
+    await rm(temp, {recursive: true, force: true});
+  }
+});
