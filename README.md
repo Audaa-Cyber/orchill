@@ -40,7 +40,7 @@ The default project target is `.agents/skills/<skill-id>/`. Other supported targ
 | `project` | `.agents/skills/` |
 | `agents` | `.agents/skills/` |
 | `claude` | `.claude/skills/` |
-| `codex` | `.codex/skills/` |
+| `codex` | `.agents/skills/` (Codex project skills) |
 
 Use `--cwd /path/to/project` to select a destination project. Use `--force` to replace an existing installation. Review the displayed destination before installing.
 
