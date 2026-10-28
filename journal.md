@@ -620,3 +620,22 @@ Expanded the registry from 4 to 13 entries total (12 official external skills pl
 Added registry tests for duplicate IDs, invalid IDs, non-HTTPS Git URLs, and credential-bearing Git URLs. Added install tests for nested directory preservation, conflict/force behavior, rollback on failed forced replacement, and Git sparse checkout pinned to an immutable commit.
 
 The local container cannot reach GitHub due to network/DNS restrictions, so local checkout-based verification is unavailable in this session. GitHub Actions is the source of CI verification; report only the status of the latest run, not older successful runs, when declaring completion.
+
+
+## 21. Package installation verification — 2026-10-29
+
+### Packaging and developer install
+
+- Documented how to install the checkout as a global local CLI without publishing to npm: `npm install`, `npm run build`, `npm install --global .`, then `orchill --help`.
+- Updated GitHub Actions to create the real npm tarball, install that tarball globally in the runner, run the installed `orchill` command, search the catalog, install `demo-focus` into a clean temporary project, and assert the installed `SKILL.md` exists.
+- GitHub Actions run 35 passed on commit `9d66e0b0c85225f9b37d013936c3e368452a640b`, including the packed-package CLI and install smoke test.
+- The README local-install documentation was updated in commit `39c1fac0976e7754a1bd5d7ae1d2e58b19b1d475`; run 36 was queued at the time of this journal update. Recheck run 36 before treating that latest README commit as CI-verified.
+
+### Remaining before an MVP tag
+
+- Confirm run 36 is green and re-run after any code changes.
+- Run the complete CI suite on the final commit and keep a clean working tree in the release environment.
+- Consider adding a package lockfile for reproducible development dependency installation.
+- Review all external skills for prompt injection, shell commands, data access, and network instructions before recommending them for trusted workflows.
+- Add installed-state / uninstall / update only if the MVP timebox permits; these are explicitly outside the current MVP scope.
+- Keep public npm publishing separate from source checkout verification; no npm package has been published yet.
