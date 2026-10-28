@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { mkdtemp, rm, writeFile } from "node:fs/promises";
+import { access, mkdtemp, rm, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { defaultRegistryPath, loadRegistry } from "../src/registry.js";
@@ -11,6 +11,18 @@ test("default registry is valid and IDs are unique", async () => {
   assert.ok(registry.skills.length >= 4);
   assert.equal(new Set(registry.skills.map(s => s.id)).size, registry.skills.length);
   assert.ok(registry.skills.some(s => s.id === "frontend-design"));
+});
+
+
+test("every local registry entry points to a bundled skill directory with SKILL.md", async () => {
+  const {registry, root} = await loadRegistry(defaultRegistryPath);
+  const localSkills = registry.skills.filter(skill => skill.source.type === "local");
+  assert.ok(localSkills.length > 0);
+  for (const skill of localSkills) {
+    const sourceRoot = path.resolve(root, skill.source.path!);
+    const skillRoot = skill.skillPath === "." ? sourceRoot : path.resolve(sourceRoot, skill.skillPath);
+    await assert.doesNotReject(() => access(path.join(skillRoot, "SKILL.md")), `${skill.id} must have a bundled SKILL.md at ${skillRoot}`);
+  }
 });
 
 test("rejects duplicate skill IDs", async () => {
