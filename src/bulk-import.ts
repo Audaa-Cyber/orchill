@@ -56,8 +56,10 @@ function frontmatter(markdown: string): Record<string, string> {
 function invokeSkills(source: string, skill: string, cwd: string): Promise<void> {
   const exe = process.platform === "win32" ? "npx.cmd" : "npx";
   const args = ["--yes", "skills", "add", source, "--skill", skill, "--agent", "codex", "--copy", "--yes"];
+  // With shell=true on Windows, preserve argument boundaries for skill names with spaces.
+  const commandArgs = process.platform === "win32" ? args.map(value => value.includes(" ") ? '"' + value + '"' : value) : args;
   return new Promise((resolve, reject) => {
-    const child = spawn(exe, args, {cwd, stdio: "inherit", shell: process.platform === "win32", windowsHide: true});
+    const child = spawn(exe, commandArgs, {cwd, stdio: "inherit", shell: process.platform === "win32", windowsHide: true});
     child.once("error", reject); child.once("close", code => code === 0 ? resolve() : reject(new Error("Skills CLI exited with code " + code)));
   });
 }
