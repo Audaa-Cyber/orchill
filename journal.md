@@ -725,3 +725,10 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Implemented in this change:** relocate all 209 local registry skill payloads to `skills/<category-slug>/<skill-id>/`, preserving every nested file; update registry source paths; keep 12 Git-backed entries remote; add `skills/` to npm package files and remove staging import directories from the package allowlist; regenerate catalogue/category indexes and assert the new source path layout in registry tests.
 - The import staging directories remain in the repository for provenance/report metadata, but their skill payload folders are removed from those locations and those directories are no longer included in the npm package allowlist.
 - **Not yet verified:** CI and npm package dry-run for this migration. Third-party redistribution rights and the existing license/security review queue remain release blockers. No PR was merged and nothing was published.
+
+
+## 2026-10-28 — Project license alignment
+
+- **Decision from project owner:** use Apache License 2.0 for Orchill's own code and documentation.
+- **Implemented in branch:** replace the project MIT license text with the standard Apache-2.0 license text and set `package.json` `license` to `Apache-2.0`; document that this does not relicense third-party skill payloads.
+- **Release gate remains:** audit each bundled skill's actual upstream license and redistribution requirements. Do not interpret registry metadata alone as proof of permission, and do not publish the full bundled catalog until the license review is complete.

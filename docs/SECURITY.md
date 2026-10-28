@@ -29,3 +29,8 @@ Run `orchill audit` to check missing license/provenance metadata, local skill pa
 ## Known gaps before a security-focused release
 
 This is an MVP, not a security certification. It does not verify Git commit signatures, enforce a license allowlist, sandbox an agent, inspect prompt injection, maintain a lockfile, or perform a full source-tree audit. Registry files are configuration and should come from trusted maintainers. Local source paths are intentionally useful for development and should not be accepted from untrusted registries. Review the implementation and test in disposable directories before production use.
+
+
+## Project license versus skill licenses
+
+The Orchill application code and original project documentation are licensed under Apache-2.0. This license does **not** grant redistribution rights for third-party skill payloads bundled in `skills/`. Each payload must be evaluated under its own upstream license and attribution requirements. A registry `license` value is metadata, not proof of permission. Before publishing a package or release, verify the source, exact upstream revision, license text, required notices, and redistribution terms for every bundled skill. Skills with unknown, incompatible, or unverified terms must be excluded from a distributable release until reviewed.

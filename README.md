@@ -181,3 +181,8 @@ Orchill clones each registered marketplace repository into a temporary directory
 - [Machine-readable category manifest](catalog/categories.json)
 
 The catalogue is generated from `registry/skills.json` with `npm run catalog:generate`.
+
+
+## License
+
+Orchill's original code and project documentation are licensed under the [Apache License 2.0](./LICENSE). This project license does not automatically relicense bundled third-party skills; each skill's upstream license and redistribution permissions must be checked independently. See [docs/SECURITY.md](./docs/SECURITY.md).
