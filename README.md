@@ -4,7 +4,7 @@
 
 Orchill is a CLI-first skill manager for AI-agent workflows. It searches a versioned JSON registry, filters by category, and installs a selected skill's complete directory tree into an explicit target. It does not download every skill in a collection just to find one.
 
-> **MVP status:** core CLI implementation is in progress and should be treated as an early release. Run the test suite and review source integrations before using it for important workflows. The bundled `demo-focus` entry is the only default catalog entry; external skill sources are not implicitly endorsed or verified.
+> **MVP status:** an initial CLI implementation, tests, CI workflow, and source-safety guidance are committed. It is still an early release: CI has not yet been observed passing in this session. The default catalog contains a bundled demo plus three official Anthropic skills whose source directories and per-skill Apache-2.0 license files were checked on 2026-10-29. Source content can change upstream; review skills before using them.
 
 ## Requirements
 
