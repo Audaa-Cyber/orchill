@@ -22,6 +22,10 @@ Orchill installs files; it does not run skill scripts. Skills are instructions a
 - Existing installs require explicit `--force`; replacement is staged and the prior install is restored if the swap fails.
 - Category installs show a plan and require confirmation unless `--yes` is passed.
 
+## Catalog audit command
+
+Run `orchill audit` to check missing license/provenance metadata, local skill paths, missing `SKILL.md` files, source symlinks, and a small set of review-worthy instruction or script patterns. Use `orchill audit --json` for machine-readable findings and `orchill audit --strict` to fail on any finding. Heuristic matches can be false positives; no finding is not proof of safety. Git-backed entries are not downloaded or scanned by this command.
+
 ## Known gaps before a security-focused release
 
 This is an MVP, not a security certification. It does not verify Git commit signatures, enforce a license allowlist, sandbox an agent, inspect prompt injection, maintain a lockfile, or perform a full source-tree audit. Registry files are configuration and should come from trusted maintainers. Local source paths are intentionally useful for development and should not be accepted from untrusted registries. Review the implementation and test in disposable directories before production use.
