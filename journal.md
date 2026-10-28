@@ -587,16 +587,18 @@ The repository now contains an initial TypeScript/Node.js CLI implementation rat
 
 ### Initial catalog entries
 
-The default registry includes the bundled demo plus:
-- `frontend-design` — official `anthropics/skills`, `skills/frontend-design`; per-skill Apache-2.0 license file checked.
-- `mcp-builder` — official `anthropics/skills`, `skills/mcp-builder`; per-skill Apache-2.0 license file checked.
-- `claude-api` — official `anthropics/skills`, `skills/claude-api`; per-skill Apache-2.0 license file checked.
+The default registry contains the bundled demo plus twelve official Anthropic skills: `frontend-design`, `mcp-builder`, `claude-api`, `algorithmic-art`, `brand-guidelines`, `canvas-design`, `skill-creator`, `slack-gif-creator`, `theme-factory`, `web-artifacts-builder`, `webapp-testing`, and `internal-comms`.
 
-These entries currently track upstream `main`, so they are not immutable or reproducible yet. Pin reviewed commit SHAs before a production-quality release. A checked license file does not constitute a security audit of a skill's instructions or scripts.
+- Source repository: `https://github.com/anthropics/skills.git`
+- Pinned source commit: `dbd4588f9e1033efb41dad4bef2f7947c8993d44`
+- The exact skill directories and their per-skill Apache-2.0 LICENSE.txt files were checked on 2026-10-29.
+- The installer copies the skill directory, including its license and nested files, and does not run its scripts.
+
+A license check does not constitute a security audit of a skill's instructions or scripts. Review the contents before using them.
 
 ### CI status at time of entry
 
-GitHub Actions run 6 completed successfully on commit `632610a69cc33fc9b66d86cf076d25123e7491ae`, including typecheck, tests, build, and smoke checks. Run 7 completed typecheck, tests, build, and help successfully; its final smoke checks were still in progress when checked. Run 8 was still installing dependencies. Recheck the latest run before declaring the latest `main` fully verified.
+GitHub Actions run 18 completed successfully on commit `b1de714257e9312667b83dfc08df0b4ad9f333a5`, including typecheck, all then-current tests, build, and CLI smoke checks. Run 19 is checking the expanded catalog and was still in progress when this entry was updated. Run 20 was queued for the latest README change. Recheck the latest run before declaring the latest `main` fully verified.
 
 ### Known MVP gaps / next steps
 
@@ -609,3 +611,12 @@ GitHub Actions run 6 completed successfully on commit `632610a69cc33fc9b66d86cf0
 - Add catalog search scoring and an explicit source-management workflow.
 - MCP integration is not implemented; a CLI alone does not make Orchill available inside hosted ChatGPT/Claude sessions.
 - No claim of production readiness until the latest CI is green and the security gaps are reviewed.
+
+
+## 20. Catalog expansion and source pinning — 2026-10-29
+
+Expanded the registry from 4 to 13 entries total (12 official external skills plus the bundled demo). The external entries are pinned to the same verified upstream commit so installs are reproducible until the registry is intentionally updated. The external skills span UI/UX design, creative coding, frontend/React, design systems, API/backend, testing/quality, content/internal communications, and tooling/MCP development.
+
+Added registry tests for duplicate IDs, invalid IDs, non-HTTPS Git URLs, and credential-bearing Git URLs. Added install tests for nested directory preservation, conflict/force behavior, rollback on failed forced replacement, and Git sparse checkout pinned to an immutable commit.
+
+The local container cannot reach GitHub due to network/DNS restrictions, so local checkout-based verification is unavailable in this session. GitHub Actions is the source of CI verification; report only the status of the latest run, not older successful runs, when declaring completion.
