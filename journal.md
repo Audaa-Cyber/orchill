@@ -732,3 +732,10 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Decision from project owner:** use Apache License 2.0 for Orchill's own code and documentation.
 - **Implemented in branch:** replace the project MIT license text with the standard Apache-2.0 license text and set `package.json` `license` to `Apache-2.0`; document that this does not relicense third-party skill payloads.
 - **Release gate remains:** audit each bundled skill's actual upstream license and redistribution requirements. Do not interpret registry metadata alone as proof of permission, and do not publish the full bundled catalog until the license review is complete.
+
+
+## 2026-10-28 — Remove duplicate staging payloads
+
+- **Implemented in branch:** remove the duplicated import-staging skill trees after the canonical 209 local payloads were moved to `skills/<category-slug>/<skill-id>/`. Keep `report.json`, `report.md`, and `registry-additions.json` in the staging roots for audit/provenance context.
+- Preserve the upstream importer `skills-lock.json` at `.orchill-skills-import/skills-lock.json` rather than losing its source/hash metadata with the staging payload copies.
+- CI now checks that staging payload directories do not reappear. The categorized `skills/` tree is the canonical local payload store.
