@@ -80,9 +80,10 @@ test("Git sparse checkout installs only the selected skill tree", async () => {
     execFileSync("git", ["-C", repo, "config", "user.email", "orchill-test@example.invalid"]);
     execFileSync("git", ["-C", repo, "add", "."]);
     execFileSync("git", ["-C", repo, "commit", "-m", "fixture"], {stdio: "ignore"});
+    const commit = execFileSync("git", ["-C", repo, "rev-parse", "HEAD"], {encoding: "utf8"}).trim();
     const skill: Skill = {
       id: "git-demo", name: "Git demo", description: "Fixture", category: "Tests",
-      source: {type: "git", url: pathToFileURL(repo).href},
+      source: {type: "git", url: pathToFileURL(repo).href, ref: commit},
       skillPath: "skills/demo"
     };
     const installed = await installSkill(skill, registryRoot, "project", cwd);
