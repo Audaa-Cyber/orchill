@@ -121,3 +121,26 @@ npm run build
 ```
 
 See [docs/CATALOG.md](./docs/CATALOG.md) for the default catalog and provenance notes, [docs/SECURITY.md](./docs/SECURITY.md) for the trust model, [docs/MVP-SCOPE.md](./docs/MVP-SCOPE.md) for acceptance criteria, and [journal.md](./journal.md) for decisions and progress.
+
+## Bulk-import skills from Skills CLI commands
+
+Create a text file with one command per line. Blank lines and lines beginning with # are ignored.
+
+\`\`\`sh
+npx skills add Leonxlnx/taste-skill@design-taste-frontend
+npx skills add owner/repo --skill "A skill with spaces"
+\`\`\`
+
+Preview the commands first:
+
+\`\`\`sh
+orchill import-commands skill-commands.txt --dry-run
+\`\`\`
+
+Then stage the skills:
+
+\`\`\`sh
+orchill import-commands skill-commands.txt --output .orchill-import --category "UI/UX Design"
+\`\`\`
+
+The importer supplies non-interactive upstream CLI flags and uses Codex only as a deterministic staging destination inside a temporary directory. It does not install into your actual project or user profile. It processes commands sequentially, continues after individual failures, rejects unsafe command syntax and symlinks, and produces copied skill folders plus registry-additions.json, report.json, and report.md. The main registry is never changed automatically. Review metadata, source provenance, instructions, referenced scripts, and licensing before publishing; a license file's presence is not proof of permission to redistribute. Use a new output directory for each run.
