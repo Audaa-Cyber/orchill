@@ -458,3 +458,111 @@ When a feature is only proposed, mark it **Proposed**. When files are drafted bu
 - **Action:** Create this journal as the first project-history and planning document.
 - **Status:** Product vision and architecture are documented here; application code is not yet verified in this repository.
 - **Next:** Bootstrap the repository and bring reviewed starter implementation and docs into version control.
+
+
+## 18. Recommended languages and technology stack
+
+### Primary recommendation: TypeScript + Node.js
+
+**Decision status: Recommended for adoption; not yet implemented in the repository.**
+
+Use **TypeScript** for the Orchill application and **Node.js** as its runtime. This is the best fit for the initial CLI and the planned agent/MCP ecosystem because it gives us a practical cross-platform runtime, strong editor tooling, static type checking, a mature npm distribution path, and an official MCP TypeScript SDK. TypeScript compiles to JavaScript and provides types on top of the JavaScript ecosystem; Node.js documents TypeScript support and the MCP project provides a TypeScript SDK for servers and clients.
+
+Sources:
+- TypeScript documentation: https://www.typescriptlang.org/docs/
+- Node.js TypeScript documentation: https://nodejs.org/api/typescript.html
+- MCP TypeScript SDK v2: https://ts.sdk.modelcontextprotocol.io/v2/
+- OpenAI developer guide for MCP servers: https://developers.openai.com/plugins/build/mcp-server
+
+### Languages and data formats
+
+| Language / format | Use | Status |
+|---|---|---|
+| **TypeScript** | CLI, core logic, registry handling, source adapters, installer, agent adapters, future MCP server | Recommended primary language |
+| **JavaScript (generated output)** | Published Node.js runtime files under `dist/` | Build output, not the main authoring language |
+| **JSON** | Skill catalog, categories, local config, install state, lockfile | Recommended data format |
+| **JSON Schema** | Public registry metadata contract and interoperable validation | Recommended |
+| **Markdown** | Skill instructions and project documentation | Input/document format |
+| **YAML** | CI workflows and optional human-authored config only if useful | Optional; avoid adding a second registry format without a need |
+| **Shell** | Small development/CI scripts where necessary | Not for core business logic |
+
+We do not need Python, Rust, Go, or a browser UI for the first MVP. A second implementation language would increase maintenance cost without solving an immediate requirement. Revisit a native component only if real profiling later proves it necessary.
+
+### Recommended tools and libraries
+
+| Area | Recommendation | Why |
+|---|---|---|
+| Runtime | Node.js, target Node 22+ initially and test current LTS releases | Cross-platform filesystem and process APIs; familiar CLI distribution |
+| Language | TypeScript, strict type checking | Helps keep registry metadata, source adapters, targets, and install plans consistent |
+| Package manager | npm | Natural fit for an npm-distributed CLI and easy first-time installation |
+| CLI argument parser | Commander | Mature commands, options, and help output |
+| Interactive terminal prompts | `@clack/prompts` (optional) | Clear interactive selection and confirmation; preserve non-interactive mode for automation |
+| Terminal colors | `picocolors` (optional) | Lightweight color output that can be disabled in CI |
+| Metadata validation | JSON Schema + Ajv | A published schema is language-neutral and can validate registry entries |
+| Internal input validation | Use the same schema at boundaries; consider Zod only where runtime parsing ergonomics justify it | Avoid maintaining duplicate, contradictory schemas |
+| Git sources | Invoke the installed `git` executable through a safe process API such as `execa`; use pinned refs and sparse checkout where possible | Reuse Git's mature source handling and fetch only the selected subdirectory when feasible |
+| Filesystem safety | Node.js `fs/promises` plus a small dedicated safe-path/copy module | Keep path validation, symlink policy, conflict detection, and rollback centralized |
+| Testing | Node.js built-in test runner for a lean baseline, or Vitest if its ergonomics materially help | Test catalog, installer, path traversal, conflicts, nested folders, and failed installs |
+| Formatting/linting | Prettier + ESLint with TypeScript support | Consistent code and early error detection |
+| Build | TypeScript compiler (`tsc`) to a `dist/` directory | Simple, inspectable build without an unnecessary bundler at first |
+| CI | GitHub Actions | Run type checking, linting, tests, and package smoke tests on supported operating systems |
+| Publishing | npm with a dry-run/package-content check before release | Distribute the `orchill` command; name availability and publication still need to be checked at publish time |
+| Future agent interface | Official MCP TypeScript SDK, introduced in a separate phase | Expose catalog search/inspection and controlled install operations to compatible clients |
+
+Treat the specific libraries above as the initial proposal. Before implementation, confirm current maintenance, compatible versions, license, and Node engine requirements, then pin dependencies through the lockfile.
+
+### Why not Python, Go, or Rust as the primary language?
+
+- **Python:** A reasonable option for automation and AI/data tooling, but it would split Orchill from the Node/npm path and add no clear advantage for a filesystem-oriented CLI plus TypeScript MCP integration.
+- **Go:** Excellent for shipping a standalone executable and efficient concurrent networking. However, it introduces a separate ecosystem from the TypeScript MCP SDK and makes the first iteration less aligned with npm installation and the likely contributor pool.
+- **Rust:** Strong performance and safety properties, but Orchill's initial workload is metadata parsing, network/Git orchestration, and file copying—not CPU-heavy computation. The added learning and development cost is not justified yet.
+- **Plain JavaScript:** Could work, but TypeScript is preferable for a growing system with schemas, multiple adapters, and stateful install flows.
+
+These are trade-offs, not claims that the alternatives are incapable. If the top priority changes to a single self-contained native executable with minimal runtime dependencies, Go would be worth re-evaluating.
+
+### Suggested project setup
+
+Use a conventional TypeScript project with source files in `src/` and compiled JavaScript in `dist/`. The published package should point its executable entry to the compiled CLI, not depend on the user's development toolchain.
+
+Indicative scripts (final scripts should match the actual source files):
+
+```json
+{
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "node --test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "check": "npm run typecheck && npm test"
+  }
+}
+```
+
+Suggested implementation constraints:
+- Enable strict TypeScript options.
+- Use ESM consistently.
+- Compile to a `dist/` directory and test the packed npm artifact before publishing.
+- Keep the core installer independent from interactive terminal UI.
+- Support non-interactive flags so CI and agent runtimes can use the CLI.
+- Never interpolate untrusted skill metadata into shell command strings.
+- Never run scripts from installed skills as part of installation.
+- Start with JSON-based local state and a lockfile; only add a database if actual needs justify it.
+- Add MCP as a separate adapter after CLI search and installation are reliable.
+
+### Language decision summary
+
+**Recommended:** TypeScript + Node.js + npm.
+
+**First implementation:** CLI, catalog and registry schema, safe source fetching, install planner, folder-preserving installer, agent-target adapters, and automated tests.
+
+**Later:** MCP server and additional integrations, using the same TypeScript core.
+
+This is a recommendation to adopt—not a statement that these tools or languages have already been added to the GitHub repository.
+
+### 2026-10-29 — Stack recommendation
+
+- **Context:** The project owner asked which tools and languages Orchill should use and requested the most suitable language.
+- **Recommendation:** TypeScript on Node.js, distributed through npm.
+- **Reasoning:** Strong fit for a cross-platform CLI, structured metadata, safe file operations, type checking, and a future MCP integration.
+- **Status:** Documented as recommended; implementation and dependency selection remain pending.
