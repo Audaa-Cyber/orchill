@@ -2,8 +2,16 @@ import path from "node:path";
 import { lstat } from "node:fs/promises";
 
 export function safeRelativePath(value: string, label: string): string {
-  if (!value || value.includes("\0") || path.isAbsolute(value)) throw new Error(`${label} must be a safe relative path.`);
-  const normalized = path.normalize(value);
+  if (
+    !value ||
+    value.includes("\0") ||
+    path.isAbsolute(value) ||
+    value.startsWith("\\") ||
+    /^[a-zA-Z]:[\\/]/.test(value)
+  ) throw new Error(`${label} must be a safe relative path.`);
+  // Treat both slash styles as separators so a registry path is checked
+  // consistently on Windows, macOS, and Linux.
+  const normalized = path.normalize(value.replace(/\\/g, "/"));
   if (normalized === ".." || normalized.startsWith(`..${path.sep}`) || normalized.split(path.sep).includes("..")) {
     throw new Error(`${label} cannot escape its parent directory: ${value}`);
   }
