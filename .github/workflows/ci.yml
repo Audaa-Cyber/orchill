@@ -14,6 +14,8 @@ jobs:
           node-version: 22
       - run: npm ci
       - run: npm run typecheck
+      - name: Report bundled-skill release approval gaps (non-blocking until review is complete)
+        run: npm run release:check
       - run: npm test
       - run: npm run build
       - run: npm run catalog:generate
