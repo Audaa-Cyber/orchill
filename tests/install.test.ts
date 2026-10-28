@@ -88,7 +88,7 @@ test("Git sparse checkout installs only the selected skill tree", async () => {
     };
     const installed = await installSkill(skill, registryRoot, "project", cwd);
     assert.equal((await readFile(path.join(installed, "SKILL.md"), "utf8")).replace(/\r\n/g, "\n"), "# Demo from Git\n");
-    assert.equal(await readFile(path.join(installed, "references", "guide.md"), "utf8"), "Nested file\n");
+    assert.equal((await readFile(path.join(installed, "references", "guide.md"), "utf8")).replace(/\r\n/g, "\n"), "Nested file\n");
     await assert.rejects(() => readFile(path.join(cwd, ".agents", "skills", "unrelated", "SKILL.md"), "utf8"));
   } finally {
     await rm(temp, {recursive: true, force: true});
