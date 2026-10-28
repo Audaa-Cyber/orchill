@@ -49,7 +49,11 @@ test("rejects invalid IDs and non-HTTPS Git sources", async () => {
     await writeFile(file, JSON.stringify({version: 1, skills: [{
       ...base, id: "bad-source", source: {type: "git", url: "http://example.com/repo.git"}
     }]}));
-    await assert.rejects(() => loadRegistry(file), /HTTPS URL/);
+    await assert.rejects(() => loadRegistry(file), /HTTPS/);
+    await writeFile(file, JSON.stringify({version: 1, skills: [{
+      ...base, id: "credential-source", source: {type: "git", url: "https://user:secret@example.com/repo.git"}
+    }]}));
+    await assert.rejects(() => loadRegistry(file), /credentials/);
   } finally {
     await rm(temp, {recursive: true, force: true});
   }
