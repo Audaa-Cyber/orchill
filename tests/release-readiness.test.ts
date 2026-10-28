@@ -1,12 +1,15 @@
 import assert from "node:assert/strict";
-import { mkdtemp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { createRequire } from "node:module";
 import test from "node:test";
 
 const checker = fileURLToPath(new URL("../scripts/check-release-readiness.ts", import.meta.url));
+const require = createRequire(import.meta.url);
+const tsxLoader = require.resolve("tsx");
 
 async function fixture(approvals: unknown) {
   const root = await mkdtemp(path.join(os.tmpdir(), "orchill-release-check-"));
@@ -32,7 +35,7 @@ test("release check does not count incomplete approval records as approved", asy
     notes: "Fixture only; not evidence."
   }] });
   try {
-    const result = spawnSync(process.execPath, ["--import", "tsx", checker], { cwd: root, encoding: "utf8" });
+    const result = spawnSync(process.execPath, ["--import", tsxLoader, checker], { cwd: root, encoding: "utf8" });
     assert.equal(result.status, 0, result.stderr);
     const report = JSON.parse(result.stdout) as { summary: { approved: number; blockers: number }; blockers: string[] };
     assert.equal(report.summary.approved, 0);
@@ -47,7 +50,7 @@ test("release check does not count incomplete approval records as approved", asy
 test("strict release check exits nonzero when approval evidence is missing", async () => {
   const root = await fixture({ version: 1, approvals: [] });
   try {
-    const result = spawnSync(process.execPath, ["--import", "tsx", checker, "--strict"], { cwd: root, encoding: "utf8" });
+    const result = spawnSync(process.execPath, ["--import", tsxLoader, checker, "--strict"], { cwd: root, encoding: "utf8" });
     assert.equal(result.status, 1);
     assert.match(result.stderr, /Release blocked/);
   } finally {
