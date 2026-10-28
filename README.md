@@ -62,7 +62,7 @@ Use `--cwd /path/to/project` to select a destination project. Use `--force` to r
 - `orchill categories` — show categories and counts.
 - `orchill info <id>` — inspect metadata and provenance notes.
 - `orchill install <id> [--target project|agents|claude|codex]` — install one skill.
-- `orchill install <id> --dry-run` — preview a single install.
+- `orchill install <id> --dry-run` — preview a single install.\n- `orchill verify <id> [--target <target>]` — check the installed directory, Orchill marker, and `SKILL.md`.\n- `orchill uninstall <id> [--target <target>]` — remove an Orchill-managed install after confirmation; use `--yes` only after reviewing the destination.
 - `orchill install-category <category>` — show a plan, then ask for confirmation; use `--yes` in reviewed automation.
 - `orchill targets` — show destinations.
 - `orchill registry` — show active registry.
@@ -104,7 +104,7 @@ Default registry: `registry/skills.json`. Its format is documented by `registry/
 - Installs are explicit; search and info never install or execute skills.
 - Installed scripts are **not** automatically run.
 - Skill IDs and relative paths are validated; destination parent symlinks are rejected.
-- Existing installs are not overwritten unless `--force` is supplied.
+- Existing installs are not overwritten unless `--force` is supplied.\n- New installations include a `.orchill-install.json` marker. Uninstall refuses to remove directories without a valid marker, protecting manually created or legacy skill folders.\n- `verify` checks the marker and the presence of `SKILL.md`; it is a structural check, not a cryptographic integrity or malware scan.
 - Category installation prints the complete plan and asks for confirmation unless `--yes` is passed.
 - Source/license metadata is only as trustworthy as the registry maintainer. Orchill does not currently verify signatures or automatically audit skill instructions.
 - Review third-party `SKILL.md` and referenced scripts before allowing an agent to use them.
