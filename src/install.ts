@@ -47,11 +47,9 @@ export async function installSkill(skill: Skill, registryRoot: string, target: s
   await mkdir(root, { recursive: true });
   await ensureNoSymlinkParents(root, destination);
 
-  let exists = false;
   try {
     const info = await lstat(destination);
     if (info.isSymbolicLink()) throw new Error(`Refusing to replace a symlink: ${destination}`);
-    exists = true;
     if (!force) throw new Error(`Already exists: ${destination}. Use --force to replace it.`);
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
