@@ -15,6 +15,7 @@ jobs:
       - run: npm install
       - run: npm run typecheck
       - run: npm test
+      - run: node dist/cli.js import-commands --help
       - run: npm run build
       - run: node dist/cli.js --help
       - run: node dist/cli.js search demo
