@@ -662,3 +662,13 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Files:** src/bulk-import.ts, tests/bulk-import.test.ts, src/cli.ts, package.json, README.md, CI workflow.
 - **Safety:** Only supported npx skills add syntax is accepted; source URLs are validated; imports are staged, symlinks rejected, and existing output directories are not overwritten. Metadata and license still require review.
 - **Verification:** GitHub Actions run 48 passed on commit `8eaef9e77d54a595ffc553b8d8b72ef52073ae86`. Typecheck, parser tests, build, CLI help smoke tests, existing CLI smoke tests, and packed-package smoke checks all passed. This verifies the Linux CI path; a real Skills CLI download and Windows end-to-end bulk import still need a user-run smoke test.
+
+
+## 24. Bulk import from agent plugin marketplaces — 2026-10-29
+
+- **Context:** The owner found agent plugin marketplace commands such as `/plugin marketplace add dotnet/skills` and `/plugin install dotnet-diag@dotnet-agent-skills` and asked to support importing them in bulk.
+- **Decision:** Extend `orchill import-commands` to recognize slash-command marketplace registration and plugin installation inputs. Resolve the plugin name and source from the marketplace's `.agents/plugins/marketplace.json` manifest, then stage every nested `SKILL.md` in the selected plugin as individual reviewable skill folders.
+- **Files:** `src/marketplace-import.ts`, `src/cli.ts`, `tests/marketplace-import.test.ts`, `package.json`, `README.md`, CI workflow.
+- **Safety:** Marketplace repos are cloned with Git into a temporary directory; plugin names must be present in the manifest; unsafe command syntax is rejected; symlinks are rejected; the canonical registry and global agent marketplace configuration are not modified. Imported scripts are not executed.
+- **Limitations:** The marketplace repository is cloned from its current default branch and is not automatically pinned to an immutable commit. Use a separate command file for marketplace commands versus `npx skills add` commands. Marketplace installation was not yet end-to-end tested against a real remote repo when this entry was written.
+- **Verification:** Parser tests and GitHub Actions CI are expected to validate the new path. Update this entry with the latest run result after CI completes.
