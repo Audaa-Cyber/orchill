@@ -24,7 +24,7 @@
     "build": "tsc -p tsconfig.json",
     "start": "node dist/cli.js",
     "dev": "tsx src/cli.ts",
-    "test": "tsx --test tests/audit.test.ts tests/safety.test.ts tests/install.test.ts tests/registry.test.ts tests/bulk-import.test.ts tests/marketplace-import.test.ts",
+    "test": "tsx --test tests/audit.test.ts tests/safety.test.ts tests/install.test.ts tests/registry.test.ts tests/bulk-import.test.ts tests/marketplace-import.test.ts tests/release-readiness.test.ts",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "prepack": "npm run build",
     "catalog:generate": "tsx scripts/generate-catalog.ts",
