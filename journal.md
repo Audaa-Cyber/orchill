@@ -692,3 +692,11 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Local payload validation:** Added a registry test that walks every local-source entry and verifies that its configured skill directory contains `SKILL.md`. This catches broken local paths before release.
 - **Packaged-install CI coverage:** Updated the package smoke test to use the actual `UI/UX` category name, install a representative imported .NET skill from the packed CLI, verify its nested reference file, and install the complete small Accessibility category.
 - **Scope note:** This adds automated checks; the changes still need a new green GitHub Actions run. Third-party licenses, immutable upstream revisions, and content safety remain separate release blockers for any imported entry whose status is unknown.
+
+
+## 27. Catalog audit tooling — 2026-10-29
+- Added `orchill audit` with text and JSON output plus an optional strict exit mode.
+- Audit checks license/provenance gaps, unpinned Git refs, missing local skill directories or `SKILL.md`, and source symlinks.
+- Added conservative pattern-based review flags for possible prompt override language, secret/environment access, shell execution, remote-script piping, and destructive commands. These are triage signals, not a malware verdict.
+- Git-backed entries are explicitly reported as not scanned; the audit never silently claims to have reviewed remote content.
+- Added unit tests for metadata findings, prompt-language flags, missing local paths, and unpinned remote sources. CI is required to validate the new command.
