@@ -9,12 +9,6 @@ This directory is the human-browsable catalogue generated from the canonical reg
 
 ## Structure
 
-```text
-catalog/
-├── README.md
-├── CATALOG.md
-├── categories.json
-└── categories/
     └── net-and-build-systems/README.md  # .NET & Build Systems (40)
     └── accessibility/README.md  # Accessibility (2)
     └── agent-tooling-and-workflows/README.md  # Agent Tooling & Workflows (15)
@@ -35,7 +29,6 @@ catalog/
     └── seo/README.md  # SEO (4)
     └── testing/README.md  # Testing (26)
     └── ui-ux/README.md  # UI/UX (10)
-```
 
 Each category folder contains a sorted index of skills and links to the canonical payload under `skills/<category-slug>/<skill-id>/`. The registry is the source of truth; this catalogue is generated for browsing.
 
