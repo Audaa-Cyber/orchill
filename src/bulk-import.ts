@@ -49,7 +49,8 @@ export function slugify(value: string): string {
 function frontmatter(markdown: string): Record<string, string> {
   const m = markdown.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/); const out: Record<string,string> = {};
   if (!m) return out;
-  const body = m[1]; if (body === undefined) return out;\n  for (const line of body.split(/\r?\n/)) { const p = line.match(/^([a-zA-Z][\w-]*):\s*(.*?)\s*$/); if (p && p[1] !== undefined && p[2] !== undefined) out[p[1].toLowerCase()] = p[2].replace(/^(['"])(.*)\1$/, "$2"); }
+  const body = m[1]; if (body === undefined) return out;
+  for (const line of body.split(/\r?\n/)) { const p = line.match(/^([a-zA-Z][\w-]*):\s*(.*?)\s*$/); if (p && p[1] !== undefined && p[2] !== undefined) out[p[1].toLowerCase()] = p[2].replace(/^(['"])(.*)\1$/, "$2"); }
   return out;
 }
 function invokeSkills(source: string, skill: string, cwd: string): Promise<void> {
