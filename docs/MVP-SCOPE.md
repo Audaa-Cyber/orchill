@@ -16,6 +16,7 @@
 - [x] Existing-install conflict handling and explicit force replacement.
 - [x] Basic registry/path validation and symlink defenses.
 - [x] Tests and GitHub Actions CI.
+- [x] Catalog metadata/path audit with clearly labeled heuristic content findings.
 - [x] Example skill and a small initial catalog.
 
 ## Not in this MVP
@@ -25,7 +26,7 @@
 - [ ] Registry hosting, signing, source attestations, or immutable lockfile.
 - [ ] Update, uninstall, dependency graph, conflict resolver, or installed-state database.
 - [ ] GUI or interactive TUI.
-- [ ] Full malware, prompt-injection, or instruction audit.
+- [ ] Full malware, prompt-injection, or instruction audit (the built-in audit is heuristic triage only).
 - [ ] Public npm publication.
 
 ## Acceptance checks before calling the MVP verified
