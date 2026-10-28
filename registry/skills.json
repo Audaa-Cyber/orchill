@@ -41,11 +41,11 @@
       "source": {
         "type": "git",
         "url": "https://github.com/anthropics/skills.git",
-        "ref": "main"
+        "ref": "dbd4588f9e1033efb41dad4bef2f7947c8993d44"
       },
       "skillPath": "skills/frontend-design",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Review upstream before use.",
+      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Pinned to upstream commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; review skill instructions before use.",
       "targets": [
         "project",
         "claude",
@@ -67,11 +67,11 @@
       "source": {
         "type": "git",
         "url": "https://github.com/anthropics/skills.git",
-        "ref": "main"
+        "ref": "dbd4588f9e1033efb41dad4bef2f7947c8993d44"
       },
       "skillPath": "skills/mcp-builder",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Review upstream before use.",
+      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Pinned to upstream commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; review skill instructions before use.",
       "targets": [
         "project",
         "claude",
@@ -94,11 +94,11 @@
       "source": {
         "type": "git",
         "url": "https://github.com/anthropics/skills.git",
-        "ref": "main"
+        "ref": "dbd4588f9e1033efb41dad4bef2f7947c8993d44"
       },
       "skillPath": "skills/claude-api",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Review upstream before use.",
+      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Pinned to upstream commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; review skill instructions before use.",
       "targets": [
         "project",
         "claude",
