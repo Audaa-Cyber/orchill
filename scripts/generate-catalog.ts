@@ -15,7 +15,7 @@ const root = process.cwd();
 const registryPath = path.join(root, "registry", "skills.json");
 const outputRoot = path.join(root, "catalog");
 const repository = "Audaa-Cyber/orchill";
-const branch = process.env.GITHUB_REF_NAME || "feat/marketplace-bulk-import";
+const branch = process.env.GITHUB_HEAD_REF || process.env.GITHUB_REF_NAME || "feat/marketplace-bulk-import";
 
 function slugify(value: string): string {
   return value.toLowerCase().normalize("NFKD").replace(/&/g, " and ")

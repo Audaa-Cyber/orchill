@@ -16,6 +16,11 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - run: npm run build
+      - run: npm run catalog:generate
+      - name: Verify generated catalog and project license metadata
+        run: |
+          git diff --exit-code -- catalog
+          node --input-type=module -e "import fs from 'node:fs'; const p=JSON.parse(fs.readFileSync('package.json','utf8')); const r=JSON.parse(fs.readFileSync('registry/skills.json','utf8')); const local=r.skills.filter(s=>s.source?.type==='local'); if(p.license!=='Apache-2.0') throw new Error('Project license metadata must be Apache-2.0'); if(local.length!==209 || local.some(s=>!s.source.path?.startsWith('../skills/'))) throw new Error('Expected all 209 local skills under categorized skills/ paths'); console.log('License and categorized registry paths verified.');"
       - run: node dist/cli.js import-commands --help
       - run: node --input-type=module -e "import { parseMarketplaceCommand } from './dist/marketplace-import.js'; if (parseMarketplaceCommand('/plugin install dotnet-diag@dotnet-agent-skills', 1).plugin !== 'dotnet-diag') process.exit(1)"
       - run: node dist/cli.js --help
