@@ -22,7 +22,7 @@ function tokenize(text: string): string[] {
 function validSource(value: string): boolean {
   if (/^[a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+$/.test(value)) return true;
   if (/[;&|<>$(){}!\r\n]/.test(value) || value.includes(String.fromCharCode(96))) return false;
-  try { const u = new URL(value); return u.protocol === "https:" && !!u.hostname && !u.username && !u.password && !u.search && !u.hash; } catch { return false; }
+  try { const u = new URL(value); return u.protocol === "https:" && !!u.hostname && !u.username && !u.password && !u.search && !u.hash && /^[a-zA-Z0-9._~/-]*$/.test(u.pathname); } catch { return false; }
 }
 export function parseSkillCommand(text: string, line: number): SkillCommand {
   const t = tokenize(text); let i = 1;
@@ -77,7 +77,7 @@ export async function runBulkImport(inputFile: string, outputPath: string, categ
   const input = path.resolve(inputFile), output = path.resolve(outputPath);
   const lines = (await readFile(input,"utf8")).split(/\r?\n/).map((s,i)=>({s:s.trim(),line:i+1})).filter(x=>x.s && !x.s.startsWith("#"));
   if (!lines.length) throw new Error("No commands found in " + input);
-  const parsed = lines.map(x => { try { return {cmd:parseSkillCommand(x.s,x.line)}; } catch(e) { return {cmd:{line:x.line,source:"",skill:"",original:x.s},error:e instanceof Error?e.message:String(e)}; } });
+  const parsed: Array<{cmd: SkillCommand; error?: string}> = lines.map(x => { try { return {cmd:parseSkillCommand(x.s,x.line)}; } catch(e) { return {cmd:{line:x.line,source:"",skill:"",original:x.s},error:e instanceof Error?e.message:String(e)}; } });
   if (dryRun) {
     for (const p of parsed) console.log((p.error ? "FAIL " + p.error : "OK " + p.cmd.source + " -> " + p.cmd.skill) + " (line " + p.cmd.line + ")");
     return parsed.map(p=>({line:p.cmd.line,command:p.cmd.original,status:p.error?"failed":"preview",...(p.error?{error:p.error}:{})}));
