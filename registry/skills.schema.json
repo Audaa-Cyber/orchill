@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orchill.dev/schemas/skills.schema.json",
+  "title": "Orchill skill registry",
+  "type": "object",
+  "required": ["version", "skills"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "const": 1 },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description", "category", "source", "skillPath"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 },
+          "category": { "type": "string", "minLength": 1 },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "source": {
+            "type": "object",
+            "required": ["type"],
+            "additionalProperties": false,
+            "properties": {
+              "type": { "enum": ["local", "git"] },
+              "path": { "type": "string" },
+              "url": { "type": "string" },
+              "ref": { "type": "string" }
+            }
+          },
+          "skillPath": { "type": "string", "minLength": 1 },
+          "license": { "type": "string" },
+          "provenance": { "type": "string" },
+          "targets": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}
