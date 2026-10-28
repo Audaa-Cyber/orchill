@@ -19,6 +19,8 @@ const TEXT_EXTENSIONS = new Set([
   ".yml", ".toml", ".xml", ".html", ".css"
 ]);
 const MAX_SCANNED_FILE_BYTES = 1024 * 1024;
+const MAX_SCANNED_FILES_PER_SKILL = 20_000;
+const MAX_DIRECTORY_DEPTH = 40;
 
 const REVIEW_PATTERNS: Array<{ code: string; message: string; pattern: RegExp }> = [
   { code: "PROMPT_OVERRIDE_LANGUAGE", message: "Instruction attempts to override prior or higher-priority instructions; review in context.", pattern: /ignore\s+(all\s+)?(previous|prior|above|system)\s+instructions|disregard\s+(all\s+)?(previous|prior|system)\s+instructions/i },
@@ -62,7 +64,13 @@ async function scanLocalSkill(skill: Skill, registryRoot: string, findings: Audi
     addFinding(findings, skill.id, "error", "SKILL_MD_MISSING", "No SKILL.md exists at the configured skill root.", skillMarkdown);
   }
 
-  async function walk(directory: string): Promise<void> {
+  let scannedFiles = 0;
+  let limitReported = false;
+  async function walk(directory: string, depth = 0): Promise<void> {
+    if (depth > MAX_DIRECTORY_DEPTH) {
+      addFinding(findings, skill.id, "review", "DIRECTORY_DEPTH_LIMIT", `Stopped scanning beyond ${MAX_DIRECTORY_DEPTH} directory levels.`, directory);
+      return;
+    }
     let entries;
     try {
       entries = await readdir(directory, { withFileTypes: true });
@@ -85,7 +93,7 @@ async function scanLocalSkill(skill: Skill, registryRoot: string, findings: Audi
         continue;
       }
       if (info.isDirectory()) {
-        await walk(fullPath);
+        await walk(fullPath, depth + 1);
         continue;
       }
       if (!info.isFile() || !TEXT_EXTENSIONS.has(path.extname(entry.name).toLowerCase())) continue;
