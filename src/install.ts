@@ -1,4 +1,4 @@
-import { cp, lstat, mkdtemp, mkdir, readdir, rm, stat } from "node:fs/promises";
+import { cp, lstat, mkdtemp, mkdir, readdir, rename, rm, stat } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { spawn } from "node:child_process";
@@ -42,48 +42,75 @@ export function targetRoot(target: string, cwd = process.cwd()): string {
 export async function installSkill(skill: Skill, registryRoot: string, target: string, cwd: string, force = false): Promise<string> {
   const root = targetRoot(target, cwd);
   const id = safeRelativePath(skill.id, "Skill id");
+  if (id !== skill.id) throw new Error("Skill id must be a single directory name.");
   const destination = path.join(root, id);
+  await mkdir(root, { recursive: true });
   await ensureNoSymlinkParents(root, destination);
+
+  let exists = false;
   try {
-    await lstat(destination);
-    if (!force) throw new Error(`Already exists: ${destination}. Use --force to replace it.`);
-    // Never follow a symlink or remove a path outside the selected skills root.
     const info = await lstat(destination);
     if (info.isSymbolicLink()) throw new Error(`Refusing to replace a symlink: ${destination}`);
-    await rm(destination, { recursive: true, force: false });
+    exists = true;
+    if (!force) throw new Error(`Already exists: ${destination}. Use --force to replace it.`);
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
   }
 
-  let sourceRoot = "";
+  const stageParent = await mkdtemp(path.join(root, ".orchill-stage-"));
+  const staged = path.join(stageParent, id);
   let temporary = "";
+  let backup = "";
+  let movedOld = false;
   try {
+    let sourceRoot: string;
     if (skill.source.type === "local") {
       sourceRoot = path.resolve(registryRoot, skill.source.path!);
     } else {
       temporary = await mkdtemp(path.join(os.tmpdir(), "orchill-"));
       const cloneDir = path.join(temporary, "repo");
-      const ref = skill.source.ref;
       const args = ["clone", "--depth", "1", "--filter=blob:none", "--sparse"];
-      if (ref) args.push("--branch", ref);
+      if (skill.source.ref) args.push("--branch", skill.source.ref);
       args.push(skill.source.url!, cloneDir);
       await run("git", args);
       const relative = safeRelativePath(skill.skillPath, "Skill path");
       await run("git", ["-C", cloneDir, "sparse-checkout", "set", "--", relative]);
       await run("git", ["-C", cloneDir, "checkout"]);
-      sourceRoot = path.resolve(cloneDir, relative);
+      sourceRoot = cloneDir;
     }
     const skillPath = safeRelativePath(skill.skillPath, "Skill path");
     const source = skillPath === "." ? sourceRoot : path.resolve(sourceRoot, skillPath);
     const sourceInfo = await stat(source);
     if (!sourceInfo.isDirectory()) throw new Error(`Skill path is not a directory: ${source}`);
-    await mkdir(root, { recursive: true });
-    await copyTree(source, destination);
+    await copyTree(source, staged);
+
+    // Recheck immediately before changing the live destination.
+    try {
+      const current = await lstat(destination);
+      if (current.isSymbolicLink()) throw new Error(`Refusing to replace a symlink: ${destination}`);
+      if (!force) throw new Error(`Already exists: ${destination}. Use --force to replace it.`);
+      backup = path.join(stageParent, "previous-install");
+      await rename(destination, backup);
+      movedOld = true;
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+    }
+    await rename(staged, destination);
+    if (movedOld) await rm(backup, { recursive: true, force: true });
     return destination;
   } catch (error) {
-    await rm(destination, { recursive: true, force: true }).catch(() => undefined);
+    if (movedOld) {
+      try {
+        await lstat(destination);
+        await rm(destination, { recursive: true, force: true });
+      } catch (check) {
+        if ((check as NodeJS.ErrnoException).code !== "ENOENT") throw check;
+      }
+      await rename(backup, destination).catch(() => undefined);
+    }
     throw error;
   } finally {
+    await rm(stageParent, { recursive: true, force: true });
     if (temporary) await rm(temporary, { recursive: true, force: true });
   }
 }
