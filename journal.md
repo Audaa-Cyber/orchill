@@ -653,3 +653,13 @@ The local container cannot reach GitHub due to network/DNS restrictions, so loca
 ### Still intentionally out of scope
 
 No hosted MCP integration, auto-install based on natural language, public npm release, lockfile, dependency resolver, update/uninstall commands, or full security audit has been implemented. The project is a usable CLI MVP candidate, not a security-certified or publicly released package.
+
+
+## 26. Install lifecycle safety — 2026-10-29
+
+- **Decision:** Move forward on lifecycle management independently of the paused marketplace importer work.
+- **Implemented on `feat/install-lifecycle`:** New installs receive a `.orchill-install.json` marker. Added `orchill verify <id>` to check the installation directory, marker, and `SKILL.md`; added `orchill uninstall <id>` with interactive confirmation and a strict marker requirement so manually created or legacy directories are not removed by mistake.
+- **Tests added:** Verify/uninstall a marked installation and confirm that uninstall refuses an unmanaged directory without deleting its contents.
+- **Documentation:** README now documents the commands and clarifies that structural verification is not a cryptographic integrity or malware scan.
+- **Not yet verified:** GitHub Actions CI and a local Windows test run have not yet been observed passing. Existing installs made before the marker feature are treated as unmanaged and cannot be removed by the new command until deliberately reinstalled or migrated.
+- **Next:** Check CI, fix any type/test failures, then consider lockfile-based reproducibility and update workflows.
