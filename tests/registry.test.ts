@@ -19,6 +19,7 @@ test("every local registry entry points to a bundled skill directory with SKILL.
   const localSkills = registry.skills.filter(skill => skill.source.type === "local");
   assert.ok(localSkills.length > 0);
   for (const skill of localSkills) {
+    assert.match(skill.source.path!, /^\.\.\/skills\/[a-z0-9-]+\/[a-z0-9-]+$/);
     const sourceRoot = path.resolve(root, skill.source.path!);
     const skillRoot = skill.skillPath === "." ? sourceRoot : path.resolve(sourceRoot, skill.skillPath);
     try {

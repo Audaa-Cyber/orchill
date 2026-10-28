@@ -717,3 +717,11 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Scope note:** Category folders currently contain indexes, while imported third-party payloads remain in their recorded source directories. This avoids silently rewriting third-party content or registry paths; physically relocating payloads is a separate migration.
 - **Counts:** 221 skills across 20 categories.
 - **Verification:** Generated files reflect the current registry snapshot. The generator and full test/package suite still require a green CI run before merge.
+
+
+## 2026-10-28 — Physical category catalogue migration
+
+- **Verified:** CI run [40775146651](https://github.com/Audaa-Cyber/orchill/actions/runs/40775146651) passed for the catalogue-index generator before this migration.
+- **Implemented in this change:** relocate all 209 local registry skill payloads to `skills/<category-slug>/<skill-id>/`, preserving every nested file; update registry source paths; keep 12 Git-backed entries remote; add `skills/` to npm package files and remove staging import directories from the package allowlist; regenerate catalogue/category indexes and assert the new source path layout in registry tests.
+- The import staging directories remain in the repository for provenance/report metadata, but their skill payload folders are removed from those locations and those directories are no longer included in the npm package allowlist.
+- **Not yet verified:** CI and npm package dry-run for this migration. Third-party redistribution rights and the existing license/security review queue remain release blockers. No PR was merged and nothing was published.

@@ -1,13 +1,10 @@
 # Orchill Skill Catalog
 
-This directory is the human-browsable catalogue generated from the canonical registry at [`registry/skills.json`](../registry/skills.json).
+This directory is generated from [`registry/skills.json`](../registry/skills.json).
 
 - **221 skills** across **20 categories**
-- [Browse all skills](CATALOG.md)
-- [Category manifest](categories.json)
-- [Browse category folders](categories/)
-
-## Structure
+- [Browse all skills](CATALOG.md) · [Category manifest](categories.json) · [Category indexes](categories/)
+- Local payloads are physically organized in [`skills/`](../skills/) as `skills/<category-slug>/<skill-id>/`.
 
 ```text
 catalog/
@@ -37,6 +34,4 @@ catalog/
     └── ui-ux/README.md  # UI/UX (10)
 ```
 
-Each category folder contains a sorted index of skills and links to the existing skill payload. Imported payloads currently remain in their original source directories so this catalogue generation does not silently rewrite third-party content or source paths. The category index is a navigation layer, not a claim that all payloads have already been physically relocated.
-
-Regenerate the catalogue after editing the registry with `npm run catalog:generate`.
+Regenerate after editing the registry with `npm run catalog:generate`.

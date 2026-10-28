@@ -2,11 +2,11 @@
 
 **4 skills** · [All categories](../../CATALOG.md)
 
-Generated from `registry/skills.json`. Payloads remain in their recorded source directories.
+Generated from `registry/skills.json`. Local payloads live under `skills/seo/`.
 
 | Skill | ID | Source | Payload/source | License metadata |
 |---|---|---|---|---|
-| Programmatic Seo | `programmatic-seo` | local | [`.orchill-skills-import/skills/programmatic-seo`](https://github.com/Audaa-Cyber/orchill/tree/feat/marketplace-bulk-import/.orchill-skills-import/skills/programmatic-seo) | Unknown |
-| Schema | `schema` | local | [`.orchill-skills-import/skills/schema`](https://github.com/Audaa-Cyber/orchill/tree/feat/marketplace-bulk-import/.orchill-skills-import/skills/schema) | Unknown |
-| Seo Aeo Best Practices | `seo-aeo-best-practices` | local | [`.orchill-skills-import/skills/seo-aeo-best-practices`](https://github.com/Audaa-Cyber/orchill/tree/feat/marketplace-bulk-import/.orchill-skills-import/skills/seo-aeo-best-practices) | Unknown |
-| Seo Audit | `seo-audit` | local | [`.orchill-skills-import/skills/seo-audit`](https://github.com/Audaa-Cyber/orchill/tree/feat/marketplace-bulk-import/.orchill-skills-import/skills/seo-audit) | Unknown |
+| Programmatic Seo | `programmatic-seo` | local | [`skills/seo/programmatic-seo`](https://github.com/Audaa-Cyber/orchill/tree/feat/marketplace-bulk-import/skills/seo/programmatic-seo) | Unknown |
+| Schema | `schema` | local | [`skills/seo/schema`](https://github.com/Audaa-Cyber/orchill/tree/feat/marketplace-bulk-import/skills/seo/schema) | Unknown |
+| Seo Aeo Best Practices | `seo-aeo-best-practices` | local | [`skills/seo/seo-aeo-best-practices`](https://github.com/Audaa-Cyber/orchill/tree/feat/marketplace-bulk-import/skills/seo/seo-aeo-best-practices) | Unknown |
+| Seo Audit | `seo-audit` | local | [`skills/seo/seo-audit`](https://github.com/Audaa-Cyber/orchill/tree/feat/marketplace-bulk-import/skills/seo/seo-audit) | Unknown |

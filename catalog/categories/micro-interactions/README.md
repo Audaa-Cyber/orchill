@@ -2,8 +2,8 @@
 
 **1 skills** · [All categories](../../CATALOG.md)
 
-This index is generated from `registry/skills.json`. Skill payloads remain in their recorded source directories; use the links below to inspect them.
+Generated from `registry/skills.json`. Local payloads live under `skills/micro-interactions/`.
 
 | Skill | ID | Source | Payload/source | License metadata |
 |---|---|---|---|---|
-| [Emil Design Eng](https://github.com/Audaa-Cyber/orchill/tree/feat/marketplace-bulk-import/.orchill-skills-import/skills/emil-design-eng) | `emil-design-eng` | local | [`.orchill-skills-import/skills/emil-design-eng`](https://github.com/Audaa-Cyber/orchill/tree/feat/marketplace-bulk-import/.orchill-skills-import/skills/emil-design-eng) | Unknown |
+| Emil Design Eng | `emil-design-eng` | local | [`skills/micro-interactions/emil-design-eng`](https://github.com/Audaa-Cyber/orchill/tree/feat/marketplace-bulk-import/skills/micro-interactions/emil-design-eng) | Unknown |

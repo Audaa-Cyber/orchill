@@ -9,7 +9,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/analyzing-dotnet-performance"
+        "path": "../skills/net-and-build-systems/analyzing-dotnet-performance"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-diag@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -34,7 +34,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/apple-crash-symbolication"
+        "path": "../skills/net-and-build-systems/apple-crash-symbolication"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-diag@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -59,7 +59,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/binlog-failure-analysis"
+        "path": "../skills/net-and-build-systems/binlog-failure-analysis"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -84,7 +84,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/binlog-generation"
+        "path": "../skills/net-and-build-systems/binlog-generation"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -108,7 +108,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/build-parallelism"
+        "path": "../skills/net-and-build-systems/build-parallelism"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -132,7 +132,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/build-perf-baseline"
+        "path": "../skills/net-and-build-systems/build-perf-baseline"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -157,7 +157,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/build-perf-diagnostics"
+        "path": "../skills/net-and-build-systems/build-perf-diagnostics"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -182,7 +182,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/copy-to-output-directory"
+        "path": "../skills/net-and-build-systems/copy-to-output-directory"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -207,7 +207,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/csharp-expert"
+        "path": "../skills/net-and-build-systems/csharp-expert"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -231,7 +231,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/csharp-refactoring"
+        "path": "../skills/net-and-build-systems/csharp-refactoring"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -255,7 +255,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/detect-static-dependencies"
+        "path": "../skills/net-and-build-systems/detect-static-dependencies"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -280,7 +280,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/directory-build-organization"
+        "path": "../skills/net-and-build-systems/directory-build-organization"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -305,7 +305,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/dotnet-aot-compat"
+        "path": "../skills/net-and-build-systems/dotnet-aot-compat"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-upgrade@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -330,7 +330,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/dotnet-trace-collect"
+        "path": "../skills/net-and-build-systems/dotnet-trace-collect"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-diag@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -355,7 +355,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/eliminate-redundant-restores"
+        "path": "../skills/net-and-build-systems/eliminate-redundant-restores"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -380,7 +380,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/extension-points"
+        "path": "../skills/net-and-build-systems/extension-points"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -404,7 +404,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/filter-syntax"
+        "path": "../skills/net-and-build-systems/filter-syntax"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -428,7 +428,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/including-generated-files"
+        "path": "../skills/net-and-build-systems/including-generated-files"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -453,7 +453,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/incremental-build"
+        "path": "../skills/net-and-build-systems/incremental-build"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -477,7 +477,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/item-management"
+        "path": "../skills/net-and-build-systems/item-management"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -501,7 +501,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/migrate-dotnet10-to-dotnet11"
+        "path": "../skills/net-and-build-systems/migrate-dotnet10-to-dotnet11"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-upgrade@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -526,7 +526,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/migrate-dotnet8-to-dotnet9"
+        "path": "../skills/net-and-build-systems/migrate-dotnet8-to-dotnet9"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-upgrade@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -551,7 +551,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/migrate-dotnet9-to-dotnet10"
+        "path": "../skills/net-and-build-systems/migrate-dotnet9-to-dotnet10"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-upgrade@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -576,7 +576,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/msbuild"
+        "path": "../skills/net-and-build-systems/msbuild"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -599,7 +599,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/msbuild-antipatterns"
+        "path": "../skills/net-and-build-systems/msbuild-antipatterns"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -623,7 +623,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/msbuild-modernization"
+        "path": "../skills/net-and-build-systems/msbuild-modernization"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -647,7 +647,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/mtp-hot-reload"
+        "path": "../skills/net-and-build-systems/mtp-hot-reload"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -672,7 +672,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/optimizing-ef-core-queries"
+        "path": "../skills/net-and-build-systems/optimizing-ef-core-queries"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-data@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -697,7 +697,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/platform-detection"
+        "path": "../skills/net-and-build-systems/platform-detection"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -721,7 +721,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/property-patterns"
+        "path": "../skills/net-and-build-systems/property-patterns"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -745,7 +745,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/refactor-module"
+        "path": "../skills/net-and-build-systems/refactor-module"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from hashicorp/agent-skills; command: npx skills add hashicorp/agent-skills@refactor-module. Verify source, pin, and license before publishing.",
@@ -768,7 +768,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/resolve-project-references"
+        "path": "../skills/net-and-build-systems/resolve-project-references"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -793,7 +793,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/setup-local-sdk"
+        "path": "../skills/net-and-build-systems/setup-local-sdk"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -818,7 +818,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/technology-selection"
+        "path": "../skills/net-and-build-systems/technology-selection"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-ai@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -842,7 +842,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/template-comparison"
+        "path": "../skills/net-and-build-systems/template-comparison"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-template-engine@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -866,7 +866,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/template-discovery"
+        "path": "../skills/net-and-build-systems/template-discovery"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-template-engine@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -890,7 +890,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/template-instantiation"
+        "path": "../skills/net-and-build-systems/template-instantiation"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-template-engine@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -914,7 +914,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/template-smart-defaults"
+        "path": "../skills/net-and-build-systems/template-smart-defaults"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-template-engine@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -939,7 +939,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/template-validation"
+        "path": "../skills/net-and-build-systems/template-validation"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-template-engine@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -963,7 +963,7 @@
       "category": ".NET & Build Systems",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/thread-abort-migration"
+        "path": "../skills/net-and-build-systems/thread-abort-migration"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-upgrade@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -988,7 +988,7 @@
       "category": "Accessibility",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/audit-website"
+        "path": "../skills/accessibility/audit-website"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from squirrelscan/skills; command: npx skills add squirrelscan/skills@audit-website. Verify source, pin, and license before publishing.",
@@ -1012,7 +1012,7 @@
       "category": "Accessibility",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/web-design-guidelines"
+        "path": "../skills/accessibility/web-design-guidelines"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@web-design-guidelines. Verify source, pin, and license before publishing.",
@@ -1036,7 +1036,7 @@
       "category": "Agent Tooling & Workflows",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/brainstorming"
+        "path": "../skills/agent-tooling-and-workflows/brainstorming"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@brainstorming. Verify source, pin, and license before publishing.",
@@ -1063,7 +1063,7 @@
       ],
       "source": {
         "type": "local",
-        "path": "../examples/demo-focus"
+        "path": "../skills/agent-tooling-and-workflows/demo-focus"
       },
       "skillPath": ".",
       "license": "MIT",
@@ -1082,7 +1082,7 @@
       "category": "Agent Tooling & Workflows",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/dispatching-parallel-agents"
+        "path": "../skills/agent-tooling-and-workflows/dispatching-parallel-agents"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@dispatching-parallel-agents. Verify source, pin, and license before publishing.",
@@ -1105,7 +1105,7 @@
       "category": "Agent Tooling & Workflows",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/executing-plans"
+        "path": "../skills/agent-tooling-and-workflows/executing-plans"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@executing-plans. Verify source, pin, and license before publishing.",
@@ -1128,7 +1128,7 @@
       "category": "Agent Tooling & Workflows",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/find-skills"
+        "path": "../skills/agent-tooling-and-workflows/find-skills"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from vercel-labs/skills; command: npx skills add vercel-labs/skills@find-skills. Verify source, pin, and license before publishing.",
@@ -1150,7 +1150,7 @@
       "category": "Agent Tooling & Workflows",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/firecrawl"
+        "path": "../skills/agent-tooling-and-workflows/firecrawl"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from firecrawl/cli; command: npx skills add firecrawl/cli@firecrawl. Verify source, pin, and license before publishing.",
@@ -1198,7 +1198,7 @@
       "category": "Agent Tooling & Workflows",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/recursive-decomposition"
+        "path": "../skills/agent-tooling-and-workflows/recursive-decomposition"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from massimodeluisa/recursive-decomposition-skill; command: npx skills add massimodeluisa/recursive-decomposition-skill@recursive-decomposition. Verify source, pin, and license before publishing.",
@@ -1222,7 +1222,7 @@
       "category": "Agent Tooling & Workflows",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/skill-builder"
+        "path": "../skills/agent-tooling-and-workflows/skill-builder"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from yusufkaraaslan/Skill_Seekers; command: npx skills add yusufkaraaslan/Skill_Seekers@skill-builder. Verify source, pin, and license before publishing.",
@@ -1269,7 +1269,7 @@
       "category": "Agent Tooling & Workflows",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/subagent-driven-development"
+        "path": "../skills/agent-tooling-and-workflows/subagent-driven-development"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@subagent-driven-development. Verify source, pin, and license before publishing.",
@@ -1293,7 +1293,7 @@
       "category": "Agent Tooling & Workflows",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/troubleshoot-binlog-mcp"
+        "path": "../skills/agent-tooling-and-workflows/troubleshoot-binlog-mcp"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -1318,7 +1318,7 @@
       "category": "Agent Tooling & Workflows",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/using-git-worktrees"
+        "path": "../skills/agent-tooling-and-workflows/using-git-worktrees"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@using-git-worktrees. Verify source, pin, and license before publishing.",
@@ -1342,7 +1342,7 @@
       "category": "Agent Tooling & Workflows",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/using-superpowers"
+        "path": "../skills/agent-tooling-and-workflows/using-superpowers"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@using-superpowers. Verify source, pin, and license before publishing.",
@@ -1365,7 +1365,7 @@
       "category": "Agent Tooling & Workflows",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/writing-plans"
+        "path": "../skills/agent-tooling-and-workflows/writing-plans"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@writing-plans. Verify source, pin, and license before publishing.",
@@ -1388,7 +1388,7 @@
       "category": "AI & Data",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/analytics"
+        "path": "../skills/ai-and-data/analytics"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@analytics. Verify source, pin, and license before publishing.",
@@ -1410,7 +1410,7 @@
       "category": "AI & Data",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/create-datadriven-aspnetcore"
+        "path": "../skills/ai-and-data/create-datadriven-aspnetcore"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-data@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -1434,7 +1434,7 @@
       "category": "AI & Data",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/deep-research"
+        "path": "../skills/ai-and-data/deep-research"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from sanjay3290/ai-skills; command: npx skills add sanjay3290/ai-skills@deep-research. Verify source, pin, and license before publishing.",
@@ -1458,7 +1458,7 @@
       "category": "AI & Data",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/huggingface-community-evals"
+        "path": "../skills/ai-and-data/huggingface-community-evals"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@huggingface-community-evals. Verify source, pin, and license before publishing.",
@@ -1482,7 +1482,7 @@
       "category": "AI & Data",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/huggingface-datasets"
+        "path": "../skills/ai-and-data/huggingface-datasets"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@huggingface-datasets. Verify source, pin, and license before publishing.",
@@ -1505,7 +1505,7 @@
       "category": "AI & Data",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/huggingface-llm-trainer"
+        "path": "../skills/ai-and-data/huggingface-llm-trainer"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@huggingface-llm-trainer. Verify source, pin, and license before publishing.",
@@ -1530,7 +1530,7 @@
       "category": "AI & Data",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/huggingface-trackio"
+        "path": "../skills/ai-and-data/huggingface-trackio"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@huggingface-trackio. Verify source, pin, and license before publishing.",
@@ -1553,7 +1553,7 @@
       "category": "AI & Data",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/imagegen"
+        "path": "../skills/ai-and-data/imagegen"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@imagegen. Verify source, pin, and license before publishing.",
@@ -1575,7 +1575,7 @@
       "category": "AI & Data",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/jupyter-notebook"
+        "path": "../skills/ai-and-data/jupyter-notebook"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@jupyter-notebook. Verify source, pin, and license before publishing.",
@@ -1598,7 +1598,7 @@
       "category": "AI & Data",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/sentry"
+        "path": "../skills/ai-and-data/sentry"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@sentry. Verify source, pin, and license before publishing.",
@@ -1620,7 +1620,7 @@
       "category": "Animation & Motion",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/remotion-best-practices"
+        "path": "../skills/animation-and-motion/remotion-best-practices"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from remotion-dev/skills; command: npx skills add remotion-dev/skills@remotion-best-practices. Verify source, pin, and license before publishing.",
@@ -1643,7 +1643,7 @@
       "category": "Animation & Motion",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/vercel-react-view-transitions"
+        "path": "../skills/animation-and-motion/vercel-react-view-transitions"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@vercel-react-view-transitions. Verify source, pin, and license before publishing.",
@@ -1669,7 +1669,7 @@
       "category": "Backend & APIs",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/better-auth-best-practices"
+        "path": "../skills/backend-and-apis/better-auth-best-practices"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from better-auth/skills; command: npx skills add better-auth/skills@better-auth-best-practices. Verify source, pin, and license before publishing.",
@@ -1720,7 +1720,7 @@
       "category": "Backend & APIs",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/dotnet-webapi"
+        "path": "../skills/backend-and-apis/dotnet-webapi"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-aspnetcore@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -1744,7 +1744,7 @@
       "category": "Backend & APIs",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/neon-postgres"
+        "path": "../skills/backend-and-apis/neon-postgres"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from neondatabase/agent-skills; command: npx skills add neondatabase/agent-skills@neon-postgres. Verify source, pin, and license before publishing.",
@@ -1767,7 +1767,7 @@
       "category": "Backend & APIs",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/postgres"
+        "path": "../skills/backend-and-apis/postgres"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from sanjay3290/postgres-skill; command: npx skills add sanjay3290/postgres-skill@postgres. Verify source, pin, and license before publishing.",
@@ -1790,7 +1790,7 @@
       "category": "Backend & APIs",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/resend"
+        "path": "../skills/backend-and-apis/resend"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from resend/resend-skills; command: npx skills add resend/resend-skills@resend. Verify source, pin, and license before publishing.",
@@ -1813,7 +1813,7 @@
       "category": "Backend & APIs",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/sanity-best-practices"
+        "path": "../skills/backend-and-apis/sanity-best-practices"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from sanity-io/agent-toolkit; command: npx skills add sanity-io/agent-toolkit@sanity-best-practices. Verify source, pin, and license before publishing.",
@@ -1836,7 +1836,7 @@
       "category": "Backend & APIs",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/supabase-postgres-best-practices"
+        "path": "../skills/backend-and-apis/supabase-postgres-best-practices"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from supabase/agent-skills; command: npx skills add supabase/agent-skills@supabase-postgres-best-practices. Verify source, pin, and license before publishing.",
@@ -1861,7 +1861,7 @@
       "category": "Backend & APIs",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/target-authoring"
+        "path": "../skills/backend-and-apis/target-authoring"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -1885,7 +1885,7 @@
       "category": "Backend & APIs",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/template-authoring"
+        "path": "../skills/backend-and-apis/template-authoring"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-template-engine@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -1909,7 +1909,7 @@
       "category": "Backend & APIs",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/tinybird"
+        "path": "../skills/backend-and-apis/tinybird"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from tinybirdco/tinybird-agent-skills; command: npx skills add tinybirdco/tinybird-agent-skills@tinybird. Verify source, pin, and license before publishing.",
@@ -1931,7 +1931,7 @@
       "category": "Backend & APIs",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/varlock"
+        "path": "../skills/backend-and-apis/varlock"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from wrsmith108/varlock-claude-skill; command: npx skills add wrsmith108/varlock-claude-skill@varlock. Verify source, pin, and license before publishing.",
@@ -1953,7 +1953,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-app-service"
+        "path": "../skills/cloud-and-devops/azure-app-service"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-app-service. Verify source, pin, and license before publishing.",
@@ -1977,7 +1977,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-blob-storage"
+        "path": "../skills/cloud-and-devops/azure-blob-storage"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-blob-storage. Verify source, pin, and license before publishing.",
@@ -2001,7 +2001,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-cognitive-search"
+        "path": "../skills/cloud-and-devops/azure-cognitive-search"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-cognitive-search. Verify source, pin, and license before publishing.",
@@ -2025,7 +2025,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-container-apps"
+        "path": "../skills/cloud-and-devops/azure-container-apps"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-container-apps. Verify source, pin, and license before publishing.",
@@ -2049,7 +2049,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-cosmos-db"
+        "path": "../skills/cloud-and-devops/azure-cosmos-db"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-cosmos-db. Verify source, pin, and license before publishing.",
@@ -2072,7 +2072,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-databricks"
+        "path": "../skills/cloud-and-devops/azure-databricks"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-databricks. Verify source, pin, and license before publishing.",
@@ -2095,7 +2095,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-devops"
+        "path": "../skills/cloud-and-devops/azure-devops"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-devops. Verify source, pin, and license before publishing.",
@@ -2118,7 +2118,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-functions"
+        "path": "../skills/cloud-and-devops/azure-functions"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-functions. Verify source, pin, and license before publishing.",
@@ -2141,7 +2141,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-key-vault"
+        "path": "../skills/cloud-and-devops/azure-key-vault"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-key-vault. Verify source, pin, and license before publishing.",
@@ -2165,7 +2165,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-kubernetes-service"
+        "path": "../skills/cloud-and-devops/azure-kubernetes-service"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-kubernetes-service. Verify source, pin, and license before publishing.",
@@ -2189,7 +2189,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-machine-learning"
+        "path": "../skills/cloud-and-devops/azure-machine-learning"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-machine-learning. Verify source, pin, and license before publishing.",
@@ -2213,7 +2213,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-monitor"
+        "path": "../skills/cloud-and-devops/azure-monitor"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-monitor. Verify source, pin, and license before publishing.",
@@ -2236,7 +2236,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-pipelines"
+        "path": "../skills/cloud-and-devops/azure-pipelines"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-pipelines. Verify source, pin, and license before publishing.",
@@ -2259,7 +2259,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-sql-database"
+        "path": "../skills/cloud-and-devops/azure-sql-database"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-sql-database. Verify source, pin, and license before publishing.",
@@ -2283,7 +2283,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/cloudflare"
+        "path": "../skills/cloud-and-devops/cloudflare"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@cloudflare. Verify source, pin, and license before publishing.",
@@ -2305,7 +2305,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/cloudflare-deploy"
+        "path": "../skills/cloud-and-devops/cloudflare-deploy"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@cloudflare-deploy. Verify source, pin, and license before publishing.",
@@ -2328,7 +2328,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/deploy-to-vercel"
+        "path": "../skills/cloud-and-devops/deploy-to-vercel"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@deploy-to-vercel. Verify source, pin, and license before publishing.",
@@ -2351,7 +2351,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/durable-objects"
+        "path": "../skills/cloud-and-devops/durable-objects"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@durable-objects. Verify source, pin, and license before publishing.",
@@ -2374,7 +2374,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/netlify-deploy"
+        "path": "../skills/cloud-and-devops/netlify-deploy"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@netlify-deploy. Verify source, pin, and license before publishing.",
@@ -2397,7 +2397,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/provider-resources"
+        "path": "../skills/cloud-and-devops/provider-resources"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from hashicorp/agent-skills; command: npx skills add hashicorp/agent-skills@provider-resources. Verify source, pin, and license before publishing.",
@@ -2421,7 +2421,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/render-deploy"
+        "path": "../skills/cloud-and-devops/render-deploy"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@render-deploy. Verify source, pin, and license before publishing.",
@@ -2444,7 +2444,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/terraform-skill"
+        "path": "../skills/cloud-and-devops/terraform-skill"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from antonbabenko/terraform-skill; command: npx skills add antonbabenko/terraform-skill@terraform-skill. Verify source, pin, and license before publishing.",
@@ -2467,7 +2467,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/terraform-style-guide"
+        "path": "../skills/cloud-and-devops/terraform-style-guide"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from hashicorp/agent-skills; command: npx skills add hashicorp/agent-skills@terraform-style-guide. Verify source, pin, and license before publishing.",
@@ -2490,7 +2490,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/vercel-cli-with-tokens"
+        "path": "../skills/cloud-and-devops/vercel-cli-with-tokens"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@vercel-cli-with-tokens. Verify source, pin, and license before publishing.",
@@ -2515,7 +2515,7 @@
       "category": "Cloud & DevOps",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/wrangler"
+        "path": "../skills/cloud-and-devops/wrangler"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@wrangler. Verify source, pin, and license before publishing.",
@@ -2537,7 +2537,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/content-research-writer"
+        "path": "../skills/content-and-marketing/content-research-writer"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from ComposioHQ/awesome-claude-skills; command: npx skills add ComposioHQ/awesome-claude-skills@content-research-writer. Verify source, pin, and license before publishing.",
@@ -2561,7 +2561,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/content-strategy"
+        "path": "../skills/content-and-marketing/content-strategy"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@content-strategy. Verify source, pin, and license before publishing.",
@@ -2584,7 +2584,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/copy-editing"
+        "path": "../skills/content-and-marketing/copy-editing"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@copy-editing. Verify source, pin, and license before publishing.",
@@ -2607,7 +2607,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/copywriting"
+        "path": "../skills/content-and-marketing/copywriting"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@copywriting. Verify source, pin, and license before publishing.",
@@ -2629,7 +2629,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/cro"
+        "path": "../skills/content-and-marketing/cro"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@cro. Verify source, pin, and license before publishing.",
@@ -2676,7 +2676,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/launch"
+        "path": "../skills/content-and-marketing/launch"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@launch. Verify source, pin, and license before publishing.",
@@ -2698,7 +2698,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/marketing-ideas"
+        "path": "../skills/content-and-marketing/marketing-ideas"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@marketing-ideas. Verify source, pin, and license before publishing.",
@@ -2721,7 +2721,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/marketing-psychology"
+        "path": "../skills/content-and-marketing/marketing-psychology"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@marketing-psychology. Verify source, pin, and license before publishing.",
@@ -2744,7 +2744,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/microbenchmarking"
+        "path": "../skills/content-and-marketing/microbenchmarking"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-diag@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -2767,7 +2767,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/microsoft-foundry"
+        "path": "../skills/content-and-marketing/microsoft-foundry"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry. Verify source, pin, and license before publishing.",
@@ -2790,7 +2790,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/microsoft-foundry-classic"
+        "path": "../skills/content-and-marketing/microsoft-foundry-classic"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry-classic. Verify source, pin, and license before publishing.",
@@ -2814,7 +2814,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/microsoft-foundry-local"
+        "path": "../skills/content-and-marketing/microsoft-foundry-local"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry-local. Verify source, pin, and license before publishing.",
@@ -2838,7 +2838,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/microsoft-foundry-tools"
+        "path": "../skills/content-and-marketing/microsoft-foundry-tools"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry-tools. Verify source, pin, and license before publishing.",
@@ -2862,7 +2862,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/pricing"
+        "path": "../skills/content-and-marketing/pricing"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@pricing. Verify source, pin, and license before publishing.",
@@ -2884,7 +2884,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/product-marketing"
+        "path": "../skills/content-and-marketing/product-marketing"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@product-marketing. Verify source, pin, and license before publishing.",
@@ -2932,7 +2932,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/social"
+        "path": "../skills/content-and-marketing/social"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@social. Verify source, pin, and license before publishing.",
@@ -2954,7 +2954,7 @@
       "category": "Content & Marketing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/x-article-publisher"
+        "path": "../skills/content-and-marketing/x-article-publisher"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from wshuyi/x-article-publisher-skill; command: npx skills add wshuyi/x-article-publisher-skill@x-article-publisher. Verify source, pin, and license before publishing.",
@@ -3003,7 +3003,7 @@
       "category": "Design Systems & Components",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/shadcn"
+        "path": "../skills/design-systems-and-components/shadcn"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from shadcn-ui/ui; command: npx skills add shadcn-ui/ui@shadcn. Verify source, pin, and license before publishing.",
@@ -3025,7 +3025,7 @@
       "category": "Design Systems & Components",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/tailwind-design-system"
+        "path": "../skills/design-systems-and-components/tailwind-design-system"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from wshobson/agents; command: npx skills add wshobson/agents@tailwind-design-system. Verify source, pin, and license before publishing.",
@@ -3074,7 +3074,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/agents-sdk"
+        "path": "../skills/developer-tools/agents-sdk"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@agents-sdk. Verify source, pin, and license before publishing.",
@@ -3096,7 +3096,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/check-bin-obj-clash"
+        "path": "../skills/developer-tools/check-bin-obj-clash"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3122,7 +3122,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/code-review"
+        "path": "../skills/developer-tools/code-review"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from getsentry/skills; command: npx skills add getsentry/skills@code-review. Verify source, pin, and license before publishing.",
@@ -3145,7 +3145,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/convert-to-cpm"
+        "path": "../skills/developer-tools/convert-to-cpm"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-nuget@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3169,7 +3169,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/differential-review"
+        "path": "../skills/developer-tools/differential-review"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@differential-review. Verify source, pin, and license before publishing.",
@@ -3192,7 +3192,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/dump-collect"
+        "path": "../skills/developer-tools/dump-collect"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-diag@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3216,7 +3216,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/gh-address-comments"
+        "path": "../skills/developer-tools/gh-address-comments"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@gh-address-comments. Verify source, pin, and license before publishing.",
@@ -3239,7 +3239,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/gh-fix-ci"
+        "path": "../skills/developer-tools/gh-fix-ci"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@gh-fix-ci. Verify source, pin, and license before publishing.",
@@ -3261,7 +3261,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/hf-cli"
+        "path": "../skills/developer-tools/hf-cli"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@hf-cli. Verify source, pin, and license before publishing.",
@@ -3283,7 +3283,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/migrate-nullable-references"
+        "path": "../skills/developer-tools/migrate-nullable-references"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-upgrade@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3308,7 +3308,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/migrate-static-to-wrapper"
+        "path": "../skills/developer-tools/migrate-static-to-wrapper"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3333,7 +3333,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/modern-python"
+        "path": "../skills/developer-tools/modern-python"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@modern-python. Verify source, pin, and license before publishing.",
@@ -3356,7 +3356,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/receiving-code-review"
+        "path": "../skills/developer-tools/receiving-code-review"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@receiving-code-review. Verify source, pin, and license before publishing.",
@@ -3380,7 +3380,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/requesting-code-review"
+        "path": "../skills/developer-tools/requesting-code-review"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@requesting-code-review. Verify source, pin, and license before publishing.",
@@ -3404,7 +3404,7 @@
       "category": "Developer Tools",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/verification-before-completion"
+        "path": "../skills/developer-tools/verification-before-completion"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@verification-before-completion. Verify source, pin, and license before publishing.",
@@ -3428,7 +3428,7 @@
       "category": "Documents & Productivity",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/docx"
+        "path": "../skills/documents-and-productivity/docx"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@docx. Verify source, pin, and license before publishing.",
@@ -3451,7 +3451,7 @@
       "category": "Documents & Productivity",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/linear"
+        "path": "../skills/documents-and-productivity/linear"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@linear. Verify source, pin, and license before publishing.",
@@ -3473,7 +3473,7 @@
       "category": "Documents & Productivity",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/notion-knowledge-capture"
+        "path": "../skills/documents-and-productivity/notion-knowledge-capture"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@notion-knowledge-capture. Verify source, pin, and license before publishing.",
@@ -3497,7 +3497,7 @@
       "category": "Documents & Productivity",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/openai-docs"
+        "path": "../skills/documents-and-productivity/openai-docs"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@openai-docs. Verify source, pin, and license before publishing.",
@@ -3520,7 +3520,7 @@
       "category": "Documents & Productivity",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/pdf"
+        "path": "../skills/documents-and-productivity/pdf"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@pdf. Verify source, pin, and license before publishing.",
@@ -3543,7 +3543,7 @@
       "category": "Documents & Productivity",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/pptx"
+        "path": "../skills/documents-and-productivity/pptx"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@pptx. Verify source, pin, and license before publishing.",
@@ -3566,7 +3566,7 @@
       "category": "Documents & Productivity",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/xlsx"
+        "path": "../skills/documents-and-productivity/xlsx"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@xlsx. Verify source, pin, and license before publishing.",
@@ -3589,7 +3589,7 @@
       "category": "Micro-interactions",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/emil-design-eng"
+        "path": "../skills/micro-interactions/emil-design-eng"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from emilkowalski/skills; command: npx skills add emilkowalski/skills@emil-design-eng. Verify source, pin, and license before publishing.",
@@ -3613,7 +3613,7 @@
       "category": "Mobile Development",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/android-tombstone-symbolication"
+        "path": "../skills/mobile-development/android-tombstone-symbolication"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-diag@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3638,7 +3638,7 @@
       "category": "Mobile Development",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/dotnet-maui-doctor"
+        "path": "../skills/mobile-development/dotnet-maui-doctor"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3663,7 +3663,7 @@
       "category": "Mobile Development",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/eas-app-stores"
+        "path": "../skills/mobile-development/eas-app-stores"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from expo/skills; command: npx skills add expo/skills@eas-app-stores. Verify source, pin, and license before publishing.",
@@ -3688,7 +3688,7 @@
       "category": "Mobile Development",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/expo-native-ui"
+        "path": "../skills/mobile-development/expo-native-ui"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from expo/skills; command: npx skills add expo/skills@expo-native-ui. Verify source, pin, and license before publishing.",
@@ -3712,7 +3712,7 @@
       "category": "Mobile Development",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/expo-upgrade"
+        "path": "../skills/mobile-development/expo-upgrade"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from expo/skills; command: npx skills add expo/skills@expo-upgrade. Verify source, pin, and license before publishing.",
@@ -3736,7 +3736,7 @@
       "category": "Mobile Development",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/ios-simulator-skill"
+        "path": "../skills/mobile-development/ios-simulator-skill"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from conorluddy/ios-simulator-skill; command: npx skills add conorluddy/ios-simulator-skill@ios-simulator-skill. Verify source, pin, and license before publishing.",
@@ -3759,7 +3759,7 @@
       "category": "Mobile Development",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/maui-app-lifecycle"
+        "path": "../skills/mobile-development/maui-app-lifecycle"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3784,7 +3784,7 @@
       "category": "Mobile Development",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/maui-collectionview"
+        "path": "../skills/mobile-development/maui-collectionview"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3808,7 +3808,7 @@
       "category": "Mobile Development",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/maui-data-binding"
+        "path": "../skills/mobile-development/maui-data-binding"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3833,7 +3833,7 @@
       "category": "Mobile Development",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/maui-dependency-injection"
+        "path": "../skills/mobile-development/maui-dependency-injection"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3858,7 +3858,7 @@
       "category": "Mobile Development",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/maui-safe-area"
+        "path": "../skills/mobile-development/maui-safe-area"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3883,7 +3883,7 @@
       "category": "Mobile Development",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/maui-shell-navigation"
+        "path": "../skills/mobile-development/maui-shell-navigation"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3908,7 +3908,7 @@
       "category": "Mobile Development",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/maui-theming"
+        "path": "../skills/mobile-development/maui-theming"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3932,7 +3932,7 @@
       "category": "Mobile Development",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/swiftui-expert-skill"
+        "path": "../skills/mobile-development/swiftui-expert-skill"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from AvdLee/SwiftUI-Agent-Skill; command: npx skills add AvdLee/SwiftUI-Agent-Skill@swiftui-expert-skill. Verify source, pin, and license before publishing.",
@@ -3955,7 +3955,7 @@
       "category": "Performance & Optimization",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/eval-performance"
+        "path": "../skills/performance-and-optimization/eval-performance"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -3979,7 +3979,7 @@
       "category": "Performance & Optimization",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/web-perf"
+        "path": "../skills/performance-and-optimization/web-perf"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@web-perf. Verify source, pin, and license before publishing.",
@@ -4002,7 +4002,7 @@
       "category": "React & Frontend",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/azure-static-web-apps"
+        "path": "../skills/react-and-frontend/azure-static-web-apps"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-static-web-apps. Verify source, pin, and license before publishing.",
@@ -4027,7 +4027,7 @@
       "category": "React & Frontend",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/convert-blazor-server-to-webapp"
+        "path": "../skills/react-and-frontend/convert-blazor-server-to-webapp"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-aspnetcore@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4053,7 +4053,7 @@
       "category": "React & Frontend",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/vercel-composition-patterns"
+        "path": "../skills/react-and-frontend/vercel-composition-patterns"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@vercel-composition-patterns. Verify source, pin, and license before publishing.",
@@ -4078,7 +4078,7 @@
       "category": "React & Frontend",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/vercel-react-best-practices"
+        "path": "../skills/react-and-frontend/vercel-react-best-practices"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@vercel-react-best-practices. Verify source, pin, and license before publishing.",
@@ -4103,7 +4103,7 @@
       "category": "React & Frontend",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/vercel-react-native-skills"
+        "path": "../skills/react-and-frontend/vercel-react-native-skills"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@vercel-react-native-skills. Verify source, pin, and license before publishing.",
@@ -4154,7 +4154,7 @@
       "category": "React & Frontend",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/wp-block-development"
+        "path": "../skills/react-and-frontend/wp-block-development"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from Automattic/agent-skills; command: npx skills add Automattic/agent-skills@wp-block-development. Verify source, pin, and license before publishing.",
@@ -4177,7 +4177,7 @@
       "category": "React & Frontend",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/wp-block-themes"
+        "path": "../skills/react-and-frontend/wp-block-themes"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from Automattic/agent-skills; command: npx skills add Automattic/agent-skills@wp-block-themes. Verify source, pin, and license before publishing.",
@@ -4200,7 +4200,7 @@
       "category": "Security",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/clawsec-clawhub-checker"
+        "path": "../skills/security/clawsec-clawhub-checker"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from prompt-security/clawsec; command: npx skills add prompt-security/clawsec@clawsec-clawhub-checker. Verify source, pin, and license before publishing.",
@@ -4224,7 +4224,7 @@
       "category": "Security",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/security-best-practices"
+        "path": "../skills/security/security-best-practices"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@security-best-practices. Verify source, pin, and license before publishing.",
@@ -4246,7 +4246,7 @@
       "category": "Security",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/security-threat-model"
+        "path": "../skills/security/security-threat-model"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@security-threat-model. Verify source, pin, and license before publishing.",
@@ -4269,7 +4269,7 @@
       "category": "Security",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/semgrep-rule-creator"
+        "path": "../skills/security/semgrep-rule-creator"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@semgrep-rule-creator. Verify source, pin, and license before publishing.",
@@ -4293,7 +4293,7 @@
       "category": "Security",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/variant-analysis"
+        "path": "../skills/security/variant-analysis"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@variant-analysis. Verify source, pin, and license before publishing.",
@@ -4316,7 +4316,7 @@
       "category": "SEO",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/programmatic-seo"
+        "path": "../skills/seo/programmatic-seo"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@programmatic-seo. Verify source, pin, and license before publishing.",
@@ -4338,7 +4338,7 @@
       "category": "SEO",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/schema"
+        "path": "../skills/seo/schema"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@schema. Verify source, pin, and license before publishing.",
@@ -4360,7 +4360,7 @@
       "category": "SEO",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/seo-aeo-best-practices"
+        "path": "../skills/seo/seo-aeo-best-practices"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from sanity-io/agent-toolkit; command: npx skills add sanity-io/agent-toolkit@seo-aeo-best-practices. Verify source, pin, and license before publishing.",
@@ -4383,7 +4383,7 @@
       "category": "SEO",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/seo-audit"
+        "path": "../skills/seo/seo-audit"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@seo-audit. Verify source, pin, and license before publishing.",
@@ -4405,7 +4405,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/assertion-quality"
+        "path": "../skills/testing/assertion-quality"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4429,7 +4429,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/clr-activation-debugging"
+        "path": "../skills/testing/clr-activation-debugging"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-diag@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4454,7 +4454,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/code-testing"
+        "path": "../skills/testing/code-testing"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4477,7 +4477,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/code-testing-agent"
+        "path": "../skills/testing/code-testing-agent"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4500,7 +4500,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/code-testing-extensions"
+        "path": "../skills/testing/code-testing-extensions"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4524,7 +4524,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/coverage-analysis"
+        "path": "../skills/testing/coverage-analysis"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4548,7 +4548,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/crap-score"
+        "path": "../skills/testing/crap-score"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4572,7 +4572,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/find-bugs"
+        "path": "../skills/testing/find-bugs"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from getsentry/skills; command: npx skills add getsentry/skills@find-bugs. Verify source, pin, and license before publishing.",
@@ -4595,7 +4595,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/find-untested-sources"
+        "path": "../skills/testing/find-untested-sources"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4620,7 +4620,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/generate-testability-wrappers"
+        "path": "../skills/testing/generate-testability-wrappers"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4645,7 +4645,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/grade-tests"
+        "path": "../skills/testing/grade-tests"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4669,7 +4669,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/playwright-skill"
+        "path": "../skills/testing/playwright-skill"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from lackeyjb/playwright-skill; command: npx skills add lackeyjb/playwright-skill@playwright-skill. Verify source, pin, and license before publishing.",
@@ -4692,7 +4692,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/property-based-testing"
+        "path": "../skills/testing/property-based-testing"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@property-based-testing. Verify source, pin, and license before publishing.",
@@ -4715,7 +4715,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/run-tests"
+        "path": "../skills/testing/run-tests"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4739,7 +4739,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/scaffold-dotnet-test-project"
+        "path": "../skills/testing/scaffold-dotnet-test-project"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4765,7 +4765,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/systematic-debugging"
+        "path": "../skills/testing/systematic-debugging"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@systematic-debugging. Verify source, pin, and license before publishing.",
@@ -4788,7 +4788,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/test-analysis-extensions"
+        "path": "../skills/testing/test-analysis-extensions"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4813,7 +4813,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/test-anti-patterns"
+        "path": "../skills/testing/test-anti-patterns"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4838,7 +4838,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/test-driven-development"
+        "path": "../skills/testing/test-driven-development"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@test-driven-development. Verify source, pin, and license before publishing.",
@@ -4862,7 +4862,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/test-gap-analysis"
+        "path": "../skills/testing/test-gap-analysis"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4887,7 +4887,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/test-smell-detection"
+        "path": "../skills/testing/test-smell-detection"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4912,7 +4912,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/test-tagging"
+        "path": "../skills/testing/test-tagging"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4936,7 +4936,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/test-value-evidence"
+        "path": "../skills/testing/test-value-evidence"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -4961,7 +4961,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/testability-obstacle"
+        "path": "../skills/testing/testability-obstacle"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -5010,7 +5010,7 @@
       "category": "Testing",
       "source": {
         "type": "local",
-        "path": "../.orchill-marketplace-import-fixed/skills/writing-mstest-tests"
+        "path": "../skills/testing/writing-mstest-tests"
       },
       "skillPath": ".",
       "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
@@ -5085,7 +5085,7 @@
       "category": "UI/UX",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/design-taste-frontend"
+        "path": "../skills/ui-ux/design-taste-frontend"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from Leonxlnx/taste-skill; command: npx skills add Leonxlnx/taste-skill@design-taste-frontend. Verify source, pin, and license before publishing.",
@@ -5109,7 +5109,7 @@
       "category": "UI/UX",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/figma"
+        "path": "../skills/ui-ux/figma"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@figma. Verify source, pin, and license before publishing.",
@@ -5131,7 +5131,7 @@
       "category": "UI/UX",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/figma-implement-design"
+        "path": "../skills/ui-ux/figma-implement-design"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@figma-implement-design. Verify source, pin, and license before publishing.",
@@ -5182,7 +5182,7 @@
       "category": "UI/UX",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/interface-review"
+        "path": "../skills/ui-ux/interface-review"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from jakubkrehel/skills; command: npx skills add jakubkrehel/skills@interface-review. Verify source, pin, and license before publishing.",
@@ -5205,7 +5205,7 @@
       "category": "UI/UX",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/landing-page-design"
+        "path": "../skills/ui-ux/landing-page-design"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from elayadesign/ai-design-skills; command: npx skills add elayadesign/ai-design-skills@landing-page-design. Verify source, pin, and license before publishing.",
@@ -5229,7 +5229,7 @@
       "category": "UI/UX",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/ui-ux-pro-max"
+        "path": "../skills/ui-ux/ui-ux-pro-max"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from nextlevelbuilder/ui-ux-pro-max-skill; command: npx skills add nextlevelbuilder/ui-ux-pro-max-skill@ui-ux-pro-max. Verify source, pin, and license before publishing.",
@@ -5252,7 +5252,7 @@
       "category": "UI/UX",
       "source": {
         "type": "local",
-        "path": "../.orchill-skills-import/skills/web-design-engineer"
+        "path": "../skills/ui-ux/web-design-engineer"
       },
       "skillPath": ".",
       "provenance": "Imported with Skills CLI from ConardLi/garden-skills; command: npx skills add ConardLi/garden-skills@web-design-engineer. Verify source, pin, and license before publishing.",
