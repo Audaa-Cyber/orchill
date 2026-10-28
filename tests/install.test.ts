@@ -118,3 +118,27 @@ test("rejects a symlinked target root before creating outside directories", asyn
     await rm(temp, {recursive: true, force: true});
   }
 });
+
+test("refuses to copy symlinks inside a skill source", async () => {
+  const temp = await mkdtemp(path.join(os.tmpdir(), "orchill-source-symlink-test-"));
+  try {
+    const registryRoot = path.join(temp, "registry");
+    const source = path.join(temp, "source-skill");
+    const outside = path.join(temp, "private.txt");
+    const cwd = path.join(temp, "project");
+    await mkdir(registryRoot, {recursive: true});
+    await mkdir(source, {recursive: true});
+    await mkdir(cwd, {recursive: true});
+    await writeFile(path.join(source, "SKILL.md"), "# Skill with link\n");
+    await writeFile(outside, "must not be copied\n");
+    await symlink(outside, path.join(source, "private.txt"), "file");
+    const skill: Skill = {
+      id: "source-link-test", name: "Source link test", description: "Fixture", category: "Tests",
+      source: {type: "local", path: "../source-skill"}, skillPath: "."
+    };
+    await assert.rejects(() => installSkill(skill, registryRoot, "project", cwd), /symbolic link/i);
+    await assert.rejects(() => readFile(path.join(cwd, ".agents", "skills", skill.id, "SKILL.md"), "utf8"), /ENOENT/);
+  } finally {
+    await rm(temp, {recursive: true, force: true});
+  }
+});
