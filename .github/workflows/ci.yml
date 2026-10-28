@@ -19,4 +19,13 @@ jobs:
       - run: node dist/cli.js --help
       - run: node dist/cli.js search demo
       - run: node dist/cli.js install demo-focus --dry-run
-      - run: npm pack --dry-run
+      - name: Pack and install the actual CLI package
+        run: |
+          npm pack --pack-destination "$RUNNER_TEMP"
+          npm install --global "$RUNNER_TEMP"/orchill-*.tgz
+          orchill --help
+          orchill search demo
+          mkdir -p "$RUNNER_TEMP/orchill-smoke-project"
+          orchill install demo-focus --cwd "$RUNNER_TEMP/orchill-smoke-project"
+          test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/demo-focus/SKILL.md"
+
