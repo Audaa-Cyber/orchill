@@ -53,7 +53,20 @@ for (const approval of approvalFile.approvals) {
 }
 
 const problems: string[] = [];
-const registryIds = new Set(registry.skills.map(skill => skill.id));
+const problemsBySkill = new Map<string, string[]>();
+const addProblem = (skillId: string, message: string) => {
+  problems.push(message);
+  if (registryIds.has(skillId)) {
+    const current = problemsBySkill.get(skillId) ?? [];
+    current.push(message);
+    problemsBySkill.set(skillId, current);
+  }
+};
+const registryIds = new Set<string>();
+for (const skill of registry.skills) {
+  if (registryIds.has(skill.id)) addProblem(skill.id, `${skill.id}: duplicate skill ID in registry`);
+  registryIds.add(skill.id);
+}
 for (const id of approvals.keys()) {
   if (!registryIds.has(id)) problems.push(`${id}: approval exists for a skill absent from the registry`);
 }
@@ -61,7 +74,7 @@ for (const id of approvals.keys()) {
 for (const skill of registry.skills) {
   const approval = approvals.get(skill.id);
   if (!approval) {
-    problems.push(`${skill.id}: no explicit redistribution approval record`);
+    addProblem(skill.id, `${skill.id}: no explicit redistribution approval record`);
     continue;
   }
   const required: (keyof Approval)[] = [
@@ -70,33 +83,36 @@ for (const skill of registry.skills) {
   ];
   for (const field of required) {
     if (typeof approval[field] !== "string" || !String(approval[field]).trim()) {
-      problems.push(`${skill.id}: approval field '${field}' is missing`);
+      addProblem(skill.id, `${skill.id}: approval field '${field}' is missing`);
     }
   }
   if (approval.redistributionAllowed !== true) {
-    problems.push(`${skill.id}: redistributionAllowed must be true`);
+    addProblem(skill.id, `${skill.id}: redistributionAllowed must be true`);
   }
-  if (approval.upstreamUrl && !/^https:\/\//i.test(approval.upstreamUrl)) {
-    problems.push(`${skill.id}: upstreamUrl must use HTTPS`);
-  }
-  if (approval.licenseEvidenceUrl && !/^https:\/\//i.test(approval.licenseEvidenceUrl)) {
-    problems.push(`${skill.id}: licenseEvidenceUrl must use HTTPS`);
+  for (const [field, value] of [["upstreamUrl", approval.upstreamUrl], ["licenseEvidenceUrl", approval.licenseEvidenceUrl]] as const) {
+    if (value) {
+      try {
+        if (new URL(value).protocol !== "https:") throw new Error("not HTTPS");
+      } catch {
+        addProblem(skill.id, `${skill.id}: ${field} must be a valid HTTPS URL`);
+      }
+    }
   }
   if (approval.upstreamRevision && !/^(?:[a-f0-9]{40}|[a-f0-9]{64})$/i.test(approval.upstreamRevision)) {
-    problems.push(`${skill.id}: upstreamRevision must be an immutable 40- or 64-character Git commit hash`);
+    addProblem(skill.id, `${skill.id}: upstreamRevision must be an immutable 40- or 64-character Git commit hash`);
   }
-  if (approval.reviewedAt && !/^\d{4}-\d{2}-\d{2}$/.test(approval.reviewedAt)) {
-    problems.push(`${skill.id}: reviewedAt must be an ISO date (YYYY-MM-DD)`);
+  if (approval.reviewedAt && (!/^\d{4}-\d{2}-\d{2}$/.test(approval.reviewedAt) || Number.isNaN(Date.parse(`${approval.reviewedAt}T00:00:00Z`)) || new Date(`${approval.reviewedAt}T00:00:00Z`).toISOString().slice(0, 10) !== approval.reviewedAt)) {
+    addProblem(skill.id, `${skill.id}: reviewedAt must be a real ISO date (YYYY-MM-DD)`);
   }
   if (approval.license && skill.license && approval.license !== skill.license) {
-    problems.push(`${skill.id}: approval license does not match registry license (${skill.license})`);
+    addProblem(skill.id, `${skill.id}: approval license does not match registry license (${skill.license})`);
   }
 }
 
 const summary = {
   skills: registry.skills.length,
   approvals: approvals.size,
-  approved: registry.skills.filter(skill => approvals.get(skill.id)?.redistributionAllowed === true).length,
+  approved: registry.skills.filter(skill => approvals.get(skill.id)?.redistributionAllowed === true && !problemsBySkill.has(skill.id)).length,
   blockers: problems.length
 };
 console.log(JSON.stringify({ summary, blockers: problems }, null, 2));
