@@ -25,7 +25,15 @@ jobs:
           npm install --global "$RUNNER_TEMP"/orchill-*.tgz
           orchill --help
           orchill search demo
-          mkdir -p "$RUNNER_TEMP/orchill-smoke-project"
+          orchill categories
+          orchill list --category "UI/UX Design"
+          orchill info frontend-design
+          orchill targets
+          orchill registry
+          orchill install frontend-design --dry-run
+          mkdir -p "$RUNNER_TEMP/orchill-smoke-project" "$RUNNER_TEMP/orchill-init-smoke"
           orchill install demo-focus --cwd "$RUNNER_TEMP/orchill-smoke-project"
           test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/demo-focus/SKILL.md"
+          orchill init --cwd "$RUNNER_TEMP/orchill-init-smoke"
+          test -f "$RUNNER_TEMP/orchill-init-smoke/.orchill/skills.json"
 
