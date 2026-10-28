@@ -71,14 +71,14 @@ This directory is the human-browsable catalogue generated from the canonical reg
 
 ## Structure
 
-```text
+\`\`\`text
 catalog/
 ├── README.md
 ├── CATALOG.md
 ├── categories.json
 └── categories/
 ${tree}
-```
+\`\`\`
 
 Each category folder contains a sorted index of skills and links to the canonical payload under \`skills/<category-slug>/<skill-id>/\`. The registry is the source of truth; this catalogue is generated for browsing.
 
