@@ -31,6 +31,23 @@ function validateSkill(value: unknown): asserts value is Skill {
     if (typeof s[key] !== "string" || !s[key]!.trim()) throw new Error(`Skill ${s.id}: ${key} must be a non-empty string.`);
   }
   if (!s.source || !["local", "git"].includes(s.source.type)) throw new Error(`Skill ${s.id}: source.type must be local or git.`);
-  if (s.source.type === "local" && !s.source.path) throw new Error(`Skill ${s.id}: local source requires source.path.`);
-  if (s.source.type === "git" && (!s.source.url || !/^https:\/\//.test(s.source.url))) throw new Error(`Skill ${s.id}: git source requires an HTTPS URL.`);
+  if (s.source.type === "local" && (typeof s.source.path !== "string" || !s.source.path.trim())) {
+    throw new Error(`Skill ${s.id}: local source requires source.path.`);
+  }
+  if (s.source.type === "git") {
+    if (typeof s.source.url !== "string" || !s.source.url.trim()) {
+      throw new Error(`Skill ${s.id}: git source requires an HTTPS URL.`);
+    }
+    let url: URL;
+    try { url = new URL(s.source.url); } catch { throw new Error(`Skill ${s.id}: invalid Git source URL.`); }
+    if (url.protocol !== "https:" || !url.hostname || url.username || url.password) {
+      throw new Error(`Skill ${s.id}: Git source must be HTTPS and must not embed credentials.`);
+    }
+  }
+  if (s.tags !== undefined && (!Array.isArray(s.tags) || s.tags.some(tag => typeof tag !== "string"))) {
+    throw new Error(`Skill ${s.id}: tags must be an array of strings.`);
+  }
+  if (s.targets !== undefined && (!Array.isArray(s.targets) || s.targets.some(target => typeof target !== "string"))) {
+    throw new Error(`Skill ${s.id}: targets must be an array of strings.`);
+  }
 }
