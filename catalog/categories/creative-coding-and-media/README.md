@@ -2,7 +2,7 @@
 
 **1 skills** · [All categories](../../CATALOG.md)
 
-Generated from `registry/skills.json`. Local payloads live under `skills/creative-coding-and-media/`.
+Generated from `registry/skills.json`. Local payloads live under `skills/<category-slug>/<skill-id>/`; Git-backed skills remain remote.
 
 | Skill | ID | Source | Payload/source | License metadata |
 |---|---|---|---|---|

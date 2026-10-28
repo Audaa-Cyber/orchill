@@ -62,7 +62,7 @@ const tree = categories.map(category =>
 ).join("\n");
 await writeFile(path.join(outputRoot, "README.md"), `# Orchill Skill Catalog
 
-This directory is the human-browsable catalogue generated from the canonical registry at [`registry/skills.json`](../registry/skills.json).
+This directory is the human-browsable catalogue generated from the canonical registry at [\`registry/skills.json\`](../registry/skills.json).
 
 - **${registry.skills.length} skills** across **${categories.length} categories**
 - [Browse all skills](CATALOG.md)
@@ -80,12 +80,17 @@ catalog/
 ${tree}
 ```
 
-Each category folder contains a sorted index of skills and links to the existing skill payload. Imported payloads remain in their recorded source directories; this catalogue is a navigation/index layer and does not claim payloads have been physically relocated.
+Each category folder contains a sorted index of skills and links to the canonical payload under \`skills/<category-slug>/<skill-id>/\`. The registry is the source of truth; this catalogue is generated for browsing.
 
-Regenerate after editing the registry with `npm run catalog:generate`.
+Regenerate after editing the registry with \`npm run catalog:generate\`.
 `);
 const allSkills = [...registry.skills].sort((a, b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name));
-const allRows = allSkills.map(skill => `| ${cell(skill.category)} | [${cell(skill.name)}](https://github.com/${repository}/tree/${branch}/${skill.source?.type === "local" ? (skill.source.path || "").replace(/^\.\.\//, "") : ""}) | \`${cell(skill.id)}\` | ${cell(skill.source?.type)} | ${sourceLink(skill)} |`).join("\n");
+const allRows = allSkills.map(skill => {
+  const link = skill.source?.type === "local" && skill.source.path
+    ? "https://github.com/" + repository + "/tree/" + branch + "/" + skill.source.path.replace(/^\.\.\//, "")
+    : skill.source?.url || "https://github.com/" + repository;
+  return "| " + cell(skill.category) + " | [" + cell(skill.name) + "](" + link + ") | \`" + cell(skill.id) + "\` | " + cell(skill.source?.type) + " | " + sourceLink(skill) + " |";
+}).join("\n");
 await writeFile(path.join(outputRoot, "CATALOG.md"), `# Orchill Skill Catalog
 
 > Generated from \`registry/skills.json\`. Do not edit manually; update the registry and run `npm run catalog:generate`.
@@ -112,7 +117,7 @@ for (const category of categories) {
 
 **${byCategory.get(category)!.length} skills** · [All categories](../../CATALOG.md)
 
-Generated from \`registry/skills.json\`. Payloads remain in their recorded source directories.
+Generated from \`registry/skills.json\`. Local payloads live under \`skills/<category-slug>/<skill-id>/\`; Git-backed skills remain remote.
 
 | Skill | ID | Source | Payload/source | License metadata |
 |---|---|---|---|---|
