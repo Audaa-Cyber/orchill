@@ -49,7 +49,7 @@ export function slugify(value: string): string {
 function frontmatter(markdown: string): Record<string, string> {
   const m = markdown.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/); const out: Record<string,string> = {};
   if (!m) return out;
-  for (const line of m[1].split(/\r?\n/)) { const p = line.match(/^([a-zA-Z][\w-]*):\s*(.*?)\s*$/); if (p) out[p[1].toLowerCase()] = p[2].replace(/^(['"])(.*)\1$/, "$2"); }
+  const body = m[1]; if (body === undefined) return out;\n  for (const line of body.split(/\r?\n/)) { const p = line.match(/^([a-zA-Z][\w-]*):\s*(.*?)\s*$/); if (p && p[1] !== undefined && p[2] !== undefined) out[p[1].toLowerCase()] = p[2].replace(/^(['"])(.*)\1$/, "$2"); }
   return out;
 }
 function invokeSkills(source: string, skill: string, cwd: string): Promise<void> {
@@ -68,7 +68,7 @@ async function findSkill(cwd: string): Promise<string> {
     try { const s = await lstat(path.join(dir, "SKILL.md")); if (s.isFile() && !s.isSymbolicLink()) found.push(dir); } catch {}
   }
   if (found.length !== 1) throw new Error("Expected exactly one staged skill folder; found " + found.length);
-  return found[0];
+  return found[0]!;
 }
 async function noSymlinks(dir: string): Promise<void> {
   for (const e of await readdir(dir, {withFileTypes:true})) { const p = path.join(dir,e.name); const s = await lstat(p); if (s.isSymbolicLink()) throw new Error("Skill contains a symlink: " + p); if (s.isDirectory()) await noSymlinks(p); }
