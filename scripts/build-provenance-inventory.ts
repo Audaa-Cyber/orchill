@@ -1,4 +1,4 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -88,7 +88,7 @@ async function main(): Promise<void> {
     };
     output = [columns.join(","), ...rows.map(row => columns.map(column => csvCell(row[column])).join(","))].join("\n") + "\n";
   }
-  if (outputPath) { await writeFile(outputPath, output, { flag: "w" }); console.error(`Wrote ${rows.length} skill records to ${outputPath}`); }
+  if (outputPath) { await mkdir(path.dirname(outputPath), { recursive: true }); await writeFile(outputPath, output, { flag: "w" }); console.error(`Wrote ${rows.length} skill records to ${outputPath}`); }
   else process.stdout.write(output);
 }
 
