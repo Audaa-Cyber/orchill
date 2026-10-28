@@ -6,6 +6,7 @@ import { loadRegistry, defaultRegistryPath } from "./registry.js";
 import { installSkill, targetRoot } from "./install.js";
 import type { Skill } from "./types.js";
 import { runBulkImport } from "./bulk-import.js";
+import { runMarketplaceImport } from "./marketplace-import.js";
 
 const program = new Command();
 program.name("orchill").description("Find and selectively install AI agent skills.").version("0.1.0");
@@ -102,12 +103,19 @@ registryOption(program.command("install-category <category>").description("Previ
     }
     if (failures) process.exitCode = 1;
   });
-program.command("import-commands <file>").description("Bulk-import npx skills add commands into a reviewable staging bundle")
+program.command("import-commands <file>").description("Bulk-import Skills CLI commands or agent plugin marketplace commands")
   .option("-o, --output <directory>", "Output directory", ".orchill-import")
   .option("-c, --category <category>", "Imported skill category", "Imported — review required")
   .option("--dry-run", "Parse and preview without downloading")
   .action(async (file: string, opts: {output: string; category: string; dryRun?: boolean}) => {
-    await runBulkImport(file, opts.output, opts.category, Boolean(opts.dryRun));
+    const input = await readFile(path.resolve(file), "utf8");
+    const activeLines = input.split(/\r?\n/).map(line => line.trim()).filter(line => line && !line.startsWith("#"));
+    const marketplaceLines = activeLines.filter(line => line.startsWith("/plugin "));
+    if (marketplaceLines.length && marketplaceLines.length !== activeLines.length) {
+      throw new Error("Do not mix npx skills add and /plugin commands in one file yet. Put each command family in its own file and run import-commands separately.");
+    }
+    if (marketplaceLines.length) await runMarketplaceImport(file, opts.output, opts.category, Boolean(opts.dryRun));
+    else await runBulkImport(file, opts.output, opts.category, Boolean(opts.dryRun));
   });
 program.command("targets").description("Show supported installation targets").action(() => {
   console.log("project  .agents/skills (recommended cross-agent project location)\nagents   .agents/skills\nclaude   .claude/skills\ncodex    .agents/skills (Codex project skills)");
