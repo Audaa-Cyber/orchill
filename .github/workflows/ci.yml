@@ -28,6 +28,12 @@ jobs:
           orchill --help
           orchill search demo
           orchill categories
+          set +e
+          orchill audit --json > "$RUNNER_TEMP/orchill-audit.json"
+          audit_status=$?
+          set -e
+          test "$audit_status" -le 1
+          node --input-type=module -e "import fs from 'node:fs'; const report = JSON.parse(fs.readFileSync(process.argv[1], 'utf8')); if (!report.summary || !Array.isArray(report.findings) || report.summary.totalSkills < 1) process.exit(1)" "$RUNNER_TEMP/orchill-audit.json"
           orchill list --category "UI/UX"
           orchill info frontend-design
           orchill targets
