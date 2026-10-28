@@ -45,7 +45,7 @@ export type ProvenanceInventoryRow = {
 };
 
 export function buildProvenanceInventory(registry: Registry, ledger: ApprovalFile): ProvenanceInventoryRow[] {
-  const approvals = new Map((ledger.approvals ?? []).map(item => [item.skillId, item]));
+  const approvals = new Map<string, Approval>((ledger.approvals ?? []).map(item => [item.skillId, item] as const));
   return registry.skills.map(skill => {
     const approval = approvals.get(skill.id);
     const values = {
