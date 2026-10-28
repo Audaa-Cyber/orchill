@@ -1,95 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
-
-type Skill = {
-  id: string;
-  name: string;
-  category: string;
-  source?: { type?: string; path?: string; url?: string; ref?: string };
-  license?: string;
-  provenance?: string;
-};
-type Registry = { version: number; skills: Skill[] };
-type Approval = {
-  skillId: string;
-  upstreamUrl?: string;
-  upstreamRevision?: string;
-  license?: string;
-  licenseEvidenceUrl?: string;
-  redistributionAllowed?: boolean;
-  reviewedAt?: string;
-  reviewer?: string;
-  notes?: string;
-};
-type ApprovalFile = { version: number; approvals: Approval[] };
-
-export type ProvenanceInventoryRow = {
-  id: string;
-  name: string;
-  category: string;
-  sourceType: string;
-  localPath: string;
-  registrySourceUrl: string;
-  registrySourceRef: string;
-  declaredLicense: string;
-  provenanceNotes: string;
-  approvalRecordPresent: boolean;
-  redistributionAllowed: boolean | null;
-  upstreamUrl: string;
-  upstreamRevision: string;
-  licenseEvidenceUrl: string;
-  reviewDate: string;
-  reviewer: string;
-  reviewNotes: string;
-  missingEvidence: string[];
-};
-
-export function buildProvenanceInventory(registry: Registry, ledger: ApprovalFile): ProvenanceInventoryRow[] {
-  const approvals = new Map<string, Approval>((ledger.approvals ?? []).map(item => [item.skillId, item] as const));
-  return registry.skills.map(skill => {
-    const approval = approvals.get(skill.id);
-    const values = {
-      upstreamUrl: approval?.upstreamUrl?.trim() ?? "",
-      upstreamRevision: approval?.upstreamRevision?.trim() ?? "",
-      licenseEvidenceUrl: approval?.licenseEvidenceUrl?.trim() ?? "",
-      reviewDate: approval?.reviewedAt?.trim() ?? "",
-      reviewer: approval?.reviewer?.trim() ?? "",
-      reviewNotes: approval?.notes?.trim() ?? ""
-    };
-    const missingEvidence: string[] = [];
-    if (!values.upstreamUrl) missingEvidence.push("upstreamUrl");
-    if (!/^(?:[a-f0-9]{40}|[a-f0-9]{64})$/i.test(values.upstreamRevision)) missingEvidence.push("upstreamRevision (full commit SHA)");
-    if (!(approval?.license ?? "").trim()) missingEvidence.push("reviewed license");
-    if (!values.licenseEvidenceUrl) missingEvidence.push("licenseEvidenceUrl");
-    if (approval?.redistributionAllowed !== true) missingEvidence.push("explicit redistribution permission");
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(values.reviewDate) || Number.isNaN(Date.parse(values.reviewDate + "T00:00:00Z")) || new Date(values.reviewDate + "T00:00:00Z").toISOString().slice(0, 10) !== values.reviewDate) missingEvidence.push("reviewDate");
-    if (!values.reviewer) missingEvidence.push("reviewer");
-    if (!values.reviewNotes) missingEvidence.push("reviewNotes");
-    if (!skill.license) missingEvidence.push("registry declared license");
-    else if (approval?.license && approval.license !== skill.license) missingEvidence.push("license mismatch");
-    for (const [field, value] of [["upstreamUrl", values.upstreamUrl], ["licenseEvidenceUrl", values.licenseEvidenceUrl]] as const) {
-      if (value) {
-        try { if (new URL(value).protocol !== "https:") missingEvidence.push(field + " must be HTTPS"); }
-        catch { missingEvidence.push(field + " must be a valid HTTPS URL"); }
-      }
-    }
-    return {
-      id: skill.id,
-      name: skill.name,
-      category: skill.category,
-      sourceType: skill.source?.type ?? "unknown",
-      localPath: skill.source?.type === "local" ? skill.source.path ?? "" : "",
-      registrySourceUrl: skill.source?.url ?? "",
-      registrySourceRef: skill.source?.ref ?? "",
-      declaredLicense: skill.license ?? "",
-      provenanceNotes: skill.provenance ?? "",
-      approvalRecordPresent: Boolean(approval),
-      redistributionAllowed: approval ? approval.redistributionAllowed === true : null,
-      ...values,
-      missingEvidence
-    };
-  }).sort((a, b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name));
-}
+import { buildProvenanceInventory } from "../src/provenance.js";
+import type { ProvenanceApprovalFile, ProvenanceRegistry, ProvenanceInventoryRow } from "../src/provenance.js";
 
 const root = process.cwd();
 const registryPath = path.resolve(process.argv.find(arg => arg.startsWith("--registry="))?.slice("--registry=".length) ?? "registry/skills.json");
@@ -98,8 +10,8 @@ const outputPath = outputArg ? path.resolve(outputArg.slice("--output=".length))
 const format = process.argv.find(arg => arg.startsWith("--format="))?.slice("--format=".length) ?? "json";
 if (format !== "json" && format !== "csv") throw new Error("--format must be json or csv");
 
-const registry = JSON.parse(await readFile(registryPath, "utf8")) as Registry;
-let ledger: ApprovalFile = { version: 1, approvals: [] };
+const registry = JSON.parse(await readFile(registryPath, "utf8")) as ProvenanceRegistry;
+let ledger: ProvenanceApprovalFile = { version: 1, approvals: [] };
 try {
   ledger = JSON.parse(await readFile(path.join(path.dirname(registryPath), "release-approvals.json"), "utf8")) as ApprovalFile;
 } catch (error) {
