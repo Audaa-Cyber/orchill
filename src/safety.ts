@@ -1,5 +1,5 @@
 import path from "node:path";
-import { lstat, mkdir, realpath } from "node:fs/promises";
+import { lstat } from "node:fs/promises";
 
 export function safeRelativePath(value: string, label: string): string {
   if (!value || value.includes("\0") || path.isAbsolute(value)) throw new Error(`${label} must be a safe relative path.`);
@@ -11,9 +11,9 @@ export function safeRelativePath(value: string, label: string): string {
 }
 
 export async function ensureInside(root: string, candidate: string): Promise<string> {
-  const rootReal = await realpath(root);
+  const rootAbs = path.resolve(root);
   const resolved = path.resolve(candidate);
-  const relative = path.relative(rootReal, resolved);
+  const relative = path.relative(rootAbs, resolved);
   if (relative === ".." || relative.startsWith(`..${path.sep}`) || path.isAbsolute(relative)) {
     throw new Error(`Path escapes destination root: ${candidate}`);
   }
@@ -24,10 +24,17 @@ export async function ensureNoSymlinkParents(root: string, target: string): Prom
   const rootAbs = path.resolve(root);
   const targetAbs = path.resolve(target);
   const rel = path.relative(rootAbs, targetAbs);
-  if (rel === ".." || rel.startsWith(`..${path.sep}`) || path.isAbsolute(rel)) throw new Error("Destination escapes target root.");
-  await mkdir(rootAbs, { recursive: true });
-  let cursor = rootAbs;
-  for (const part of rel.split(path.sep).filter(Boolean).slice(0, -1)) {
+  if (rel === ".." || rel.startsWith(`..${path.sep}`) || path.isAbsolute(rel)) {
+    throw new Error("Destination escapes target root.");
+  }
+
+  // Inspect existing ancestors before mkdir: creating through a symlink can
+  // otherwise create directories outside the project before detection.
+  const filesystemRoot = path.parse(rootAbs).root;
+  const rootParts = rootAbs.slice(filesystemRoot.length).split(path.sep).filter(Boolean);
+  const parentParts = rel.split(path.sep).filter(Boolean).slice(0, -1);
+  let cursor = filesystemRoot;
+  for (const part of [...rootParts, ...parentParts]) {
     cursor = path.join(cursor, part);
     try {
       const info = await lstat(cursor);
