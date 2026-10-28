@@ -24,6 +24,8 @@ Branch reviewed: `feat/marketplace-bulk-import`
 - [ ] Run the full CI workflow on the exact release commit and record the result. A missing status result is not a passing check.
 - [ ] Test install, replacement rollback, category install, uninstall, and packaged CLI behavior on supported Node.js 22 environments.
 - [ ] Review false positives and false negatives in heuristic security checks; document that a clean audit is not a security guarantee.
+- [x] Add an evidence-backed redistribution approval ledger and make `npm publish` fail closed until every bundled skill has an approval record.
+- [ ] Populate and independently review the approval ledger; the initial ledger is intentionally empty, so publishing is blocked.
 - [ ] Decide a documented inclusion policy for imported skills and block unreviewed/redistribution-unclear entries from release artifacts.
 
 ## Release acceptance criteria
@@ -51,4 +53,4 @@ git diff --exit-code -- catalog
 npm pack
 ```
 
-These checks establish build and packaging integrity; they do not independently establish legal redistribution rights or prove that a skill is safe.
+These checks establish build and packaging integrity; they do not independently establish legal redistribution rights or prove that a skill is safe. Run `npm run release:check` to report missing approval evidence. `npm publish` runs `prepublishOnly`, which uses strict mode and intentionally fails until every bundled skill has a complete approval record in `registry/release-approvals.json`. An approval requires the upstream URL, immutable commit hash, license and evidence URL, explicit redistribution permission, review date, reviewer, and notes. Do not add approvals unless the evidence has actually been reviewed.
