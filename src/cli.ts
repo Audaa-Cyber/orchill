@@ -169,7 +169,8 @@ registryOption(program.command("update").alias("up").description("Update Orchill
   .option("-t, --target <target>", "project, agents, claude, or codex", "project")
   .option("-C, --cwd <path>", "Project directory", process.cwd())
   .option("--yes", "Skip confirmation")
-  .action(async (opts: {registry?: string; target: string; cwd: string; yes?: boolean}) => {
+  .option("--dry-run", "Show the update plan without changing files")
+  .action(async (opts: {registry?: string; target: string; cwd: string; yes?: boolean; dryRun?: boolean}) => {
     const {registry, root} = await getRegistry(opts.registry);
     const cwd = path.resolve(opts.cwd);
     const target = targetRoot(opts.target, cwd);
@@ -189,6 +190,7 @@ registryOption(program.command("update").alias("up").description("Update Orchill
     if (!entries.length) { console.log("No registered installed skills found to update."); return; }
     console.log(`Updates: ${entries.length}`);
     for (const entry of entries) console.log(`  ${entry.path}`);
+    if (opts.dryRun) { console.log("Dry run only; no files changed."); return; }
     if (!(await confirm("Update these skills?", Boolean(opts.yes)))) { console.log("Cancelled."); return; }
     let failures = 0;
     for (const entry of entries) {
@@ -202,7 +204,8 @@ registryOption(program.command("remove <name>").alias("rm").description("Remove 
   .option("-t, --target <target>", "project, agents, claude, or codex", "project")
   .option("-C, --cwd <path>", "Project directory", process.cwd())
   .option("--yes", "Skip confirmation")
-  .action(async (name: string, opts: {registry?: string; target: string; cwd: string; yes?: boolean}) => {
+  .option("--dry-run", "Show the removal plan without changing files")
+  .action(async (name: string, opts: {registry?: string; target: string; cwd: string; yes?: boolean; dryRun?: boolean}) => {
     const {registry} = await getRegistry(opts.registry);
     const cwd = path.resolve(opts.cwd);
     const resolved = resolveName(registry, name);
@@ -213,6 +216,7 @@ registryOption(program.command("remove <name>").alias("rm").description("Remove 
     else throw new Error(`Unknown skill or category: ${name}. Run "orchill list".`);
     console.log(`Removals: ${skills.length}`);
     for (const skill of skills) console.log(`  ${skill.category}/${skill.id}`);
+    if (opts.dryRun) { console.log("Dry run only; no files changed."); return; }
     if (!(await confirm("Remove these Orchill-managed installations?", Boolean(opts.yes)))) { console.log("Cancelled."); return; }
     let failures = 0;
     for (const skill of skills) {
@@ -230,7 +234,7 @@ registryOption(program.command("remove <name>").alias("rm").description("Remove 
     if (failures) process.exitCode = 1;
   });
 
-registryOption(program.command("check").description("Verify Orchill-managed installations and registry integrity"))
+registryOption(program.command("check [name]").description("Verify Orchill-managed installations and registry integrity"))
   .option("-t, --target <target>", "project, agents, claude, or codex", "project")
   .option("-C, --cwd <path>", "Project directory", process.cwd())
   .option("--json", "Output machine-readable JSON")
@@ -279,6 +283,8 @@ registryOption(program.command("registry").description("Show active registry loc
   const {registry, file} = await getRegistry(opts.registry);
   console.log(`Registry: ${file}\nVersion: ${registry.version}\nSkills: ${registry.skills.length}`);
 });
+
+program.command("mcp").description("Run the Orchill MCP server over stdio").action(async () => { const { runMcpServer } = await import("./mcp.js"); await runMcpServer(); });
 
 program.command("targets").description("Show supported installation targets").action(() => {
   console.log("project  .agents/skills/<category>/<skill>\nagents   .agents/skills/<category>/<skill>\nclaude   .claude/skills/<category>/<skill>\ncodex    .agents/skills/<category>/<skill>");
@@ -366,6 +372,7 @@ Examples:
   orchill add "UI/UX Design"
   orchill add catalogue
   orchill add demo-focus --dry-run
+  orchill update --dry-run
   orchill update --yes
   orchill remove demo-focus --yes
   orchill check --json
