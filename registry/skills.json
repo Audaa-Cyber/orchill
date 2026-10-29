@@ -4286,7 +4286,7 @@
         "path": "../skills/security/clawsec-clawhub-checker"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from prompt-security/clawsec; command: npx skills add prompt-security/clawsec@clawsec-clawhub-checker. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from prompt-security/clawsec; command: npx skills add prompt-security/clawsec@clawsec-clawhub-checker. Verified 2026-10-29 against prompt-security/clawsec at commit e46beec4f559e15c57d250023298391253e9ce43; all 11 bundled file(s) matched upstream by Git blob SHA at skills/clawsec-clawhub-checker. License evidence: https://github.com/prompt-security/clawsec/blob/e46beec4f559e15c57d250023298391253e9ce43/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -4298,7 +4298,8 @@
         "clawsec",
         "clawhub",
         "checker"
-      ]
+      ],
+      "license": "AGPL-3.0"
     },
     {
       "id": "security-best-practices",
