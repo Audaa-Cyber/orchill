@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "type": "module",
   "bin": {
-    "orchill": "./dist/cli.js"
+    "orchill": "dist/cli.js"
   },
   "files": [
     "dist",
