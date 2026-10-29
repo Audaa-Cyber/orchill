@@ -616,3 +616,134 @@ Apache License
    See the License for the specific language governing permissions and
    limitations under the License.
 ```
+
+
+## Additional verified upstream skill payloads (2026-10-29)
+
+### emilkowalski/skills
+
+Pinned commit: [`a81dbca07f2217b7103e510c0f13f8d5b017afc9`](https://github.com/emilkowalski/skills/commit/a81dbca07f2217b7103e510c0f13f8d5b017afc9). All bundled files for the following skills matched upstream by Git blob SHA:
+
+- `emil-design-eng` — 1 file(s)
+
+License evidence: [LICENSE](https://github.com/emilkowalski/skills/blob/a81dbca07f2217b7103e510c0f13f8d5b017afc9/LICENSE) — **MIT**.
+
+Upstream MIT license text:
+
+```text
+MIT License
+
+Copyright (c) 2026 Emil Kowalski
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+
+### getsentry/skills
+
+Pinned commit: [`d12f250460ffd961f549dbebf7eeb0cf4afd4c2e`](https://github.com/getsentry/skills/commit/d12f250460ffd961f549dbebf7eeb0cf4afd4c2e). All bundled files for the following skills matched upstream by Git blob SHA:
+
+- `code-review` — 1 file(s)
+- `find-bugs` — 1 file(s)
+
+License evidence: [LICENSE](https://github.com/getsentry/skills/blob/d12f250460ffd961f549dbebf7eeb0cf4afd4c2e/LICENSE) — **Apache-2.0**.
+
+The full Apache License 2.0 text is reproduced in the Apache license section above; the pinned upstream license is linked here for source-specific verification.
+
+
+### neondatabase/agent-skills
+
+Pinned commit: [`9df568a3f88a361ea33db00453ff754d07b3b3e1`](https://github.com/neondatabase/agent-skills/commit/9df568a3f88a361ea33db00453ff754d07b3b3e1). All bundled files for the following skills matched upstream by Git blob SHA:
+
+- `neon-postgres` — 5 file(s)
+
+License evidence: [LICENSE](https://github.com/neondatabase/agent-skills/blob/9df568a3f88a361ea33db00453ff754d07b3b3e1/LICENSE) — **Apache-2.0**.
+
+The full Apache License 2.0 text is reproduced in the Apache license section above; the pinned upstream license is linked here for source-specific verification.
+
+
+### lackeyjb/playwright-skill
+
+Pinned commit: [`dd47a6a023e249eb1b36e9e943eab89d0900865d`](https://github.com/lackeyjb/playwright-skill/commit/dd47a6a023e249eb1b36e9e943eab89d0900865d). All bundled files for the following skills matched upstream by Git blob SHA:
+
+- `playwright-skill` — 6 file(s)
+
+License evidence: [LICENSE](https://github.com/lackeyjb/playwright-skill/blob/dd47a6a023e249eb1b36e9e943eab89d0900865d/LICENSE) — **MIT**.
+
+Upstream MIT license text:
+
+```text
+MIT License
+
+Copyright (c) 2025 lackeyjb
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+
+### massimodeluisa/recursive-decomposition-skill
+
+Pinned commit: [`e0a8b0418a1e40e3ae774ad1d06834db2696ee26`](https://github.com/massimodeluisa/recursive-decomposition-skill/commit/e0a8b0418a1e40e3ae774ad1d06834db2696ee26). All bundled files for the following skills matched upstream by Git blob SHA:
+
+- `recursive-decomposition` — 9 file(s)
+
+License evidence: [LICENSE](https://github.com/massimodeluisa/recursive-decomposition-skill/blob/e0a8b0418a1e40e3ae774ad1d06834db2696ee26/LICENSE) — **MIT**.
+
+Upstream MIT license text:
+
+```text
+MIT License
+
+Copyright (c) 2026 MDL
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
