@@ -1,7 +1,7 @@
 name: CI
 on:
   push:
-    branches: [main]
+    branches: [main, feat/marketplace-bulk-import]
   pull_request:
   workflow_dispatch:
 jobs:
