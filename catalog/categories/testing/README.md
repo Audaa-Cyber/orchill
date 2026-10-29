@@ -21,10 +21,10 @@ Generated from `registry/skills.json`. Local payloads live under `skills/<catego
 | Property Based Testing | `property-based-testing` | local | [`skills/testing/property-based-testing`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/property-based-testing) | Unknown |
 | Run Tests | `run-tests` | local | [`skills/testing/run-tests`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/run-tests) | MIT |
 | Scaffold Dotnet Test Project | `scaffold-dotnet-test-project` | local | [`skills/testing/scaffold-dotnet-test-project`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/scaffold-dotnet-test-project) | MIT |
-| Systematic Debugging | `systematic-debugging` | local | [`skills/testing/systematic-debugging`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/systematic-debugging) | Unknown |
+| Systematic Debugging | `systematic-debugging` | local | [`skills/testing/systematic-debugging`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/systematic-debugging) | MIT |
 | Test Analysis Extensions | `test-analysis-extensions` | local | [`skills/testing/test-analysis-extensions`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/test-analysis-extensions) | MIT |
 | Test Anti Patterns | `test-anti-patterns` | local | [`skills/testing/test-anti-patterns`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/test-anti-patterns) | MIT |
-| Test Driven Development | `test-driven-development` | local | [`skills/testing/test-driven-development`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/test-driven-development) | Unknown |
+| Test Driven Development | `test-driven-development` | local | [`skills/testing/test-driven-development`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/test-driven-development) | MIT |
 | Test Gap Analysis | `test-gap-analysis` | local | [`skills/testing/test-gap-analysis`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/test-gap-analysis) | MIT |
 | Test Smell Detection | `test-smell-detection` | local | [`skills/testing/test-smell-detection`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/test-smell-detection) | MIT |
 | Test Tagging | `test-tagging` | local | [`skills/testing/test-tagging`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/test-tagging) | MIT |
