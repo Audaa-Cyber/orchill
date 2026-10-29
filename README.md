@@ -194,3 +194,8 @@ For third-party skill licensing and source provenance review, see [the provenanc
 ## Verify and uninstall managed installations
 
 New installations include an Orchill marker. Verify an installation with `orchill verify <id>`; remove only an Orchill-managed installation with `orchill uninstall <id>`. Uninstall prompts for confirmation; use `--yes` only after reviewing the destination. Unmanaged or legacy directories without a valid marker are deliberately not removed. Verification checks structure and the marker; it is not a cryptographic integrity or malware scan.
+
+
+## Release review
+
+The full development catalogue and categorized imported payloads are not automatically approved for redistribution. Generate a provenance review queue with `npm run release:review-queue` and follow [the Phase 2 release-review workflow](docs/PHASE-2-RELEASE-REVIEW.md) before publishing bundled third-party skills.

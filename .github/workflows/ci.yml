@@ -18,6 +18,8 @@ jobs:
         run: npm run release:check
       - name: Generate third-party provenance inventory
         run: npm run provenance:inventory -- --output=reports/provenance-inventory.json
+      - run: npm run release:review-queue -- --output=reports/release-review-queue.json
+      - run: npm run release:review-queue -- --format=csv --output=reports/release-review-queue.csv
       - run: npm test
       - run: npm run build
       - run: npm run catalog:generate
