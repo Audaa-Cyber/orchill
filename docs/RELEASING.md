@@ -10,6 +10,7 @@ This checklist is intentionally conservative. A green CI run is necessary, but n
 - [ ] Confirm all catalog entries have verified upstream paths, immutable source refs where practical, per-skill license information, and provenance notes.
 - [ ] Review bundled skill instructions and referenced scripts. CI and license checks are not a security audit.
 - [ ] Check the exact npm package name `orchill` for availability, ownership, and possible naming conflicts. Do not assume availability from the repository name.
+- [x] Add the canonical GitHub repository URL to `package.json`; npm trusted publishing requires repository metadata to match the source repository.
 - [ ] Confirm the package includes the compiled CLI, registry, documentation, example skill, and license, and excludes source-only files or secrets not intended for distribution.
 - [ ] Run typecheck, tests, build, CLI smoke tests, and a real `npm pack` installation test against the exact release commit.
 - [ ] Choose the first public version deliberately. The current development version is `0.1.0`; do not tag a release until the owner approves the version.
