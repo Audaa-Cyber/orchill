@@ -12,8 +12,8 @@ Generated from `registry/skills.json`. Local payloads live under `skills/<catego
 | Convert To Cpm | `convert-to-cpm` | local | [`skills/developer-tools/convert-to-cpm`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/convert-to-cpm) | MIT |
 | Differential Review | `differential-review` | local | [`skills/developer-tools/differential-review`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/differential-review) | CC-BY-SA-4.0 |
 | Dump Collect | `dump-collect` | local | [`skills/developer-tools/dump-collect`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/dump-collect) | MIT |
-| Gh Address Comments | `gh-address-comments` | local | [`skills/developer-tools/gh-address-comments`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/gh-address-comments) | Unknown |
-| Gh Fix Ci | `gh-fix-ci` | local | [`skills/developer-tools/gh-fix-ci`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/gh-fix-ci) | Unknown |
+| Gh Address Comments | `gh-address-comments` | local | [`skills/developer-tools/gh-address-comments`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/gh-address-comments) | Apache-2.0 |
+| Gh Fix Ci | `gh-fix-ci` | local | [`skills/developer-tools/gh-fix-ci`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/gh-fix-ci) | Apache-2.0 |
 | Hf Cli | `hf-cli` | local | [`skills/developer-tools/hf-cli`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/hf-cli) | Apache-2.0 |
 | Migrate Nullable References | `migrate-nullable-references` | local | [`skills/developer-tools/migrate-nullable-references`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/migrate-nullable-references) | MIT |
 | Migrate Static To Wrapper | `migrate-static-to-wrapper` | local | [`skills/developer-tools/migrate-static-to-wrapper`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/migrate-static-to-wrapper) | MIT |
