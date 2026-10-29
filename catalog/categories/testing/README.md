@@ -13,7 +13,7 @@ Generated from `registry/skills.json`. Local payloads live under `skills/<catego
 | Code Testing Extensions | `code-testing-extensions` | local | [`skills/testing/code-testing-extensions`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/code-testing-extensions) | MIT |
 | Coverage Analysis | `coverage-analysis` | local | [`skills/testing/coverage-analysis`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/coverage-analysis) | MIT |
 | Crap Score | `crap-score` | local | [`skills/testing/crap-score`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/crap-score) | MIT |
-| Find Bugs | `find-bugs` | local | [`skills/testing/find-bugs`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/find-bugs) | Unknown |
+| Find Bugs | `find-bugs` | local | [`skills/testing/find-bugs`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/find-bugs) | Apache-2.0 |
 | Find Untested Sources | `find-untested-sources` | local | [`skills/testing/find-untested-sources`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/find-untested-sources) | MIT |
 | Generate Testability Wrappers | `generate-testability-wrappers` | local | [`skills/testing/generate-testability-wrappers`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/generate-testability-wrappers) | MIT |
 | Grade Tests | `grade-tests` | local | [`skills/testing/grade-tests`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/grade-tests) | MIT |
