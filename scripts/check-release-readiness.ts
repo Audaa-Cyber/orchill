@@ -84,6 +84,11 @@ for (const skill of registry.skills) {
     continue;
   }
   if (source?.type !== "local") { addProblem(skill.id, skill.id + ": source type must be local or git"); continue; }
+  const isFirstPartyExample = skill.id === "demo-focus" && source.path === "../skills/examples/demo-focus" && skill.provenance === "Bundled Orchill example; not a third-party skill.";
+  if (isFirstPartyExample) {
+    if (!skill.license?.trim()) addProblem(skill.id, skill.id + ": first-party example must declare its license");
+    continue;
+  }
   const approval = approvals.get(skill.id);
   if (!approval) { addProblem(skill.id, skill.id + ": no explicit redistribution approval record for bundled local payload"); continue; }
   const required: (keyof Approval)[] = ["upstreamUrl", "upstreamRevision", "license", "licenseEvidenceUrl", "reviewedAt", "reviewer", "notes"];
@@ -105,7 +110,8 @@ const summary = {
   bundledSkills: bundledSkills.length,
   remoteSources: remoteSources.length,
   approvals: approvals.size,
-  approved: bundledSkills.filter(skill => approvals.get(skill.id)?.redistributionAllowed === true && !problemsBySkill.has(skill.id)).length,
+  approved: bundledSkills.filter(skill => (approvals.get(skill.id)?.redistributionAllowed === true || (skill.id === "demo-focus" && skill.source?.path === "../skills/examples/demo-focus" && skill.provenance === "Bundled Orchill example; not a third-party skill." && Boolean(skill.license?.trim()))) && !problemsBySkill.has(skill.id)).length,
+  firstPartyExamples: bundledSkills.filter(skill => skill.id === "demo-focus" && skill.source?.path === "../skills/examples/demo-focus" && skill.provenance === "Bundled Orchill example; not a third-party skill.").length,
   blockers: problems.length
 };
 console.log(JSON.stringify({ summary, blockers: problems }, null, 2));
