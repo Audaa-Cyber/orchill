@@ -12,7 +12,7 @@ const TARGETS = new Set(["project", "agents", "claude", "codex"]);
 const ROOT_KEYS = new Set(["$schema", "version", "skills"]);
 const SKILL_KEYS = new Set([
   "id", "name", "description", "category", "tags", "source",
-  "skillPath", "license", "provenance", "targets"
+  "skillPath", "license", "licenseEvidenceUrl", "provenance", "targets"
 ]);
 const SOURCE_KEYS = new Set(["type", "path", "url", "ref"]);
 
@@ -104,9 +104,15 @@ function validateSkill(value: unknown): asserts value is Skill {
     throw new Error(`Skill ${s.id}: source.type must be local or git.`);
   }
 
-  for (const key of ["license", "provenance"] as const) {
+  for (const key of ["license", "provenance", "licenseEvidenceUrl"] as const) {
     if (s[key] !== undefined) requireNonEmptyString(s[key], `Skill ${s.id}: ${key}`);
   }
+  if (s.licenseEvidenceUrl !== undefined) {
+    let evidenceUrl: URL;
+    try { evidenceUrl = new URL(s.licenseEvidenceUrl); } catch { throw new Error(`Skill ${s.id}: invalid licenseEvidenceUrl.`); }
+    if (evidenceUrl.protocol !== "https:" || !evidenceUrl.hostname || evidenceUrl.username || evidenceUrl.password || evidenceUrl.search || evidenceUrl.hash) throw new Error(`Skill ${s.id}: licenseEvidenceUrl must be a clean HTTPS URL.`);
+  }
+
   if (s.tags !== undefined) {
     if (!Array.isArray(s.tags) || s.tags.some(tag => typeof tag !== "string" || !tag.trim())) {
       throw new Error(`Skill ${s.id}: tags must be an array of non-empty strings.`);
