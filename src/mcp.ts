@@ -147,7 +147,7 @@ async function handle(request: Rpc) {
           output = runCli(cliArgs);
         } else if (name === "orchill_remove") {
           const cliArgs = commandArgs(args, ["remove", stringArg(args, "name") ?? ""]);
-          cliArgs.push("--yes");
+          cliArgs.push(boolArg(args, "confirm") ? "--yes" : "--dry-run");
           output = runCli(cliArgs);
         } else if (name === "orchill_check") {
           output = runCli(commandArgs(args, ["check"]));
