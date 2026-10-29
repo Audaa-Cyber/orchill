@@ -7,3 +7,10 @@ test("pinned remote source is complete without a bundled redistribution approval
 test("Skills CLI provenance is grouped by the actual upstream repository",()=>{const rows=buildReleaseReviewQueue({skills:[{id:"azure-sample",name:"Azure Sample",category:"Cloud",source:{type:"local",path:"../skills/azure-sample"},provenance:"Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-app-service. Verify source, pin, and license before publishing."}]},{approvals:[]});assert.equal(rows[0]?.sourceGroup,"github.com/MicrosoftDocs/Agent-Skills")});
 test("dotnet marketplace imports are grouped under the source repository and plugin",()=>{const rows=buildReleaseReviewQueue({skills:[{id:"dotnet-sample",name:"Dotnet Sample",category:"Build",source:{type:"local",path:"../skills/dotnet-sample"},provenance:"Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing."}]},{approvals:[]});assert.equal(rows[0]?.sourceGroup,"github.com/dotnet/skills (plugin: dotnet-msbuild)")});
 test("first-party example is not mislabeled as unknown origin",()=>{const rows=buildReleaseReviewQueue({skills:[{id:"demo",name:"Demo",category:"Examples",source:{type:"local",path:"../skills/demo"},provenance:"Bundled Orchill example; not a third-party skill."}]},{approvals:[]});assert.equal(rows[0]?.sourceGroup,"orchill-project (first-party example)")});
+
+
+test("first-party demo example does not require third-party redistribution approval", () => {
+ const rows=buildReleaseReviewQueue({skills:[{id:"demo-focus",name:"Demo Focus",category:"Examples",source:{type:"local",path:"../skills/examples/demo-focus"},license:"MIT",provenance:"Bundled Orchill example; not a third-party skill."}]},{approvals:[]});
+ assert.equal(rows[0]?.missingEvidence.length,0);
+ assert.match(rows[0]?.recommendedAction??"",/First-party Orchill example/);
+});
