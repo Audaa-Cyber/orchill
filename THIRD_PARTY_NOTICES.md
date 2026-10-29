@@ -2987,3 +2987,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+
+## Postgres Skill
+
+The `postgres` skill is copied unchanged from [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills), pinned to commit [281d88df199357e3091a3be5c743a0fca9a9ae1b](https://github.com/sanjay3290/ai-skills/commit/281d88df199357e3091a3be5c743a0fca9a9ae1b). All 6 bundled files matched upstream by Git blob SHA at `skills/postgres/`. The earlier `sanjay3290/postgres-skill` repository now redirects; this is the canonical repository.
+
+License evidence: [LICENSE](https://github.com/sanjay3290/ai-skills/blob/281d88df199357e3091a3be5c743a0fca9a9ae1b/LICENSE) — Apache-2.0. The complete Apache-2.0 license text is included in the Apache License 2.0 section above.
