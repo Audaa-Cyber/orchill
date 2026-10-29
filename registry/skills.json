@@ -1204,7 +1204,7 @@
         "path": "../skills/agent-tooling-and-workflows/recursive-decomposition"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from massimodeluisa/recursive-decomposition-skill; command: npx skills add massimodeluisa/recursive-decomposition-skill@recursive-decomposition. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from massimodeluisa/recursive-decomposition-skill; command: npx skills add massimodeluisa/recursive-decomposition-skill@recursive-decomposition. Verify source, pin, and license before publishing. Verified 2026-10-29 against massimodeluisa/recursive-decomposition-skill at commit e0a8b0418a1e40e3ae774ad1d06834db2696ee26; all 9 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/massimodeluisa/recursive-decomposition-skill/blob/e0a8b0418a1e40e3ae774ad1d06834db2696ee26/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1761,7 +1761,7 @@
         "path": "../skills/backend-and-apis/neon-postgres"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from neondatabase/agent-skills; command: npx skills add neondatabase/agent-skills@neon-postgres. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from neondatabase/agent-skills; command: npx skills add neondatabase/agent-skills@neon-postgres. Verify source, pin, and license before publishing. Verified 2026-10-29 against neondatabase/agent-skills at commit 9df568a3f88a361ea33db00453ff754d07b3b3e1; all 5 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/neondatabase/agent-skills/blob/9df568a3f88a361ea33db00453ff754d07b3b3e1/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1772,7 +1772,8 @@
         "backend-apis",
         "neon",
         "postgres"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "postgres",
@@ -3174,7 +3175,7 @@
         "path": "../skills/developer-tools/code-review"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from getsentry/skills; command: npx skills add getsentry/skills@code-review. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from getsentry/skills; command: npx skills add getsentry/skills@code-review. Verify source, pin, and license before publishing. Verified 2026-10-29 against getsentry/skills at commit d12f250460ffd961f549dbebf7eeb0cf4afd4c2e; all 1 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/getsentry/skills/blob/d12f250460ffd961f549dbebf7eeb0cf4afd4c2e/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -3185,7 +3186,8 @@
         "developer-tools",
         "code",
         "review"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "convert-to-cpm",
@@ -3650,7 +3652,7 @@
         "path": "../skills/micro-interactions/emil-design-eng"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from emilkowalski/skills; command: npx skills add emilkowalski/skills@emil-design-eng. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from emilkowalski/skills; command: npx skills add emilkowalski/skills@emil-design-eng. Verify source, pin, and license before publishing. Verified 2026-10-29 against emilkowalski/skills at commit a81dbca07f2217b7103e510c0f13f8d5b017afc9; all 1 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/emilkowalski/skills/blob/a81dbca07f2217b7103e510c0f13f8d5b017afc9/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -3662,7 +3664,8 @@
         "emil",
         "design",
         "eng"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "android-tombstone-symbolication",
@@ -4642,7 +4645,7 @@
         "path": "../skills/testing/find-bugs"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from getsentry/skills; command: npx skills add getsentry/skills@find-bugs. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from getsentry/skills; command: npx skills add getsentry/skills@find-bugs. Verify source, pin, and license before publishing. Verified 2026-10-29 against getsentry/skills at commit d12f250460ffd961f549dbebf7eeb0cf4afd4c2e; all 1 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/getsentry/skills/blob/d12f250460ffd961f549dbebf7eeb0cf4afd4c2e/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -4653,7 +4656,8 @@
         "testing",
         "find",
         "bugs"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "find-untested-sources",
@@ -4739,7 +4743,7 @@
         "path": "../skills/testing/playwright-skill"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from lackeyjb/playwright-skill; command: npx skills add lackeyjb/playwright-skill@playwright-skill. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from lackeyjb/playwright-skill; command: npx skills add lackeyjb/playwright-skill@playwright-skill. Verify source, pin, and license before publishing. Verified 2026-10-29 against lackeyjb/playwright-skill at commit dd47a6a023e249eb1b36e9e943eab89d0900865d; all 6 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/lackeyjb/playwright-skill/blob/dd47a6a023e249eb1b36e9e943eab89d0900865d/LICENSE.",
       "targets": [
         "project",
         "claude",
