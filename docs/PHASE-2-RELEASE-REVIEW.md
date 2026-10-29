@@ -14,5 +14,11 @@ The approval ledger is intentionally empty. The report marks every skill as need
 
 The release-review queue groups imported skills using the recorded Skills CLI repository hint or marketplace plugin provenance. This is a triage aid only: a command string is not proof that the copied payload matches that repository, that the import came from the stated commit, or that the exact skill and bundled assets may be redistributed. The queue currently has 55 source groups and no `unknown-origin` group based on those hints, but all 221 skills still lack complete approval evidence. Verify exact content and immutable revisions before recording any approval.
 
+## Verified batch: dotnet/skills
+
+On 2026-10-29, an automated source-and-license review covered 81 imported skills from the official [dotnet/skills repository](https://github.com/dotnet/skills), pinned to commit `95e7d0cb7994d47b5789baa68e13f7a2f348b956`. All 238 files across those 81 local skill directories matched the corresponding upstream file paths and Git blob SHAs exactly. The repository-root MIT license at [the pinned LICENSE file](https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE) grants redistribution subject to retaining the copyright and permission notice. Orchill now records this evidence in `registry/release-approvals.json` and ships that notice through `THIRD_PARTY_NOTICES.md`.
+
+This is an **automated evidence review**, not legal advice or a claim that a human maintainer has signed off. The review ledger identifies the method transparently. A maintainer should confirm the record before publishing. These 81 records do not clear the other 140 skills; the strict release gate must remain blocked until those are resolved.
+
 ## Publication policy
 Do not publish a release containing local third-party payloads until the strict evidence gate and clean packed-package install test pass. Apache-2.0 applies to Orchill's own code, not automatically to imported skills.
