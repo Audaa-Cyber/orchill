@@ -278,6 +278,17 @@
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
     },
     {
+      "skillId": "cloudflare-deploy",
+      "upstreamUrl": "https://github.com/openai/skills",
+      "upstreamRevision": "49f948faa9258a0c61caceaf225e179651397431",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/cloudflare-deploy/LICENSE.txt",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/cloudflare-deploy in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/cloudflare-deploy/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
+    },
+    {
       "skillId": "clr-activation-debugging",
       "upstreamUrl": "https://github.com/dotnet/skills",
       "upstreamRevision": "95e7d0cb7994d47b5789baa68e13f7a2f348b956",
@@ -553,6 +564,28 @@
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
     },
     {
+      "skillId": "gh-address-comments",
+      "upstreamUrl": "https://github.com/openai/skills",
+      "upstreamRevision": "49f948faa9258a0c61caceaf225e179651397431",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/gh-address-comments/LICENSE.txt",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/gh-address-comments in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/gh-address-comments/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "gh-fix-ci",
+      "upstreamUrl": "https://github.com/openai/skills",
+      "upstreamRevision": "49f948faa9258a0c61caceaf225e179651397431",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/gh-fix-ci/LICENSE.txt",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/gh-fix-ci in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/gh-fix-ci/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
+    },
+    {
       "skillId": "grade-tests",
       "upstreamUrl": "https://github.com/dotnet/skills",
       "upstreamRevision": "95e7d0cb7994d47b5789baa68e13f7a2f348b956",
@@ -562,6 +595,17 @@
       "reviewedAt": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "imagegen",
+      "upstreamUrl": "https://github.com/openai/skills",
+      "upstreamRevision": "49f948faa9258a0c61caceaf225e179651397431",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.system/imagegen/LICENSE.txt",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.system/imagegen in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.system/imagegen/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
     },
     {
       "skillId": "including-generated-files",
@@ -595,6 +639,28 @@
       "reviewedAt": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "jupyter-notebook",
+      "upstreamUrl": "https://github.com/openai/skills",
+      "upstreamRevision": "49f948faa9258a0c61caceaf225e179651397431",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/jupyter-notebook/LICENSE.txt",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/jupyter-notebook in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/jupyter-notebook/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "linear",
+      "upstreamUrl": "https://github.com/openai/skills",
+      "upstreamRevision": "49f948faa9258a0c61caceaf225e179651397431",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/linear/LICENSE.txt",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/linear in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/linear/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
     },
     {
       "skillId": "maui-app-lifecycle",
@@ -828,6 +894,39 @@
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
     },
     {
+      "skillId": "netlify-deploy",
+      "upstreamUrl": "https://github.com/openai/skills",
+      "upstreamRevision": "49f948faa9258a0c61caceaf225e179651397431",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/netlify-deploy/LICENSE.txt",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/netlify-deploy in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/netlify-deploy/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "notion-knowledge-capture",
+      "upstreamUrl": "https://github.com/openai/skills",
+      "upstreamRevision": "49f948faa9258a0c61caceaf225e179651397431",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/notion-knowledge-capture/LICENSE.txt",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/notion-knowledge-capture in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/notion-knowledge-capture/LICENSE.txt identifies the MIT license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "openai-docs",
+      "upstreamUrl": "https://github.com/openai/skills",
+      "upstreamRevision": "49f948faa9258a0c61caceaf225e179651397431",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/openai-docs/LICENSE.txt",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/openai-docs in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/openai-docs/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
+    },
+    {
       "skillId": "optimizing-ef-core-queries",
       "upstreamUrl": "https://github.com/dotnet/skills",
       "upstreamRevision": "95e7d0cb7994d47b5789baa68e13f7a2f348b956",
@@ -861,6 +960,17 @@
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
     },
     {
+      "skillId": "render-deploy",
+      "upstreamUrl": "https://github.com/openai/skills",
+      "upstreamRevision": "49f948faa9258a0c61caceaf225e179651397431",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/render-deploy/LICENSE.txt",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/render-deploy in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/render-deploy/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
+    },
+    {
       "skillId": "resolve-project-references",
       "upstreamUrl": "https://github.com/dotnet/skills",
       "upstreamRevision": "95e7d0cb7994d47b5789baa68e13f7a2f348b956",
@@ -892,6 +1002,39 @@
       "reviewedAt": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "security-best-practices",
+      "upstreamUrl": "https://github.com/openai/skills",
+      "upstreamRevision": "49f948faa9258a0c61caceaf225e179651397431",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/security-best-practices/LICENSE.txt",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/security-best-practices in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/security-best-practices/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "security-threat-model",
+      "upstreamUrl": "https://github.com/openai/skills",
+      "upstreamRevision": "49f948faa9258a0c61caceaf225e179651397431",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/security-threat-model/LICENSE.txt",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/security-threat-model in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/security-threat-model/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "sentry",
+      "upstreamUrl": "https://github.com/openai/skills",
+      "upstreamRevision": "49f948faa9258a0c61caceaf225e179651397431",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/sentry/LICENSE.txt",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/sentry in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/sentry/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
     },
     {
       "skillId": "setup-local-sdk",
