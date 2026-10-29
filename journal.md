@@ -653,3 +653,12 @@ The local container cannot reach GitHub due to network/DNS restrictions, so loca
 ### Still intentionally out of scope
 
 No hosted MCP integration, auto-install based on natural language, public npm release, lockfile, dependency resolver, update/uninstall commands, or full security audit has been implemented. The project is a usable CLI MVP candidate, not a security-certified or publicly released package.
+
+
+## 24. Registry metadata hardening — 2026-10-29
+
+- **Branch:** `feat/registry-validation`, based on `main`; separate from the marketplace importer and Apache license PRs.
+- **Implemented:** Strict allowlists for registry, skill, and source fields; non-empty checks for required and optional text; validation of supported target names; duplicate tag/target rejection; safer HTTPS Git URL checks that reject credentials, query strings, and fragments; and early relative-path checks for `skillPath`.
+- **Schema:** Updated the public JSON Schema to express local versus Git source shapes, restrict targets to implemented adapters, reject duplicate tags/targets, and constrain path/URL forms.
+- **Tests added:** Unknown keys, unsupported targets, duplicate metadata, invalid optional text, credential/query-bearing URLs, and unsafe skill paths.
+- **Verification status:** Changes are committed through GitHub file updates; CI must pass on the final branch head before this work is considered verified. The local environment did not run the test suite.
