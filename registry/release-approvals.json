@@ -1345,6 +1345,17 @@
       "notes": "Automated content comparison on 2026-10-29 found all 6 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in lackeyjb/playwright-skill at commit dd47a6a023e249eb1b36e9e943eab89d0900865d. The repository-root MIT license at https://github.com/lackeyjb/playwright-skill/blob/dd47a6a023e249eb1b36e9e943eab89d0900865d/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
     },
     {
+      "skillId": "postgres",
+      "upstreamUrl": "https://github.com/sanjay3290/ai-skills",
+      "upstreamRevision": "281d88df199357e3091a3be5c743a0fca9a9ae1b",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/sanjay3290/ai-skills/blob/281d88df199357e3091a3be5c743a0fca9a9ae1b/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison found all 6 files in the bundled skill directory identical by Git blob SHA to skills/postgres in sanjay3290/ai-skills at commit 281d88df199357e3091a3be5c743a0fca9a9ae1b. The original sanjay3290/postgres-skill repository redirects; the current canonical repository is sanjay3290/ai-skills. The repository-root Apache-2.0 license permits redistribution subject to its terms; the full license text and attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
       "skillId": "pricing",
       "upstreamUrl": "https://github.com/coreyhaines31/marketingskills",
       "upstreamRevision": "0cd9b3a0ef4c411a1d690419ce843f2a1da32cce",
