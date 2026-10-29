@@ -33,26 +33,26 @@ jobs:
       - run: node dist/cli.js import-commands --help
       - run: node --input-type=module -e "import { parseMarketplaceCommand } from './dist/marketplace-import.js'; if (parseMarketplaceCommand('/plugin install dotnet-diag@dotnet-agent-skills', 1).plugin !== 'dotnet-diag') process.exit(1)"
       - run: node dist/cli.js --help
-      - run: node dist/cli.js search demo
-      - run: node dist/cli.js install demo-focus --dry-run
+      - run: node dist/cli.js list --all
+      - run: node dist/cli.js add demo-focus --dry-run
       - name: Pack and install the actual CLI package
         run: |
           npm pack --pack-destination "$RUNNER_TEMP"
           npm install --global "$RUNNER_TEMP"/orchill-*.tgz
           orchill --help
           orchill search demo
-          orchill categories
+          orchill list
           set +e
           orchill audit --json > "$RUNNER_TEMP/orchill-audit.json"
           audit_status=$?
           set -e
           test "$audit_status" -le 1
           node --input-type=module -e "import fs from 'node:fs'; const report = JSON.parse(fs.readFileSync(process.argv[1], 'utf8')); if (!report.summary || !Array.isArray(report.findings) || report.summary.totalSkills < 1) process.exit(1); console.log(JSON.stringify({ auditSummary: report.summary, findingsByCode: report.findings.reduce((counts, finding) => (counts[finding.code] = (counts[finding.code] || 0) + 1, counts), {}) }, null, 2))" "$RUNNER_TEMP/orchill-audit.json"
-          orchill list --category "UI/UX"
+          orchill list "UI/UX"
           orchill info frontend-design
           orchill targets
           orchill registry
-          orchill install frontend-design --dry-run
+          orchill add frontend-design --dry-run
           mkdir -p "$RUNNER_TEMP/orchill-smoke-project" "$RUNNER_TEMP/orchill-init-smoke" "$RUNNER_TEMP/orchill-category-smoke"
           orchill install analyzing-dotnet-performance --cwd "$RUNNER_TEMP/orchill-smoke-project"
           test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/analyzing-dotnet-performance/SKILL.md"
