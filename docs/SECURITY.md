@@ -13,10 +13,13 @@ Orchill installs files; it does not run skill scripts. Skills are instructions a
 
 ## MVP protections
 
-- IDs are constrained to lowercase alphanumeric, dot, underscore, and hyphen characters.
-- Relative skill paths reject absolute paths and traversal.
+- Registry metadata rejects unknown fields at the root, skill, and source levels.
+- Required metadata and optional license/provenance values must be non-empty.
+- Skill IDs are constrained to lowercase alphanumeric, dot, underscore, and hyphen characters.
+- Skill paths reject absolute paths and traversal outside their source.
+- Targets are restricted to the implemented adapters: project, agents, Claude, and Codex.
+- Git sources must use HTTPS and reject embedded credentials, query strings, and fragments.
 - Git commands use argument arrays with `shell: false`; the URL is not interpolated into a shell command.
-- Git sources must use HTTPS.
 - Copies reject symbolic links rather than following them.
 - Destination parent symlinks are rejected.
 - Existing installs require explicit `--force`; replacement is staged and the prior install is restored if the swap fails.
@@ -24,4 +27,4 @@ Orchill installs files; it does not run skill scripts. Skills are instructions a
 
 ## Known gaps before a security-focused release
 
-This is an MVP, not a security certification. It does not verify Git commit signatures, enforce a license allowlist, sandbox an agent, inspect prompt injection, maintain a lockfile, or perform a full source-tree audit. Registry files are configuration and should come from trusted maintainers. Local source paths are intentionally useful for development and should not be accepted from untrusted registries. Review the implementation and test in disposable directories before production use.
+This is an MVP, not a security certification. Runtime validation and the published JSON Schema must be kept aligned by tests/review; no cryptographic source signatures or license allowlist are enforced. Orchill does not sandbox an agent, inspect prompt injection, maintain a lockfile, or perform a full source-tree audit. Registry files are configuration and should come from trusted maintainers. Local source paths are intentionally useful for development and should not be accepted from untrusted registries. Review the implementation and test in disposable directories before production use.

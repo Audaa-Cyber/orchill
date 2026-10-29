@@ -671,3 +671,11 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Source of canonical license text:** https://www.apache.org/licenses/LICENSE-2.0.txt
 - **Verification status:** Repository files were updated through GitHub; CI and packaged metadata still need to verify on the resulting commit/PR. This entry does not claim the change has merged or that CI has passed.
 
+## 25. Registry metadata hardening — 2026-10-29
+
+- **Branch:** `feat/registry-validation`, based on `main`; separate from the marketplace importer and Apache license PRs.
+- **Implemented:** Strict allowlists for registry, skill, and source fields; non-empty checks for required and optional text; validation of supported target names; duplicate tag/target rejection; safer HTTPS Git URL checks that reject credentials, query strings, and fragments; and early relative-path checks for `skillPath`.
+- **Schema:** Updated the public JSON Schema to express local versus Git source shapes, restrict targets to implemented adapters, reject duplicate tags/targets, and constrain path/URL forms.
+- **Tests added:** Unknown keys, unsupported targets, duplicate metadata, invalid optional text, credential/query-bearing URLs, and unsafe skill paths.
+- **Verification status:** Changes are committed through GitHub file updates; CI must pass on the final branch head before this work is considered verified. The local environment did not run the test suite.
+
