@@ -6,5 +6,5 @@ Generated from `registry/skills.json`. Local payloads live under `skills/<catego
 
 | Skill | ID | Source | Payload/source | License metadata |
 |---|---|---|---|---|
-| Remotion Best Practices | `remotion-best-practices` | local | [`skills/animation-and-motion/remotion-best-practices`](https://github.com/Audaa-Cyber/orchill/tree/feat/marketplace-bulk-import/skills/animation-and-motion/remotion-best-practices) | Unknown |
-| Vercel React View Transitions | `vercel-react-view-transitions` | local | [`skills/animation-and-motion/vercel-react-view-transitions`](https://github.com/Audaa-Cyber/orchill/tree/feat/marketplace-bulk-import/skills/animation-and-motion/vercel-react-view-transitions) | MIT |
+| Remotion Best Practices | `remotion-best-practices` | local | [`skills/animation-and-motion/remotion-best-practices`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/animation-and-motion/remotion-best-practices) | Unknown |
+| Vercel React View Transitions | `vercel-react-view-transitions` | local | [`skills/animation-and-motion/vercel-react-view-transitions`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/animation-and-motion/vercel-react-view-transitions) | MIT |
