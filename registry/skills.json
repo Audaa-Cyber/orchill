@@ -1522,14 +1522,14 @@
         "path": "../skills/ai-and-data/huggingface-llm-trainer"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@huggingface-llm-trainer. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@huggingface-llm-trainer. Verified 2026-10-29 against huggingface/skills at commit fabc634a893f62ad5c2039830397efa35fa62715; all 19 bundled file(s) matched upstream by Git blob SHA at skills/huggingface-llm-trainer. License evidence: https://github.com/huggingface/skills/blob/fabc634a893f62ad5c2039830397efa35fa62715/LICENSE.",
       "targets": [
         "project",
         "claude",
         "codex",
         "agents"
       ],
-      "license": "Complete terms in LICENSE.txt",
+      "license": "Apache-2.0",
       "tags": [
         "ai-data",
         "huggingface",
@@ -5186,7 +5186,7 @@
         "path": "../skills/ui-ux/design-taste-frontend"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from Leonxlnx/taste-skill; command: npx skills add Leonxlnx/taste-skill@design-taste-frontend. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from Leonxlnx/taste-skill; command: npx skills add Leonxlnx/taste-skill@design-taste-frontend. Verified 2026-10-29 against Leonxlnx/taste-skill at commit 12af471f627f866411b4bd785b19646d3672784c; all 39 bundled file(s) matched upstream by Git blob SHA at skills/taste-skill. License evidence: https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -5198,7 +5198,8 @@
         "design",
         "taste",
         "frontend"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "figma",
