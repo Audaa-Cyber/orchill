@@ -679,3 +679,11 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Tests added:** Unknown keys, unsupported targets, duplicate metadata, invalid optional text, credential/query-bearing URLs, and unsafe skill paths.
 - **Verification status:** Changes are committed through GitHub file updates; CI must pass on the final branch head before this work is considered verified. The local environment did not run the test suite.
 
+## 26. npm release preparation — 2026-10-29
+
+- **Branch:** `chore/npm-release-prep`, based on `main`.
+- **Implemented:** Added a GitHub Release-triggered npm publication workflow using GitHub OIDC trusted publishing and npm provenance. It checks that the release tag matches the package version, fails unless package metadata declares Apache-2.0, runs typecheck/tests/build, inspects package contents with `npm pack --dry-run`, and publishes only on a published GitHub Release.
+- **Documentation:** Added `docs/RELEASING.md` with release gates, catalog review requirements, version/tag rules, npm trusted-publisher setup, and post-publish verification.
+- **Safety:** The workflow does not publish on ordinary pushes and is deliberately blocked until the Apache-2.0 license change is merged. npm trusted publishing must be configured in the npm account separately.
+- **Verification:** Workflow and docs are committed to this branch. The release workflow has not been executed against a published release; no npm publication is claimed. CI must pass on the PR head before merge.
+
