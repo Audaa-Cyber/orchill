@@ -1,0 +1,2520 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "id": "design-taste-frontend",
+      "name": "design-taste-frontend",
+      "description": ">-",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/design-taste-frontend"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from Leonxlnx/taste-skill; command: npx skills add Leonxlnx/taste-skill@design-taste-frontend. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "emil-design-eng",
+      "name": "emil-design-eng",
+      "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/emil-design-eng"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from emilkowalski/skills; command: npx skills add emilkowalski/skills@emil-design-eng. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "find-skills",
+      "name": "find-skills",
+      "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/find-skills"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from vercel-labs/skills; command: npx skills add vercel-labs/skills@find-skills. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "vercel-react-best-practices",
+      "name": "vercel-react-best-practices",
+      "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/vercel-react-best-practices"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@vercel-react-best-practices. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "frontend-design",
+      "name": "frontend-design",
+      "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/frontend-design"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@frontend-design. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Complete terms in LICENSE.txt"
+    },
+    {
+      "id": "mcp-builder",
+      "name": "mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/mcp-builder"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@mcp-builder. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Complete terms in LICENSE.txt"
+    },
+    {
+      "id": "claude-api",
+      "name": "claude-api",
+      "description": "|-",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/claude-api"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@claude-api. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Complete terms in LICENSE.txt"
+    },
+    {
+      "id": "docx",
+      "name": "docx",
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', '.dotx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx or .dotx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/docx"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@docx. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Proprietary. LICENSE.txt has complete terms"
+    },
+    {
+      "id": "shadcn",
+      "name": "shadcn",
+      "description": "Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI, including chat interfaces. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with a components.json file. Also triggers for \"shadcn init\", \"create an app with --preset\", \"switch to --preset\", and for building a design system or applying a DESIGN.md or brand spec to shadcn/ui.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/shadcn"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from shadcn-ui/ui; command: npx skills add shadcn-ui/ui@shadcn. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "brainstorming",
+      "name": "brainstorming",
+      "description": "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/brainstorming"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@brainstorming. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "systematic-debugging",
+      "name": "systematic-debugging",
+      "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/systematic-debugging"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@systematic-debugging. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "test-driven-development",
+      "name": "test-driven-development",
+      "description": "Use when implementing any feature or bugfix, before writing implementation code",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/test-driven-development"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@test-driven-development. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "requesting-code-review",
+      "name": "requesting-code-review",
+      "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/requesting-code-review"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@requesting-code-review. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "subagent-driven-development",
+      "name": "subagent-driven-development",
+      "description": "Use when executing implementation plans with independent tasks in the current session",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/subagent-driven-development"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@subagent-driven-development. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "verification-before-completion",
+      "name": "verification-before-completion",
+      "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/verification-before-completion"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@verification-before-completion. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "receiving-code-review",
+      "name": "receiving-code-review",
+      "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/receiving-code-review"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@receiving-code-review. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "writing-plans",
+      "name": "writing-plans",
+      "description": "Use when you have a spec or requirements for a multi-step task, before touching code",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/writing-plans"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@writing-plans. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "executing-plans",
+      "name": "executing-plans",
+      "description": "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/executing-plans"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@executing-plans. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "dispatching-parallel-agents",
+      "name": "dispatching-parallel-agents",
+      "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/dispatching-parallel-agents"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@dispatching-parallel-agents. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "using-git-worktrees",
+      "name": "using-git-worktrees",
+      "description": "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/using-git-worktrees"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@using-git-worktrees. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "using-superpowers",
+      "name": "using-superpowers",
+      "description": "Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/using-superpowers"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@using-superpowers. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "skill-creator",
+      "name": "skill-creator",
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/skill-creator"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@skill-creator. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "pdf",
+      "name": "pdf",
+      "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/pdf"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@pdf. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Proprietary. LICENSE.txt has complete terms"
+    },
+    {
+      "id": "slack-gif-creator",
+      "name": "slack-gif-creator",
+      "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\"",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/slack-gif-creator"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@slack-gif-creator. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Complete terms in LICENSE.txt"
+    },
+    {
+      "id": "web-artifacts-builder",
+      "name": "web-artifacts-builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/web-artifacts-builder"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@web-artifacts-builder. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Complete terms in LICENSE.txt"
+    },
+    {
+      "id": "internal-comms",
+      "name": "internal-comms",
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/internal-comms"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@internal-comms. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Complete terms in LICENSE.txt"
+    },
+    {
+      "id": "canvas-design",
+      "name": "canvas-design",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/canvas-design"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@canvas-design. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Complete terms in LICENSE.txt"
+    },
+    {
+      "id": "algorithmic-art",
+      "name": "algorithmic-art",
+      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/algorithmic-art"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@algorithmic-art. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Complete terms in LICENSE.txt"
+    },
+    {
+      "id": "theme-factory",
+      "name": "theme-factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/theme-factory"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@theme-factory. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Complete terms in LICENSE.txt"
+    },
+    {
+      "id": "brand-guidelines",
+      "name": "brand-guidelines",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/brand-guidelines"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@brand-guidelines. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Complete terms in LICENSE.txt"
+    },
+    {
+      "id": "pptx",
+      "name": "pptx",
+      "description": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or .potx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates (.potx), layouts, speaker notes, or comments. Trigger whenever the user mentions \\\"deck,\\\" \\\"slides,\\\" \\\"presentation,\\\" or references a .pptx or .potx filename, regardless of what they plan to do with the content afterward. If a .pptx or .potx file needs to be opened, created, or touched, use this skill.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/pptx"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@pptx. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Proprietary. LICENSE.txt has complete terms"
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "name": "ui-ux-pro-max",
+      "description": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data: 79 searchable styles (50 active), 192 product palettes and reasoning profiles, 74 font pairings, 119 UX guidelines, 105 icons, 17 GSAP presets, 25 chart types, and 22 stacks.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/ui-ux-pro-max"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from nextlevelbuilder/ui-ux-pro-max-skill; command: npx skills add nextlevelbuilder/ui-ux-pro-max-skill@ui-ux-pro-max. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "xlsx",
+      "name": "xlsx",
+      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \\\"the xlsx in my downloads\\\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/xlsx"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from anthropics/skills; command: npx skills add anthropics/skills@xlsx. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Proprietary. LICENSE.txt has complete terms"
+    },
+    {
+      "id": "tailwind-design-system",
+      "name": "tailwind-design-system",
+      "description": "Build scalable design systems with Tailwind CSS v4, design tokens, component libraries, and responsive patterns. Use when creating component libraries, implementing design systems, or standardizing UI patterns.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/tailwind-design-system"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from wshobson/agents; command: npx skills add wshobson/agents@tailwind-design-system. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "vercel-composition-patterns",
+      "name": "vercel-composition-patterns",
+      "description": "Description requires review; imported from vercel-labs/agent-skills.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/vercel-composition-patterns"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@vercel-composition-patterns. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "vercel-react-view-transitions",
+      "name": "vercel-react-view-transitions",
+      "description": "Guide for implementing smooth, native-feeling animations using React's View Transition API (`<ViewTransition>` component, `addTransitionType`, and CSS view transition pseudo-elements). Use this skill whenever the user wants to add page transitions, animate route changes, create shared element animations, animate enter/exit of components, animate list reorder, implement directional (forward/back) navigation animations, or integrate view transitions in Next.js. Also use when the user mentions view transitions, `startViewTransition`, `ViewTransition`, transition types, or asks about animating between UI states in React without third-party animation libraries.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/vercel-react-view-transitions"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@vercel-react-view-transitions. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "seo-audit",
+      "name": "seo-audit",
+      "description": "When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions \"SEO audit,\" \"technical SEO,\" \"why am I not ranking,\" \"SEO issues,\" \"on-page SEO,\" \"meta tags review,\" \"SEO health check,\" \"my traffic dropped,\" \"lost rankings,\" \"not showing up in Google,\" \"site isn't ranking,\" \"Google update hit me,\" \"page speed,\" \"core web vitals,\" \"crawl errors,\" \"indexing issues,\" \"stuck on page 2,\" \"striking distance keywords,\" \"title tag rewrite,\" \"low CTR,\" \"local SEO,\" \"Google Business Profile,\" or \"map pack.\" Use this even if the user just says something vague like \"my SEO is bad\" or \"help with SEO\" — start with an audit. For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema. For AI search optimization, see ai-seo.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/seo-audit"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@seo-audit. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "remotion-best-practices",
+      "name": "remotion-best-practices",
+      "description": "Router for all Remotion skills",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/remotion-best-practices"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from remotion-dev/skills; command: npx skills add remotion-dev/skills@remotion-best-practices. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "wp-block-development",
+      "name": "wp-block-development",
+      "description": "Use when developing WordPress (Gutenberg) blocks: block.json metadata, register_block_type(_from_metadata), attributes/serialization, supports, dynamic rendering (render.php/render_callback), deprecations/migrations, viewScript vs viewScriptModule, and @wordpress/scripts/@wordpress/create-block build and test workflows.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/wp-block-development"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from Automattic/agent-skills; command: npx skills add Automattic/agent-skills@wp-block-development. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "wp-block-themes",
+      "name": "wp-block-themes",
+      "description": "Use when developing WordPress block themes: theme.json (global settings/styles), templates and template parts, patterns, style variations, and Site Editor troubleshooting (style hierarchy, overrides, caching).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/wp-block-themes"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from Automattic/agent-skills; command: npx skills add Automattic/agent-skills@wp-block-themes. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "openai-docs",
+      "name": "openai-docs",
+      "description": "Use when the user asks how to build with OpenAI products or APIs, asks about Codex itself or choosing Codex surfaces, needs up-to-date official documentation with citations, help choosing the latest model for a use case, or model upgrade and prompt-upgrade guidance; use OpenAI docs MCP tools for non-Codex docs questions, use the Codex manual helper first for broad Codex self-knowledge, and restrict fallback browsing to official OpenAI domains.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/openai-docs"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@openai-docs. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "supabase-postgres-best-practices",
+      "name": "supabase-postgres-best-practices",
+      "description": "Postgres best practices maintained by Supabase, for Postgres running anywhere. Load this skill BEFORE writing or changing anything that lives in a Postgres database: creating or altering tables and columns (including choosing column types), schema design, migrations and declarative schema files, RLS policies and the tests that verify them, indexes, triggers, database functions, queues and scheduled jobs (pg_cron, pgmq), vector/semantic search (pgvector), and restoring dumps (pg_restore) or importing data. Also load it when diagnosing slow queries, high CPU, timeouts, EXPLAIN plans, connection exhaustion, locking, bloat, or rows visible to the wrong user or tenant. This is not just a performance guide — schema, migration, security, and SQL authoring tasks need these rules too, even for a one-column change or a single query.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/supabase-postgres-best-practices"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from supabase/agent-skills; command: npx skills add supabase/agent-skills@supabase-postgres-best-practices. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "better-auth-best-practices",
+      "name": "better-auth-best-practices",
+      "description": "Configure Better Auth server and client, set up database adapters, manage sessions, add plugins, and handle environment variables. Use when users mention Better Auth, betterauth, auth.ts, or need to set up TypeScript authentication with email/password, OAuth, or plugin configuration.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/better-auth-best-practices"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from better-auth/skills; command: npx skills add better-auth/skills@better-auth-best-practices. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "resend",
+      "name": "resend",
+      "description": "Use when working with the Resend email API — sending transactional emails (single or batch), receiving inbound emails via webhooks, managing email templates, tracking delivery events, managing domains, contacts, broadcasts, webhooks, API keys, inboxes (threads, labels, drafts, replies), automations, events, viewing API request logs, checking account usage and quotas, or setting up the Resend SDK. Always use this skill when the user mentions Resend, even for simple tasks like \"send an email with Resend\" — the skill contains critical gotchas (idempotency keys, webhook verification, template variable syntax) that prevent common production issues.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/resend"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from resend/resend-skills; command: npx skills add resend/resend-skills@resend. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "sanity-best-practices",
+      "name": "sanity-best-practices",
+      "description": "Sanity development best practices for schema design, GROQ queries, TypeGen, Visual Editing, images, Portable Text, Studio structure, localization, migrations, Sanity Functions, webhooks, Blueprints, and framework integrations such as Next.js, Nuxt, Astro, Remix, SvelteKit, Angular, Hydrogen, the App SDK, and Studios or apps running in the Sanity Dashboard (defineApplication). Use this skill whenever working with Sanity schemas, defineType or defineField, GROQ or defineQuery, content modeling, Presentation or preview setups, Sanity-powered frontend integrations, event-driven content automation, documentEventHandler, defineDocumentFunction, defineMediaLibraryAssetFunction, @sanity/functions, @sanity/blueprints, sanity.blueprint.ts, event-driven content automation, or when reviewing and fixing a Sanity codebase.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/sanity-best-practices"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from sanity-io/agent-toolkit; command: npx skills add sanity-io/agent-toolkit@sanity-best-practices. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "neon-postgres",
+      "name": "neon-postgres",
+      "description": ">-",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/neon-postgres"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from neondatabase/agent-skills; command: npx skills add neondatabase/agent-skills@neon-postgres. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "tinybird",
+      "name": "tinybird",
+      "description": "Tinybird file formats, SQL rules, optimization patterns, and best practices for datasources, pipes, endpoints, and materialized views.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/tinybird"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from tinybirdco/tinybird-agent-skills; command: npx skills add tinybirdco/tinybird-agent-skills@tinybird. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "deploy-to-vercel",
+      "name": "deploy-to-vercel",
+      "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/deploy-to-vercel"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@deploy-to-vercel. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "vercel-cli-with-tokens",
+      "name": "vercel-cli-with-tokens",
+      "description": "Deploy and manage projects on Vercel using token-based authentication. Use when working with Vercel CLI using access tokens rather than interactive login — e.g. \"deploy to vercel\", \"set up vercel\", \"add environment variables to vercel\".",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/vercel-cli-with-tokens"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@vercel-cli-with-tokens. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "cloudflare-deploy",
+      "name": "cloudflare-deploy",
+      "description": "Deploy applications and infrastructure to Cloudflare using Workers, Pages, and related platform services. Use when the user asks to deploy, host, publish, or set up a project on Cloudflare.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/cloudflare-deploy"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@cloudflare-deploy. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "netlify-deploy",
+      "name": "netlify-deploy",
+      "description": "Deploy web projects to Netlify using the Netlify CLI (`npx netlify`). Use when the user asks to deploy, host, publish, or link a site/repo on Netlify, including preview and production deploys.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/netlify-deploy"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@netlify-deploy. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "render-deploy",
+      "name": "render-deploy",
+      "description": "Deploy applications to Render by analyzing codebases, generating render.yaml Blueprints, and providing Dashboard deeplinks. Use when the user wants to deploy, host, publish, or set up their application on Render's cloud platform.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/render-deploy"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@render-deploy. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "wrangler",
+      "name": "wrangler",
+      "description": "Run or troubleshoot Wrangler CLI commands in projects that have a wrangler.jsonc, wrangler.json, or wrangler.toml file, including local development, Previews, deployment, and resource management. For new projects and projects without a Wrangler configuration file, use the cf CLI instead.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/wrangler"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@wrangler. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "cloudflare",
+      "name": "cloudflare",
+      "description": "Discover and choose Cloudflare products for apps, APIs, AI agents, storage, networking, and security. Use for architecture and product selection, including when the user describes a need without naming a Cloudflare product; then find the relevant skill or documentation.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/cloudflare"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@cloudflare. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "durable-objects",
+      "name": "durable-objects",
+      "description": "Build, debug, or review Cloudflare Durable Objects code for persistent state and coordination.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/durable-objects"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@durable-objects. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "web-perf",
+      "name": "web-perf",
+      "description": "Audit, diagnose, or optimize website loading and interaction performance, Core Web Vitals, and Lighthouse performance scores.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/web-perf"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@web-perf. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "terraform-skill",
+      "name": "terraform-skill",
+      "description": "Use when writing, reviewing, or debugging Terraform/OpenTofu modules, tests, CI, scans, or state ops - diagnoses failure mode (identity churn, secrets, blast radius, CI drift, state corruption) with version-aware guards.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/terraform-skill"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from antonbabenko/terraform-skill; command: npx skills add antonbabenko/terraform-skill@terraform-skill. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "terraform-style-guide",
+      "name": "terraform-style-guide",
+      "description": "Generate Terraform HCL code following HashiCorp's official style conventions and best practices. Use when writing, reviewing, or generating Terraform configurations.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/terraform-style-guide"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from hashicorp/agent-skills; command: npx skills add hashicorp/agent-skills@terraform-style-guide. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "refactor-module",
+      "name": "refactor-module",
+      "description": "Transform monolithic Terraform configurations into reusable, maintainable modules following HashiCorp's module design principles and community best practices.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/refactor-module"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from hashicorp/agent-skills; command: npx skills add hashicorp/agent-skills@refactor-module. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "provider-resources",
+      "name": "provider-resources",
+      "description": ">-",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/provider-resources"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from hashicorp/agent-skills; command: npx skills add hashicorp/agent-skills@provider-resources. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MPL-2.0"
+    },
+    {
+      "id": "azure-functions",
+      "name": "azure-functions",
+      "description": "Expert knowledge for Azure Functions development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring Functions to HTTP/storage/queues, using bindings, VNet/private endpoints, managed identity, or CI/CD deploys, and other Azure Functions related development tasks. Not for Azure App Service (use azure-app-service), Azure Logic Apps (use azure-logic-apps), Azure Container Apps (use azure-container-apps), Azure Kubernetes Service (AKS) (use azure-kubernetes-service).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-functions"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-functions. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "azure-app-service",
+      "name": "azure-app-service",
+      "description": "Expert knowledge for Azure App Service development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring App Service plans, deployment slots, VNet integration, Entra auth, or managed identities, and other Azure App Service related development tasks. Not for Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Spring Apps (use azure-spring-apps), Azure Static Web Apps (use azure-static-web-apps).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-app-service"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-app-service. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "azure-kubernetes-service",
+      "name": "azure-kubernetes-service",
+      "description": "Expert knowledge for Azure Kubernetes Service (AKS) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when securing AKS with Entra/RBAC, configuring Fleet, GPUs or KEDA, or running AI/ML, Wasm, or PCI workloads, and other Azure Kubernetes Service (AKS) related development tasks. Not for Azure Container Apps (use azure-container-apps), Azure Container Instances (use azure-container-instances), Azure Container Registry (use azure-container-registry), Azure Red Hat OpenShift (use azure-redhat-openshift).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-kubernetes-service"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-kubernetes-service. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "azure-container-apps",
+      "name": "azure-container-apps",
+      "description": "Expert knowledge for Azure Container Apps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring ACA auth/networking, workload profiles/GPUs, CI/CD deployments, KEDA/Dapr scaling, or Java microservices, and other Azure Container Apps related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Kubernetes Service (AKS) (use azure-kubernetes-service), Azure Spring Apps (use azure-spring-apps).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-container-apps"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-container-apps. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "azure-static-web-apps",
+      "name": "azure-static-web-apps",
+      "description": "Expert knowledge for Azure Static Web Apps development including troubleshooting, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when wiring SWA APIs to Azure DBs, configuring custom domains/backends, Entra auth, CI/CD, or plan limits, and other Azure Static Web Apps related development tasks. Not for Azure App Service (use azure-app-service), Azure Functions (use azure-functions), Azure Container Apps (use azure-container-apps), Azure Web Application Firewall (use azure-web-application-firewall).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-static-web-apps"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-static-web-apps. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "azure-devops",
+      "name": "azure-devops",
+      "description": "Expert knowledge for Azure DevOps development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing org/projects, repos, pipelines, work items, dashboards/analytics, or Azure DevOps Server deployments, and other Azure DevOps related development tasks. Not for Azure Boards (use azure-boards), Azure Pipelines (use azure-pipelines), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-devops"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-devops. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "azure-pipelines",
+      "name": "azure-pipelines",
+      "description": "Expert knowledge for Azure Pipelines development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring YAML pipelines, agents, service connections, Key Vault secrets, or Kubernetes/web app deployments, and other Azure Pipelines related development tasks. Not for Azure DevOps (use azure-devops), Azure Boards (use azure-boards), Azure Repos (use azure-repos), Azure Test Plans (use azure-test-plans).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-pipelines"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-pipelines. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "azure-monitor",
+      "name": "azure-monitor",
+      "description": "Expert knowledge for Azure Monitor development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring AMA/DCR pipelines, Log Analytics, App Insights, Container/VM monitoring, or Prometheus/OpenTelemetry, and other Azure Monitor related development tasks. Not for Azure Network Watcher (use azure-network-watcher), Azure Service Health (use azure-service-health), Azure Defender For Cloud (use azure-defender-for-cloud), Cost Management (use azure-cost-management).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-monitor"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-monitor. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "gh-fix-ci",
+      "name": "gh-fix-ci",
+      "description": "Use when a user asks to debug or fix failing GitHub PR checks that run in GitHub Actions; use `gh` to inspect checks and logs, summarize failure context, draft a fix plan, and implement only after explicit approval. Treat external providers (for example Buildkite) as out of scope and report only the details URL.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/gh-fix-ci"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@gh-fix-ci. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "gh-address-comments",
+      "name": "gh-address-comments",
+      "description": "Help address review/issue comments on the open GitHub PR for the current branch using gh CLI; verify gh auth first and prompt the user to authenticate if not logged in.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/gh-address-comments"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@gh-address-comments. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "modern-python",
+      "name": "modern-python",
+      "description": "Configures Python projects with modern tooling (uv, ruff, ty). Use when creating projects, writing standalone scripts, or migrating from pip/Poetry/mypy/black.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/modern-python"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@modern-python. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "playwright-skill",
+      "name": "playwright-skill",
+      "description": "Complete browser automation with Playwright. Auto-detects dev servers, writes reusable test scripts, and supports screenshots, responsive checks, UX validation, login flows, link checks, and arbitrary browser automation. Use when the user wants to test a website, automate browser interactions, validate web functionality, or perform browser-based testing.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/playwright-skill"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from lackeyjb/playwright-skill; command: npx skills add lackeyjb/playwright-skill@playwright-skill. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "code-review",
+      "name": "code-review",
+      "description": "Perform code reviews following Sentry engineering practices. Use when reviewing pull requests, examining code changes, or providing feedback on code quality. Covers security, performance, testing, and design review.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/code-review"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from getsentry/skills; command: npx skills add getsentry/skills@code-review. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "find-bugs",
+      "name": "find-bugs",
+      "description": "Find bugs, security vulnerabilities, and code quality issues in local branch changes. Use when asked to review changes, find bugs, security review, or audit code on the current branch.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/find-bugs"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from getsentry/skills; command: npx skills add getsentry/skills@find-bugs. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "imagegen",
+      "name": "imagegen",
+      "description": "Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/imagegen"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@imagegen. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "hf-cli",
+      "name": "hf-cli",
+      "description": "Hugging Face Hub CLI (`hf`) for downloading, uploading, and managing models, datasets, spaces, buckets, repos, papers, jobs, and more on the Hugging Face Hub. Use when: handling authentication; managing local cache; managing Hugging Face Buckets; running or scheduling jobs on Hugging Face infrastructure; managing Hugging Face repos; discussions and pull requests; browsing models, datasets and spaces; reading, searching, or browsing academic papers; managing collections; querying datasets; configuring spaces; setting up webhooks; or deploying and managing HF Inference Endpoints. Make sure to use this skill whenever the user mentions 'hf', 'huggingface', 'Hugging Face', 'huggingface-cli', or 'hugging face cli', or wants to do anything related to the Hugging Face ecosystem and to AI and ML in general. Also use for cloud storage needs like training checkpoints, data pipelines, or agent traces. Use even if the user doesn't explicitly ask for a CLI command. Replaces the deprecated `huggingface-cli`.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/hf-cli"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@hf-cli. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "huggingface-llm-trainer",
+      "name": "huggingface-llm-trainer",
+      "description": "Train or fine-tune language and vision models using TRL (Transformer Reinforcement Learning) or Unsloth with Hugging Face Jobs infrastructure. Covers SFT, DPO, GRPO and reward modeling training methods, plus GGUF conversion for local deployment. Includes guidance on the TRL Jobs package, UV scripts with PEP 723 format, dataset preparation and validation, hardware selection, cost estimation, Trackio monitoring, Hub authentication, model selection/leaderboards and model persistence. Use for tasks involving cloud GPU training, GGUF conversion, or when users mention training on Hugging Face Jobs without local GPU setup.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/huggingface-llm-trainer"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@huggingface-llm-trainer. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Complete terms in LICENSE.txt"
+    },
+    {
+      "id": "huggingface-datasets",
+      "name": "huggingface-datasets",
+      "description": "Use this skill for Hugging Face Dataset Viewer API workflows that fetch subset/split metadata, paginate rows, search text, apply filters, download parquet URLs, and read size or statistics.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/huggingface-datasets"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@huggingface-datasets. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "huggingface-community-evals",
+      "name": "huggingface-community-evals",
+      "description": "Run evaluations for Hugging Face Hub models using inspect-ai and lighteval on local hardware. Use for backend selection, local GPU evals, and choosing between vLLM / Transformers / accelerate. Not for HF Jobs orchestration, model-card PRs, .eval_results publication, or community-evals automation.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/huggingface-community-evals"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@huggingface-community-evals. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "huggingface-trackio",
+      "name": "huggingface-trackio",
+      "description": "Track and visualize ML training experiments with Trackio. Use when logging metrics during training (Python API), firing alerts for training diagnostics, or retrieving/analyzing logged metrics (CLI). Supports real-time dashboard visualization, alerts with webhooks, HF Space syncing, and JSON output for automation.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/huggingface-trackio"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@huggingface-trackio. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "microsoft-foundry",
+      "name": "microsoft-foundry",
+      "description": "Expert knowledge for Microsoft Foundry (aka Azure AI Foundry) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when building Foundry agents with Azure OpenAI, voice/telephony, Realtime, MCP tools, or LangChain integrations, and other Microsoft Foundry related development tasks. Not for Content Safety in Foundry Control Plane (use azure-content-safety), Azure Content Understanding in Foundry Tools (use azure-content-understanding), Azure Speech in Foundry Tools (use azure-speech), Microsoft Foundry Classic (use microsoft-foundry-classic).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/microsoft-foundry"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "microsoft-foundry-classic",
+      "name": "microsoft-foundry-classic",
+      "description": "Expert knowledge for Microsoft Foundry Classic (aka Azure AI Foundry classic) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring Foundry agents, model routing, Azure OpenAI/RAG, multi-agent apps, or secure on-your-data tools, and other Microsoft Foundry Classic related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Local (use microsoft-foundry-local), Content Safety in Foundry Control Plane (use azure-content-safety), Azure Speech in Foundry Tools (use azure-speech).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/microsoft-foundry-classic"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry-classic. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "microsoft-foundry-local",
+      "name": "microsoft-foundry-local",
+      "description": "Expert knowledge for Microsoft Foundry Local (aka Azure AI Foundry Local) development including best practices, decision making, configuration, and integrations & coding patterns. Use when compiling HF models with Olive, using Foundry Local CLI, embeddings/chat/audio APIs, or OpenAI-style integrations, and other Microsoft Foundry Local related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Azure Local (use azure-local), Azure Content Understanding in Foundry Tools (use azure-content-understanding).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/microsoft-foundry-local"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry-local. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "microsoft-foundry-tools",
+      "name": "microsoft-foundry-tools",
+      "description": "Expert knowledge for Microsoft Foundry Tools (aka Azure AI services, Azure Cognitive Services) development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, and integrations & coding patterns. Use when using Content Moderator, Content Safety, Content Understanding analyzers, REST/.NET APIs, or document extraction workloads, and other Microsoft Foundry Tools related development tasks. Not for Microsoft Foundry (use microsoft-foundry), Microsoft Foundry Classic (use microsoft-foundry-classic), Microsoft Foundry Local (use microsoft-foundry-local).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/microsoft-foundry-tools"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry-tools. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "azure-machine-learning",
+      "name": "azure-machine-learning",
+      "description": "Expert knowledge for Azure Machine Learning development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using AutoML, Prompt Flow, online/batch endpoints, vector stores/RAG, or Model Catalog in Azure ML, and other Azure Machine Learning related development tasks. Not for Azure Databricks (use azure-databricks), Azure Synapse Analytics (use azure-synapse-analytics), Azure Data Science Virtual Machines (use azure-data-science-vm), Azure HDInsight (use azure-hdinsight).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-machine-learning"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-machine-learning. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "azure-cognitive-search",
+      "name": "azure-cognitive-search",
+      "description": "Expert knowledge for Azure AI Search development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when configuring data sources, skillsets, vector/semantic search, indexers, or multi-region search architectures, and other Azure AI Search related development tasks. Not for Azure Cosmos DB (use azure-cosmos-db), Azure Data Explorer (use azure-data-explorer), Azure Synapse Analytics (use azure-synapse-analytics).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-cognitive-search"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-cognitive-search. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "deep-research",
+      "name": "deep-research",
+      "description": "Execute autonomous multi-step research using Google Gemini Deep Research Agent. Use for: market analysis, competitive landscaping, literature reviews, technical research, due diligence. Takes 2-10 minutes but produces detailed, cited reports. Costs $2-5 per task.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/deep-research"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from sanjay3290/ai-skills; command: npx skills add sanjay3290/ai-skills@deep-research. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "jupyter-notebook",
+      "name": "jupyter-notebook",
+      "description": "Use when the user asks to create, scaffold, or edit Jupyter notebooks (`.ipynb`) for experiments, explorations, or tutorials; prefer the bundled templates and run the helper script `new_notebook.py` to generate a clean starting notebook.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/jupyter-notebook"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@jupyter-notebook. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "azure-databricks",
+      "name": "azure-databricks",
+      "description": "Expert knowledge for Azure Databricks development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using Unity Catalog, Lakeflow pipelines, Lakebase, AI Runtime/agents, or external connectors/BI tools, and other Azure Databricks related development tasks. Not for Azure Synapse Analytics (use azure-synapse-analytics), Azure HDInsight (use azure-hdinsight), Azure Data Factory (use azure-data-factory), Azure Machine Learning (use azure-machine-learning).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-databricks"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-databricks. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "copywriting",
+      "name": "copywriting",
+      "description": "When the user wants to write, rewrite, or improve marketing copy for any page, including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says \"write copy for,\" \"improve this copy,\" \"rewrite this page,\" \"marketing copy,\" \"headline help,\" \"CTA copy,\" \"value proposition,\" \"tagline,\" \"hero section copy,\" \"this copy is weak,\" \"this sounds like AI,\" \"AI slop,\" \"make it sound human,\" or \"help me describe my product.\" Drafts never use AI tells like \"it's not X, it's Y\" reveals, \"no X, no Y, no Z\" lists, or sentences that trail into extra comma clauses. For email copy, see emails. For popup copy, see popups. For editing existing copy, see copy-editing. For the offer underneath the copy (bonuses, guarantees, value framing), see offers. Claims must be supportable, and a declined claim names the evidence that would unlock it. Diagnoses the input first (blank brief, real voice, or point edit) and changes only what it calls for.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/copywriting"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@copywriting. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "marketing-psychology",
+      "name": "marketing-psychology",
+      "description": "When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,' 'mental models,' 'cognitive bias,' 'persuasion,' 'behavioral science,' 'why people buy,' 'decision-making,' 'consumer behavior,' 'anchoring,' 'social proof,' 'scarcity,' 'loss aversion,' 'framing,' or 'nudge.' Use this whenever someone wants to understand or leverage how people think and make decisions in a marketing context. For applying psychology to specific pages, see cro; for pricing tactics, see pricing; for copy framing, see copywriting.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/marketing-psychology"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@marketing-psychology. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "content-strategy",
+      "name": "content-strategy",
+      "description": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions \"content strategy,\" \"what should I write about,\" \"content ideas,\" \"blog strategy,\" \"topic clusters,\" \"content planning,\" \"editorial calendar,\" \"content marketing,\" \"content roadmap,\" \"what content should I create,\" \"blog topics,\" \"content pillars,\" or \"I don't know what to write.\" Use this whenever someone needs help deciding what content to produce, not just writing it. For writing individual pieces, see copywriting. For SEO-specific audits, see seo-audit. For social media content specifically, see social.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/content-strategy"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@content-strategy. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "product-marketing",
+      "name": "product-marketing",
+      "description": "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' 'who is my target audience,' 'describe my product,' 'ICP,' 'ideal customer profile,' 'brand voice,' 'tone of voice,' 'brand guidelines,' 'what have we learned,' 'log this learning,' or wants to avoid repeating foundational information across marketing tasks. Use this at the start of any new project before using other marketing skills — it creates `.agents/product-marketing.md` that all other skills reference for product, audience, and positioning context.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/product-marketing"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@product-marketing. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "marketing-ideas",
+      "name": "marketing-ideas",
+      "description": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'growth ideas,' 'how to market,' 'marketing strategies,' 'marketing tactics,' 'ways to promote,' 'ideas to grow,' 'what else can I try,' 'I don't know how to market this,' 'brainstorm marketing,' or 'what marketing should I do.' Use this as a starting point whenever someone is stuck or looking for inspiration on how to grow. For specific channel execution, see the relevant skill (ads, social, emails, etc.).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/marketing-ideas"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@marketing-ideas. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "social",
+      "name": "social",
+      "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, or Facebook, or wants to do social listening and engagement triage. Also use when the user mentions 'LinkedIn post,' 'Twitter thread,' 'social media,' 'content calendar,' 'social scheduling,' 'engagement,' 'viral content,' 'what should I post,' 'repurpose this content,' 'tweet ideas,' 'LinkedIn carousel,' 'social media strategy,' 'grow my following,' 'TikTok video,' 'Reels,' 'Shorts,' 'video script,' 'video hook,' 'short-form video,' 'create a reel,' 'social listening,' 'brand mentions,' 'competitor monitoring,' 'top posts to comment on,' 'find people asking for,' 'carousel,' 'slide-by-slide,' or 'document post.' Use this for social content, repurposing, scheduling, video scripts, and listening. Posts avoid AI tells like 'it's not X, it's Y' reveals and broetry. For broader content strategy, see content-strategy. For paid ads, see ad-creative. For earned media, see public-relations.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/social"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@social. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "copy-editing",
+      "name": "copy-editing",
+      "description": "When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content. Also use when the user mentions 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make this better,' 'copy sweep,' 'tighten this up,' 'this reads awkwardly,' 'clean up this text,' 'too wordy,' 'sharpen the messaging,' 'refresh this content,' 'update this page,' 'this content is outdated,' or 'content audit,' 'this sounds like AI,' 'AI slop,' 'de-slop this,' or 'make it sound human.' Use this when the user already has copy and wants it improved or refreshed rather than rewritten from scratch. Every edit removes AI tells such as 'it's not X, it's Y' reveals, 'no X, no Y, no Z' lists, and sentences that trail into extra comma clauses. A request to fix one line gets a point edit that changes only that line. For writing new copy, see copywriting.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/copy-editing"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@copy-editing. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "launch",
+      "name": "launch",
+      "description": "When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early access,' 'waitlist,' 'product update,' 'how do I launch this,' 'site launch,' 'go live,' 'pre-launch QA,' 'launch checklist,' 'GTM plan,' 'we're about to ship,' 'changelog,' 'release notes,' or 'what did we ship this week.' Use this whenever someone is preparing to release something publicly. For ongoing marketing after launch, see marketing-ideas. For the offer being launched (bonuses, guarantees, scarcity, naming), see offers.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/launch"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@launch. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "x-article-publisher",
+      "name": "x-article-publisher",
+      "description": "|",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/x-article-publisher"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from wshuyi/x-article-publisher-skill; command: npx skills add wshuyi/x-article-publisher-skill@x-article-publisher. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "content-research-writer",
+      "name": "content-research-writer",
+      "description": "Assists in writing high-quality content by conducting research, adding citations, improving hooks, iterating on outlines, and providing real-time feedback on each section. Transforms your writing process from solo effort to collaborative partnership.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/content-research-writer"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from ComposioHQ/awesome-claude-skills; command: npx skills add ComposioHQ/awesome-claude-skills@content-research-writer. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "programmatic-seo",
+      "name": "programmatic-seo",
+      "description": "When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions \"programmatic SEO,\" \"template pages,\" \"pages at scale,\" \"directory pages,\" \"location pages,\" \"[keyword] + [city] pages,\" \"comparison pages,\" \"integration pages,\" \"building many pages for SEO,\" \"pSEO,\" \"generate 100 pages,\" \"data-driven pages,\" \"templated landing pages,\" or \"which CMS for pSEO.\" Use this whenever someone wants to create many similar pages targeting different keywords or locations. For auditing existing SEO issues, see seo-audit. For content strategy planning, see content-strategy.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/programmatic-seo"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@programmatic-seo. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "pricing",
+      "name": "pricing",
+      "description": "When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free trial,' 'packaging,' 'price increase,' 'value metric,' 'Van Westendorp,' 'willingness to pay,' 'monetization,' 'how much should I charge,' 'my pricing is wrong,' 'pricing page,' 'annual vs monthly,' 'per seat pricing,' 'should I offer a free plan,' 'pricing page teardown,' 'pricing page audit,' 'is my pricing page AI-readable,' or 'can AI read my pricing.' Use this whenever someone is figuring out what to charge, how to structure their plans, or wants to audit a pricing page (for humans and for the AI agents that shortlist tools). For in-app upgrade screens, see paywalls. For offer construction (bonuses, guarantees, value framing, naming) on services/courses/coaching/high-ticket B2B, see offers.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/pricing"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@pricing. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "cro",
+      "name": "cro",
+      "description": "When the user wants to optimize, improve, or increase conversions on any marketing page or form — including homepage, landing pages, pricing pages, feature pages, lead capture forms, or contact forms. Also use when the user says 'CRO,' 'conversion rate optimization,' 'this page isn't converting,' 'improve conversions,' 'why isn't this page working,' 'my landing page sucks,' 'form abandonment,' 'nobody's converting,' 'low conversion rate,' or 'this page needs work.' Use this even if the user just shares a URL and asks for feedback. For signup/registration flows, see signup. For post-signup activation, see onboarding. For popups/modals, see popups.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/cro"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@cro. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "analytics",
+      "name": "analytics",
+      "description": "When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions \"set up tracking,\" \"GA4,\" \"Google Analytics,\" \"event tracking,\" \"UTM parameters,\" \"tag manager,\" \"GTM,\" \"analytics implementation,\" \"tracking plan,\" \"how do I measure this,\" \"Mixpanel,\" \"Segment,\" \"are my events firing,\" or \"analytics isn't working.\" Use this whenever someone asks how to know if something is working or wants to measure marketing results. For getting conversions into ad platforms (pixels, conversion tags, CAPI, server-side) and verifying they arrived, see conversion-tracking. For choosing attribution models, comparing multi-touch/MMM/incrementality, or reconciling conflicting numbers across tools, see attribution. For A/B test measurement, see ab-testing. Rate metrics divide matching closed windows — never full-period spend by partial-period results.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/analytics"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@analytics. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "schema",
+      "name": "schema",
+      "description": "When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions \"schema markup,\" \"structured data,\" \"JSON-LD,\" \"rich snippets,\" \"schema.org,\" \"FAQ schema,\" \"product schema,\" \"review schema,\" \"breadcrumb schema,\" \"Google rich results,\" \"knowledge panel,\" \"star ratings in search,\" or \"add structured data.\" Use this whenever someone wants their pages to show enhanced results in Google. For broader SEO issues, see seo-audit. For AI search optimization, see ai-seo.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/schema"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@schema. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "seo-aeo-best-practices",
+      "name": "seo-aeo-best-practices",
+      "description": "SEO and AEO best practices for metadata, Open Graph, sitemaps, robots.txt, hreflang, JSON-LD structured data, EEAT, and content optimized for search engines and AI answer surfaces. Use this skill when implementing page SEO, technical SEO, schema markup, international SEO, AI-overview readiness, or improving content for Google, ChatGPT, Perplexity, and similar assistants.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/seo-aeo-best-practices"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from sanity-io/agent-toolkit; command: npx skills add sanity-io/agent-toolkit@seo-aeo-best-practices. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "web-design-guidelines",
+      "name": "web-design-guidelines",
+      "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/web-design-guidelines"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@web-design-guidelines. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "figma-implement-design",
+      "name": "figma-implement-design",
+      "description": "Translates Figma designs into production-ready application code with 1:1 visual fidelity. Use when implementing UI code from Figma files, when user mentions \"implement design\", \"generate code\", \"implement component\", provides Figma URLs, or asks to build components matching Figma specs. For Figma canvas writes via `use_figma`, use `figma-use`.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/figma-implement-design"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@figma-implement-design. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "figma",
+      "name": "figma",
+      "description": "Use the Figma MCP server to fetch design context, screenshots, variables, and assets from Figma, and to translate Figma nodes into production code. Trigger when a task involves Figma URLs, node IDs, design-to-code implementation, or Figma MCP setup and troubleshooting.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/figma"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@figma. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "web-design-engineer",
+      "name": "web-design-engineer",
+      "description": "Build or redesign polished browser-rendered visual artifacts with HTML/CSS/JavaScript/React: pages, dashboards, prototypes, slide decks, animations, UI mockups, and data visualizations. Use for visual front-end creation, design-system exploration, design critique, or explicit browser acceptance / QA of a web artifact. Not for back-end, CLI, non-visual coding, source-to-longform article conversion, or narration-driven click-through video presentations.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/web-design-engineer"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from ConardLi/garden-skills; command: npx skills add ConardLi/garden-skills@web-design-engineer. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "interface-review",
+      "name": "interface-review",
+      "description": "Reviews a branch, pull request or uncommitted change for the interface problems it introduced or regressed, across accessibility, layout, writing, typography, color and UI.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/interface-review"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from jakubkrehel/skills; command: npx skills add jakubkrehel/skills@interface-review. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "landing-page-design",
+      "name": "landing-page-design",
+      "description": "Complete system for building high converting landing pages: intake questions, page structure, layout selection, conversion copywriting, SEO, plus strict visual rules for typography, spacing, corner radius, backgrounds, hero layout, icons, and motion. Use this skill whenever building, editing, styling, reviewing, or writing copy for ANY landing page, marketing site, web UI, page section, component, or prototype, even when the user does not mention design, conversion, tokens, or a design system. Always consult it before choosing page sections, headlines, CTAs, fonts, font sizes, spacing values, border radii, background colors, icons, or transitions.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/landing-page-design"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from elayadesign/ai-design-skills; command: npx skills add elayadesign/ai-design-skills@landing-page-design. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "linear",
+      "name": "linear",
+      "description": "Manage issues, projects & team workflows in Linear. Use when the user wants to read, create or updates tickets in Linear.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/linear"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@linear. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "notion-knowledge-capture",
+      "name": "notion-knowledge-capture",
+      "description": "Capture conversations and decisions into structured Notion pages; use when turning chats/notes into wiki entries, how-tos, decisions, or FAQs with proper linking.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/notion-knowledge-capture"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@notion-knowledge-capture. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "skill-builder",
+      "name": "skill-builder",
+      "description": "Automatically detect source types and build AI skills using Skill Seekers. Use when the user wants to create skills from documentation, repos, PDFs, videos, or other knowledge sources.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/skill-builder"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from yusufkaraaslan/Skill_Seekers; command: npx skills add yusufkaraaslan/Skill_Seekers@skill-builder. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "firecrawl",
+      "name": "firecrawl",
+      "description": "|",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/firecrawl"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from firecrawl/cli; command: npx skills add firecrawl/cli@firecrawl. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "security-best-practices",
+      "name": "security-best-practices",
+      "description": "Perform language and framework specific security best-practice reviews and suggest improvements. Trigger only when the user explicitly requests security best practices guidance, a security review/report, or secure-by-default coding help. Trigger only for supported languages (python, javascript/typescript, go). Do not trigger for general code review, debugging, or non-security tasks.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/security-best-practices"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@security-best-practices. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "security-threat-model",
+      "name": "security-threat-model",
+      "description": "Repository-grounded threat modeling that enumerates trust boundaries, assets, attacker capabilities, abuse paths, and mitigations, and writes a concise Markdown threat model. Trigger only when the user explicitly asks to threat model a codebase or path, enumerate threats/abuse paths, or perform AppSec threat modeling. Do not trigger for general architecture summaries, code review, or non-security design work.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/security-threat-model"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@security-threat-model. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "variant-analysis",
+      "name": "variant-analysis",
+      "description": "Hunts for the other instances of a bug already found — the variants of one root cause across a codebase. Use immediately after a vulnerability, logic bug, or bad pattern turns up in a specific file and the question becomes where else it occurs, including the bare conversational form (\"are there others like this?\", \"is this the same bug?\"). Also for generalizing one known instance into a CodeQL or Semgrep query for its whole pattern family, and for triaging a set of look-alike candidates against a known root cause. Not for initial discovery with no bug in hand.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/variant-analysis"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@variant-analysis. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "semgrep-rule-creator",
+      "name": "semgrep-rule-creator",
+      "description": "Creates custom Semgrep rules for detecting security vulnerabilities, bug patterns, and code patterns. Use when writing Semgrep rules or building custom static analysis detections.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/semgrep-rule-creator"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@semgrep-rule-creator. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "differential-review",
+      "name": "differential-review",
+      "description": "Performs security-focused differential review of code changes. Adapts analysis depth to codebase size, uses git blame for context, calculates blast radius by counting callers, checks test coverage of modified code, and generates a markdown report. Use when reviewing a PR, commit, or diff for security vulnerabilities, checking whether a change re-introduces a previously fixed bug, asking what else a change could break, or finding which modified code has no test covering it.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/differential-review"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@differential-review. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "property-based-testing",
+      "name": "property-based-testing",
+      "description": "Writes, reviews, and debugs property-based tests — Hypothesis, fast-check, proptest, jqwik, rapid, and Echidna or Medusa for Solidity invariants. Use whenever tests should cover a whole input domain instead of a hand-picked list of examples: encode/decode and serialize/deserialize pairs, parsers, canonicalizers and normalizers, validators, numeric and Decimal types, comparators and sort order, data structures, and smart-contract state invariants. Also use when adding cases to an existing @given, fast-check, or proptest suite, when judging whether existing property tests assert anything real, and when a generator has shrunk a counterexample and you need to tell a wrong property from a genuine bug. Not for coverage-guided binary fuzzing (libFuzzer, AFL), mutation-testing campaigns, static analysis, benchmarking, or end-to-end UI tests.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/property-based-testing"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@property-based-testing. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "clawsec-clawhub-checker",
+      "name": "clawsec-clawhub-checker",
+      "description": "ClawHub reputation checker for clawsec-suite. Adds a standalone reputation gate before guarded skill installation.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/clawsec-clawhub-checker"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from prompt-security/clawsec; command: npx skills add prompt-security/clawsec@clawsec-clawhub-checker. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "azure-key-vault",
+      "name": "azure-key-vault",
+      "description": "Expert knowledge for Azure Key Vault development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when managing secrets/keys, Private Link, Entra ID auth, BYOK/HSM, or ARM/Bicep/Terraform deployments, and other Azure Key Vault related development tasks. Not for Azure Cloud Hsm (use azure-cloud-hsm), Azure Dedicated HSM (use azure-dedicated-hsm), Azure Payment Hsm (use azure-payment-hsm), Azure Attestation (use azure-attestation).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-key-vault"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-key-vault. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "audit-website",
+      "name": "audit-website",
+      "description": "Audit a website with the squirrelscan CLI and fix the findings in code. Runs SEO, performance, security, technical, content, accessibility, and 16 other rule categories (300+ rules), returns an LLM-optimized report, then drives an iterative fix loop, mapping issues to source files, applying fixes, and re-auditing until the site scores well. Use to discover and assess website or webapp issues and drive them to fixed.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/audit-website"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from squirrelscan/skills; command: npx skills add squirrelscan/skills@audit-website. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "See LICENSE file in repository root"
+    },
+    {
+      "id": "varlock",
+      "name": "varlock",
+      "description": "Secure environment variable management with Varlock. Use when handling secrets, API keys, credentials, or any sensitive configuration. Ensures secrets are never exposed in terminals, logs, traces, or Claude's context. Trigger phrases include \"environment variables\", \"secrets\", \".env\", \"API key\", \"credentials\", \"sensitive\", \"Varlock\".",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/varlock"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from wrsmith108/varlock-claude-skill; command: npx skills add wrsmith108/varlock-claude-skill@varlock. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "sentry",
+      "name": "sentry",
+      "description": "Use when the user asks to inspect Sentry issues or events, summarize recent production errors, or pull basic Sentry health data via the Sentry CLI; perform read-only queries using the `sentry` command.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/sentry"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from openai/skills; command: npx skills add openai/skills@sentry. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "azure-cosmos-db",
+      "name": "azure-cosmos-db",
+      "description": "Expert knowledge for Azure Cosmos DB development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using NoSQL/Mongo/Cassandra/Gremlin/PostgreSQL APIs, change feed, vector search, multi-region HA, or bulk ops, and other Azure Cosmos DB related development tasks. Not for Azure Table Storage (use azure-table-storage), Azure SQL Database (use azure-sql-database), Azure SQL Managed Instance (use azure-sql-managed-instance), Azure Virtual Machines (use azure-virtual-machines).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-cosmos-db"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-cosmos-db. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "azure-sql-database",
+      "name": "azure-sql-database",
+      "description": "Expert knowledge for Azure SQL Database development including troubleshooting, best practices, decision making, architecture & design patterns, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when choosing DTU/vCore tiers, configuring serverless or Hyperscale, geo-replication/DR, CI/CD, or Terraform, and other Azure SQL Database related development tasks. Not for Azure SQL Managed Instance (use azure-sql-managed-instance), SQL Server on Azure Virtual Machines (use azure-sql-virtual-machines), Azure Cosmos DB (use azure-cosmos-db), Azure Data Factory (use azure-data-factory).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-sql-database"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-sql-database. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "azure-blob-storage",
+      "name": "azure-blob-storage",
+      "description": "Expert knowledge for Azure Blob Storage development including troubleshooting, best practices, decision making, limits & quotas, security, configuration, integrations & coding patterns, and deployment. Use when using tiers/archival, NFS/SFTP/BlobFuse mounts, immutability/WORM, lifecycle policies, or Storage Mover, and other Azure Blob Storage related development tasks. Not for Azure Files (use azure-files), Azure Queue Storage (use azure-queue-storage), Azure Table Storage (use azure-table-storage), Azure Cosmos DB (use azure-cosmos-db).",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/azure-blob-storage"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from MicrosoftDocs/Agent-Skills; command: npx skills add MicrosoftDocs/Agent-Skills@azure-blob-storage. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "postgres",
+      "name": "postgres",
+      "description": "Execute read-only SQL queries against multiple PostgreSQL databases. Use when: (1) querying PostgreSQL databases, (2) exploring database schemas/tables, (3) running SELECT queries for data analysis, (4) checking database contents. Supports multiple database connections with descriptions for intelligent auto-selection. Blocks all write operations (INSERT, UPDATE, DELETE, DROP, etc.) for safety.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/postgres"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from sanjay3290/postgres-skill; command: npx skills add sanjay3290/postgres-skill@postgres. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "vercel-react-native-skills",
+      "name": "vercel-react-native-skills",
+      "description": "Description requires review; imported from vercel-labs/agent-skills.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/vercel-react-native-skills"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from vercel-labs/agent-skills; command: npx skills add vercel-labs/agent-skills@vercel-react-native-skills. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "swiftui-expert-skill",
+      "name": "swiftui-expert-skill",
+      "description": "Use when writing, reviewing, or refactoring SwiftUI code for iOS or macOS, including state and `@Observable` data flow, view composition, resizable layouts, safe areas, display scale, performance, lists, environment, localization, animation, Liquid Glass, and API migration. Also use for iPhone Duo, foldable, or large-display layouts (`NavigationSplitView` on large displays, iPhone tab sidebar, two-column reflow, foldable grids, `ArrangementView`, `ReservedRegion`), hinge effects, vertical bars, `@State` initialization or synthesized-property diagnostics, `@ContentBuilder` ambiguity, `reorderable` drag/drop, custom `AsyncImage` `URLSession`, swipe actions outside List, item-bound `alert`/`confirmationDialog`, `ToolbarOverflowMenu`, `AnimatableValues`, Document APIs (`Document`/`DocumentReader`), and Instruments `.trace` capture or analysis.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/swiftui-expert-skill"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from AvdLee/SwiftUI-Agent-Skill; command: npx skills add AvdLee/SwiftUI-Agent-Skill@swiftui-expert-skill. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "expo-native-ui",
+      "name": "expo-native-ui",
+      "description": "Build beautiful, native-feeling Expo screens. Covers Apple HIG styling, semantic colors, native controls, SF Symbols, media, visual effects, gradients, storage, and responsive layout. For routing and navigation, use the expo-router skill; for motion and animation, use the expo-animation skill.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/expo-native-ui"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from expo/skills; command: npx skills add expo/skills@expo-native-ui. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "eas-app-stores",
+      "name": "eas-app-stores",
+      "description": "Build and submit iOS and Android apps with EAS to TestFlight, the App Store, or Google Play. Supports Expo and other React Native projects, plus existing native apps. Use for eas.json setup, release pipelines, signing, app versions and build numbers, store submissions, and listing metadata. For Expo websites and API routes, use eas-hosting; for adding React Native screens to a native app, use expo-brownfield.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/eas-app-stores"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from expo/skills; command: npx skills add expo/skills@eas-app-stores. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "expo-upgrade",
+      "name": "expo-upgrade",
+      "description": "Guidelines for upgrading Expo SDK versions and fixing dependency issues",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/expo-upgrade"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from expo/skills; command: npx skills add expo/skills@expo-upgrade. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "ios-simulator-skill",
+      "name": "ios-simulator-skill",
+      "description": "Build, test, and drive iOS apps in the Simulator with 30 token-efficient scripts. Use when asked to build or test an Xcode project, launch an app on a simulator, tap/type/swipe through its UI by accessibility label, take screenshots or visual diffs, audit accessibility, read logs or diagnose hangs, or manage simulators (boot, erase, permissions, location, push, appearance). macOS only; needs Xcode, Python 3.12+ and idb.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/ios-simulator-skill"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from conorluddy/ios-simulator-skill; command: npx skills add conorluddy/ios-simulator-skill@ios-simulator-skill. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "agents-sdk",
+      "name": "agents-sdk",
+      "description": "Build, debug, or review Cloudflare Agents SDK applications using the agents package.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/agents-sdk"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@agents-sdk. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "recursive-decomposition",
+      "name": "recursive-decomposition",
+      "description": "Decompose dense codebase-wide, multi-document, PDF, and aggregation work even when the input fits the context window, following Recursive Language Models (Zhang, Kraska, Khattab, 2025). Use when the user asks to analyse all files, a whole repo, all docs, large PDFs, or to aggregate or multi-hop across scattered sources. Skip one file, one function, a single needle, or a one-page PDF conversion. Triggers: long context, context rot, large codebase, many files, all files, big document, multi-document, PDF, aggregate, summarize everything, codebase-wide, multi-hop, recursive, sub-agents, map-reduce.",
+      "category": "UI/UX Design",
+      "source": {
+        "type": "local",
+        "path": "./skills/recursive-decomposition"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from massimodeluisa/recursive-decomposition-skill; command: npx skills add massimodeluisa/recursive-decomposition-skill@recursive-decomposition. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    }
+  ]
+}

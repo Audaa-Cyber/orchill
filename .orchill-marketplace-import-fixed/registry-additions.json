@@ -1,0 +1,1543 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "id": "csharp-expert",
+      "name": "csharp-expert",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/csharp-expert"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "csharp-refactoring",
+      "name": "csharp-refactoring",
+      "description": "Safely refactors C#/.NET code without changing behavior. USE FOR any request to refactor, rename, move, extract, inline, merge, consolidate, deduplicate, split, or modernize C# code, including partial/generated declarations, wrappers, public APIs, serialization/reflection/configuration names, friend assemblies, conditional compilation, and multi-targeted projects. Also use when a request calls a feature, bug fix, package/framework upgrade, or public nullability change a refactor and the behavior-changing part must be separated or declined. DO NOT USE FOR ordinary feature or bug fixes not presented as refactoring; standalone upgrades after reclassification (use dotnet-upgrade); adding tests; or formatting-only work.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/csharp-refactoring"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "msbuild",
+      "name": "msbuild",
+      "description": "Use only for MSBuild failure investigation, build-performance analysis, or review of existing build XML/extension contracts. A plan to convert a working legacy/non-SDK project to SDK style or migrate packages.config is a project-system migration, NOT a build-file review: do not activate, even to check scope. Framework/API upgrades are also excluded. Activate for advisory Import/Exists hook and NuGet packed-import questions even without a checkout or failed build; .csproj/.fsproj/.vbproj/.props/.targets conditions; custom-target inputs/outputs; .binlog capture/replay; failing dotnet build/restore/pack/publish or MSBuild-based test builds; slow evaluation, compilation, copying, or no-change builds; and controlled timing comparisons. Exclude SDK installation alone, C# refactoring, runtime profiling, assertions after successful builds, and non-MSBuild builds.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/msbuild"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "setup-local-sdk",
+      "name": "setup-local-sdk",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/setup-local-sdk"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "convert-blazor-server-to-webapp",
+      "name": "convert-blazor-server-to-webapp",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/convert-blazor-server-to-webapp"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-aspnetcore@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "dotnet-webapi",
+      "name": "dotnet-webapi",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/dotnet-webapi"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-aspnetcore@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "binlog-failure-analysis",
+      "name": "binlog-failure-analysis",
+      "description": "Analyze MSBuild binary logs to diagnose build failures. USE FOR: build errors that are unclear from console output, diagnosing cascading failures across multi-project builds, tracing MSBuild target execution order, and generally any MSBuild build issues. Requires an existing .binlog file. DO NOT USE FOR: generating binlogs (use binlog-generation), binlog MCP startup or connection failures (use troubleshoot-binlog-mcp), non-MSBuild build systems.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/binlog-failure-analysis"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "binlog-generation",
+      "name": "binlog-generation",
+      "description": "Generate MSBuild binary logs (binlogs) for build diagnostics and analysis. USE FOR: adding /bl:{} to any dotnet build, test, pack, publish, or restore command to capture a full build execution trace, prerequisite for binlog-failure-analysis and build-perf-diagnostics skills, enabling post-build investigation of errors or performance. Requires MSBuild 17.8+ / .NET 8 SDK+ for {} placeholder; PowerShell must quote the complete switch as '-bl:{}'. DO NOT USE FOR: non-MSBuild build systems (npm, Maven, CMake), analyzing an existing binlog (use binlog-failure-analysis instead), binlog MCP startup failures (use troubleshoot-binlog-mcp).",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/binlog-generation"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "build-parallelism",
+      "name": "build-parallelism",
+      "description": "Analyze an MSBuild solution, solution filter, or Build.proj that schedules multiple project files. USE FOR: measured idle worker nodes, `-m` that does not scale, a serial ProjectReference critical path, graph builds, or an MSBuild task that builds a Projects list. Requires at least two distinct project files whose scheduling or throughput must be analyzed. DO NOT USE for non-MSBuild build systems.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/build-parallelism"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "build-perf-baseline",
+      "name": "build-perf-baseline",
+      "description": "Establish MSBuild/.NET build performance baselines before optimizing. USE FOR: unranked slow builds; cold, warm, incremental or no-op measurements; before/after comparisons; CI output caching; static graph, artifacts output and dependency graph trimming. Start here before build-perf-diagnostics, incremental-build or build-parallelism. DO NOT USE FOR: known repeated-restore fixes (use eliminate-redundant-restores), non-MSBuild builds. For measured target/task/analyzer bottlenecks, use build-perf-diagnostics.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/build-perf-baseline"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "build-perf-diagnostics",
+      "name": "build-perf-diagnostics",
+      "description": "Diagnose MSBuild bottlenecks from binlog timelines and Target/Task Performance Summaries after build-perf-baseline establishes measurements. USE FOR: unknown build slowness, RAR >5s, analyzers >30% of Csc, one target >50% of build time, node utilization <80%, excessive Copy tasks, finding restore overhead. DO NOT USE FOR: known repeated-restore fixes (use eliminate-redundant-restores), initial baselines (use build-perf-baseline), incremental rebuilds (use incremental-build), parallelism tuning (use build-parallelism), non-MSBuild builds.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/build-perf-diagnostics"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "check-bin-obj-clash",
+      "name": "check-bin-obj-clash",
+      "description": "Detects MSBuild projects with conflicting OutputPath or IntermediateOutputPath. USE FOR: builds failing with 'Cannot create a file when that file already exists', 'The process cannot access the file because it is being used by another process', intermittent build failures that succeed on retry, or missing/overwritten outputs in multi-project or multi-targeting builds where bin/obj (or project.assets.json) collide. Common causes: shared OutputPath, missing AppendTargetFrameworkToOutputPath, extra global properties (e.g. PublishReadyToRun), or SetTargetFramework on a ProjectReference to a single-targeting project. DO NOT USE FOR: file access errors unrelated to MSBuild (OS-level locking), single-project single-TFM builds, non-MSBuild build systems.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/check-bin-obj-clash"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "copy-to-output-directory",
+      "name": "copy-to-output-directory",
+      "description": "Choosing an MSBuild CopyToOutputDirectory / CopyToPublishDirectory mode: Never, PreserveNewest, Always, and IfDifferent (MSBuild 17.13+), plus $(SkipUnchangedFilesOnCopyAlways). USE FOR: removing the per-build Always copy perf hit; resetting output files mutated between builds. DO NOT USE FOR: general incremental-build diagnosis (use incremental-build); non-MSBuild build systems.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/copy-to-output-directory"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "directory-build-organization",
+      "name": "directory-build-organization",
+      "description": "USE ONLY for (1) two or more projects with repeated MSBuild policy, targets, or package versions, or (2) an existing Directory.Build.props/targets/rsp hierarchy with an import, placement, or layering defect. A one-project repo without an existing Directory.Build file is outside scope; do not load this skill. Covers centralizing shared policy and targets, Directory.Packages.props across projects, parent hierarchy/import structure, props-versus-targets placement, and folder/project exceptions. An existing hierarchy defect remains in scope when only one project is affected. For property value or condition semantics use property-patterns. Exclude legacy-to-SDK migration and non-MSBuild systems.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/directory-build-organization"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "eliminate-redundant-restores",
+      "name": "eliminate-redundant-restores",
+      "description": "Remove repeated NuGet restores from multi-step .NET builds safely. USE FOR: build/test/publish steps that each restore, Directory.Build.rsp with -restore, safe restore suppression, NETSDK1004/NETSDK1047 after --no-restore. DO NOT USE FOR: slow first restore, only one restore, version or lock errors, unranked build slowness (use build-perf-baseline).",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/eliminate-redundant-restores"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "eval-performance",
+      "name": "eval-performance",
+      "description": "Guide for diagnosing and improving MSBuild project evaluation performance. USE FOR: builds slow before any compilation starts, high evaluation time in binlog analysis, expensive glob patterns walking large directories (node_modules, .git, bin/obj), deep import chains (>20 levels), preprocessed output >10K lines indicating heavy evaluation, property functions with file I/O ($([System.IO.File]::ReadAllText(...))), multiple evaluations per project. Covers the 5 MSBuild evaluation phases, glob optimization via DefaultItemExcludes, import chain analysis with /pp preprocessing. DO NOT USE FOR: compilation-time slowness (use build-perf-diagnostics), incremental build issues (use incremental-build), non-MSBuild build systems.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/eval-performance"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "extension-points",
+      "name": "extension-points",
+      "description": "Own MSBuild import and hook discovery. USE FOR: CustomBefore/CustomAfter hooks, ordered wildcard and NuGet auto-imports, control properties, build/buildTransitive packed layout, package ID and file-name matching, per-TFM forwarders, and tracing why assets or hooks are missing, broken, or replaced. An import guard remains in scope when it is one defect in a broader hook/import flow. DO NOT USE for a focused safety verdict on whether one specific Import needs Exists or is an intentionally unguarded package contract; use msbuild-antipatterns. NEVER INVOKE when imports and hook placement already work and the request is only target Inputs/Outputs, incremental skipping, or FileWrites clean tracking; use incremental-build or target-authoring. Exclude props-versus-targets placement and non-MSBuild systems.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/extension-points"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "including-generated-files",
+      "name": "including-generated-files",
+      "description": "Own MSBuild generated-artifact integration. USE FOR: a target that creates or should create source, Content, None, or another physical file but the artifact is missing from compilation or output; target timing; evaluation-time glob misses; $(IntermediateOutputPath) placement; and FileWrites clean tracking. The prompt may describe the generated artifact without naming the producing task. DO NOT USE when the primary defect is general Include/Remove/Update semantics, item metadata or batching, duplicate/overlapping declarations, or a generated-item identity relationship; use item-management. Exclude Roslyn source-generator internals and non-MSBuild systems.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/including-generated-files"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "incremental-build",
+      "name": "incremental-build",
+      "description": "Guide for optimizing MSBuild incremental builds. USE FOR: builds slower than expected on subsequent runs, 'nothing changed but it rebuilds anyway', diagnosing why targets re-execute unnecessarily, fixing broken no-op builds. Covers 8 common causes: missing Inputs/Outputs on custom targets, volatile properties in output paths (timestamps/GUIDs), file writes outside tracked Outputs, missing FileWrites registration, glob changes, Visual Studio Fast Up-to-Date Check (FUTDC) issues. Key diagnostic: look for 'Building target completely' vs 'Skipping target' in binlog. DO NOT USE FOR: first-time build slowness (use build-perf-baseline), parallelism issues (use build-parallelism), evaluation-phase slowness (use eval-performance), non-MSBuild build systems.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/incremental-build"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "item-management",
+      "name": "item-management",
+      "description": "Own concrete MSBuild ItemGroup and item-expression questions. USE FOR: Include, Remove, Update, item identity and metadata, transforms, filtering, batching, duplicate or overlapping items, and reviews that verify whether those operations are correct. Generated items stay in scope when the central defect is item identity, metadata, batching, duplicate declarations, or glob/Remove/Update semantics. For a generated artifact missing from compilation or output, wrong target timing/path, or FileWrites clean tracking without a broader item-semantics defect, use including-generated-files. The item operation may be broken, suspected, or already correct. Exclude property-only issues, general incrementality with no item question, broad reviews with no concrete item concern, and non-MSBuild systems.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/item-management"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "msbuild-antipatterns",
+      "name": "msbuild-antipatterns",
+      "description": "DO NOT INVOKE when the primary request explicitly asks to convert, migrate, modernize, or rewrite a legacy/old-style project to SDK style; use msbuild-modernization. Migration prompts often mention ToolsVersion, explicit Compile/Reference entries, packages.config, or Microsoft.CSharp.targets, but merely reviewing or auditing a file that contains those patterns remains in scope here. USE FOR broad review, audit, lint, or maintainability/correctness checks of project/build files, including custom targets; prioritized cross-cutting findings; discrete anti-patterns; F# ordering/FS0039; cross-platform paths; and focused Import safety verdicts. Review/audit is analysis-only unless fixes are requested. For concrete property/item defects use property-patterns/item-management; use target-authoring for implementation and extension-points for NuGet auto-import/layout discovery. Exclude non-MSBuild systems.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/msbuild-antipatterns"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "msbuild-modernization",
+      "name": "msbuild-modernization",
+      "description": "Guide for modernizing and migrating MSBuild project files to SDK-style format. USE FOR: converting legacy .csproj/.vbproj with verbose XML to SDK-style, migrating packages.config to PackageReference, removing Properties/AssemblyInfo.cs in favor of auto-generation, eliminating explicit Compile Include lists via implicit globbing, consolidating shared settings into Directory.Build.props. Indicators of legacy projects: ToolsVersion attribute, an Import of Microsoft.CSharp.targets via $(MSBuildToolsPath), .csproj files over 50 lines for simple projects. DO NOT USE FOR: projects already in SDK-style format, non-.NET build systems (npm, Maven, CMake), .NET Framework projects that cannot move to SDK-style.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/msbuild-modernization"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "property-patterns",
+      "name": "property-patterns",
+      "description": "Diagnose and fix concrete MSBuild property defects in projects and existing shared-file hierarchies. USE FOR: conditions, defaults, append versus overwrite, last-write-wins values, OS/TFM checks, portable paths, normalization, and reviews centered on those property defects. Property defects in Directory.Build.* remain in scope, including overwritten values across parent/child imports and conditions that run before TargetFramework is set, even when the fix changes import order or moves a property group to .targets. DO NOT USE FOR: placement-only or import-only requests with no concrete property defect, such as discovering shared files or choosing which file owns a target or customization (use directory-build-organization); item operations; target structure; broad reviews without a concrete property defect; non-MSBuild work.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/property-patterns"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "resolve-project-references",
+      "name": "resolve-project-references",
+      "description": "Guide for interpreting ResolveProjectReferences time in MSBuild performance summaries. Activate when ResolveProjectReferences appears as the most expensive target and developers are trying to optimize it directly. Explains that the reported time includes wait time for dependent project builds and is misleading. Guides users to focus on task self-time instead. Do not activate for general build performance -- use build-perf-diagnostics instead.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/resolve-project-references"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "target-authoring",
+      "name": "target-authoring",
+      "description": "Canonical patterns for writing custom MSBuild targets. USE FOR: diagnosing and fixing custom target authoring anti-patterns; broken SDK target chains across files (e.g., Directory.Build.targets silently redefining SDK targets); targets that replace CompileDependsOn instead of extending it with $(CompileDependsOn); query targets returning stale results from Outputs vs Returns misuse; missing Inputs/Outputs causing unnecessary rebuilds; missing FileWrites registration. Covers DependsOnTargets vs BeforeTargets vs AfterTargets, the Build→CoreBuild three-level pattern, and the $(XxxDependsOn) chain-extension pattern. DO NOT USE FOR: incremental build tuning (use incremental-build), parallelization (use build-parallelism), general anti-patterns (use msbuild-antipatterns), non-MSBuild build systems.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/target-authoring"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "troubleshoot-binlog-mcp",
+      "name": "troubleshoot-binlog-mcp",
+      "description": "Diagnose dotnet-msbuild binlog MCP startup failures. USE FOR: CONNECTION_CLOSED, binlog server won't connect, missing binlog tools, Microsoft.AITools.BinlogMcp not found, dnx launch errors. Checks workspace SDK, feeds, and source mapping without bypassing policy. DO NOT USE FOR: errors inside a binlog (use binlog-failure-analysis), capturing binlogs (use binlog-generation), unrelated MCP servers.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/troubleshoot-binlog-mcp"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-msbuild@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "convert-to-cpm",
+      "name": "convert-to-cpm",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/convert-to-cpm"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-nuget@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "analyzing-dotnet-performance",
+      "name": "analyzing-dotnet-performance",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/analyzing-dotnet-performance"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-diag@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "android-tombstone-symbolication",
+      "name": "android-tombstone-symbolication",
+      "description": "Symbolicate the .NET runtime frames in an Android tombstone file. Extracts BuildIds and PC offsets from the native backtrace, downloads debug symbols from the Microsoft symbol server, and runs llvm-symbolizer to produce function names with source file and line numbers. USE FOR triaging a .NET MAUI or Mono Android app crash from a tombstone, resolving native backtrace frames in libmonosgen-2.0.so or libcoreclr.so to .NET runtime source code, or investigating SIGABRT, SIGSEGV, or other native signals originating from the .NET runtime on Android. DO NOT USE FOR pure Java/Kotlin crashes, managed .NET exceptions that are already captured in logcat, or iOS crash logs. INVOKES Symbolicate-Tombstone.ps1 script, llvm-symbolizer, Microsoft symbol server.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/android-tombstone-symbolication"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-diag@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "apple-crash-symbolication",
+      "name": "apple-crash-symbolication",
+      "description": "Symbolicate .NET runtime frames in Apple platform .ips crash logs (iOS, tvOS, Mac Catalyst, macOS). Extracts UUIDs and addresses from the native backtrace, locates dSYM debug symbols, and runs atos to produce function names with source file and line numbers. Automatically downloads .dwarf symbols from the Microsoft symbol server using Mach-O UUIDs. USE FOR triaging a .NET MAUI or Mono app crash from an .ips file on any Apple platform, resolving native backtrace frames in libcoreclr or libmonosgen-2.0 to .NET runtime source code, retrieving .ips crash logs from a connected iOS device or iPhone, or investigating EXC_CRASH, EXC_BAD_ACCESS, SIGABRT, or SIGSEGV originating from the .NET runtime. DO NOT USE FOR pure Swift/Objective-C crashes with no .NET components, or Android tombstone files. INVOKES Symbolicate-Crash.ps1 script, atos, dwarfdump, idevicecrashreport.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/apple-crash-symbolication"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-diag@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "clr-activation-debugging",
+      "name": "clr-activation-debugging",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/clr-activation-debugging"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-diag@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "dotnet-trace-collect",
+      "name": "dotnet-trace-collect",
+      "description": "Guide developers through capturing diagnostic artifacts to diagnose production .NET performance issues. Use when the user needs help choosing diagnostic tools, collecting performance data, or understanding tool trade-offs across different environments (Windows/Linux, .NET Framework/modern .NET, container/non-container).",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/dotnet-trace-collect"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-diag@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "dump-collect",
+      "name": "dump-collect",
+      "description": "Configure and collect crash dumps for modern .NET applications. USE FOR: enabling automatic crash dumps for CoreCLR or NativeAOT, capturing dumps from running .NET processes, setting up dump collection in Docker or Kubernetes, using dotnet-dump collect or createdump. DO NOT USE FOR: analyzing or debugging dumps, post-mortem investigation with lldb/windbg/dotnet-dump analyze, profiling or tracing, or for .NET Framework processes.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/dump-collect"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-diag@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "microbenchmarking",
+      "name": "microbenchmarking",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/microbenchmarking"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-diag@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "assertion-quality",
+      "name": "assertion-quality",
+      "description": "Analyze assertion quality, depth, variety, and false confidence in existing tests. ALWAYS USE when asked about weak, shallow, trivial, always-true, self-referential, assertion-free, presence/truthiness-only, or insufficiently diverse assertions, including MSTest, Jest, pytest, and Go. DO NOT USE for direct fixes: writing-mstest-tests owns supplied MSTest assertions; code-testing owns new cases. Use test-gap-analysis when asked whether tests would catch a production change, and test-anti-patterns for general severity-ranked audits.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/assertion-quality"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "code-testing",
+      "name": "code-testing",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/code-testing"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "code-testing-agent",
+      "name": "code-testing-agent",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/code-testing-agent"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "code-testing-extensions",
+      "name": "code-testing-extensions",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/code-testing-extensions"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "coverage-analysis",
+      "name": "coverage-analysis",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/coverage-analysis"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "crap-score",
+      "name": "crap-score",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/crap-score"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "detect-static-dependencies",
+      "name": "detect-static-dependencies",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/detect-static-dependencies"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "filter-syntax",
+      "name": "filter-syntax",
+      "description": "Reference-only filter syntax for VSTest and MTP with MSTest, NUnit, xUnit v3, and TUnit. Load only after the platform/framework is known and a consumer needs to create or translate a filter. Do not load for unfiltered runs or platform detection. Used by run-tests and mtp-hot-reload; never invoke directly.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/filter-syntax"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "find-untested-sources",
+      "name": "find-untested-sources",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/find-untested-sources"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "generate-testability-wrappers",
+      "name": "generate-testability-wrappers",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/generate-testability-wrappers"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "grade-tests",
+      "name": "grade-tests",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/grade-tests"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "migrate-static-to-wrapper",
+      "name": "migrate-static-to-wrapper",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/migrate-static-to-wrapper"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "mtp-hot-reload",
+      "name": "mtp-hot-reload",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/mtp-hot-reload"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "platform-detection",
+      "name": "platform-detection",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/platform-detection"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "run-tests",
+      "name": "run-tests",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/run-tests"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "scaffold-dotnet-test-project",
+      "name": "scaffold-dotnet-test-project",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/scaffold-dotnet-test-project"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "test-analysis-extensions",
+      "name": "test-analysis-extensions",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/test-analysis-extensions"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "test-anti-patterns",
+      "name": "test-anti-patterns",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/test-anti-patterns"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "test-gap-analysis",
+      "name": "test-gap-analysis",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/test-gap-analysis"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "test-smell-detection",
+      "name": "test-smell-detection",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/test-smell-detection"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "test-tagging",
+      "name": "test-tagging",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/test-tagging"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "test-value-evidence",
+      "name": "test-value-evidence",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/test-value-evidence"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "testability-obstacle",
+      "name": "testability-obstacle",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/testability-obstacle"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "writing-mstest-tests",
+      "name": "writing-mstest-tests",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/writing-mstest-tests"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-test@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "technology-selection",
+      "name": "technology-selection",
+      "description": "Guides technology selection and implementation of AI and ML features in .NET 8+ applications using ML.NET, Microsoft.Extensions.AI (MEAI), Microsoft Agent Framework (MAF), GitHub Copilot SDK, ONNX Runtime, and OllamaSharp. Covers the full spectrum from classic ML through modern LLM orchestration to local inference. Use when adding classification, regression, clustering, anomaly detection, recommendation, LLM integration (text generation, summarization, reasoning), RAG pipelines with vector search, agentic workflows with tool calling, Copilot extensions, or custom model inference via ONNX Runtime to a .NET project. DO NOT USE FOR projects targeting .NET Framework (requires .NET 8+), the task is pure data engineering or ETL with no ML/AI component, or the project needs a custom deep learning training loop (use Python with PyTorch/TensorFlow, then export to ONNX for .NET inference).",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/technology-selection"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-ai@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "template-authoring",
+      "name": "template-authoring",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/template-authoring"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-template-engine@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "template-comparison",
+      "name": "template-comparison",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/template-comparison"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-template-engine@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "template-discovery",
+      "name": "template-discovery",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/template-discovery"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-template-engine@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "template-instantiation",
+      "name": "template-instantiation",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/template-instantiation"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-template-engine@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "template-smart-defaults",
+      "name": "template-smart-defaults",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/template-smart-defaults"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-template-engine@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "template-validation",
+      "name": "template-validation",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/template-validation"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-template-engine@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "dotnet-aot-compat",
+      "name": "dotnet-aot-compat",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/dotnet-aot-compat"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-upgrade@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "migrate-dotnet10-to-dotnet11",
+      "name": "migrate-dotnet10-to-dotnet11",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/migrate-dotnet10-to-dotnet11"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-upgrade@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "migrate-dotnet8-to-dotnet9",
+      "name": "migrate-dotnet8-to-dotnet9",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/migrate-dotnet8-to-dotnet9"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-upgrade@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "migrate-dotnet9-to-dotnet10",
+      "name": "migrate-dotnet9-to-dotnet10",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/migrate-dotnet9-to-dotnet10"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-upgrade@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "migrate-nullable-references",
+      "name": "migrate-nullable-references",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/migrate-nullable-references"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-upgrade@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "thread-abort-migration",
+      "name": "thread-abort-migration",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/thread-abort-migration"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-upgrade@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "create-datadriven-aspnetcore",
+      "name": "create-datadriven-aspnetcore",
+      "description": "Generate or scaffold ASP.NET Core code — Razor Pages, Blazor components, MVC controllers, views, and Minimal API endpoints — without using ASP.NET Core CLI scaffolding/code-generation tools. Use when (1) adding CRUD pages, views, or API endpoints backed by Entity Framework (EF Core) and a database, (2) generating code to create, read, update, and delete data using a DbContext, (3) scaffolding UI components that match the project's existing CSS framework and coding patterns, or (4) creating data-driven forms, tables, and navigation for a model class. Do not use for non-ASP.NET projects or when CLI-based scaffolding is preferred.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/create-datadriven-aspnetcore"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-data@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "optimizing-ef-core-queries",
+      "name": "optimizing-ef-core-queries",
+      "description": "Review and optimize application data access that uses Entity Framework Core (EF Core). Use for EF Core performance and correctness reviews of services, repositories, imports, and background jobs: slow or memory-heavy queries, excessive round-trips, hidden SaveChanges, premature materialization, dynamic query construction, result-graph tracking, bulk writes, DbContext lifetime or overlapping operations, search semantics, paging, raw SQL, and model/index coverage. Use whether or not EF Core owns the schema. For EF Core, not Dapper or raw ADO.NET.",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/optimizing-ef-core-queries"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-data@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "dotnet-maui-doctor",
+      "name": "dotnet-maui-doctor",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/dotnet-maui-doctor"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "maui-app-lifecycle",
+      "name": "maui-app-lifecycle",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/maui-app-lifecycle"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "maui-collectionview",
+      "name": "maui-collectionview",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/maui-collectionview"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "maui-data-binding",
+      "name": "maui-data-binding",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/maui-data-binding"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "maui-dependency-injection",
+      "name": "maui-dependency-injection",
+      "description": ">",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/maui-dependency-injection"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "maui-safe-area",
+      "name": "maui-safe-area",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/maui-safe-area"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "maui-shell-navigation",
+      "name": "maui-shell-navigation",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/maui-shell-navigation"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    },
+    {
+      "id": "maui-theming",
+      "name": "maui-theming",
+      "description": ">-",
+      "category": "Developer Tools",
+      "source": {
+        "type": "local",
+        "path": "./skills/maui-theming"
+      },
+      "skillPath": ".",
+      "provenance": "Imported from marketplace plugin dotnet-maui@dotnet-agent-skills; review upstream source, commit, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ],
+      "license": "MIT"
+    }
+  ]
+}

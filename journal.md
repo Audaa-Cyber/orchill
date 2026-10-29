@@ -655,48 +655,7 @@ The local container cannot reach GitHub due to network/DNS restrictions, so loca
 No hosted MCP integration, auto-install based on natural language, public npm release, lockfile, dependency resolver, update/uninstall commands, or full security audit has been implemented. The project is a usable CLI MVP candidate, not a security-certified or publicly released package.
 
 
-## 23. Windows test portability fixes — 2026-10-29
-
-- **Context:** The project owner ran the test suite on Windows and reported 2 failures out of 13. The Git sparse-checkout test saw CRLF instead of LF, and the safe relative-path test received Windows backslashes instead of the registry's expected slash format.
-- **Decision:** Treat registry skill paths as POSIX-style paths on every operating system. Normalize them with `path.posix.normalize` after converting backslashes, and reject drive-prefixed paths. For the sparse-checkout assertion, normalize CRLF to LF because Git's `core.autocrlf` may change working-tree line endings on Windows.
-- **Files changed:** `src/safety.ts`, `tests/install.test.ts`.
-- **Status:** Fixes prepared on branch `fix/windows-cross-platform-tests`; not yet CI-verified.
-- **Verification:** Not run in this session. GitHub Actions must verify Windows and Linux behavior before merge.
-
-## 24. Project license alignment — 2026-10-29
-
-- **Decision:** The project owner selected Apache-2.0 for Orchill's own code.
-- **Implementation branch:** `chore/apache-2-license`, based on `main`; marketplace importer work was left untouched.
-- **Changes:** Updated the npm package metadata to SPDX identifier `Apache-2.0`, replaced the root MIT license text with the full Apache License 2.0 text, and added a README license section distinguishing Orchill's code license from individual catalog-skill licenses.
-- **Source of canonical license text:** https://www.apache.org/licenses/LICENSE-2.0.txt
-- **Verification status:** Repository files were updated through GitHub; CI and packaged metadata still need to verify on the resulting commit/PR. This entry does not claim the change has merged or that CI has passed.
-
-## 25. Registry metadata hardening — 2026-10-29
-
-- **Branch:** `feat/registry-validation`, based on `main`; separate from the marketplace importer and Apache license PRs.
-- **Implemented:** Strict allowlists for registry, skill, and source fields; non-empty checks for required and optional text; validation of supported target names; duplicate tag/target rejection; safer HTTPS Git URL checks that reject credentials, query strings, and fragments; and early relative-path checks for `skillPath`.
-- **Schema:** Updated the public JSON Schema to express local versus Git source shapes, restrict targets to implemented adapters, reject duplicate tags/targets, and constrain path/URL forms.
-- **Tests added:** Unknown keys, unsupported targets, duplicate metadata, invalid optional text, credential/query-bearing URLs, and unsafe skill paths.
-- **Verification status:** Changes are committed through GitHub file updates; CI must pass on the final branch head before this work is considered verified. The local environment did not run the test suite.
-
-## 26. npm release preparation — 2026-10-29
-
-- **Branch:** `chore/npm-release-prep`, based on `main`.
-- **Implemented:** Added a GitHub Release-triggered npm publication workflow using GitHub OIDC trusted publishing and npm provenance. It checks that the release tag matches the package version, fails unless package metadata declares Apache-2.0, runs typecheck/tests/build, inspects package contents with `npm pack --dry-run`, and publishes only on a published GitHub Release.
-- **Documentation:** Added `docs/RELEASING.md` with release gates, catalog review requirements, version/tag rules, npm trusted-publisher setup, and post-publish verification.
-- **Safety:** The workflow does not publish on ordinary pushes and is deliberately blocked until the Apache-2.0 license change is merged. npm trusted publishing must be configured in the npm account separately.
-- **Verification:** Workflow and docs are committed to this branch. The release workflow has not been executed against a published release; no npm publication is claimed. CI must pass on the PR head before merge.
-
-## 27. Install lifecycle safety — 2026-10-29
-
-- **Decision:** Move forward on lifecycle management independently of the paused marketplace importer work.
-- **Implemented on `feat/install-lifecycle`:** New installs receive a `.orchill-install.json` marker. Added `orchill verify <id>` to check the installation directory, marker, and `SKILL.md`; added `orchill uninstall <id>` with interactive confirmation and a strict marker requirement so manually created or legacy directories are not removed by mistake.
-- **Tests added:** Verify/uninstall a marked installation and confirm that uninstall refuses an unmanaged directory without deleting its contents.
-- **Documentation:** README now documents the commands and clarifies that structural verification is not a cryptographic integrity or malware scan.
-- **Validation update:** The first CI attempt exposed missing exported lifecycle functions in `src/install.ts`; those functions and marker creation are now implemented, and the workflow is being expanded to smoke-test verify/uninstall. A fresh green CI run is still required. A local Windows test run has not been observed passing. Existing installs made before the marker feature are treated as unmanaged and cannot be removed by the new command until deliberately reinstalled or migrated.
-- **Next:** Check CI, fix any type/test failures, then consider lockfile-based reproducibility and update workflows.
-
-## 28. Bulk import from Skills CLI commands — 2026-10-29
+## 23. Bulk import from Skills CLI commands — 2026-10-29
 
 - **Context:** The owner has many skills available through commands such as npx skills add Leonxlnx/taste-skill@design-taste-frontend and wants to avoid repeated agent/scope prompts.
 - **Decision:** Add an Orchill bulk-import command that parses a command list, runs the upstream Skills CLI with non-interactive flags in an isolated temporary project, stages skill folders, prepares registry metadata, and reports per-line failures. It does not alter the canonical registry or execute skill scripts.
@@ -704,16 +663,79 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Safety:** Only supported npx skills add syntax is accepted; source URLs are validated; imports are staged, symlinks rejected, and existing output directories are not overwritten. Metadata and license still require review.
 - **Verification:** GitHub Actions run 48 passed on commit `8eaef9e77d54a595ffc553b8d8b72ef52073ae86`. Typecheck, parser tests, build, CLI help smoke tests, existing CLI smoke tests, and packed-package smoke checks all passed. This verifies the Linux CI path; a real Skills CLI download and Windows end-to-end bulk import still need a user-run smoke test.
 
-## 29. Release readiness consolidation — 2026-10-29
 
-- **Merged to main:** Windows portability fixes (PR #1), Apache-2.0 license alignment (PR #8), registry metadata hardening (PR #9), safe install verification/uninstall lifecycle (PR #11), staged bulk skill importer (PR #12), and guarded npm release workflow (PR #10). Each rebased feature PR passed GitHub Actions on its exact head before merge.
-- **Marketplace boundary:** PR #3 / `feat/marketplace-bulk-import` remains untouched and open, per the project owner's instruction.
-- **Package:** `orchill@0.1.0`, Node.js >=22, license Apache-2.0. The repository's release workflow is in place but has not been exercised by publishing a release.
-- **Remaining external gates:** Verify npm package-name availability and ownership; configure npm trusted publishing for this repository and workflow; confirm the release version/tag; then verify a clean installation and provenance after publication. These account-side steps have not been completed from GitHub.
-- **Validation boundary:** Rebased PR CI passed for the merged code. The package has not been published to npm, and this entry does not claim a full security audit or Windows end-to-end test of the external Skills CLI importer.
+## 24. Bulk import from agent plugin marketplaces — 2026-10-29
 
-## 30. npm package identity metadata — 2026-10-29
+- **Context:** The owner found agent plugin marketplace commands such as `/plugin marketplace add dotnet/skills` and `/plugin install dotnet-diag@dotnet-agent-skills` and asked to support importing them in bulk.
+- **Decision:** Extend `orchill import-commands` to recognize slash-command marketplace registration and plugin installation inputs. Resolve the plugin name and source from the marketplace's `.agents/plugins/marketplace.json` manifest, then stage every nested `SKILL.md` in the selected plugin as individual reviewable skill folders.
+- **Files:** `src/marketplace-import.ts`, `src/cli.ts`, `tests/marketplace-import.test.ts`, `package.json`, `README.md`, CI workflow.
+- **Safety:** Marketplace repos are cloned with Git into a temporary directory; plugin names must be present in the manifest; unsafe command syntax is rejected; symlinks are rejected; the canonical registry and global agent marketplace configuration are not modified. Imported scripts are not executed.
+- **Limitations:** The marketplace repository is cloned from its current default branch and is not automatically pinned to an immutable commit. Use a separate command file for marketplace commands versus `npx skills add` commands. Marketplace installation was not yet end-to-end tested against a real remote repo when this entry was written.
+- **Verification:** GitHub Actions run 50 passed on commit `ae0915e762d484c00bb157cb823bc3644e3286e5`. Typecheck, all tests, build, marketplace parser smoke test, existing CLI smoke checks, and packed-package smoke checks passed. This is automated CI coverage; a real remote marketplace import has not yet been run end-to-end.
 
-- **Change:** Added the canonical GitHub repository URL, README homepage, and issue tracker to `package.json` to improve package identity and satisfy npm trusted-publishing repository matching requirements.
-- **Validation:** Fresh CI must pass on this change before merge. npm package-name availability and npm account trusted-publisher configuration remain externally unverified.
 
+## 25. Offline skill catalog organized by category — 2026-10-29
+
+- **Request:** Preserve the locally imported skills and make the catalog navigable by meaningful categories, with category-level installation and complete nested skill folders.
+- **Registry:** Expanded `registry/skills.json` from 13 entries to 221. The merge incorporated 138 successfully imported Skills CLI entries and 81 marketplace-import entries, retaining existing canonical entries for duplicate IDs. The failed imports were not added.
+- **Categories:** Added consistent category metadata including UI/UX, Animation & Motion, Micro-interactions, React & Frontend, Accessibility, SEO, Testing, Design Systems & Components, Mobile Development, Backend & APIs, Cloud & DevOps, Security, AI & Data, Content & Marketing, Documents & Productivity, Agent Tooling & Workflows, .NET & Build Systems, and other specialist groups. Category metadata does not flatten or rewrite skill folders.
+- **Offline source paths:** Local source paths point to the staged skill directories in `.orchill-skills-import/skills` and `.orchill-marketplace-import-fixed/skills`. Added those directories to the npm package file allowlist so the local registry paths remain available in a packaged offline install.
+- **Catalog documentation:** Regenerated `docs/CATALOG.md` from the registry and updated README catalog status and import-review warnings.
+- **Safety/quality note:** Several imported metadata descriptions were only YAML block markers (for example `>-`); these received a clearly labeled generic fallback rather than pretending to know their contents. Missing license metadata remains unknown. The imported skill content has not been comprehensively audited. Build/tests were not run through this GitHub-only editing pass and must be verified in Codespaces before merging or publishing.
+
+
+- **Category refinement:** Ensured the catalog exposes a dedicated `Accessibility` category for website audit and web-guideline skills, alongside the previously agreed UI/UX, Animation & Motion, Micro-interactions, React & Frontend, SEO, and Testing groups.
+
+
+## Catalog payload verification phase — 2026-10-28
+- **Registry audit:** Recounted 221 unique registry entries across 20 categories (209 local bundled skills and 12 Git-backed skills). The README category count was corrected from 19 to 20.
+- **Local payload validation:** Added a registry test that walks every local-source entry and verifies that its configured skill directory contains `SKILL.md`. This catches broken local paths before release.
+- **Packaged-install CI coverage:** Updated the package smoke test to use the actual `UI/UX` category name, install a representative imported .NET skill from the packed CLI, verify its nested reference file, and install the complete small Accessibility category.
+- **Scope note:** This adds automated checks; the changes still need a new green GitHub Actions run. Third-party licenses, immutable upstream revisions, and content safety remain separate release blockers for any imported entry whose status is unknown.
+
+
+## 27. Catalog audit tooling — 2026-10-29
+- Added `orchill audit` with text and JSON output plus an optional strict exit mode.
+- Audit checks license/provenance gaps, unpinned Git refs, missing local skill directories or `SKILL.md`, and source symlinks.
+- Added conservative pattern-based review flags for possible prompt override language, secret/environment access, shell execution, remote-script piping, and destructive commands. These are triage signals, not a malware verdict.
+- Git-backed entries are explicitly reported as not scanned; the audit never silently claims to have reviewed remote content.
+- Added unit tests for metadata findings, prompt-language flags, missing local paths, and unpinned remote sources. CI is required to validate the new command.
+
+
+## 28. Human-browsable category catalogue — 2026-10-29
+- **Problem:** The 221-entry registry was machine-readable, but category organization was not browsable as a directory structure for humans.
+- **Implementation:** Added `catalog/README.md`, a generated all-skills index at `catalog/CATALOG.md`, a machine-readable `catalog/categories.json` manifest, and a `catalog/categories/<category-slug>/README.md` index for each of the 20 categories. Each category index lists its skills, source type, payload/source link, and license metadata without inventing unknown licenses.
+- **Important scope note:** This adds real category-index folders and files. It deliberately does **not** relocate imported third-party payloads out of their original source directories; physically moving them would change registry paths and package layout and should be a separate migration with validation. The category index clearly documents this distinction.
+- **Counts:** 221 skills across 20 categories.
+- **Verification status:** Files generated from the current registry snapshot. CI has not yet verified this commit; run `npm run catalog:generate`, tests, and package smoke checks after the generator is added/validated.
+
+
+## 28. Human-browsable category catalogue — 2026-10-29
+- **Problem:** The 221-entry registry was machine-readable, but category organization was not browsable as a directory structure for humans.
+- **Implementation:** Added `catalog/README.md`, generated all-skills index `catalog/CATALOG.md`, machine-readable `catalog/categories.json`, and category index folders under `catalog/categories/<category-slug>/README.md` for all 20 categories. Each index lists skill IDs, source type, source/payload link, and license metadata without inventing unknown licenses.
+- **Regeneration:** Added `npm run catalog:generate` via `scripts/generate-catalog.ts`; generator validates duplicate/missing IDs and missing categories before writing indexes.
+- **Scope note:** Category folders currently contain indexes, while imported third-party payloads remain in their recorded source directories. This avoids silently rewriting third-party content or registry paths; physically relocating payloads is a separate migration.
+- **Counts:** 221 skills across 20 categories.
+- **Verification:** Generated files reflect the current registry snapshot. The generator and full test/package suite still require a green CI run before merge.
+
+
+## 2026-10-28 — Physical category catalogue migration
+
+- **Verified:** CI run [40775146651](https://github.com/Audaa-Cyber/orchill/actions/runs/40775146651) passed for the catalogue-index generator before this migration.
+- **Implemented in this change:** relocate all 209 local registry skill payloads to `skills/<category-slug>/<skill-id>/`, preserving every nested file; update registry source paths; keep 12 Git-backed entries remote; add `skills/` to npm package files and remove staging import directories from the package allowlist; regenerate catalogue/category indexes and assert the new source path layout in registry tests.
+- The import staging directories remain in the repository for provenance/report metadata, but their skill payload folders are removed from those locations and those directories are no longer included in the npm package allowlist.
+- **Not yet verified:** CI and npm package dry-run for this migration. Third-party redistribution rights and the existing license/security review queue remain release blockers. No PR was merged and nothing was published.
+
+
+## 2026-10-28 — Project license alignment
+
+- **Decision from project owner:** use Apache License 2.0 for Orchill's own code and documentation.
+- **Implemented in branch:** replace the project MIT license text with the standard Apache-2.0 license text and set `package.json` `license` to `Apache-2.0`; document that this does not relicense third-party skill payloads.
+- **Release gate remains:** audit each bundled skill's actual upstream license and redistribution requirements. Do not interpret registry metadata alone as proof of permission, and do not publish the full bundled catalog until the license review is complete.
+
+
+## 2026-10-28 — Remove duplicate staging payloads
+
+- **Implemented in branch:** remove the duplicated import-staging skill trees after the canonical 209 local payloads were moved to `skills/<category-slug>/<skill-id>/`. Keep `report.json`, `report.md`, and `registry-additions.json` in the staging roots for audit/provenance context.
+- Preserve the upstream importer `skills-lock.json` at `.orchill-skills-import/skills-lock.json` rather than losing its source/hash metadata with the staging payload copies.
+- CI now checks that staging payload directories do not reappear. The categorized `skills/` tree is the canonical local payload store.
