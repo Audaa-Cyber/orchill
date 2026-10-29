@@ -28,7 +28,7 @@ try {
   assert.equal(packageJson.bin?.orchill, "./dist/cli.js", "source package must declare the orchill executable");
   run(["install", "--prefix", installDir, "--no-audit", "--no-fund", path.join(packDir, tarball)], root);
   const installedPackage = JSON.parse(await readFile(path.join(installDir, "node_modules", "orchill", "package.json"), "utf8")) as { bin?: Record<string, string> };
-  assert.equal(installedPackage.bin?.orchill, "dist/cli.js", "published package metadata must preserve the executable mapping");
+  assert.ok(["./dist/cli.js", "dist/cli.js"].includes(installedPackage.bin?.orchill ?? ""), "packed package metadata must preserve a valid executable mapping");
   const executable = path.join(installDir, "node_modules", ".bin", process.platform === "win32" ? "orchill.cmd" : "orchill");
   const smoke = spawnSync(executable, ["--version"], { cwd: temp, encoding: "utf8", timeout: 15_000, windowsHide: true, shell: process.platform === "win32" });
   assert.equal(smoke.status, 0, `installed orchill --version failed: ${smoke.stderr || smoke.stdout}`);
