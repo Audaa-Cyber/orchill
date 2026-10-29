@@ -1969,7 +1969,8 @@
         "azure",
         "app",
         "service"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "azure-blob-storage",
@@ -1993,7 +1994,8 @@
         "azure",
         "blob",
         "storage"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "azure-cognitive-search",
@@ -2017,7 +2019,8 @@
         "azure",
         "cognitive",
         "search"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "azure-container-apps",
@@ -2041,7 +2044,8 @@
         "azure",
         "container",
         "apps"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "azure-cosmos-db",
@@ -2064,7 +2068,8 @@
         "cloud-devops",
         "azure",
         "cosmos"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "azure-databricks",
@@ -2087,7 +2092,8 @@
         "cloud-devops",
         "azure",
         "databricks"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "azure-devops",
@@ -2110,7 +2116,8 @@
         "cloud-devops",
         "azure",
         "devops"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "azure-functions",
@@ -2133,7 +2140,8 @@
         "cloud-devops",
         "azure",
         "functions"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "azure-key-vault",
@@ -2157,7 +2165,8 @@
         "azure",
         "key",
         "vault"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "azure-kubernetes-service",
@@ -2181,7 +2190,8 @@
         "azure",
         "kubernetes",
         "service"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "azure-machine-learning",
@@ -2205,7 +2215,8 @@
         "azure",
         "machine",
         "learning"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "azure-monitor",
@@ -2228,7 +2239,8 @@
         "cloud-devops",
         "azure",
         "monitor"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "azure-pipelines",
@@ -2251,7 +2263,8 @@
         "cloud-devops",
         "azure",
         "pipelines"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "azure-sql-database",
@@ -2275,7 +2288,8 @@
         "azure",
         "sql",
         "database"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "cloudflare",
@@ -2782,7 +2796,8 @@
         "content-marketing",
         "microsoft",
         "foundry"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "microsoft-foundry-classic",
@@ -2806,7 +2821,8 @@
         "microsoft",
         "foundry",
         "classic"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "microsoft-foundry-local",
@@ -2830,7 +2846,8 @@
         "microsoft",
         "foundry",
         "local"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "microsoft-foundry-tools",
@@ -2854,7 +2871,8 @@
         "microsoft",
         "foundry",
         "tools"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "pricing",
@@ -4019,7 +4037,8 @@
         "static",
         "web",
         "apps"
-      ]
+      ],
+      "license": "CC-BY-4.0"
     },
     {
       "id": "convert-blazor-server-to-webapp",
