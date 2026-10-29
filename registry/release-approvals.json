@@ -861,6 +861,17 @@
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
     },
     {
+      "skillId": "interface-review",
+      "upstreamUrl": "https://github.com/jakubkrehel/skills",
+      "upstreamRevision": "592aedc44d7d5b3e29740984252902f3e5402a1c",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found all 4 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in jakubkrehel/skills at commit 592aedc44d7d5b3e29740984252902f3e5402a1c. The repository-root MIT license at https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/LICENSE permits redistribution subject to its terms. Required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
       "skillId": "ios-simulator-skill",
       "upstreamUrl": "https://github.com/conorluddy/ios-simulator-skill",
       "upstreamRevision": "e38b3ad5cc2585140c91b9c0f974124c3add31dc",
@@ -1312,6 +1323,17 @@
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
     },
     {
+      "skillId": "provider-resources",
+      "upstreamUrl": "https://github.com/hashicorp/agent-skills",
+      "upstreamRevision": "bc6b14b77481c3cbfbb06a0166be7245ed45798c",
+      "license": "MPL-2.0",
+      "licenseEvidenceUrl": "https://github.com/hashicorp/agent-skills/blob/bc6b14b77481c3cbfbb06a0166be7245ed45798c/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found all 3 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in hashicorp/agent-skills at commit bc6b14b77481c3cbfbb06a0166be7245ed45798c. The repository-root MPL-2.0 license at https://github.com/hashicorp/agent-skills/blob/bc6b14b77481c3cbfbb06a0166be7245ed45798c/LICENSE permits redistribution subject to its terms. Required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
       "skillId": "receiving-code-review",
       "upstreamUrl": "https://github.com/obra/superpowers",
       "upstreamRevision": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
@@ -1332,6 +1354,17 @@
       "reviewedAt": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "notes": "Automated content comparison on 2026-10-29 found all 9 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in massimodeluisa/recursive-decomposition-skill at commit e0a8b0418a1e40e3ae774ad1d06834db2696ee26. The repository-root MIT license at https://github.com/massimodeluisa/recursive-decomposition-skill/blob/e0a8b0418a1e40e3ae774ad1d06834db2696ee26/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
+      "skillId": "refactor-module",
+      "upstreamUrl": "https://github.com/hashicorp/agent-skills",
+      "upstreamRevision": "bc6b14b77481c3cbfbb06a0166be7245ed45798c",
+      "license": "MPL-2.0",
+      "licenseEvidenceUrl": "https://github.com/hashicorp/agent-skills/blob/bc6b14b77481c3cbfbb06a0166be7245ed45798c/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found all 1 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in hashicorp/agent-skills at commit bc6b14b77481c3cbfbb06a0166be7245ed45798c. The repository-root MPL-2.0 license at https://github.com/hashicorp/agent-skills/blob/bc6b14b77481c3cbfbb06a0166be7245ed45798c/LICENSE permits redistribution subject to its terms. Required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
     },
     {
       "skillId": "render-deploy",
@@ -1662,6 +1695,17 @@
       "reviewedAt": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "notes": "Automated content comparison on 2026-10-29 found all 9 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in antonbabenko/terraform-skill at commit 9c1e92d962a5407c227e5566416e962a2f057240. The repository-root Apache-2.0 license at https://github.com/antonbabenko/terraform-skill/blob/9c1e92d962a5407c227e5566416e962a2f057240/LICENSE permits redistribution subject to its terms. Required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
+      "skillId": "terraform-style-guide",
+      "upstreamUrl": "https://github.com/hashicorp/agent-skills",
+      "upstreamRevision": "bc6b14b77481c3cbfbb06a0166be7245ed45798c",
+      "license": "MPL-2.0",
+      "licenseEvidenceUrl": "https://github.com/hashicorp/agent-skills/blob/bc6b14b77481c3cbfbb06a0166be7245ed45798c/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found all 2 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in hashicorp/agent-skills at commit bc6b14b77481c3cbfbb06a0166be7245ed45798c. The repository-root MPL-2.0 license at https://github.com/hashicorp/agent-skills/blob/bc6b14b77481c3cbfbb06a0166be7245ed45798c/LICENSE permits redistribution subject to its terms. Required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
     },
     {
       "skillId": "test-analysis-extensions",
