@@ -92,4 +92,13 @@ test("rejects skill paths that are absolute or escape their source", async () =>
   await withRegistry([{ ...validSkill(), skillPath: "/tmp/outside" }], async file => {
     await assert.rejects(() => loadRegistry(file), /invalid skillPath/);
   });
+  await withRegistry([{ ...validSkill(), skillPath: "safe/../outside" }], async file => {
+    await assert.rejects(() => loadRegistry(file), /parent-directory segments/);
+  });
+  await withRegistry([{ ...validSkill(), skillPath: "safe\\\\outside" }], async file => {
+    await assert.rejects(() => loadRegistry(file), /forward slashes/);
+  });
+  await withRegistry([{ ...validSkill(), source: { type: "local", path: "..\\\\outside" } }], async file => {
+    await assert.rejects(() => loadRegistry(file), /relative path/);
+  });
 });
