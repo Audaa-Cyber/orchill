@@ -8,7 +8,7 @@ Generated from `registry/skills.json`. Local payloads live under `skills/<catego
 |---|---|---|---|---|
 | Agents Sdk | `agents-sdk` | local | [`skills/developer-tools/agents-sdk`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/agents-sdk) | Apache-2.0 |
 | Check Bin Obj Clash | `check-bin-obj-clash` | local | [`skills/developer-tools/check-bin-obj-clash`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/check-bin-obj-clash) | MIT |
-| Code Review | `code-review` | local | [`skills/developer-tools/code-review`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/code-review) | Unknown |
+| Code Review | `code-review` | local | [`skills/developer-tools/code-review`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/code-review) | Apache-2.0 |
 | Convert To Cpm | `convert-to-cpm` | local | [`skills/developer-tools/convert-to-cpm`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/convert-to-cpm) | MIT |
 | Differential Review | `differential-review` | local | [`skills/developer-tools/differential-review`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/differential-review) | Unknown |
 | Dump Collect | `dump-collect` | local | [`skills/developer-tools/dump-collect`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/developer-tools/dump-collect) | MIT |
