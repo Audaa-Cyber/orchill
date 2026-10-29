@@ -144,3 +144,23 @@ Covered skill IDs:
 
 License evidence: [LICENSE at the reviewed commit](https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE). The repository identifies the license as **Creative Commons Attribution 4.0 International (CC BY 4.0)**. These copies were not modified. Attribution/source and license information are provided here; see the [full CC BY 4.0 legal code](https://creativecommons.org/licenses/by/4.0/).
 
+## OpenAI skills repository
+
+The following 13 skill directories are copied unchanged from [openai/skills](https://github.com/openai/skills), pinned for this review to commit [49f948faa9258a0c61caceaf225e179651397431](https://github.com/openai/skills/commit/49f948faa9258a0c61caceaf225e179651397431). All 438 files across these 13 directories matched the corresponding upstream file paths and Git blob SHAs. Each skill's own `LICENSE.txt` is included in the copied directory; license evidence is linked below.
+
+- `imagegen` — Apache-2.0; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.system/imagegen/LICENSE.txt)
+- `jupyter-notebook` — Apache-2.0; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/jupyter-notebook/LICENSE.txt)
+- `sentry` — Apache-2.0; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/sentry/LICENSE.txt)
+- `cloudflare-deploy` — Apache-2.0; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/cloudflare-deploy/LICENSE.txt)
+- `netlify-deploy` — Apache-2.0; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/netlify-deploy/LICENSE.txt)
+- `render-deploy` — Apache-2.0; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/render-deploy/LICENSE.txt)
+- `gh-address-comments` — Apache-2.0; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/gh-address-comments/LICENSE.txt)
+- `gh-fix-ci` — Apache-2.0; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/gh-fix-ci/LICENSE.txt)
+- `linear` — Apache-2.0; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/linear/LICENSE.txt)
+- `notion-knowledge-capture` — MIT; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/notion-knowledge-capture/LICENSE.txt)
+- `openai-docs` — Apache-2.0; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/openai-docs/LICENSE.txt)
+- `security-best-practices` — Apache-2.0; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/security-best-practices/LICENSE.txt)
+- `security-threat-model` — Apache-2.0; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/security-threat-model/LICENSE.txt)
+
+Two other imported entries, `figma` and `figma-implement-design`, are **not approved for redistribution**: their upstream `LICENSE.txt` files state that the materials are governed by Figma Developer Terms and describe them as a beta feature, rather than granting a standard open-source license. They remain blocked pending review of those terms and a clear redistribution basis. License evidence: [figma LICENSE.txt](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/figma/LICENSE.txt) and [figma-implement-design LICENSE.txt](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/figma-implement-design/LICENSE.txt).
+
