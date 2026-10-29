@@ -1,0 +1,46 @@
+/plugin marketplace add trailofbits/skills
+/plugin install static-analysis@trailofbits
+/plugin marketplace add blader/humanizer
+/plugin install humanizer@humanizer
+/plugin marketplace add dotnet/skills
+/plugin install dotnet@dotnet-agent-skills
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-aspnetcore@dotnet-agent-skills
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-msbuild@dotnet-agent-skills
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-nuget@dotnet-agent-skills
+/plugin marketplace add callstackincubator/agent-skills
+/plugin install testing-react-native-apps@callstack-agent-skills
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-diag@dotnet-agent-skills
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-test@dotnet-agent-skills
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-ai@dotnet-agent-skills
+/plugin marketplace add anthropics/knowledge-work-plugins
+/plugin install design@knowledge-work-plugins
+/plugin marketplace add mvanhorn/last30days-skill
+/plugin install last30days@last30days-skill
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-template-engine@dotnet-agent-skills
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-upgrade@dotnet-agent-skills
+/plugin marketplace add trailofbits/skills
+/plugin install static-analysis@trailofbits
+/plugin marketplace add trailofbits/skills
+/plugin install building-secure-contracts@trailofbits
+/plugin marketplace add kreuzberg-dev/kreuzberg
+/plugin install xberg@xberg
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-data@dotnet-agent-skills
+/plugin marketplace add dotnet/skills
+/plugin install dotnet-maui@dotnet-agent-skills
+/plugin marketplace add callstackincubator/agent-skills
+/plugin install building-react-native-apps@callstack-agent-skills
+/plugin marketplace add callstackincubator/agent-skills
+/plugin install building-react-native-apps@callstack-agent-skills
+/plugin marketplace add callstackincubator/agent-skills
+/plugin install migrating-to-react-native@callstack-agent-skills
+/plugin marketplace add OthmanAdi/planning-with-files
+/plugin install planning-with-files@planning-with-files

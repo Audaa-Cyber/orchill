@@ -14,7 +14,8 @@
     "docs",
     "README.md",
     "LICENSE",
-    "journal.md"
+    "journal.md",
+    "skills"
   ],
   "engines": {
     "node": ">=22"
@@ -23,9 +24,13 @@
     "build": "tsc -p tsconfig.json",
     "start": "node dist/cli.js",
     "dev": "tsx src/cli.ts",
-    "test": "tsx --test tests/safety.test.ts tests/install.test.ts tests/registry.test.ts tests/bulk-import.test.ts",
+    "test": "tsx --test tests/audit.test.ts tests/safety.test.ts tests/install.test.ts tests/registry.test.ts tests/bulk-import.test.ts tests/marketplace-import.test.ts tests/release-readiness.test.ts tests/provenance.test.ts",
     "typecheck": "tsc --noEmit -p tsconfig.json",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "catalog:generate": "tsx scripts/generate-catalog.ts",
+    "release:check": "tsx scripts/check-release-readiness.ts",
+    "prepublishOnly": "npm run build && npm run release:check -- --strict",
+    "provenance:inventory": "tsx scripts/build-provenance-inventory.ts"
   },
   "dependencies": {
     "commander": "^14.0.0"

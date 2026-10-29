@@ -1,0 +1,283 @@
+{
+  "total": 46,
+  "imported": 0,
+  "failed": 46,
+  "records": [
+    {
+      "line": 1,
+      "command": "/plugin marketplace add trailofbits/skills",
+      "status": "failed",
+      "error": "Marketplace manifest not found at .agents/plugins/marketplace.json."
+    },
+    {
+      "line": 3,
+      "command": "/plugin marketplace add blader/humanizer",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 5,
+      "command": "/plugin marketplace add dotnet/skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 7,
+      "command": "/plugin marketplace add dotnet/skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 9,
+      "command": "/plugin marketplace add dotnet/skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 11,
+      "command": "/plugin marketplace add dotnet/skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 13,
+      "command": "/plugin marketplace add callstackincubator/agent-skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 15,
+      "command": "/plugin marketplace add dotnet/skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 17,
+      "command": "/plugin marketplace add dotnet/skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 19,
+      "command": "/plugin marketplace add dotnet/skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 21,
+      "command": "/plugin marketplace add anthropics/knowledge-work-plugins",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 23,
+      "command": "/plugin marketplace add mvanhorn/last30days-skill",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 25,
+      "command": "/plugin marketplace add dotnet/skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 27,
+      "command": "/plugin marketplace add dotnet/skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 29,
+      "command": "/plugin marketplace add trailofbits/skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 31,
+      "command": "/plugin marketplace add trailofbits/skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 33,
+      "command": "/plugin marketplace add kreuzberg-dev/kreuzberg",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 35,
+      "command": "/plugin marketplace add dotnet/skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 37,
+      "command": "/plugin marketplace add dotnet/skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 39,
+      "command": "/plugin marketplace add callstackincubator/agent-skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 41,
+      "command": "/plugin marketplace add callstackincubator/agent-skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 43,
+      "command": "/plugin marketplace add callstackincubator/agent-skills",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 45,
+      "command": "/plugin marketplace add OthmanAdi/planning-with-files",
+      "status": "failed",
+      "error": "git exited with code 128"
+    },
+    {
+      "line": 2,
+      "command": "/plugin install static-analysis@trailofbits",
+      "status": "failed",
+      "error": "Marketplace trailofbits was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 4,
+      "command": "/plugin install humanizer@humanizer",
+      "status": "failed",
+      "error": "Marketplace humanizer was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 6,
+      "command": "/plugin install dotnet@dotnet-agent-skills",
+      "status": "failed",
+      "error": "Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 8,
+      "command": "/plugin install dotnet-aspnetcore@dotnet-agent-skills",
+      "status": "failed",
+      "error": "Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 10,
+      "command": "/plugin install dotnet-msbuild@dotnet-agent-skills",
+      "status": "failed",
+      "error": "Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 12,
+      "command": "/plugin install dotnet-nuget@dotnet-agent-skills",
+      "status": "failed",
+      "error": "Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 14,
+      "command": "/plugin install testing-react-native-apps@callstack-agent-skills",
+      "status": "failed",
+      "error": "Marketplace callstack-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 16,
+      "command": "/plugin install dotnet-diag@dotnet-agent-skills",
+      "status": "failed",
+      "error": "Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 18,
+      "command": "/plugin install dotnet-test@dotnet-agent-skills",
+      "status": "failed",
+      "error": "Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 20,
+      "command": "/plugin install dotnet-ai@dotnet-agent-skills",
+      "status": "failed",
+      "error": "Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 22,
+      "command": "/plugin install design@knowledge-work-plugins",
+      "status": "failed",
+      "error": "Marketplace knowledge-work-plugins was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 24,
+      "command": "/plugin install last30days@last30days-skill",
+      "status": "failed",
+      "error": "Marketplace last30days-skill was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 26,
+      "command": "/plugin install dotnet-template-engine@dotnet-agent-skills",
+      "status": "failed",
+      "error": "Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 28,
+      "command": "/plugin install dotnet-upgrade@dotnet-agent-skills",
+      "status": "failed",
+      "error": "Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 30,
+      "command": "/plugin install static-analysis@trailofbits",
+      "status": "failed",
+      "error": "Marketplace trailofbits was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 32,
+      "command": "/plugin install building-secure-contracts@trailofbits",
+      "status": "failed",
+      "error": "Marketplace trailofbits was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 34,
+      "command": "/plugin install xberg@xberg",
+      "status": "failed",
+      "error": "Marketplace xberg was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 36,
+      "command": "/plugin install dotnet-data@dotnet-agent-skills",
+      "status": "failed",
+      "error": "Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 38,
+      "command": "/plugin install dotnet-maui@dotnet-agent-skills",
+      "status": "failed",
+      "error": "Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 40,
+      "command": "/plugin install building-react-native-apps@callstack-agent-skills",
+      "status": "failed",
+      "error": "Marketplace callstack-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 42,
+      "command": "/plugin install building-react-native-apps@callstack-agent-skills",
+      "status": "failed",
+      "error": "Marketplace callstack-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 44,
+      "command": "/plugin install migrating-to-react-native@callstack-agent-skills",
+      "status": "failed",
+      "error": "Marketplace callstack-agent-skills was not resolved. Use the exact marketplace name declared in its manifest."
+    },
+    {
+      "line": 46,
+      "command": "/plugin install planning-with-files@planning-with-files",
+      "status": "failed",
+      "error": "Marketplace planning-with-files was not resolved. Use the exact marketplace name declared in its manifest."
+    }
+  ]
+}

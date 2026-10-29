@@ -1,0 +1,50 @@
+# Orchill marketplace import report
+
+- FAILED line 1: /plugin marketplace add trailofbits/skills — Marketplace manifest not found at .agents/plugins/marketplace.json.
+- FAILED line 2: /plugin install static-analysis@trailofbits — Marketplace trailofbits was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 3: /plugin marketplace add blader/humanizer — git exited with code 128
+- FAILED line 4: /plugin install humanizer@humanizer — Marketplace humanizer was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 5: /plugin marketplace add dotnet/skills — git exited with code 128
+- FAILED line 6: /plugin install dotnet@dotnet-agent-skills — Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 7: /plugin marketplace add dotnet/skills — git exited with code 128
+- FAILED line 8: /plugin install dotnet-aspnetcore@dotnet-agent-skills — Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 9: /plugin marketplace add dotnet/skills — git exited with code 128
+- FAILED line 10: /plugin install dotnet-msbuild@dotnet-agent-skills — Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 11: /plugin marketplace add dotnet/skills — git exited with code 128
+- FAILED line 12: /plugin install dotnet-nuget@dotnet-agent-skills — Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 13: /plugin marketplace add callstackincubator/agent-skills — git exited with code 128
+- FAILED line 14: /plugin install testing-react-native-apps@callstack-agent-skills — Marketplace callstack-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 15: /plugin marketplace add dotnet/skills — git exited with code 128
+- FAILED line 16: /plugin install dotnet-diag@dotnet-agent-skills — Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 17: /plugin marketplace add dotnet/skills — git exited with code 128
+- FAILED line 18: /plugin install dotnet-test@dotnet-agent-skills — Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 19: /plugin marketplace add dotnet/skills — git exited with code 128
+- FAILED line 20: /plugin install dotnet-ai@dotnet-agent-skills — Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 21: /plugin marketplace add anthropics/knowledge-work-plugins — git exited with code 128
+- FAILED line 22: /plugin install design@knowledge-work-plugins — Marketplace knowledge-work-plugins was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 23: /plugin marketplace add mvanhorn/last30days-skill — git exited with code 128
+- FAILED line 24: /plugin install last30days@last30days-skill — Marketplace last30days-skill was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 25: /plugin marketplace add dotnet/skills — git exited with code 128
+- FAILED line 26: /plugin install dotnet-template-engine@dotnet-agent-skills — Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 27: /plugin marketplace add dotnet/skills — git exited with code 128
+- FAILED line 28: /plugin install dotnet-upgrade@dotnet-agent-skills — Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 29: /plugin marketplace add trailofbits/skills — git exited with code 128
+- FAILED line 30: /plugin install static-analysis@trailofbits — Marketplace trailofbits was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 31: /plugin marketplace add trailofbits/skills — git exited with code 128
+- FAILED line 32: /plugin install building-secure-contracts@trailofbits — Marketplace trailofbits was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 33: /plugin marketplace add kreuzberg-dev/kreuzberg — git exited with code 128
+- FAILED line 34: /plugin install xberg@xberg — Marketplace xberg was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 35: /plugin marketplace add dotnet/skills — git exited with code 128
+- FAILED line 36: /plugin install dotnet-data@dotnet-agent-skills — Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 37: /plugin marketplace add dotnet/skills — git exited with code 128
+- FAILED line 38: /plugin install dotnet-maui@dotnet-agent-skills — Marketplace dotnet-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 39: /plugin marketplace add callstackincubator/agent-skills — git exited with code 128
+- FAILED line 40: /plugin install building-react-native-apps@callstack-agent-skills — Marketplace callstack-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 41: /plugin marketplace add callstackincubator/agent-skills — git exited with code 128
+- FAILED line 42: /plugin install building-react-native-apps@callstack-agent-skills — Marketplace callstack-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 43: /plugin marketplace add callstackincubator/agent-skills — git exited with code 128
+- FAILED line 44: /plugin install migrating-to-react-native@callstack-agent-skills — Marketplace callstack-agent-skills was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 45: /plugin marketplace add OthmanAdi/planning-with-files — git exited with code 128
+- FAILED line 46: /plugin install planning-with-files@planning-with-files — Marketplace planning-with-files was not resolved. Use the exact marketplace name declared in its manifest.
+
+Review plugin instructions, scripts, provenance, and licensing before publishing. Marketplace registration is recorded only for this import run; Orchill does not change your agent's global plugin configuration.

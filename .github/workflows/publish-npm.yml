@@ -65,4 +65,4 @@ jobs:
         run: npm pack --dry-run
 
       - name: Publish package with npm provenance
-        run: npm publish --provenance
+        run: npm publish --provenance --access public

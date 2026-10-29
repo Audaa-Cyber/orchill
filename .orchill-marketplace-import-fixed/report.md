@@ -1,0 +1,50 @@
+# Orchill marketplace import report
+
+- FAILED line 1: /plugin marketplace add trailofbits/skills — Marketplace manifest not found at .agents/plugins/marketplace.json.
+- FAILED line 2: /plugin install static-analysis@trailofbits — Marketplace trailofbits was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 3: /plugin marketplace add blader/humanizer — Marketplace manifest not found at .agents/plugins/marketplace.json.
+- FAILED line 4: /plugin install humanizer@humanizer — Marketplace humanizer was not resolved. Use the exact marketplace name declared in its manifest.
+- IMPORTED line 5: /plugin marketplace add dotnet/skills
+- IMPORTED line 6: /plugin install dotnet@dotnet-agent-skills → csharp-expert, csharp-refactoring, msbuild, setup-local-sdk
+- IMPORTED line 7: /plugin marketplace add dotnet/skills
+- IMPORTED line 8: /plugin install dotnet-aspnetcore@dotnet-agent-skills → convert-blazor-server-to-webapp, dotnet-webapi
+- IMPORTED line 9: /plugin marketplace add dotnet/skills
+- IMPORTED line 10: /plugin install dotnet-msbuild@dotnet-agent-skills → binlog-failure-analysis, binlog-generation, build-parallelism, build-perf-baseline, build-perf-diagnostics, check-bin-obj-clash, copy-to-output-directory, directory-build-organization, eliminate-redundant-restores, eval-performance, extension-points, including-generated-files, incremental-build, item-management, msbuild-antipatterns, msbuild-modernization, property-patterns, resolve-project-references, target-authoring, troubleshoot-binlog-mcp
+- IMPORTED line 11: /plugin marketplace add dotnet/skills
+- IMPORTED line 12: /plugin install dotnet-nuget@dotnet-agent-skills → convert-to-cpm
+- IMPORTED line 13: /plugin marketplace add callstackincubator/agent-skills
+- FAILED line 14: /plugin install testing-react-native-apps@callstack-agent-skills — plugin.source.startsWith is not a function
+- IMPORTED line 15: /plugin marketplace add dotnet/skills
+- IMPORTED line 16: /plugin install dotnet-diag@dotnet-agent-skills → analyzing-dotnet-performance, android-tombstone-symbolication, apple-crash-symbolication, clr-activation-debugging, dotnet-trace-collect, dump-collect, microbenchmarking
+- IMPORTED line 17: /plugin marketplace add dotnet/skills
+- IMPORTED line 18: /plugin install dotnet-test@dotnet-agent-skills → assertion-quality, code-testing, code-testing-agent, code-testing-extensions, coverage-analysis, crap-score, detect-static-dependencies, filter-syntax, find-untested-sources, generate-testability-wrappers, grade-tests, migrate-static-to-wrapper, mtp-hot-reload, platform-detection, run-tests, scaffold-dotnet-test-project, test-analysis-extensions, test-anti-patterns, test-gap-analysis, test-smell-detection, test-tagging, test-value-evidence, testability-obstacle, writing-mstest-tests
+- IMPORTED line 19: /plugin marketplace add dotnet/skills
+- IMPORTED line 20: /plugin install dotnet-ai@dotnet-agent-skills → technology-selection
+- FAILED line 21: /plugin marketplace add anthropics/knowledge-work-plugins — Marketplace manifest not found at .agents/plugins/marketplace.json.
+- FAILED line 22: /plugin install design@knowledge-work-plugins — Marketplace knowledge-work-plugins was not resolved. Use the exact marketplace name declared in its manifest.
+- IMPORTED line 23: /plugin marketplace add mvanhorn/last30days-skill
+- FAILED line 24: /plugin install last30days@last30days-skill — plugin.source.startsWith is not a function
+- IMPORTED line 25: /plugin marketplace add dotnet/skills
+- IMPORTED line 26: /plugin install dotnet-template-engine@dotnet-agent-skills → template-authoring, template-comparison, template-discovery, template-instantiation, template-smart-defaults, template-validation
+- IMPORTED line 27: /plugin marketplace add dotnet/skills
+- IMPORTED line 28: /plugin install dotnet-upgrade@dotnet-agent-skills → dotnet-aot-compat, migrate-dotnet10-to-dotnet11, migrate-dotnet8-to-dotnet9, migrate-dotnet9-to-dotnet10, migrate-nullable-references, thread-abort-migration
+- FAILED line 29: /plugin marketplace add trailofbits/skills — Marketplace manifest not found at .agents/plugins/marketplace.json.
+- FAILED line 30: /plugin install static-analysis@trailofbits — Marketplace trailofbits was not resolved. Use the exact marketplace name declared in its manifest.
+- FAILED line 31: /plugin marketplace add trailofbits/skills — Marketplace manifest not found at .agents/plugins/marketplace.json.
+- FAILED line 32: /plugin install building-secure-contracts@trailofbits — Marketplace trailofbits was not resolved. Use the exact marketplace name declared in its manifest.
+- IMPORTED line 33: /plugin marketplace add kreuzberg-dev/kreuzberg
+- FAILED line 34: /plugin install xberg@xberg — plugin.source.startsWith is not a function
+- IMPORTED line 35: /plugin marketplace add dotnet/skills
+- IMPORTED line 36: /plugin install dotnet-data@dotnet-agent-skills → create-datadriven-aspnetcore, optimizing-ef-core-queries
+- IMPORTED line 37: /plugin marketplace add dotnet/skills
+- IMPORTED line 38: /plugin install dotnet-maui@dotnet-agent-skills → dotnet-maui-doctor, maui-app-lifecycle, maui-collectionview, maui-data-binding, maui-dependency-injection, maui-safe-area, maui-shell-navigation, maui-theming
+- IMPORTED line 39: /plugin marketplace add callstackincubator/agent-skills
+- FAILED line 40: /plugin install building-react-native-apps@callstack-agent-skills — plugin.source.startsWith is not a function
+- IMPORTED line 41: /plugin marketplace add callstackincubator/agent-skills
+- FAILED line 42: /plugin install building-react-native-apps@callstack-agent-skills — plugin.source.startsWith is not a function
+- IMPORTED line 43: /plugin marketplace add callstackincubator/agent-skills
+- FAILED line 44: /plugin install migrating-to-react-native@callstack-agent-skills — plugin.source.startsWith is not a function
+- FAILED line 45: /plugin marketplace add OthmanAdi/planning-with-files — Marketplace manifest not found at .agents/plugins/marketplace.json.
+- FAILED line 46: /plugin install planning-with-files@planning-with-files — Marketplace planning-with-files was not resolved. Use the exact marketplace name declared in its manifest.
+
+Review plugin instructions, scripts, provenance, and licensing before publishing. Marketplace registration is recorded only for this import run; Orchill does not change your agent's global plugin configuration.

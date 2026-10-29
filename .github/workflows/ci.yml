@@ -12,11 +12,23 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install
+      - run: npm ci
       - run: npm run typecheck
+      - name: Report bundled-skill release approval gaps (non-blocking until review is complete)
+        run: npm run release:check
+      - name: Generate third-party provenance inventory
+        run: npm run provenance:inventory -- --output=reports/provenance-inventory.json
       - run: npm test
       - run: npm run build
+      - run: npm run catalog:generate
+      - name: Verify generated catalog and project license metadata
+        run: |
+          git diff --exit-code -- catalog reports
+          test ! -e .orchill-skills-import/skills
+          test ! -e .orchill-marketplace-import-fixed/skills
+          node --input-type=module -e "import fs from 'node:fs'; const p=JSON.parse(fs.readFileSync('package.json','utf8')); const r=JSON.parse(fs.readFileSync('registry/skills.json','utf8')); const local=r.skills.filter(s=>s.source?.type==='local'); if(p.license!=='Apache-2.0') throw new Error('Project license metadata must be Apache-2.0'); if(local.length!==209 || local.some(s=>!s.source.path?.startsWith('../skills/'))) throw new Error('Expected all 209 local skills under categorized skills/ paths'); console.log('License and categorized registry paths verified.');"
       - run: node dist/cli.js import-commands --help
+      - run: node --input-type=module -e "import { parseMarketplaceCommand } from './dist/marketplace-import.js'; if (parseMarketplaceCommand('/plugin install dotnet-diag@dotnet-agent-skills', 1).plugin !== 'dotnet-diag') process.exit(1)"
       - run: node dist/cli.js --help
       - run: node dist/cli.js search demo
       - run: node dist/cli.js install demo-focus --dry-run
@@ -27,12 +39,24 @@ jobs:
           orchill --help
           orchill search demo
           orchill categories
-          orchill list --category "UI/UX Design"
+          set +e
+          orchill audit --json > "$RUNNER_TEMP/orchill-audit.json"
+          audit_status=$?
+          set -e
+          test "$audit_status" -le 1
+          node --input-type=module -e "import fs from 'node:fs'; const report = JSON.parse(fs.readFileSync(process.argv[1], 'utf8')); if (!report.summary || !Array.isArray(report.findings) || report.summary.totalSkills < 1) process.exit(1); console.log(JSON.stringify({ auditSummary: report.summary, findingsByCode: report.findings.reduce((counts, finding) => (counts[finding.code] = (counts[finding.code] || 0) + 1, counts), {}) }, null, 2))" "$RUNNER_TEMP/orchill-audit.json"
+          orchill list --category "UI/UX"
           orchill info frontend-design
           orchill targets
           orchill registry
           orchill install frontend-design --dry-run
-          mkdir -p "$RUNNER_TEMP/orchill-smoke-project" "$RUNNER_TEMP/orchill-init-smoke"
+          mkdir -p "$RUNNER_TEMP/orchill-smoke-project" "$RUNNER_TEMP/orchill-init-smoke" "$RUNNER_TEMP/orchill-category-smoke"
+          orchill install analyzing-dotnet-performance --cwd "$RUNNER_TEMP/orchill-smoke-project"
+          test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/analyzing-dotnet-performance/SKILL.md"
+          test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/analyzing-dotnet-performance/references/critical-patterns.md"
+          orchill install-category Accessibility --yes --cwd "$RUNNER_TEMP/orchill-category-smoke"
+          test -f "$RUNNER_TEMP/orchill-category-smoke/.agents/skills/audit-website/SKILL.md"
+          test -f "$RUNNER_TEMP/orchill-category-smoke/.agents/skills/web-design-guidelines/SKILL.md"
           orchill install demo-focus --cwd "$RUNNER_TEMP/orchill-smoke-project"
           test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/demo-focus/SKILL.md"
           orchill verify demo-focus --cwd "$RUNNER_TEMP/orchill-smoke-project"

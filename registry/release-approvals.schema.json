@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orchill.dev/schemas/release-approvals.schema.json",
+  "title": "Orchill bundled skill redistribution approvals",
+  "type": "object",
+  "required": ["version", "approvals"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "const": 1 },
+    "approvals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "skillId",
+          "upstreamUrl",
+          "upstreamRevision",
+          "license",
+          "licenseEvidenceUrl",
+          "redistributionAllowed",
+          "reviewedAt",
+          "reviewer",
+          "notes"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "skillId": { "type": "string", "minLength": 1 },
+          "upstreamUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
+          "upstreamRevision": { "type": "string", "pattern": "^(?:[a-fA-F0-9]{40}|[a-fA-F0-9]{64})$" },
+          "license": { "type": "string", "minLength": 1 },
+          "licenseEvidenceUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
+          "redistributionAllowed": { "const": true },
+          "reviewedAt": { "type": "string", "format": "date" },
+          "reviewer": { "type": "string", "minLength": 1 },
+          "notes": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

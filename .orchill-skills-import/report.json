@@ -1,0 +1,1129 @@
+{
+  "total": 164,
+  "imported": 138,
+  "failed": 26,
+  "records": [
+    {
+      "line": 1,
+      "command": "npx skills add Leonxlnx/taste-skill@design-taste-frontend",
+      "status": "imported",
+      "id": "design-taste-frontend",
+      "licenseFound": false
+    },
+    {
+      "line": 2,
+      "command": "npx skills add emilkowalski/skills@emil-design-eng",
+      "status": "imported",
+      "id": "emil-design-eng",
+      "licenseFound": false
+    },
+    {
+      "line": 3,
+      "command": "npx skills add MengTo/Skills@build-awwwards-quality-sites",
+      "status": "failed",
+      "error": "Skills CLI exited with code 1"
+    },
+    {
+      "line": 4,
+      "command": "npx skills add vercel-labs/skills@find-skills",
+      "status": "imported",
+      "id": "find-skills",
+      "licenseFound": false
+    },
+    {
+      "line": 5,
+      "command": "npx skills add vercel-labs/agent-skills@vercel-react-best-practices",
+      "status": "imported",
+      "id": "vercel-react-best-practices",
+      "licenseFound": false
+    },
+    {
+      "line": 6,
+      "command": "npx skills add anthropics/skills@frontend-design",
+      "status": "imported",
+      "id": "frontend-design",
+      "licenseFound": true
+    },
+    {
+      "line": 7,
+      "command": "npx skills add coreyhaines31/marketingskills",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 8,
+      "command": "npx skills add AgriciDaniel/claude-seo",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 9,
+      "command": "npx skills add charlie947/social-media-skills",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 10,
+      "command": "npx skills add anthropics/skills@mcp-builder",
+      "status": "imported",
+      "id": "mcp-builder",
+      "licenseFound": true
+    },
+    {
+      "line": 11,
+      "command": "npx skills add anthropics/skills@claude-api",
+      "status": "imported",
+      "id": "claude-api",
+      "licenseFound": true
+    },
+    {
+      "line": 12,
+      "command": "npx skills add anthropics/skills@docx",
+      "status": "imported",
+      "id": "docx",
+      "licenseFound": true
+    },
+    {
+      "line": 13,
+      "command": "npx skills add shadcn-ui/ui@shadcn",
+      "status": "imported",
+      "id": "shadcn",
+      "licenseFound": false
+    },
+    {
+      "line": 14,
+      "command": "npx skills add obra/superpowers@brainstorming",
+      "status": "imported",
+      "id": "brainstorming",
+      "licenseFound": false
+    },
+    {
+      "line": 15,
+      "command": "npx skills add obra/superpowers@systematic-debugging",
+      "status": "imported",
+      "id": "systematic-debugging",
+      "licenseFound": false
+    },
+    {
+      "line": 16,
+      "command": "npx skills add obra/superpowers@test-driven-development",
+      "status": "imported",
+      "id": "test-driven-development",
+      "licenseFound": false
+    },
+    {
+      "line": 17,
+      "command": "npx skills add obra/superpowers@requesting-code-review",
+      "status": "imported",
+      "id": "requesting-code-review",
+      "licenseFound": false
+    },
+    {
+      "line": 18,
+      "command": "npx skills add obra/superpowers@subagent-driven-development",
+      "status": "imported",
+      "id": "subagent-driven-development",
+      "licenseFound": false
+    },
+    {
+      "line": 19,
+      "command": "npx skills add obra/superpowers@verification-before-completion",
+      "status": "imported",
+      "id": "verification-before-completion",
+      "licenseFound": false
+    },
+    {
+      "line": 20,
+      "command": "npx skills add obra/superpowers@receiving-code-review",
+      "status": "imported",
+      "id": "receiving-code-review",
+      "licenseFound": false
+    },
+    {
+      "line": 21,
+      "command": "npx skills add obra/superpowers@writing-plans",
+      "status": "imported",
+      "id": "writing-plans",
+      "licenseFound": false
+    },
+    {
+      "line": 22,
+      "command": "npx skills add obra/superpowers@executing-plans",
+      "status": "imported",
+      "id": "executing-plans",
+      "licenseFound": false
+    },
+    {
+      "line": 23,
+      "command": "npx skills add obra/superpowers@dispatching-parallel-agents",
+      "status": "imported",
+      "id": "dispatching-parallel-agents",
+      "licenseFound": false
+    },
+    {
+      "line": 24,
+      "command": "npx skills add obra/superpowers@using-git-worktrees",
+      "status": "imported",
+      "id": "using-git-worktrees",
+      "licenseFound": false
+    },
+    {
+      "line": 25,
+      "command": "npx skills add obra/superpowers@using-superpowers",
+      "status": "imported",
+      "id": "using-superpowers",
+      "licenseFound": false
+    },
+    {
+      "line": 26,
+      "command": "npx skills add anthropics/skills@skill-creator",
+      "status": "imported",
+      "id": "skill-creator",
+      "licenseFound": true
+    },
+    {
+      "line": 27,
+      "command": "npx skills add anthropics/skills@pdf",
+      "status": "imported",
+      "id": "pdf",
+      "licenseFound": true
+    },
+    {
+      "line": 28,
+      "command": "npx skills add anthropics/skills@webapp-testing",
+      "status": "failed",
+      "error": "Skills CLI exited with code 1"
+    },
+    {
+      "line": 29,
+      "command": "npx skills add anthropics/skills@doc-coauthoring",
+      "status": "failed",
+      "error": "Skills CLI exited with code 1"
+    },
+    {
+      "line": 30,
+      "command": "npx skills add anthropics/skills@slack-gif-creator",
+      "status": "imported",
+      "id": "slack-gif-creator",
+      "licenseFound": true
+    },
+    {
+      "line": 31,
+      "command": "npx skills add anthropics/skills@web-artifacts-builder",
+      "status": "imported",
+      "id": "web-artifacts-builder",
+      "licenseFound": true
+    },
+    {
+      "line": 32,
+      "command": "npx skills add anthropics/skills@internal-comms",
+      "status": "imported",
+      "id": "internal-comms",
+      "licenseFound": true
+    },
+    {
+      "line": 33,
+      "command": "npx skills add anthropics/skills@canvas-design",
+      "status": "imported",
+      "id": "canvas-design",
+      "licenseFound": true
+    },
+    {
+      "line": 34,
+      "command": "npx skills add anthropics/skills@algorithmic-art",
+      "status": "imported",
+      "id": "algorithmic-art",
+      "licenseFound": true
+    },
+    {
+      "line": 35,
+      "command": "npx skills add anthropics/skills@theme-factory",
+      "status": "imported",
+      "id": "theme-factory",
+      "licenseFound": true
+    },
+    {
+      "line": 36,
+      "command": "npx skills add anthropics/skills@brand-guidelines",
+      "status": "imported",
+      "id": "brand-guidelines",
+      "licenseFound": true
+    },
+    {
+      "line": 37,
+      "command": "npx skills add anthropics/skills@pptx",
+      "status": "imported",
+      "id": "pptx",
+      "licenseFound": true
+    },
+    {
+      "line": 38,
+      "command": "npx skills add nextlevelbuilder/ui-ux-pro-max-skill@ui-ux-pro-max",
+      "status": "imported",
+      "id": "ui-ux-pro-max",
+      "licenseFound": false
+    },
+    {
+      "line": 39,
+      "command": "npx skills add anthropics/skills@xlsx",
+      "status": "imported",
+      "id": "xlsx",
+      "licenseFound": true
+    },
+    {
+      "line": 40,
+      "command": "npx skills add wshobson/agents@tailwind-design-system",
+      "status": "imported",
+      "id": "tailwind-design-system",
+      "licenseFound": false
+    },
+    {
+      "line": 41,
+      "command": "npx skills add vercel-labs/agent-skills@vercel-composition-patterns",
+      "status": "imported",
+      "id": "vercel-composition-patterns",
+      "licenseFound": false
+    },
+    {
+      "line": 42,
+      "command": "npx skills add vercel-labs/agent-skills@vercel-react-view-transitions",
+      "status": "imported",
+      "id": "vercel-react-view-transitions",
+      "licenseFound": false
+    },
+    {
+      "line": 43,
+      "command": "npx skills add coreyhaines31/marketingskills@seo-audit",
+      "status": "imported",
+      "id": "seo-audit",
+      "licenseFound": false
+    },
+    {
+      "line": 44,
+      "command": "npx skills add zarazhangrui/frontend-slides",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 45,
+      "command": "npx skills add ibelick/ui-skills",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 46,
+      "command": "npx skills add remotion-dev/skills@remotion-best-practices",
+      "status": "imported",
+      "id": "remotion-best-practices",
+      "licenseFound": false
+    },
+    {
+      "line": 47,
+      "command": "npx skills add CloudAI-X/threejs-skills",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 48,
+      "command": "npx skills add Automattic/agent-skills@wp-block-development",
+      "status": "imported",
+      "id": "wp-block-development",
+      "licenseFound": false
+    },
+    {
+      "line": 49,
+      "command": "npx skills add Automattic/agent-skills@wp-block-themes",
+      "status": "imported",
+      "id": "wp-block-themes",
+      "licenseFound": false
+    },
+    {
+      "line": 50,
+      "command": "npx skills add openai/skills@openai-docs",
+      "status": "imported",
+      "id": "openai-docs",
+      "licenseFound": true
+    },
+    {
+      "line": 51,
+      "command": "npx skills add supabase/agent-skills@supabase-postgres-best-practices",
+      "status": "imported",
+      "id": "supabase-postgres-best-practices",
+      "licenseFound": false
+    },
+    {
+      "line": 52,
+      "command": "npx skills add better-auth/skills@better-auth-best-practices",
+      "status": "imported",
+      "id": "better-auth-best-practices",
+      "licenseFound": false
+    },
+    {
+      "line": 53,
+      "command": "npx skills add better-auth/skills@create-auth-skill",
+      "status": "failed",
+      "error": "Skills CLI exited with code 1"
+    },
+    {
+      "line": 54,
+      "command": "npx skills add resend/resend-skills@resend",
+      "status": "imported",
+      "id": "resend",
+      "licenseFound": false
+    },
+    {
+      "line": 55,
+      "command": "npx skills add sanity-io/agent-toolkit@sanity-best-practices",
+      "status": "imported",
+      "id": "sanity-best-practices",
+      "licenseFound": false
+    },
+    {
+      "line": 56,
+      "command": "npx skills add neondatabase/agent-skills@neon-postgres",
+      "status": "imported",
+      "id": "neon-postgres",
+      "licenseFound": false
+    },
+    {
+      "line": 57,
+      "command": "npx skills add tinybirdco/tinybird-agent-skills@tinybird",
+      "status": "imported",
+      "id": "tinybird",
+      "licenseFound": false
+    },
+    {
+      "line": 58,
+      "command": "npx skills add vercel-labs/agent-skills@deploy-to-vercel",
+      "status": "imported",
+      "id": "deploy-to-vercel",
+      "licenseFound": false
+    },
+    {
+      "line": 59,
+      "command": "npx skills add vercel-labs/agent-skills@vercel-cli-with-tokens",
+      "status": "imported",
+      "id": "vercel-cli-with-tokens",
+      "licenseFound": false
+    },
+    {
+      "line": 60,
+      "command": "npx skills add openai/skills@cloudflare-deploy",
+      "status": "imported",
+      "id": "cloudflare-deploy",
+      "licenseFound": true
+    },
+    {
+      "line": 61,
+      "command": "npx skills add openai/skills@netlify-deploy",
+      "status": "imported",
+      "id": "netlify-deploy",
+      "licenseFound": true
+    },
+    {
+      "line": 62,
+      "command": "npx skills add openai/skills@render-deploy",
+      "status": "imported",
+      "id": "render-deploy",
+      "licenseFound": true
+    },
+    {
+      "line": 63,
+      "command": "npx skills add cloudflare/skills@wrangler",
+      "status": "imported",
+      "id": "wrangler",
+      "licenseFound": false
+    },
+    {
+      "line": 64,
+      "command": "npx skills add cloudflare/skills@cloudflare",
+      "status": "imported",
+      "id": "cloudflare",
+      "licenseFound": false
+    },
+    {
+      "line": 65,
+      "command": "npx skills add cloudflare/skills@durable-objects",
+      "status": "imported",
+      "id": "durable-objects",
+      "licenseFound": false
+    },
+    {
+      "line": 66,
+      "command": "npx skills add cloudflare/skills@web-perf",
+      "status": "imported",
+      "id": "web-perf",
+      "licenseFound": false
+    },
+    {
+      "line": 67,
+      "command": "npx skills add microsoft/skills",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 68,
+      "command": "npx skills add antonbabenko/terraform-skill@terraform-skill",
+      "status": "imported",
+      "id": "terraform-skill",
+      "licenseFound": false
+    },
+    {
+      "line": 69,
+      "command": "npx skills add hashicorp/agent-skills@terraform-style-guide",
+      "status": "imported",
+      "id": "terraform-style-guide",
+      "licenseFound": false
+    },
+    {
+      "line": 70,
+      "command": "npx skills add hashicorp/agent-skills@refactor-module",
+      "status": "imported",
+      "id": "refactor-module",
+      "licenseFound": false
+    },
+    {
+      "line": 71,
+      "command": "npx skills add hashicorp/agent-skills@provider-resources",
+      "status": "imported",
+      "id": "provider-resources",
+      "licenseFound": false
+    },
+    {
+      "line": 72,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-functions",
+      "status": "imported",
+      "id": "azure-functions",
+      "licenseFound": false
+    },
+    {
+      "line": 73,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-app-service",
+      "status": "imported",
+      "id": "azure-app-service",
+      "licenseFound": false
+    },
+    {
+      "line": 74,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-kubernetes-service",
+      "status": "imported",
+      "id": "azure-kubernetes-service",
+      "licenseFound": false
+    },
+    {
+      "line": 75,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-container-apps",
+      "status": "imported",
+      "id": "azure-container-apps",
+      "licenseFound": false
+    },
+    {
+      "line": 76,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-static-web-apps",
+      "status": "imported",
+      "id": "azure-static-web-apps",
+      "licenseFound": false
+    },
+    {
+      "line": 77,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-devops",
+      "status": "imported",
+      "id": "azure-devops",
+      "licenseFound": false
+    },
+    {
+      "line": 78,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-pipelines",
+      "status": "imported",
+      "id": "azure-pipelines",
+      "licenseFound": false
+    },
+    {
+      "line": 79,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-monitor",
+      "status": "imported",
+      "id": "azure-monitor",
+      "licenseFound": false
+    },
+    {
+      "line": 80,
+      "command": "npx skills add zxkane/aws-skills",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 81,
+      "command": "npx skills add openai/skills@gh-fix-ci",
+      "status": "imported",
+      "id": "gh-fix-ci",
+      "licenseFound": true
+    },
+    {
+      "line": 82,
+      "command": "npx skills add openai/skills@gh-address-comments",
+      "status": "imported",
+      "id": "gh-address-comments",
+      "licenseFound": true
+    },
+    {
+      "line": 83,
+      "command": "npx skills add trailofbits/skills@modern-python",
+      "status": "imported",
+      "id": "modern-python",
+      "licenseFound": false
+    },
+    {
+      "line": 84,
+      "command": "npx skills add lackeyjb/playwright-skill@playwright-skill",
+      "status": "imported",
+      "id": "playwright-skill",
+      "licenseFound": false
+    },
+    {
+      "line": 85,
+      "command": "npx skills add getsentry/skills@code-review",
+      "status": "imported",
+      "id": "code-review",
+      "licenseFound": false
+    },
+    {
+      "line": 86,
+      "command": "npx skills add getsentry/skills@find-bugs",
+      "status": "imported",
+      "id": "find-bugs",
+      "licenseFound": false
+    },
+    {
+      "line": 87,
+      "command": "npx skills add omkamal/pypict-claude-skill",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 88,
+      "command": "npx skills add openai/skills@imagegen",
+      "status": "imported",
+      "id": "imagegen",
+      "licenseFound": true
+    },
+    {
+      "line": 89,
+      "command": "npx skills add zechenzhangAGI/AI-research-SKILLs",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 90,
+      "command": "npx skills add huggingface/skills@hf-cli",
+      "status": "imported",
+      "id": "hf-cli",
+      "licenseFound": false
+    },
+    {
+      "line": 91,
+      "command": "npx skills add huggingface/skills@huggingface-llm-trainer",
+      "status": "imported",
+      "id": "huggingface-llm-trainer",
+      "licenseFound": false
+    },
+    {
+      "line": 92,
+      "command": "npx skills add huggingface/skills@huggingface-datasets",
+      "status": "imported",
+      "id": "huggingface-datasets",
+      "licenseFound": false
+    },
+    {
+      "line": 93,
+      "command": "npx skills add huggingface/skills@huggingface-community-evals",
+      "status": "imported",
+      "id": "huggingface-community-evals",
+      "licenseFound": false
+    },
+    {
+      "line": 94,
+      "command": "npx skills add huggingface/skills@huggingface-trackio",
+      "status": "imported",
+      "id": "huggingface-trackio",
+      "licenseFound": false
+    },
+    {
+      "line": 95,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry",
+      "status": "imported",
+      "id": "microsoft-foundry",
+      "licenseFound": false
+    },
+    {
+      "line": 96,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry-classic",
+      "status": "imported",
+      "id": "microsoft-foundry-classic",
+      "licenseFound": false
+    },
+    {
+      "line": 97,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry-local",
+      "status": "imported",
+      "id": "microsoft-foundry-local",
+      "licenseFound": false
+    },
+    {
+      "line": 98,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@microsoft-foundry-tools",
+      "status": "imported",
+      "id": "microsoft-foundry-tools",
+      "licenseFound": false
+    },
+    {
+      "line": 99,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-machine-learning",
+      "status": "imported",
+      "id": "azure-machine-learning",
+      "licenseFound": false
+    },
+    {
+      "line": 100,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-cognitive-search",
+      "status": "imported",
+      "id": "azure-cognitive-search",
+      "licenseFound": false
+    },
+    {
+      "line": 101,
+      "command": "npx skills add sanjay3290/ai-skills@deep-research",
+      "status": "imported",
+      "id": "deep-research",
+      "licenseFound": false
+    },
+    {
+      "line": 102,
+      "command": "npx skills add K-Dense-AI/claude-scientific-skills",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 103,
+      "command": "npx skills add openai/skills@jupyter-notebook",
+      "status": "imported",
+      "id": "jupyter-notebook",
+      "licenseFound": true
+    },
+    {
+      "line": 104,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-databricks",
+      "status": "imported",
+      "id": "azure-databricks",
+      "licenseFound": false
+    },
+    {
+      "line": 105,
+      "command": "npx skills add chrisvoncsefalvay/claude-d3js-skill",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 106,
+      "command": "npx skills add coreyhaines31/marketingskills@copywriting",
+      "status": "imported",
+      "id": "copywriting",
+      "licenseFound": false
+    },
+    {
+      "line": 107,
+      "command": "npx skills add coreyhaines31/marketingskills@marketing-psychology",
+      "status": "imported",
+      "id": "marketing-psychology",
+      "licenseFound": false
+    },
+    {
+      "line": 108,
+      "command": "npx skills add coreyhaines31/marketingskills@content-strategy",
+      "status": "imported",
+      "id": "content-strategy",
+      "licenseFound": false
+    },
+    {
+      "line": 109,
+      "command": "npx skills add coreyhaines31/marketingskills@product-marketing",
+      "status": "imported",
+      "id": "product-marketing",
+      "licenseFound": false
+    },
+    {
+      "line": 110,
+      "command": "npx skills add coreyhaines31/marketingskills@marketing-ideas",
+      "status": "imported",
+      "id": "marketing-ideas",
+      "licenseFound": false
+    },
+    {
+      "line": 111,
+      "command": "npx skills add coreyhaines31/marketingskills@social",
+      "status": "imported",
+      "id": "social",
+      "licenseFound": false
+    },
+    {
+      "line": 112,
+      "command": "npx skills add coreyhaines31/marketingskills@copy-editing",
+      "status": "imported",
+      "id": "copy-editing",
+      "licenseFound": false
+    },
+    {
+      "line": 113,
+      "command": "npx skills add coreyhaines31/marketingskills@launch",
+      "status": "imported",
+      "id": "launch",
+      "licenseFound": false
+    },
+    {
+      "line": 114,
+      "command": "npx skills add wshuyi/x-article-publisher-skill@x-article-publisher",
+      "status": "imported",
+      "id": "x-article-publisher",
+      "licenseFound": false
+    },
+    {
+      "line": 115,
+      "command": "npx skills add CosmoBlk/email-marketing-bible",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 116,
+      "command": "npx skills add SHADOWPR0/beautiful_prose",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 117,
+      "command": "npx skills add ComposioHQ/awesome-claude-skills@content-research-writer",
+      "status": "imported",
+      "id": "content-research-writer",
+      "licenseFound": false
+    },
+    {
+      "line": 118,
+      "command": "npx skills add coreyhaines31/marketingskills@programmatic-seo",
+      "status": "imported",
+      "id": "programmatic-seo",
+      "licenseFound": false
+    },
+    {
+      "line": 119,
+      "command": "npx skills add coreyhaines31/marketingskills@pricing",
+      "status": "imported",
+      "id": "pricing",
+      "licenseFound": false
+    },
+    {
+      "line": 120,
+      "command": "npx skills add coreyhaines31/marketingskills@cro",
+      "status": "imported",
+      "id": "cro",
+      "licenseFound": false
+    },
+    {
+      "line": 121,
+      "command": "npx skills add coreyhaines31/marketingskills@analytics",
+      "status": "imported",
+      "id": "analytics",
+      "licenseFound": false
+    },
+    {
+      "line": 122,
+      "command": "npx skills add coreyhaines31/marketingskills@schema",
+      "status": "imported",
+      "id": "schema",
+      "licenseFound": false
+    },
+    {
+      "line": 123,
+      "command": "npx skills add zubair-trabzada/geo-seo-claude",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 124,
+      "command": "npx skills add Auriti-Labs/geo-optimizer-skill",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 125,
+      "command": "npx skills add seo-skills/seo-audit-skill@seo-audit",
+      "status": "failed",
+      "error": "Duplicate generated skill ID: seo-audit"
+    },
+    {
+      "line": 126,
+      "command": "npx skills add sanity-io/agent-toolkit@seo-aeo-best-practices",
+      "status": "imported",
+      "id": "seo-aeo-best-practices",
+      "licenseFound": false
+    },
+    {
+      "line": 127,
+      "command": "npx skills add vercel-labs/agent-skills@web-design-guidelines",
+      "status": "imported",
+      "id": "web-design-guidelines",
+      "licenseFound": false
+    },
+    {
+      "line": 128,
+      "command": "npx skills add openai/skills@figma-implement-design",
+      "status": "imported",
+      "id": "figma-implement-design",
+      "licenseFound": true
+    },
+    {
+      "line": 129,
+      "command": "npx skills add openai/skills@figma",
+      "status": "imported",
+      "id": "figma",
+      "licenseFound": true
+    },
+    {
+      "line": 130,
+      "command": "npx skills add ConardLi/garden-skills@web-design-engineer",
+      "status": "imported",
+      "id": "web-design-engineer",
+      "licenseFound": false
+    },
+    {
+      "line": 131,
+      "command": "npx skills add jakubkrehel/skills@interface-review",
+      "status": "imported",
+      "id": "interface-review",
+      "licenseFound": false
+    },
+    {
+      "line": 132,
+      "command": "npx skills add jakubkrehel/skills",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 133,
+      "command": "npx skills add elayadesign/ai-design-skills@landing-page-design",
+      "status": "imported",
+      "id": "landing-page-design",
+      "licenseFound": false
+    },
+    {
+      "line": 134,
+      "command": "npx skills add Owl-Listener/designer-skills",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 135,
+      "command": "npx skills add ehmo/platform-design-skills",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 136,
+      "command": "npx skills add openai/skills@linear",
+      "status": "imported",
+      "id": "linear",
+      "licenseFound": true
+    },
+    {
+      "line": 137,
+      "command": "npx skills add openai/skills@notion-knowledge-capture",
+      "status": "imported",
+      "id": "notion-knowledge-capture",
+      "licenseFound": true
+    },
+    {
+      "line": 138,
+      "command": "npx skills add yusufkaraaslan/Skill_Seekers@skill-builder",
+      "status": "imported",
+      "id": "skill-builder",
+      "licenseFound": false
+    },
+    {
+      "line": 139,
+      "command": "npx skills add firecrawl/cli@firecrawl",
+      "status": "imported",
+      "id": "firecrawl",
+      "licenseFound": false
+    },
+    {
+      "line": 140,
+      "command": "npx skills add openai/skills@security-best-practices",
+      "status": "imported",
+      "id": "security-best-practices",
+      "licenseFound": true
+    },
+    {
+      "line": 141,
+      "command": "npx skills add openai/skills@security-threat-model",
+      "status": "imported",
+      "id": "security-threat-model",
+      "licenseFound": true
+    },
+    {
+      "line": 142,
+      "command": "npx skills add trailofbits/skills@variant-analysis",
+      "status": "imported",
+      "id": "variant-analysis",
+      "licenseFound": false
+    },
+    {
+      "line": 143,
+      "command": "npx skills add trailofbits/skills@semgrep-rule-creator",
+      "status": "imported",
+      "id": "semgrep-rule-creator",
+      "licenseFound": false
+    },
+    {
+      "line": 144,
+      "command": "npx skills add trailofbits/skills@differential-review",
+      "status": "imported",
+      "id": "differential-review",
+      "licenseFound": false
+    },
+    {
+      "line": 145,
+      "command": "npx skills add trailofbits/skills@property-based-testing",
+      "status": "imported",
+      "id": "property-based-testing",
+      "licenseFound": false
+    },
+    {
+      "line": 146,
+      "command": "npx skills add prompt-security/clawsec@clawsec-clawhub-checker",
+      "status": "imported",
+      "id": "clawsec-clawhub-checker",
+      "licenseFound": false
+    },
+    {
+      "line": 147,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-key-vault",
+      "status": "imported",
+      "id": "azure-key-vault",
+      "licenseFound": false
+    },
+    {
+      "line": 148,
+      "command": "npx skills add squirrelscan/skills@audit-website",
+      "status": "imported",
+      "id": "audit-website",
+      "licenseFound": false
+    },
+    {
+      "line": 149,
+      "command": "npx skills add wrsmith108/varlock-claude-skill@varlock",
+      "status": "imported",
+      "id": "varlock",
+      "licenseFound": false
+    },
+    {
+      "line": 150,
+      "command": "npx skills add openai/skills@sentry",
+      "status": "imported",
+      "id": "sentry",
+      "licenseFound": true
+    },
+    {
+      "line": 151,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-cosmos-db",
+      "status": "imported",
+      "id": "azure-cosmos-db",
+      "licenseFound": false
+    },
+    {
+      "line": 152,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-sql-database",
+      "status": "imported",
+      "id": "azure-sql-database",
+      "licenseFound": false
+    },
+    {
+      "line": 153,
+      "command": "npx skills add MicrosoftDocs/Agent-Skills@azure-blob-storage",
+      "status": "imported",
+      "id": "azure-blob-storage",
+      "licenseFound": false
+    },
+    {
+      "line": 154,
+      "command": "npx skills add ClickHouse/agent-skills",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 155,
+      "command": "npx skills add sanjay3290/postgres-skill@postgres",
+      "status": "imported",
+      "id": "postgres",
+      "licenseFound": false
+    },
+    {
+      "line": 156,
+      "command": "npx skills add vercel-labs/agent-skills@vercel-react-native-skills",
+      "status": "imported",
+      "id": "vercel-react-native-skills",
+      "licenseFound": false
+    },
+    {
+      "line": 157,
+      "command": "npx skills add AvdLee/SwiftUI-Agent-Skill@swiftui-expert-skill",
+      "status": "imported",
+      "id": "swiftui-expert-skill",
+      "licenseFound": false
+    },
+    {
+      "line": 158,
+      "command": "npx skills add expo/skills@expo-native-ui",
+      "status": "imported",
+      "id": "expo-native-ui",
+      "licenseFound": false
+    },
+    {
+      "line": 159,
+      "command": "npx skills add expo/skills@eas-app-stores",
+      "status": "imported",
+      "id": "eas-app-stores",
+      "licenseFound": false
+    },
+    {
+      "line": 160,
+      "command": "npx skills add expo/skills@expo-upgrade",
+      "status": "imported",
+      "id": "expo-upgrade",
+      "licenseFound": false
+    },
+    {
+      "line": 161,
+      "command": "npx skills add conorluddy/ios-simulator-skill@ios-simulator-skill",
+      "status": "imported",
+      "id": "ios-simulator-skill",
+      "licenseFound": false
+    },
+    {
+      "line": 162,
+      "command": "npx skills add cloudflare/skills@agents-sdk",
+      "status": "imported",
+      "id": "agents-sdk",
+      "licenseFound": false
+    },
+    {
+      "line": 163,
+      "command": "npx skills add asklokesh/claudeskill-loki-mode",
+      "status": "failed",
+      "error": "Specify one skill with source@skill or --skill <name>."
+    },
+    {
+      "line": 164,
+      "command": "npx skills add massimodeluisa/recursive-decomposition-skill@recursive-decomposition",
+      "status": "imported",
+      "id": "recursive-decomposition",
+      "licenseFound": false
+    }
+  ]
+}

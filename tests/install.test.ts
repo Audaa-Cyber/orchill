@@ -28,8 +28,8 @@ test("installs a complete nested skill directory", async () => {
       skillPath: "."
     };
     const installed = await installSkill(skill, registryRoot, "project", cwd);
-    assert.equal(await readFile(path.join(installed, "SKILL.md"), "utf8"), "# Test skill\n");
-    assert.equal(await readFile(path.join(installed, "references", "guide.md"), "utf8"), "Nested guide\n");
+    assert.equal((await readFile(path.join(installed, "SKILL.md"), "utf8")).replace(/\r\n/g, "\n"), "# Test skill\n");
+    assert.equal((await readFile(path.join(installed, "references", "guide.md"), "utf8")).replace(/\r\n/g, "\n"), "Nested guide\n");
     await assert.rejects(() => installSkill(skill, registryRoot, "project", cwd), /Already exists/);
     await writeFile(path.join(source, "SKILL.md"), "# Updated skill\n");
     const replaced = await installSkill(skill, registryRoot, "project", cwd, true);
@@ -56,7 +56,7 @@ test("failed forced replacement keeps the previous install", async () => {
     const installed = await installSkill(skill, registryRoot, "project", cwd);
     const broken: Skill = {...skill, source: {type: "local", path: "../missing-source"}};
     await assert.rejects(() => installSkill(broken, registryRoot, "project", cwd, true));
-    assert.equal(await readFile(path.join(installed, "SKILL.md"), "utf8"), "known-good\n");
+    assert.equal((await readFile(path.join(installed, "SKILL.md"), "utf8")).replace(/\r\n/g, "\n"), "known-good\n");
   } finally {
     await rm(temp, {recursive: true, force: true});
   }
@@ -87,8 +87,8 @@ test("Git sparse checkout installs only the selected skill tree", async () => {
       skillPath: "skills/demo"
     };
     const installed = await installSkill(skill, registryRoot, "project", cwd);
-    assert.equal(await readFile(path.join(installed, "SKILL.md"), "utf8"), "# Demo from Git\n");
-    assert.equal(await readFile(path.join(installed, "references", "guide.md"), "utf8"), "Nested file\n");
+    assert.equal((await readFile(path.join(installed, "SKILL.md"), "utf8")).replace(/\r\n/g, "\n"), "# Demo from Git\n");
+    assert.equal((await readFile(path.join(installed, "references", "guide.md"), "utf8")).replace(/\r\n/g, "\n"), "Nested file\n");
     await assert.rejects(() => readFile(path.join(cwd, ".agents", "skills", "unrelated", "SKILL.md"), "utf8"));
   } finally {
     await rm(temp, {recursive: true, force: true});
