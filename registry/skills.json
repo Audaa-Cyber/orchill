@@ -5310,7 +5310,7 @@
         "path": "../skills/ui-ux/landing-page-design"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from elayadesign/ai-design-skills; command: npx skills add elayadesign/ai-design-skills@landing-page-design. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from elayadesign/ai-design-skills; command: npx skills add elayadesign/ai-design-skills@landing-page-design. Verified 2026-10-29 against elayadesign/ai-design-skills at commit ded7efc9d5c02761c41a03caf3b78f9259ab8828; all 1 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/elayadesign/ai-design-skills/blob/ded7efc9d5c02761c41a03caf3b78f9259ab8828/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -5322,7 +5322,8 @@
         "landing",
         "page",
         "design"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "ui-ux-pro-max",
@@ -5334,7 +5335,7 @@
         "path": "../skills/ui-ux/ui-ux-pro-max"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from nextlevelbuilder/ui-ux-pro-max-skill; command: npx skills add nextlevelbuilder/ui-ux-pro-max-skill@ui-ux-pro-max. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from nextlevelbuilder/ui-ux-pro-max-skill; command: npx skills add nextlevelbuilder/ui-ux-pro-max-skill@ui-ux-pro-max. Verified 2026-10-29 against nextlevelbuilder/ui-ux-pro-max-skill at commit 28b3b8dee8c976df4fa3e94aed4e092ad43fcb03; all 73 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/28b3b8dee8c976df4fa3e94aed4e092ad43fcb03/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -5345,7 +5346,8 @@
         "ui-ux",
         "pro",
         "max"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "web-design-engineer",
