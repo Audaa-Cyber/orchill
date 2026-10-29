@@ -3,46 +3,101 @@
   "$id": "https://orchill.dev/schemas/skills.schema.json",
   "title": "Orchill skill registry",
   "type": "object",
-  "required": ["version", "skills"],
+  "required": [
+    "version",
+    "skills"
+  ],
   "additionalProperties": false,
   "properties": {
-    "$schema": { "type": "string" },
-    "version": { "const": 1 },
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "const": 1
+    },
     "skills": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "name", "description", "category", "source", "skillPath"],
+        "required": [
+          "id",
+          "name",
+          "description",
+          "category",
+          "source",
+          "skillPath"
+        ],
         "additionalProperties": false,
         "properties": {
-          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
-          "name": { "type": "string", "minLength": 1, "pattern": "\\S" },
-          "description": { "type": "string", "minLength": 1, "pattern": "\\S" },
-          "category": { "type": "string", "minLength": 1, "pattern": "\\S" },
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._-]*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
           "tags": {
             "type": "array",
             "uniqueItems": true,
-            "items": { "type": "string", "minLength": 1, "pattern": "\\S" }
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
           },
           "source": {
             "oneOf": [
               {
                 "type": "object",
-                "required": ["type", "path"],
+                "required": [
+                  "type",
+                  "path"
+                ],
                 "additionalProperties": false,
                 "properties": {
-                  "type": { "const": "local" },
-                  "path": { "type": "string", "minLength": 1, "pattern": "^(?!/)(?![A-Za-z]:)(?!\\\\)" }
+                  "type": {
+                    "const": "local"
+                  },
+                  "path": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "^(?!/)(?![A-Za-z]:)(?!\\\\)"
+                  }
                 }
               },
               {
                 "type": "object",
-                "required": ["type", "url"],
+                "required": [
+                  "type",
+                  "url"
+                ],
                 "additionalProperties": false,
                 "properties": {
-                  "type": { "const": "git" },
-                  "url": { "type": "string", "format": "uri", "pattern": "^https://[^/?#]+/[^?#]+$" },
-                  "ref": { "type": "string", "minLength": 1, "pattern": "\\S" }
+                  "type": {
+                    "const": "git"
+                  },
+                  "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "pattern": "^https://[^/?#]+/[^?#]+$"
+                  },
+                  "ref": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  }
                 }
               }
             ]
@@ -50,14 +105,29 @@
           "skillPath": {
             "type": "string",
             "minLength": 1,
-            "pattern": "^(?!/)(?![A-Za-z]:)(?!\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))"
+            "pattern": "^(?!/)(?![A-Za-z]:)(?!\\\\\\\\)(?!.*\\\\\\\\)(?!.*(?:^|/)\\\\.\\\\.(?:/|$))"
           },
-          "license": { "type": "string", "minLength": 1, "pattern": "\\S" },
-          "provenance": { "type": "string", "minLength": 1, "pattern": "\\S" },
+          "license": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "provenance": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
           "targets": {
             "type": "array",
             "uniqueItems": true,
-            "items": { "enum": ["project", "agents", "claude", "codex"] }
+            "items": {
+              "enum": [
+                "project",
+                "agents",
+                "claude",
+                "codex"
+              ]
+            }
           }
         }
       }
