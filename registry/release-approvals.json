@@ -520,6 +520,17 @@
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
     },
     {
+      "skillId": "deep-research",
+      "upstreamUrl": "https://github.com/sanjay3290/ai-skills",
+      "upstreamRevision": "281d88df199357e3091a3be5c743a0fca9a9ae1b",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/sanjay3290/ai-skills/blob/281d88df199357e3091a3be5c743a0fca9a9ae1b/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found all 6 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in sanjay3290/ai-skills at commit 281d88df199357e3091a3be5c743a0fca9a9ae1b. The repository-root Apache-2.0 license at https://github.com/sanjay3290/ai-skills/blob/281d88df199357e3091a3be5c743a0fca9a9ae1b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
       "skillId": "detect-static-dependencies",
       "upstreamUrl": "https://github.com/dotnet/skills",
       "upstreamRevision": "95e7d0cb7994d47b5789baa68e13f7a2f348b956",
@@ -1290,6 +1301,17 @@
       "notes": "Automated content comparison on 2026-10-29 found all 2 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
     },
     {
+      "skillId": "resend",
+      "upstreamUrl": "https://github.com/resend/resend-skills",
+      "upstreamRevision": "b2ae7b1798b70134faf679f35fc05b4331462988",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/resend/resend-skills/blob/b2ae7b1798b70134faf679f35fc05b4331462988/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found all 23 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in resend/resend-skills at commit b2ae7b1798b70134faf679f35fc05b4331462988. The repository-root MIT license at https://github.com/resend/resend-skills/blob/b2ae7b1798b70134faf679f35fc05b4331462988/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
       "skillId": "resolve-project-references",
       "upstreamUrl": "https://github.com/dotnet/skills",
       "upstreamRevision": "95e7d0cb7994d47b5789baa68e13f7a2f348b956",
@@ -1409,6 +1431,17 @@
       "reviewedAt": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "notes": "Automated content comparison on 2026-10-29 found all 14 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
+      "skillId": "supabase-postgres-best-practices",
+      "upstreamUrl": "https://github.com/supabase/agent-skills",
+      "upstreamRevision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/supabase/agent-skills/blob/c9be0e931b7930f7d02126d04774d904c381e7d7/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found all 36 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in supabase/agent-skills at commit c9be0e931b7930f7d02126d04774d904c381e7d7. The repository-root MIT license at https://github.com/supabase/agent-skills/blob/c9be0e931b7930f7d02126d04774d904c381e7d7/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
     },
     {
       "skillId": "swiftui-expert-skill",
