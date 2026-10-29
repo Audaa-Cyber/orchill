@@ -65,7 +65,7 @@ function validateSkill(value: unknown): asserts value is Skill {
     requireNonEmptyString(s[key], `Skill ${s.id}: ${key}`);
   }
   requireNonEmptyString(s.skillPath, `Skill ${s.id}: skillPath`);
-  if (s.skillPath.includes("\\\\") || s.skillPath.split("/").includes("..")) {
+  if (s.skillPath.includes("\\") || s.skillPath.split("/").includes("..")) {
     throw new Error(`Skill ${s.id}: skillPath must use forward slashes and cannot contain parent-directory segments.`);
   }
   try {
