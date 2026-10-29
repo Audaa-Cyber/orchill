@@ -146,7 +146,7 @@ License evidence: [LICENSE at the reviewed commit](https://github.com/MicrosoftD
 
 ## OpenAI skills repository
 
-The following 13 skill directories are copied unchanged from [openai/skills](https://github.com/openai/skills), pinned for this review to commit [49f948faa9258a0c61caceaf225e179651397431](https://github.com/openai/skills/commit/49f948faa9258a0c61caceaf225e179651397431). All 438 files across these 13 directories matched the corresponding upstream file paths and Git blob SHAs. Each skill's own `LICENSE.txt` is included in the copied directory; license evidence is linked below.
+The following 13 skill directories are copied unchanged from [openai/skills](https://github.com/openai/skills), pinned for this review to commit [49f948faa9258a0c61caceaf225e179651397431](https://github.com/openai/skills/commit/49f948faa9258a0c61caceaf225e179651397431). All 432 files across these 13 directories matched the corresponding upstream file paths and Git blob SHAs. Each skill's own `LICENSE.txt` is included in the copied directory; license evidence is linked below.
 
 - `imagegen` — Apache-2.0; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.system/imagegen/LICENSE.txt)
 - `jupyter-notebook` — Apache-2.0; [license file](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/jupyter-notebook/LICENSE.txt)
