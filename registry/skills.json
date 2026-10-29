@@ -1231,7 +1231,7 @@
         "path": "../skills/agent-tooling-and-workflows/skill-builder"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from yusufkaraaslan/Skill_Seekers; command: npx skills add yusufkaraaslan/Skill_Seekers@skill-builder. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from yusufkaraaslan/Skill_Seekers; command: npx skills add yusufkaraaslan/Skill_Seekers@skill-builder. Verified 2026-10-29 against yusufkaraaslan/Skill_Seekers at commit 6ca46a059439fb1e14604f0877e2fcac8c39a7f4; the bundled SKILL.md matched upstream byte-for-byte at distribution/claude-plugin/skills/skill-builder/SKILL.md. License evidence: https://github.com/yusufkaraaslan/Skill_Seekers/blob/6ca46a059439fb1e14604f0877e2fcac8c39a7f4/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1241,7 +1241,8 @@
       "tags": [
         "agent-tooling-workflows",
         "builder"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "skill-creator",
