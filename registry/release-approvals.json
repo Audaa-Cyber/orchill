@@ -1389,6 +1389,17 @@
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
     },
     {
+      "skillId": "sanity-best-practices",
+      "upstreamUrl": "https://github.com/sanity-io/agent-toolkit",
+      "upstreamRevision": "3ed3a143f8d3413faa7790ac0b2274fd3a8a6320",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/sanity-io/agent-toolkit/blob/3ed3a143f8d3413faa7790ac0b2274fd3a8a6320/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found all 26 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in sanity-io/agent-toolkit at commit 3ed3a143f8d3413faa7790ac0b2274fd3a8a6320. The repository-root MIT license at https://github.com/sanity-io/agent-toolkit/blob/3ed3a143f8d3413faa7790ac0b2274fd3a8a6320/LICENSE permits redistribution subject to its terms. Required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
       "skillId": "scaffold-dotnet-test-project",
       "upstreamUrl": "https://github.com/dotnet/skills",
       "upstreamRevision": "95e7d0cb7994d47b5789baa68e13f7a2f348b956",
@@ -1453,6 +1464,17 @@
       "reviewedAt": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/sentry in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/sentry/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "seo-aeo-best-practices",
+      "upstreamUrl": "https://github.com/sanity-io/agent-toolkit",
+      "upstreamRevision": "3ed3a143f8d3413faa7790ac0b2274fd3a8a6320",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/sanity-io/agent-toolkit/blob/3ed3a143f8d3413faa7790ac0b2274fd3a8a6320/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found all 5 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in sanity-io/agent-toolkit at commit 3ed3a143f8d3413faa7790ac0b2274fd3a8a6320. The repository-root MIT license at https://github.com/sanity-io/agent-toolkit/blob/3ed3a143f8d3413faa7790ac0b2274fd3a8a6320/LICENSE permits redistribution subject to its terms. Required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
     },
     {
       "skillId": "seo-audit",
@@ -1629,6 +1651,17 @@
       "reviewedAt": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "terraform-skill",
+      "upstreamUrl": "https://github.com/antonbabenko/terraform-skill",
+      "upstreamRevision": "9c1e92d962a5407c227e5566416e962a2f057240",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/antonbabenko/terraform-skill/blob/9c1e92d962a5407c227e5566416e962a2f057240/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found all 9 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in antonbabenko/terraform-skill at commit 9c1e92d962a5407c227e5566416e962a2f057240. The repository-root Apache-2.0 license at https://github.com/antonbabenko/terraform-skill/blob/9c1e92d962a5407c227e5566416e962a2f057240/LICENSE permits redistribution subject to its terms. Required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
     },
     {
       "skillId": "test-analysis-extensions",
