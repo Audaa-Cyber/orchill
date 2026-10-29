@@ -9,7 +9,7 @@ Generated from `registry/skills.json`. Local payloads live under `skills/<catego
 | Better Auth Best Practices | `better-auth-best-practices` | local | [`skills/backend-and-apis/better-auth-best-practices`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/backend-and-apis/better-auth-best-practices) | Unknown |
 | Claude API | `claude-api` | git | [upstream](https://github.com/anthropics/skills.git) | Apache-2.0 |
 | Dotnet Webapi | `dotnet-webapi` | local | [`skills/backend-and-apis/dotnet-webapi`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/backend-and-apis/dotnet-webapi) | MIT |
-| Neon Postgres | `neon-postgres` | local | [`skills/backend-and-apis/neon-postgres`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/backend-and-apis/neon-postgres) | Unknown |
+| Neon Postgres | `neon-postgres` | local | [`skills/backend-and-apis/neon-postgres`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/backend-and-apis/neon-postgres) | Apache-2.0 |
 | Postgres | `postgres` | local | [`skills/backend-and-apis/postgres`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/backend-and-apis/postgres) | Apache-2.0 |
 | Resend | `resend` | local | [`skills/backend-and-apis/resend`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/backend-and-apis/resend) | MIT |
 | Sanity Best Practices | `sanity-best-practices` | local | [`skills/backend-and-apis/sanity-best-practices`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/backend-and-apis/sanity-best-practices) | Unknown |
