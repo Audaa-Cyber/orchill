@@ -1,4 +1,4 @@
-import { cp, lstat, mkdtemp, mkdir, readFile, readdir, realpath, rename, rm, stat, writeFile } from "node:fs/promises";
+import { cp, lstat, mkdtemp, mkdir, readdir, realpath, rename, rm, stat, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { spawn } from "node:child_process";
@@ -29,14 +29,32 @@ async function copyTree(source: string, destination: string): Promise<void> {
   await cp(source, destination, { errorOnExist: true, force: false, preserveTimestamps: true });
 }
 
+export function categorySlug(value: string): string {
+  return value.toLowerCase().normalize("NFKD").replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
 export function targetRoot(target: string, cwd = process.cwd()): string {
   switch (target) {
-    case "project": return path.join(cwd, ".agents", "skills");
-    case "claude": return path.join(cwd, ".claude", "skills");
-    case "codex": return path.join(cwd, ".agents", "skills");
-    case "agents": return path.join(cwd, ".agents", "skills");
-    default: throw new Error(`Unknown target "${target}". Use project, agents, claude, or codex.`);
+    case "project":
+    case "agents":
+    case "codex":
+      return path.join(cwd, ".agents", "skills");
+    case "claude":
+      return path.join(cwd, ".claude", "skills");
+    default:
+      throw new Error(`Unknown target "${target}". Use project, agents, claude, or codex.`);
   }
+}
+
+function installDestination(id: string, target: string, cwd: string, category?: string): string {
+  const safeId = safeRelativePath(id, "Skill id");
+  if (safeId !== id) throw new Error("Skill id must be a single directory name.");
+  const root = targetRoot(target, cwd);
+  if (!category) throw new Error("Skill category is required for managed installations.");
+  const slug = categorySlug(category);
+  if (!slug) throw new Error("Skill category must produce a non-empty directory name.");
+  return path.join(root, slug, safeId);
 }
 
 export async function installSkill(skill: Skill, registryRoot: string, target: string, cwd: string, force = false): Promise<string> {
@@ -44,9 +62,11 @@ export async function installSkill(skill: Skill, registryRoot: string, target: s
   const root = targetRoot(target, projectRoot);
   const id = safeRelativePath(skill.id, "Skill id");
   if (id !== skill.id) throw new Error("Skill id must be a single directory name.");
-  const destination = path.join(root, id);
+  const category = categorySlug(skill.category);
+  if (!category) throw new Error("Skill category must produce a non-empty directory name.");
+  const destination = path.join(root, category, id);
   await ensureNoSymlinkParents(root, destination);
-  await mkdir(root, { recursive: true });
+  await mkdir(path.dirname(destination), { recursive: true });
   await ensureNoSymlinkParents(root, destination);
 
   try {
@@ -91,9 +111,13 @@ export async function installSkill(skill: Skill, registryRoot: string, target: s
     } catch (error) {
       if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
     }
-    await writeFile(markerPath, JSON.stringify({ version: 1, skillId: id, target }, null, 2) + "\n", { flag: "wx" });
+    await writeFile(markerPath, JSON.stringify({
+      version: 2,
+      skillId: id,
+      category,
+      target
+    }, null, 2) + "\n", { flag: "wx" });
 
-    // Recheck immediately before changing the live destination.
     try {
       const current = await lstat(destination);
       if (current.isSymbolicLink()) throw new Error(`Refusing to replace a symlink: ${destination}`);
@@ -105,7 +129,6 @@ export async function installSkill(skill: Skill, registryRoot: string, target: s
       if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
     }
     await rename(staged, destination);
-    // The new install is now committed. Cleanup failures must not roll it back.
     const hadBackup = movedOld;
     movedOld = false;
     if (hadBackup) await rm(backup, { recursive: true, force: true }).catch(() => undefined);
@@ -127,12 +150,12 @@ export async function installSkill(skill: Skill, registryRoot: string, target: s
   }
 }
 
-
 const INSTALL_MARKER = ".orchill-install.json";
 
 interface InstallMarker {
-  version: 1;
+  version: 2;
   skillId: string;
+  category: string;
   target: string;
 }
 
@@ -145,30 +168,9 @@ export interface SkillVerification {
   problems: string[];
 }
 
-function installDestination(id: string, target: string, cwd: string): string {
-  const safeId = safeRelativePath(id, "Skill id");
-  if (safeId !== id) throw new Error("Skill id must be a single directory name.");
-  return path.join(targetRoot(target, cwd), safeId);
-}
-
-async function readInstallMarker(destination: string, id: string): Promise<InstallMarker | undefined> {
-  const markerPath = path.join(destination, INSTALL_MARKER);
-  try {
-    const markerInfo = await lstat(markerPath);
-    if (!markerInfo.isFile() || markerInfo.isSymbolicLink()) return undefined;
-    const parsed: unknown = JSON.parse(await readFile(markerPath, "utf8"));
-    if (!parsed || typeof parsed !== "object") return undefined;
-    const marker = parsed as Partial<InstallMarker>;
-    if (marker.version !== 1 || marker.skillId !== id || typeof marker.target !== "string") return undefined;
-    return marker as InstallMarker;
-  } catch {
-    return undefined;
-  }
-}
-
-export async function verifySkillInstallation(id: string, target: string, cwd: string): Promise<SkillVerification> {
+export async function verifySkillInstallation(id: string, target: string, cwd: string, category: string): Promise<SkillVerification> {
   const projectRoot = await realpath(cwd);
-  const destination = installDestination(id, target, projectRoot);
+  const destination = installDestination(id, target, projectRoot, category);
   const problems: string[] = [];
   let installed = false;
   let managed = false;
@@ -180,7 +182,15 @@ export async function verifySkillInstallation(id: string, target: string, cwd: s
       problems.push("Installation destination is not a regular directory.");
     } else {
       installed = true;
-      managed = Boolean(await readInstallMarker(destination, id));
+      const markerPath = path.join(destination, INSTALL_MARKER);
+      try {
+        const markerInfo = await lstat(markerPath);
+        if (!markerInfo.isFile() || markerInfo.isSymbolicLink()) throw new Error("invalid marker");
+        const marker = JSON.parse(await (await import("node:fs/promises")).readFile(markerPath, "utf8")) as Partial<InstallMarker>;
+        managed = marker.version === 2 && marker.skillId === id && marker.category === categorySlug(category) && marker.target === target;
+      } catch {
+        managed = false;
+      }
       if (!managed) problems.push("Missing or invalid Orchill installation marker; this directory is unmanaged.");
       try {
         const skillFile = await lstat(path.join(destination, "SKILL.md"));
@@ -201,12 +211,12 @@ export async function verifySkillInstallation(id: string, target: string, cwd: s
   return { skillId: id, destination, installed, managed, hasSkillFile, problems };
 }
 
-export async function uninstallSkill(id: string, target: string, cwd: string): Promise<string> {
+export async function uninstallSkill(id: string, target: string, cwd: string, category: string): Promise<string> {
   const projectRoot = await realpath(cwd);
-  const destination = installDestination(id, target, projectRoot);
+  const destination = installDestination(id, target, projectRoot, category);
   const root = targetRoot(target, projectRoot);
   await ensureNoSymlinkParents(root, destination);
-  const checked = await verifySkillInstallation(id, target, projectRoot);
+  const checked = await verifySkillInstallation(id, target, projectRoot, category);
   if (!checked.installed) throw new Error(`Cannot uninstall "${id}": skill is not installed.`);
   if (!checked.managed) throw new Error(`Refusing to uninstall "${id}": no valid Orchill installation marker.`);
   const info = await lstat(destination);
