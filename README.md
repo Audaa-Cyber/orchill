@@ -21,7 +21,7 @@ npm run build
 node dist/cli.js --help
 ```
 
-For local development: `npm run dev -- search focus`.
+For local development: `npm run dev -- list --all`.
 
 To install the checked-out version as a global CLI on your own machine (without publishing to npm):
 
@@ -34,7 +34,48 @@ orchill --help
 
 To update that local global install after pulling changes, rerun `npm run build` and `npm install --global .` from the repository root. This is a local source install, not an npm registry release.
 
-## Quick start\n\n```sh\norchill list\norchill list "UI/UX Design"\norchill info demo-focus\norchill add demo-focus\norchill add "UI/UX Design"\norchill add catalogue\norchill check\n```\n\nThe default project target is `.agents/skills/<category>/<skill>/`. Every installed skill keeps its complete nested files, including `SKILL.md`, references, scripts, examples, and assets.\n\n| Target | Destination relative to project |\n|---|---|\n| `project` | `.agents/skills/<category>/<skill>/` |\n| `agents` | `.agents/skills/<category>/<skill>/` |\n| `claude` | `.claude/skills/<category>/<skill>/` |\n| `codex` | `.agents/skills/<category>/<skill>/` |\n\nUse `--cwd /path/to/project` to select a destination project. Use `--force` to replace an existing Orchill-managed installation. Review the displayed destination before installing.\n\n## Commands\n\n- `orchill list [category]` / `orchill ls [category]` — list categories, or skills inside one category.\n- `orchill list --all` — list every skill in every category.\n- `orchill info <name>` — inspect a skill or category.\n- `orchill add <name>` — install one skill or every skill in a category.\n- `orchill add catalogue` — install the entire eligible catalogue with all category and skill folders preserved.\n- `orchill update` / `orchill up` — update Orchill-managed installed skills.\n- `orchill remove <name>` / `orchill rm <name>` — remove an installed skill, category, or catalogue.\n- `orchill check` — verify installed content; use `--json` for automation.\n- `orchill audit` — review registry metadata and heuristic findings.\n- `orchill init` — create a project-local registry template.\n- `orchill import <file>` — stage Skills CLI or marketplace command imports.\n- `orchill --help` / `orchill -h` — explain the full interface, structure, targets, agent integration, safety, and automation.\n- `orchill --version` / `orchill -V` — show the installed version.\n\nNo category gets its own command. The same `list`, `info`, `add`, `update`, `remove`, and `check` commands work for every category and skill.\n\n## Add a Git-backed skill
+## Quick start
+
+```sh
+orchill list
+orchill list "UI/UX Design"
+orchill info demo-focus
+orchill add demo-focus
+orchill add "UI/UX Design"
+orchill add catalogue
+orchill check
+```
+
+The default project target is `.agents/skills/<category>/<skill>/`. Every installed skill keeps its complete nested files, including `SKILL.md`, references, scripts, examples, and assets.
+
+| Target | Destination relative to project |
+|---|---|
+| `project` | `.agents/skills/<category>/<skill>/` |
+| `agents` | `.agents/skills/<category>/<skill>/` |
+| `claude` | `.claude/skills/<category>/<skill>/` |
+| `codex` | `.agents/skills/<category>/<skill>/` |
+
+Use `--cwd /path/to/project` to select a destination project. Use `--force` to replace an existing Orchill-managed installation. Review the displayed destination before installing.
+
+## Commands
+
+- `orchill list [category]` / `orchill ls [category]` — list categories, or skills inside one category.
+- `orchill list --all` — list every skill in every category.
+- `orchill info <name>` — inspect a skill or category.
+- `orchill add <name>` — install one skill or every skill in a category.
+- `orchill add catalogue` — install the entire eligible catalogue with all category and skill folders preserved.
+- `orchill update` / `orchill up` — update Orchill-managed installed skills.
+- `orchill remove <name>` / `orchill rm <name>` — remove an installed skill, category, or catalogue.
+- `orchill check` — verify installed content; use `--json` for automation.
+- `orchill audit` — review registry metadata and heuristic findings.
+- `orchill init` — create a project-local registry template.
+- `orchill import <file>` — stage Skills CLI or marketplace command imports.
+- `orchill --help` / `orchill -h` — explain the full interface, structure, targets, agent integration, safety, and automation.
+- `orchill --version` / `orchill -V` — show the installed version.
+
+No category gets its own command. The same `list`, `info`, `add`, `update`, `remove`, and `check` commands work for every category and skill.
+
+## Add a Git-backed skill
 
 Add a registry entry only after verifying the upstream repository, exact skill directory, license, and source provenance. Example shape:
 
