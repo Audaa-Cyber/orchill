@@ -112,6 +112,10 @@ Default registry: `registry/skills.json`. Its format is documented by `registry/
 - MVP currently has no update/uninstall/lockfile, dependency resolution, remote hosted catalog, MCP server, or built-in agent auto-detection.
 - This CLI does not make skills automatically available inside hosted ChatGPT or Claude chats. Such environments need a supported local tool, filesystem, or MCP integration.
 
+## License
+
+Orchill's own code is licensed under the [Apache License, Version 2.0](./LICENSE) (`Apache-2.0`). Individual catalog skills may have their own licenses; check each skill's source and bundled license before redistributing it.
+
 ## Development
 
 ```sh
