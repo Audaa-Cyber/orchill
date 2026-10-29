@@ -1791,7 +1791,7 @@
         "path": "../skills/backend-and-apis/postgres"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from sanjay3290/postgres-skill; command: npx skills add sanjay3290/postgres-skill@postgres. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from sanjay3290/postgres-skill; command: npx skills add sanjay3290/postgres-skill@postgres. Verified 2026-10-29 against the moved upstream repository sanjay3290/ai-skills at commit 281d88df199357e3091a3be5c743a0fca9a9ae1b; all 6 bundled file(s) matched upstream by Git blob SHA at skills/postgres. License evidence: https://github.com/sanjay3290/ai-skills/blob/281d88df199357e3091a3be5c743a0fca9a9ae1b/LICENSE.",
       "targets": [
         "project",
         "claude",
