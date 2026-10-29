@@ -542,6 +542,17 @@
       "notes": "Automated content comparison on 2026-10-29 found all 6 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in sanjay3290/ai-skills at commit 281d88df199357e3091a3be5c743a0fca9a9ae1b. The repository-root Apache-2.0 license at https://github.com/sanjay3290/ai-skills/blob/281d88df199357e3091a3be5c743a0fca9a9ae1b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
     },
     {
+      "skillId": "design-taste-frontend",
+      "upstreamUrl": "https://github.com/Leonxlnx/taste-skill",
+      "upstreamRevision": "12af471f627f866411b4bd785b19646d3672784c",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison found all 39 files in the bundled directory identical by Git blob SHA to skills/taste-skill in Leonxlnx/taste-skill at commit 12af471f627f866411b4bd785b19646d3672784c. The upstream MIT license permits redistribution subject to retaining the copyright and permission notice. The full license text and Leonxlnx attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
       "skillId": "detect-static-dependencies",
       "upstreamUrl": "https://github.com/dotnet/skills",
       "upstreamRevision": "95e7d0cb7994d47b5789baa68e13f7a2f348b956",
@@ -848,6 +859,17 @@
       "reviewedAt": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "notes": "Automated content comparison on 2026-10-29 found all 6 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in huggingface/skills at commit fabc634a893f62ad5c2039830397efa35fa62715. The repository-root Apache-2.0 license at https://github.com/huggingface/skills/blob/fabc634a893f62ad5c2039830397efa35fa62715/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
+      "skillId": "huggingface-llm-trainer",
+      "upstreamUrl": "https://github.com/huggingface/skills",
+      "upstreamRevision": "fabc634a893f62ad5c2039830397efa35fa62715",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/huggingface/skills/blob/fabc634a893f62ad5c2039830397efa35fa62715/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison found all 19 files in the bundled skill directory identical by Git blob SHA to skills/huggingface-llm-trainer in huggingface/skills at commit fabc634a893f62ad5c2039830397efa35fa62715. The repository-root Apache-2.0 license applies; no per-skill LICENSE.txt was present in the matching upstream tree. The Apache license text and required notices are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
     },
     {
       "skillId": "huggingface-trackio",
