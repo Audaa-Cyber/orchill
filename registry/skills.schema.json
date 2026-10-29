@@ -3,38 +3,132 @@
   "$id": "https://orchill.dev/schemas/skills.schema.json",
   "title": "Orchill skill registry",
   "type": "object",
-  "required": ["version", "skills"],
+  "required": [
+    "version",
+    "skills"
+  ],
   "additionalProperties": false,
   "properties": {
-    "$schema": { "type": "string" },
-    "version": { "const": 1 },
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "const": 1
+    },
     "skills": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "name", "description", "category", "source", "skillPath"],
+        "required": [
+          "id",
+          "name",
+          "description",
+          "category",
+          "source",
+          "skillPath"
+        ],
         "additionalProperties": false,
         "properties": {
-          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
-          "name": { "type": "string", "minLength": 1 },
-          "description": { "type": "string", "minLength": 1 },
-          "category": { "type": "string", "minLength": 1 },
-          "tags": { "type": "array", "items": { "type": "string" } },
-          "source": {
-            "type": "object",
-            "required": ["type"],
-            "additionalProperties": false,
-            "properties": {
-              "type": { "enum": ["local", "git"] },
-              "path": { "type": "string" },
-              "url": { "type": "string" },
-              "ref": { "type": "string" }
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._-]*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "tags": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
             }
           },
-          "skillPath": { "type": "string", "minLength": 1 },
-          "license": { "type": "string" },
-          "provenance": { "type": "string" },
-          "targets": { "type": "array", "items": { "type": "string" } }
+          "source": {
+            "oneOf": [
+              {
+                "type": "object",
+                "required": [
+                  "type",
+                  "path"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "const": "local"
+                  },
+                  "path": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "^(?!\\/)(?![A-Za-z]:)(?!\\\\)(?!.*\\\\)(?=\\S)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "required": [
+                  "type",
+                  "url"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "const": "git"
+                  },
+                  "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "pattern": "^https://[^/?#]+/[^?#]+$"
+                  },
+                  "ref": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  }
+                }
+              }
+            ]
+          },
+          "skillPath": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^(?!\\/)(?![A-Za-z]:)(?!\\\\)(?!.*\\\\)(?!.*(?:^|\\/)\\.\\.(?:\\/|$))"
+          },
+          "license": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "provenance": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "targets": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "project",
+                "agents",
+                "claude",
+                "codex"
+              ]
+            }
+          }
         }
       }
     }
