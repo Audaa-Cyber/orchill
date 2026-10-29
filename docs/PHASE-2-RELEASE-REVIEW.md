@@ -12,5 +12,7 @@ Keep the full development catalogue in the repository, but do not distribute thi
 ## Current findings
 The approval ledger is intentionally empty. The report marks every skill as needing evidence; a registry license label does not equal approval. The 209 local payloads are the primary redistribution concern. Remote Git entries also need accurate source/revision/license metadata and a clear distribution decision.
 
+The release-review queue groups imported skills using the recorded Skills CLI repository hint or marketplace plugin provenance. This is a triage aid only: a command string is not proof that the copied payload matches that repository, that the import came from the stated commit, or that the exact skill and bundled assets may be redistributed. The queue currently has 55 source groups and no `unknown-origin` group based on those hints, but all 221 skills still lack complete approval evidence. Verify exact content and immutable revisions before recording any approval.
+
 ## Publication policy
 Do not publish a release containing local third-party payloads until the strict evidence gate and clean packed-package install test pass. Apache-2.0 applies to Orchill's own code, not automatically to imported skills.
