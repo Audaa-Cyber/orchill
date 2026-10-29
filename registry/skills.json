@@ -1567,7 +1567,8 @@
       "tags": [
         "ai-data",
         "imagegen"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "jupyter-notebook",
@@ -1590,7 +1591,8 @@
         "ai-data",
         "jupyter",
         "notebook"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "sentry",
@@ -1612,7 +1614,8 @@
       "tags": [
         "ai-data",
         "sentry"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "remotion-best-practices",
@@ -2334,7 +2337,8 @@
         "cloud-devops",
         "cloudflare",
         "deploy"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "deploy-to-vercel",
@@ -2403,7 +2407,8 @@
         "cloud-devops",
         "netlify",
         "deploy"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "provider-resources",
@@ -2450,7 +2455,8 @@
         "cloud-devops",
         "render",
         "deploy"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "terraform-skill",
@@ -3249,7 +3255,8 @@
         "developer-tools",
         "address",
         "comments"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "gh-fix-ci",
@@ -3271,7 +3278,8 @@
       "tags": [
         "developer-tools",
         "fix"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "hf-cli",
@@ -3483,7 +3491,8 @@
       "tags": [
         "documents-productivity",
         "linear"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "notion-knowledge-capture",
@@ -3507,7 +3516,8 @@
         "notion",
         "knowledge",
         "capture"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "openai-docs",
@@ -3530,7 +3540,8 @@
         "documents-productivity",
         "openai",
         "docs"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "pdf",
@@ -4257,7 +4268,8 @@
       "tags": [
         "security",
         "practices"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "security-threat-model",
@@ -4280,7 +4292,8 @@
         "security",
         "threat",
         "model"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "semgrep-rule-creator",
@@ -5142,7 +5155,8 @@
       "tags": [
         "ui-ux",
         "figma"
-      ]
+      ],
+      "license": "Proprietary — Figma Developer Terms (redistribution not approved pending review)"
     },
     {
       "id": "figma-implement-design",
@@ -5166,7 +5180,8 @@
         "figma",
         "implement",
         "design"
-      ]
+      ],
+      "license": "Proprietary — Figma Developer Terms (redistribution not approved pending review)"
     },
     {
       "id": "frontend-design",
