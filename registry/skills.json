@@ -991,14 +991,14 @@
         "path": "../skills/accessibility/audit-website"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from squirrelscan/skills; command: npx skills add squirrelscan/skills@audit-website. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from squirrelscan/skills; command: npx skills add squirrelscan/skills@audit-website. Verify source, pin, and license before publishing. Verified 2026-10-29 against squirrelscan/skills at commit 8ce7e12d51e0a3df4a353f037e33fb53be23db7e; all 6 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/squirrelscan/skills/blob/8ce7e12d51e0a3df4a353f037e33fb53be23db7e/LICENSE.",
       "targets": [
         "project",
         "claude",
         "codex",
         "agents"
       ],
-      "license": "See LICENSE file in repository root",
+      "license": "MIT",
       "tags": [
         "developer-tools",
         "audit",
@@ -1134,7 +1134,7 @@
         "path": "../skills/agent-tooling-and-workflows/find-skills"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from vercel-labs/skills; command: npx skills add vercel-labs/skills@find-skills. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from vercel-labs/skills; command: npx skills add vercel-labs/skills@find-skills. Verify source, pin, and license before publishing. Verified 2026-10-29 against vercel-labs/skills at commit 92a9a34ac3bf88e695e468b90c7bf32f163d32c8; all 1 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/vercel-labs/skills/blob/92a9a34ac3bf88e695e468b90c7bf32f163d32c8/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1144,7 +1144,8 @@
       "tags": [
         "agent-tooling-workflows",
         "find"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "firecrawl",
@@ -1952,7 +1953,7 @@
         "path": "../skills/backend-and-apis/varlock"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from wrsmith108/varlock-claude-skill; command: npx skills add wrsmith108/varlock-claude-skill@varlock. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from wrsmith108/varlock-claude-skill; command: npx skills add wrsmith108/varlock-claude-skill@varlock. Verify source, pin, and license before publishing. Verified 2026-10-29 against wrsmith108/varlock-claude-skill at commit 348a435345b7ddafb4d1002d41d9e2ef3f5b6992; all 1 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/wrsmith108/varlock-claude-skill/blob/348a435345b7ddafb4d1002d41d9e2ef3f5b6992/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1962,7 +1963,8 @@
       "tags": [
         "backend-apis",
         "varlock"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "azure-app-service",
@@ -3083,7 +3085,7 @@
         "path": "../skills/design-systems-and-components/tailwind-design-system"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from wshobson/agents; command: npx skills add wshobson/agents@tailwind-design-system. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from wshobson/agents; command: npx skills add wshobson/agents@tailwind-design-system. Verify source, pin, and license before publishing. Verified 2026-10-29 against wshobson/agents at commit 0874a27b17a22e2b7c2e2bcd725768e0803cad06; all 3 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/wshobson/agents/blob/0874a27b17a22e2b7c2e2bcd725768e0803cad06/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -3095,7 +3097,8 @@
         "tailwind",
         "design",
         "system"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "theme-factory",
@@ -3230,7 +3233,7 @@
         "path": "../skills/developer-tools/differential-review"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@differential-review. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@differential-review. Verify source, pin, and license before publishing. Verified 2026-10-29 against trailofbits/skills at commit 2be6433b39e009cd2b6fd3be1895f6b1faa5af9a; all 7 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/trailofbits/skills/blob/2be6433b39e009cd2b6fd3be1895f6b1faa5af9a/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -3241,7 +3244,8 @@
         "developer-tools",
         "differential",
         "review"
-      ]
+      ],
+      "license": "CC-BY-SA-4.0"
     },
     {
       "id": "dump-collect",
@@ -3397,7 +3401,7 @@
         "path": "../skills/developer-tools/modern-python"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@modern-python. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@modern-python. Verify source, pin, and license before publishing. Verified 2026-10-29 against trailofbits/skills at commit 2be6433b39e009cd2b6fd3be1895f6b1faa5af9a; all 14 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/trailofbits/skills/blob/2be6433b39e009cd2b6fd3be1895f6b1faa5af9a/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -3408,7 +3412,8 @@
         "developer-tools",
         "modern",
         "python"
-      ]
+      ],
+      "license": "CC-BY-SA-4.0"
     },
     {
       "id": "receiving-code-review",
@@ -4347,7 +4352,7 @@
         "path": "../skills/security/semgrep-rule-creator"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@semgrep-rule-creator. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@semgrep-rule-creator. Verify source, pin, and license before publishing. Verified 2026-10-29 against trailofbits/skills at commit 2be6433b39e009cd2b6fd3be1895f6b1faa5af9a; all 5 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/trailofbits/skills/blob/2be6433b39e009cd2b6fd3be1895f6b1faa5af9a/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -4359,7 +4364,8 @@
         "semgrep",
         "rule",
         "creator"
-      ]
+      ],
+      "license": "CC-BY-SA-4.0"
     },
     {
       "id": "variant-analysis",
@@ -4371,7 +4377,7 @@
         "path": "../skills/security/variant-analysis"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@variant-analysis. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@variant-analysis. Verify source, pin, and license before publishing. Verified 2026-10-29 against trailofbits/skills at commit 2be6433b39e009cd2b6fd3be1895f6b1faa5af9a; all 18 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/trailofbits/skills/blob/2be6433b39e009cd2b6fd3be1895f6b1faa5af9a/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -4382,7 +4388,8 @@
         "security",
         "variant",
         "analysis"
-      ]
+      ],
+      "license": "CC-BY-SA-4.0"
     },
     {
       "id": "programmatic-seo",
@@ -4774,7 +4781,7 @@
         "path": "../skills/testing/property-based-testing"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@property-based-testing. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from trailofbits/skills; command: npx skills add trailofbits/skills@property-based-testing. Verify source, pin, and license before publishing. Verified 2026-10-29 against trailofbits/skills at commit 2be6433b39e009cd2b6fd3be1895f6b1faa5af9a; all 9 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/trailofbits/skills/blob/2be6433b39e009cd2b6fd3be1895f6b1faa5af9a/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -4785,7 +4792,8 @@
         "testing",
         "property",
         "based"
-      ]
+      ],
+      "license": "CC-BY-SA-4.0"
     },
     {
       "id": "run-tests",
