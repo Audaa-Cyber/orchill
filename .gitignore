@@ -4,3 +4,5 @@ coverage/
 .orchill/
 *.log
 .DS_Store
+
+orchill-*.tgz

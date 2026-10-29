@@ -15,7 +15,8 @@
     "README.md",
     "LICENSE",
     "journal.md",
-    "skills"
+    "skills",
+    "provenance"
   ],
   "engines": {
     "node": ">=22"
