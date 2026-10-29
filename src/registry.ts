@@ -82,7 +82,7 @@ function validateSkill(value: unknown): asserts value is Skill {
     if (s.source.url !== undefined || s.source.ref !== undefined) {
       throw new Error(`Skill ${s.id}: local sources may only define type and path.`);
     }
-    if (path.isAbsolute(s.source.path) || s.source.path.includes("\0")) {
+    if (path.isAbsolute(s.source.path) || s.source.path.includes("\0") || s.source.path.includes("\\")) {
       throw new Error(`Skill ${s.id}: local source.path must be a relative path.`);
     }
   } else if (s.source.type === "git") {
