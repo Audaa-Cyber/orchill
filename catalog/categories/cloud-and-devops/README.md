@@ -20,14 +20,14 @@ Generated from `registry/skills.json`. Local payloads live under `skills/<catego
 | Azure Monitor | `azure-monitor` | local | [`skills/cloud-and-devops/azure-monitor`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/azure-monitor) | Unknown |
 | Azure Pipelines | `azure-pipelines` | local | [`skills/cloud-and-devops/azure-pipelines`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/azure-pipelines) | Unknown |
 | Azure Sql Database | `azure-sql-database` | local | [`skills/cloud-and-devops/azure-sql-database`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/azure-sql-database) | Unknown |
-| Cloudflare | `cloudflare` | local | [`skills/cloud-and-devops/cloudflare`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/cloudflare) | Unknown |
+| Cloudflare | `cloudflare` | local | [`skills/cloud-and-devops/cloudflare`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/cloudflare) | Apache-2.0 |
 | Cloudflare Deploy | `cloudflare-deploy` | local | [`skills/cloud-and-devops/cloudflare-deploy`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/cloudflare-deploy) | Unknown |
 | Deploy To Vercel | `deploy-to-vercel` | local | [`skills/cloud-and-devops/deploy-to-vercel`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/deploy-to-vercel) | Unknown |
-| Durable Objects | `durable-objects` | local | [`skills/cloud-and-devops/durable-objects`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/durable-objects) | Unknown |
+| Durable Objects | `durable-objects` | local | [`skills/cloud-and-devops/durable-objects`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/durable-objects) | Apache-2.0 |
 | Netlify Deploy | `netlify-deploy` | local | [`skills/cloud-and-devops/netlify-deploy`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/netlify-deploy) | Unknown |
 | Provider Resources | `provider-resources` | local | [`skills/cloud-and-devops/provider-resources`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/provider-resources) | MPL-2.0 |
 | Render Deploy | `render-deploy` | local | [`skills/cloud-and-devops/render-deploy`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/render-deploy) | Unknown |
 | Terraform Skill | `terraform-skill` | local | [`skills/cloud-and-devops/terraform-skill`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/terraform-skill) | Apache-2.0 |
 | Terraform Style Guide | `terraform-style-guide` | local | [`skills/cloud-and-devops/terraform-style-guide`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/terraform-style-guide) | Unknown |
 | Vercel Cli With Tokens | `vercel-cli-with-tokens` | local | [`skills/cloud-and-devops/vercel-cli-with-tokens`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/vercel-cli-with-tokens) | Unknown |
-| Wrangler | `wrangler` | local | [`skills/cloud-and-devops/wrangler`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/wrangler) | Unknown |
+| Wrangler | `wrangler` | local | [`skills/cloud-and-devops/wrangler`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/cloud-and-devops/wrangler) | Apache-2.0 |
