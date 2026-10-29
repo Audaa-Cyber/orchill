@@ -40,7 +40,7 @@ jobs:
           npm pack --pack-destination "$RUNNER_TEMP"
           npm install --global "$RUNNER_TEMP"/orchill-*.tgz
           orchill --help
-          orchill search demo
+          orchill list --all
           orchill list
           set +e
           orchill audit --json > "$RUNNER_TEMP/orchill-audit.json"
@@ -54,17 +54,17 @@ jobs:
           orchill registry
           orchill add frontend-design --dry-run
           mkdir -p "$RUNNER_TEMP/orchill-smoke-project" "$RUNNER_TEMP/orchill-init-smoke" "$RUNNER_TEMP/orchill-category-smoke"
-          orchill install analyzing-dotnet-performance --cwd "$RUNNER_TEMP/orchill-smoke-project"
-          test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/analyzing-dotnet-performance/SKILL.md"
-          test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/analyzing-dotnet-performance/references/critical-patterns.md"
-          orchill install-category Accessibility --yes --cwd "$RUNNER_TEMP/orchill-category-smoke"
-          test -f "$RUNNER_TEMP/orchill-category-smoke/.agents/skills/audit-website/SKILL.md"
-          test ! -e "$RUNNER_TEMP/orchill-category-smoke/.agents/skills/web-design-guidelines"
-          orchill install demo-focus --cwd "$RUNNER_TEMP/orchill-smoke-project"
-          test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/demo-focus/SKILL.md"
-          orchill verify demo-focus --cwd "$RUNNER_TEMP/orchill-smoke-project"
-          orchill uninstall demo-focus --yes --cwd "$RUNNER_TEMP/orchill-smoke-project"
-          test ! -e "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/demo-focus"
+          orchill add analyzing-dotnet-performance --cwd "$RUNNER_TEMP/orchill-smoke-project" --yes
+          test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/net-and-build-systems/analyzing-dotnet-performance/SKILL.md"
+          test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/net-and-build-systems/analyzing-dotnet-performance/references/critical-patterns.md"
+          orchill add Accessibility --yes --cwd "$RUNNER_TEMP/orchill-category-smoke"
+          test -f "$RUNNER_TEMP/orchill-category-smoke/.agents/skills/accessibility/audit-website/SKILL.md"
+          test ! -e "$RUNNER_TEMP/orchill-category-smoke/.agents/skills/accessibility/web-design-guidelines"
+          orchill add demo-focus --cwd "$RUNNER_TEMP/orchill-smoke-project" --yes
+          test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/agent-tooling-and-workflows/demo-focus/SKILL.md"
+          orchill check demo-focus --cwd "$RUNNER_TEMP/orchill-smoke-project"
+          orchill remove demo-focus --yes --cwd "$RUNNER_TEMP/orchill-smoke-project"
+          test ! -e "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/agent-tooling-and-workflows/demo-focus"
           orchill init --cwd "$RUNNER_TEMP/orchill-init-smoke"
           test -f "$RUNNER_TEMP/orchill-init-smoke/.orchill/skills.json"
 
