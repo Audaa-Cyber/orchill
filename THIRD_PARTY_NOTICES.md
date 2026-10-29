@@ -747,3 +747,87 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
+
+
+## Additional verified skill payloads (2026-10-29)
+
+### resend/resend-skills
+
+Pinned upstream commit: [`b2ae7b1798b70134faf679f35fc05b4331462988`](https://github.com/resend/resend-skills/commit/b2ae7b1798b70134faf679f35fc05b4331462988). All bundled files for these skills matched upstream by Git blob SHA:
+
+- `resend` — 23 files
+
+License evidence: [LICENSE](https://github.com/resend/resend-skills/blob/b2ae7b1798b70134faf679f35fc05b4331462988/LICENSE) — **MIT**.
+
+Upstream MIT license text:
+
+```text
+MIT License
+
+Copyright (c) 2026 Resend
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+
+### sanjay3290/ai-skills
+
+Pinned upstream commit: [`281d88df199357e3091a3be5c743a0fca9a9ae1b`](https://github.com/sanjay3290/ai-skills/commit/281d88df199357e3091a3be5c743a0fca9a9ae1b). All bundled files for these skills matched upstream by Git blob SHA:
+
+- `deep-research` — 6 files
+
+License evidence: [LICENSE](https://github.com/sanjay3290/ai-skills/blob/281d88df199357e3091a3be5c743a0fca9a9ae1b/LICENSE) — **Apache-2.0**.
+
+The full Apache License 2.0 text is reproduced in the Apache license section above; this pinned license file is the source-specific evidence.
+
+
+### supabase/agent-skills
+
+Pinned upstream commit: [`c9be0e931b7930f7d02126d04774d904c381e7d7`](https://github.com/supabase/agent-skills/commit/c9be0e931b7930f7d02126d04774d904c381e7d7). All bundled files for these skills matched upstream by Git blob SHA:
+
+- `supabase-postgres-best-practices` — 36 files
+
+License evidence: [LICENSE](https://github.com/supabase/agent-skills/blob/c9be0e931b7930f7d02126d04774d904c381e7d7/LICENSE) — **MIT**.
+
+Upstream MIT license text:
+
+```text
+MIT License
+
+Copyright (c) 2026 Supabase
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
