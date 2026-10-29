@@ -12,6 +12,7 @@
     "registry",
     "examples",
     "docs",
+    "AGENTS.md",
     "README.md",
     "LICENSE",
     "journal.md",
