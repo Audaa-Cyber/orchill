@@ -1039,7 +1039,7 @@
         "path": "../skills/agent-tooling-and-workflows/brainstorming"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@brainstorming. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@brainstorming. Verify source, pin, and license before publishing. Verified 2026-10-29 against obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b; all 8 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1049,7 +1049,8 @@
       "tags": [
         "agent-tooling-workflows",
         "brainstorming"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "demo-focus",
@@ -1085,7 +1086,7 @@
         "path": "../skills/agent-tooling-and-workflows/dispatching-parallel-agents"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@dispatching-parallel-agents. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@dispatching-parallel-agents. Verify source, pin, and license before publishing. Verified 2026-10-29 against obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b; all 1 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1096,7 +1097,8 @@
         "agent-tooling-workflows",
         "dispatching",
         "parallel"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "executing-plans",
@@ -1108,7 +1110,7 @@
         "path": "../skills/agent-tooling-and-workflows/executing-plans"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@executing-plans. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@executing-plans. Verify source, pin, and license before publishing. Verified 2026-10-29 against obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b; all 3 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1119,7 +1121,8 @@
         "agent-tooling-workflows",
         "executing",
         "plans"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "find-skills",
@@ -1272,7 +1275,7 @@
         "path": "../skills/agent-tooling-and-workflows/subagent-driven-development"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@subagent-driven-development. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@subagent-driven-development. Verify source, pin, and license before publishing. Verified 2026-10-29 against obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b; all 14 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1284,7 +1287,8 @@
         "subagent",
         "driven",
         "development"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "troubleshoot-binlog-mcp",
@@ -1321,7 +1325,7 @@
         "path": "../skills/agent-tooling-and-workflows/using-git-worktrees"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@using-git-worktrees. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@using-git-worktrees. Verify source, pin, and license before publishing. Verified 2026-10-29 against obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b; all 1 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1333,7 +1337,8 @@
         "using",
         "git",
         "worktrees"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "using-superpowers",
@@ -1345,7 +1350,7 @@
         "path": "../skills/agent-tooling-and-workflows/using-superpowers"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@using-superpowers. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@using-superpowers. Verify source, pin, and license before publishing. Verified 2026-10-29 against obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b; all 8 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1356,7 +1361,8 @@
         "agent-tooling-workflows",
         "using",
         "superpowers"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "writing-plans",
@@ -1368,7 +1374,7 @@
         "path": "../skills/agent-tooling-and-workflows/writing-plans"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@writing-plans. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@writing-plans. Verify source, pin, and license before publishing. Verified 2026-10-29 against obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b; all 1 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1379,7 +1385,8 @@
         "agent-tooling-workflows",
         "writing",
         "plans"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "analytics",
@@ -1391,7 +1398,7 @@
         "path": "../skills/ai-and-data/analytics"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@analytics. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@analytics. Verify source, pin, and license before publishing. Verified 2026-10-29 against coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce; all 5 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1401,7 +1408,8 @@
       "tags": [
         "ai-data",
         "analytics"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "create-datadriven-aspnetcore",
@@ -1462,7 +1470,7 @@
         "path": "../skills/ai-and-data/huggingface-community-evals"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@huggingface-community-evals. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@huggingface-community-evals. Verify source, pin, and license before publishing. Verified 2026-10-29 against huggingface/skills at commit fabc634a893f62ad5c2039830397efa35fa62715; all 6 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/huggingface/skills/blob/fabc634a893f62ad5c2039830397efa35fa62715/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1474,7 +1482,8 @@
         "huggingface",
         "community",
         "evals"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "huggingface-datasets",
@@ -1534,7 +1543,7 @@
         "path": "../skills/ai-and-data/huggingface-trackio"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@huggingface-trackio. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@huggingface-trackio. Verify source, pin, and license before publishing. Verified 2026-10-29 against huggingface/skills at commit fabc634a893f62ad5c2039830397efa35fa62715; all 4 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/huggingface/skills/blob/fabc634a893f62ad5c2039830397efa35fa62715/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1545,7 +1554,8 @@
         "ai-data",
         "huggingface",
         "trackio"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "imagegen",
@@ -2304,7 +2314,7 @@
         "path": "../skills/cloud-and-devops/cloudflare"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@cloudflare. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@cloudflare. Verify source, pin, and license before publishing. Verified 2026-10-29 against cloudflare/skills at commit 49a31e0b3229ccdffe4944be9c61bc7481d1d432; all 140 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/cloudflare/skills/blob/49a31e0b3229ccdffe4944be9c61bc7481d1d432/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2314,7 +2324,8 @@
       "tags": [
         "cloud-devops",
         "cloudflare"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "cloudflare-deploy",
@@ -2373,7 +2384,7 @@
         "path": "../skills/cloud-and-devops/durable-objects"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@durable-objects. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@durable-objects. Verify source, pin, and license before publishing. Verified 2026-10-29 against cloudflare/skills at commit 49a31e0b3229ccdffe4944be9c61bc7481d1d432; all 5 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/cloudflare/skills/blob/49a31e0b3229ccdffe4944be9c61bc7481d1d432/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2384,7 +2395,8 @@
         "cloud-devops",
         "durable",
         "objects"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "netlify-deploy",
@@ -2539,7 +2551,7 @@
         "path": "../skills/cloud-and-devops/wrangler"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@wrangler. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@wrangler. Verify source, pin, and license before publishing. Verified 2026-10-29 against cloudflare/skills at commit 49a31e0b3229ccdffe4944be9c61bc7481d1d432; all 2 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/cloudflare/skills/blob/49a31e0b3229ccdffe4944be9c61bc7481d1d432/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2549,7 +2561,8 @@
       "tags": [
         "cloud-devops",
         "wrangler"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "content-research-writer",
@@ -2585,7 +2598,7 @@
         "path": "../skills/content-and-marketing/content-strategy"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@content-strategy. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@content-strategy. Verify source, pin, and license before publishing. Verified 2026-10-29 against coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce; all 4 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2596,7 +2609,8 @@
         "content-marketing",
         "content",
         "strategy"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "copy-editing",
@@ -2608,7 +2622,7 @@
         "path": "../skills/content-and-marketing/copy-editing"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@copy-editing. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@copy-editing. Verify source, pin, and license before publishing. Verified 2026-10-29 against coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce; all 5 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2619,7 +2633,8 @@
         "content-marketing",
         "copy",
         "editing"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "copywriting",
@@ -2631,7 +2646,7 @@
         "path": "../skills/content-and-marketing/copywriting"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@copywriting. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@copywriting. Verify source, pin, and license before publishing. Verified 2026-10-29 against coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce; all 5 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2641,7 +2656,8 @@
       "tags": [
         "content-marketing",
         "copywriting"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "cro",
@@ -2653,7 +2669,7 @@
         "path": "../skills/content-and-marketing/cro"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@cro. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@cro. Verify source, pin, and license before publishing. Verified 2026-10-29 against coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce; all 4 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2663,7 +2679,8 @@
       "tags": [
         "content-marketing",
         "cro"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "internal-comms",
@@ -2700,7 +2717,7 @@
         "path": "../skills/content-and-marketing/launch"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@launch. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@launch. Verify source, pin, and license before publishing. Verified 2026-10-29 against coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce; all 4 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2710,7 +2727,8 @@
       "tags": [
         "content-marketing",
         "launch"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "marketing-ideas",
@@ -2722,7 +2740,7 @@
         "path": "../skills/content-and-marketing/marketing-ideas"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@marketing-ideas. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@marketing-ideas. Verify source, pin, and license before publishing. Verified 2026-10-29 against coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce; all 4 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2733,7 +2751,8 @@
         "content-marketing",
         "marketing",
         "ideas"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "marketing-psychology",
@@ -2745,7 +2764,7 @@
         "path": "../skills/content-and-marketing/marketing-psychology"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@marketing-psychology. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@marketing-psychology. Verify source, pin, and license before publishing. Verified 2026-10-29 against coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce; all 2 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2756,7 +2775,8 @@
         "content-marketing",
         "marketing",
         "psychology"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "microbenchmarking",
@@ -2890,7 +2910,7 @@
         "path": "../skills/content-and-marketing/pricing"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@pricing. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@pricing. Verify source, pin, and license before publishing. Verified 2026-10-29 against coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce; all 6 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2900,7 +2920,8 @@
       "tags": [
         "content-marketing",
         "pricing"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "product-marketing",
@@ -2912,7 +2933,7 @@
         "path": "../skills/content-and-marketing/product-marketing"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@product-marketing. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@product-marketing. Verify source, pin, and license before publishing. Verified 2026-10-29 against coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce; all 3 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2923,7 +2944,8 @@
         "content-marketing",
         "product",
         "marketing"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "slack-gif-creator",
@@ -2960,7 +2982,7 @@
         "path": "../skills/content-and-marketing/social"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@social. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@social. Verify source, pin, and license before publishing. Verified 2026-10-29 against coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce; all 11 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2970,7 +2992,8 @@
       "tags": [
         "content-marketing",
         "social"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "x-article-publisher",
@@ -3102,7 +3125,7 @@
         "path": "../skills/developer-tools/agents-sdk"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@agents-sdk. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@agents-sdk. Verify source, pin, and license before publishing. Verified 2026-10-29 against cloudflare/skills at commit 49a31e0b3229ccdffe4944be9c61bc7481d1d432; all 21 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/cloudflare/skills/blob/49a31e0b3229ccdffe4944be9c61bc7481d1d432/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -3112,7 +3135,8 @@
       "tags": [
         "developer-tools",
         "sdk"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "check-bin-obj-clash",
@@ -3291,7 +3315,7 @@
         "path": "../skills/developer-tools/hf-cli"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@hf-cli. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from huggingface/skills; command: npx skills add huggingface/skills@hf-cli. Verify source, pin, and license before publishing. Verified 2026-10-29 against huggingface/skills at commit fabc634a893f62ad5c2039830397efa35fa62715; all 1 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/huggingface/skills/blob/fabc634a893f62ad5c2039830397efa35fa62715/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -3301,7 +3325,8 @@
       "tags": [
         "developer-tools",
         "cli"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "migrate-nullable-references",
@@ -3386,7 +3411,7 @@
         "path": "../skills/developer-tools/receiving-code-review"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@receiving-code-review. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@receiving-code-review. Verify source, pin, and license before publishing. Verified 2026-10-29 against obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b; all 1 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -3398,7 +3423,8 @@
         "receiving",
         "code",
         "review"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "requesting-code-review",
@@ -3410,7 +3436,7 @@
         "path": "../skills/developer-tools/requesting-code-review"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@requesting-code-review. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@requesting-code-review. Verify source, pin, and license before publishing. Verified 2026-10-29 against obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b; all 2 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -3422,7 +3448,8 @@
         "requesting",
         "code",
         "review"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "verification-before-completion",
@@ -3434,7 +3461,7 @@
         "path": "../skills/developer-tools/verification-before-completion"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@verification-before-completion. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@verification-before-completion. Verify source, pin, and license before publishing. Verified 2026-10-29 against obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b; all 1 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -3446,7 +3473,8 @@
         "verification",
         "before",
         "completion"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "docx",
@@ -3769,7 +3797,7 @@
         "path": "../skills/mobile-development/ios-simulator-skill"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from conorluddy/ios-simulator-skill; command: npx skills add conorluddy/ios-simulator-skill@ios-simulator-skill. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from conorluddy/ios-simulator-skill; command: npx skills add conorluddy/ios-simulator-skill@ios-simulator-skill. Verify source, pin, and license before publishing. Verified 2026-10-29 against conorluddy/ios-simulator-skill at commit e38b3ad5cc2585140c91b9c0f974124c3add31dc; all 46 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/conorluddy/ios-simulator-skill/blob/e38b3ad5cc2585140c91b9c0f974124c3add31dc/LICENSE.md.",
       "targets": [
         "project",
         "claude",
@@ -3780,7 +3808,8 @@
         "mobile-development",
         "ios",
         "simulator"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "maui-app-lifecycle",
@@ -3965,7 +3994,7 @@
         "path": "../skills/mobile-development/swiftui-expert-skill"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from AvdLee/SwiftUI-Agent-Skill; command: npx skills add AvdLee/SwiftUI-Agent-Skill@swiftui-expert-skill. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from AvdLee/SwiftUI-Agent-Skill; command: npx skills add AvdLee/SwiftUI-Agent-Skill@swiftui-expert-skill. Verify source, pin, and license before publishing. Verified 2026-10-29 against AvdLee/SwiftUI-Agent-Skill at commit 204dba7c67256a8b707ee3fbc5759a824191974f; all 51 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/204dba7c67256a8b707ee3fbc5759a824191974f/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -3976,7 +4005,8 @@
         "mobile-development",
         "swiftui",
         "expert"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "eval-performance",
@@ -4012,7 +4042,7 @@
         "path": "../skills/performance-and-optimization/web-perf"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@web-perf. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from cloudflare/skills; command: npx skills add cloudflare/skills@web-perf. Verify source, pin, and license before publishing. Verified 2026-10-29 against cloudflare/skills at commit 49a31e0b3229ccdffe4944be9c61bc7481d1d432; all 2 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/cloudflare/skills/blob/49a31e0b3229ccdffe4944be9c61bc7481d1d432/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -4023,7 +4053,8 @@
         "performance-optimization",
         "web",
         "perf"
-      ]
+      ],
+      "license": "Apache-2.0"
     },
     {
       "id": "azure-static-web-apps",
@@ -4352,7 +4383,7 @@
         "path": "../skills/seo/programmatic-seo"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@programmatic-seo. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@programmatic-seo. Verify source, pin, and license before publishing. Verified 2026-10-29 against coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce; all 4 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -4362,7 +4393,8 @@
       "tags": [
         "seo",
         "programmatic"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "schema",
@@ -4374,7 +4406,7 @@
         "path": "../skills/seo/schema"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@schema. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@schema. Verify source, pin, and license before publishing. Verified 2026-10-29 against coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce; all 3 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -4384,7 +4416,8 @@
       "tags": [
         "seo",
         "schema"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "seo-aeo-best-practices",
@@ -4419,7 +4452,7 @@
         "path": "../skills/seo/seo-audit"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@seo-audit. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from coreyhaines31/marketingskills; command: npx skills add coreyhaines31/marketingskills@seo-audit. Verify source, pin, and license before publishing. Verified 2026-10-29 against coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce; all 9 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -4429,7 +4462,8 @@
       "tags": [
         "seo",
         "audit"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "assertion-quality",
@@ -4801,7 +4835,7 @@
         "path": "../skills/testing/systematic-debugging"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@systematic-debugging. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@systematic-debugging. Verify source, pin, and license before publishing. Verified 2026-10-29 against obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b; all 11 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -4812,7 +4846,8 @@
         "testing",
         "systematic",
         "debugging"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "test-analysis-extensions",
@@ -4874,7 +4909,7 @@
         "path": "../skills/testing/test-driven-development"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@test-driven-development. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from obra/superpowers; command: npx skills add obra/superpowers@test-driven-development. Verify source, pin, and license before publishing. Verified 2026-10-29 against obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b; all 2 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -4886,7 +4921,8 @@
         "test",
         "driven",
         "development"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "test-gap-analysis",
@@ -5290,7 +5326,7 @@
         "path": "../skills/ui-ux/web-design-engineer"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from ConardLi/garden-skills; command: npx skills add ConardLi/garden-skills@web-design-engineer. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from ConardLi/garden-skills; command: npx skills add ConardLi/garden-skills@web-design-engineer. Verify source, pin, and license before publishing. Verified 2026-10-29 against ConardLi/garden-skills at commit 2b9a89340b70f632d31c0f1c69fce94a7912423e; all 39 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/ConardLi/garden-skills/blob/2b9a89340b70f632d31c0f1c69fce94a7912423e/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -5302,7 +5338,8 @@
         "web",
         "design",
         "engineer"
-      ]
+      ],
+      "license": "MIT"
     }
   ]
 }
