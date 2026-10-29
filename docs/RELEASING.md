@@ -4,9 +4,9 @@ This checklist is intentionally conservative. A green CI run is necessary, but n
 
 ## Before the first public release
 
-- [ ] Merge the reviewed Apache-2.0 license PR and confirm `package.json`, root `LICENSE`, and README agree.
-- [ ] Merge registry-validation hardening and confirm the runtime validator, JSON Schema, and tests are aligned.
-- [ ] Review the install lifecycle PR and the remaining importer PRs; merge only changes that are reviewed, passing CI, and in scope for the first release.
+- [x] Merge the Apache-2.0 license alignment and confirm `package.json`, root `LICENSE`, and README agree.
+- [x] Merge registry-validation hardening and confirm the runtime validator, JSON Schema, and tests are aligned.
+- [x] Merge the install lifecycle safety and staged bulk-import changes after fresh CI passed. Marketplace importer PR #3 remains intentionally untouched and is not included in this release candidate.
 - [ ] Confirm all catalog entries have verified upstream paths, immutable source refs where practical, per-skill license information, and provenance notes.
 - [ ] Review bundled skill instructions and referenced scripts. CI and license checks are not a security audit.
 - [ ] Check the exact npm package name `orchill` for availability, ownership, and possible naming conflicts. Do not assume availability from the repository name.

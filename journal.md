@@ -704,3 +704,11 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Safety:** Only supported npx skills add syntax is accepted; source URLs are validated; imports are staged, symlinks rejected, and existing output directories are not overwritten. Metadata and license still require review.
 - **Verification:** GitHub Actions run 48 passed on commit `8eaef9e77d54a595ffc553b8d8b72ef52073ae86`. Typecheck, parser tests, build, CLI help smoke tests, existing CLI smoke tests, and packed-package smoke checks all passed. This verifies the Linux CI path; a real Skills CLI download and Windows end-to-end bulk import still need a user-run smoke test.
 
+## 29. Release readiness consolidation — 2026-10-29
+
+- **Merged to main:** Windows portability fixes (PR #1), Apache-2.0 license alignment (PR #8), registry metadata hardening (PR #9), safe install verification/uninstall lifecycle (PR #11), staged bulk skill importer (PR #12), and guarded npm release workflow (PR #10). Each rebased feature PR passed GitHub Actions on its exact head before merge.
+- **Marketplace boundary:** PR #3 / `feat/marketplace-bulk-import` remains untouched and open, per the project owner's instruction.
+- **Package:** `orchill@0.1.0`, Node.js >=22, license Apache-2.0. The repository's release workflow is in place but has not been exercised by publishing a release.
+- **Remaining external gates:** Verify npm package-name availability and ownership; configure npm trusted publishing for this repository and workflow; confirm the release version/tag; then verify a clean installation and provenance after publication. These account-side steps have not been completed from GitHub.
+- **Validation boundary:** Rebased PR CI passed for the merged code. The package has not been published to npm, and this entry does not claim a full security audit or Windows end-to-end test of the external Skills CLI importer.
+
