@@ -17,4 +17,4 @@ Generated from `registry/skills.json`. Local payloads live under `skills/<catego
 | Target Authoring | `target-authoring` | local | [`skills/backend-and-apis/target-authoring`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/backend-and-apis/target-authoring) | MIT |
 | Template Authoring | `template-authoring` | local | [`skills/backend-and-apis/template-authoring`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/backend-and-apis/template-authoring) | MIT |
 | Tinybird | `tinybird` | local | [`skills/backend-and-apis/tinybird`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/backend-and-apis/tinybird) | Unknown |
-| Varlock | `varlock` | local | [`skills/backend-and-apis/varlock`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/backend-and-apis/varlock) | Unknown |
+| Varlock | `varlock` | local | [`skills/backend-and-apis/varlock`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/backend-and-apis/varlock) | MIT |
