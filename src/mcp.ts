@@ -150,7 +150,10 @@ async function handle(request: Rpc) {
           cliArgs.push(boolArg(args, "confirm") ? "--yes" : "--dry-run");
           output = runCli(cliArgs);
         } else if (name === "orchill_check") {
-          output = runCli(commandArgs(args, ["check"]));
+          const cliArgs = ["check"];
+          const targetName = stringArg(args, "name");
+          if (targetName) cliArgs.push(targetName);
+          output = runCli(commandArgs(args, cliArgs));
         } else {
           return error(id, -32601, "Unknown tool: " + name);
         }
