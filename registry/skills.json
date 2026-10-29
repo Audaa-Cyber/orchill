@@ -1448,7 +1448,7 @@
         "path": "../skills/ai-and-data/deep-research"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from sanjay3290/ai-skills; command: npx skills add sanjay3290/ai-skills@deep-research. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from sanjay3290/ai-skills; command: npx skills add sanjay3290/ai-skills@deep-research. Verify source, pin, and license before publishing. Verified 2026-10-29 against sanjay3290/ai-skills at commit 281d88df199357e3091a3be5c743a0fca9a9ae1b; all 6 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/sanjay3290/ai-skills/blob/281d88df199357e3091a3be5c743a0fca9a9ae1b/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1811,7 +1811,7 @@
         "path": "../skills/backend-and-apis/resend"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from resend/resend-skills; command: npx skills add resend/resend-skills@resend. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from resend/resend-skills; command: npx skills add resend/resend-skills@resend. Verify source, pin, and license before publishing. Verified 2026-10-29 against resend/resend-skills at commit b2ae7b1798b70134faf679f35fc05b4331462988; all 23 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/resend/resend-skills/blob/b2ae7b1798b70134faf679f35fc05b4331462988/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1857,7 +1857,7 @@
         "path": "../skills/backend-and-apis/supabase-postgres-best-practices"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from supabase/agent-skills; command: npx skills add supabase/agent-skills@supabase-postgres-best-practices. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from supabase/agent-skills; command: npx skills add supabase/agent-skills@supabase-postgres-best-practices. Verify source, pin, and license before publishing. Verified 2026-10-29 against supabase/agent-skills at commit c9be0e931b7930f7d02126d04774d904c381e7d7; all 36 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/supabase/agent-skills/blob/c9be0e931b7930f7d02126d04774d904c381e7d7/LICENSE.",
       "targets": [
         "project",
         "claude",
