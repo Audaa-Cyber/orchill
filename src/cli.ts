@@ -238,11 +238,16 @@ registryOption(program.command("check [name]").description("Verify Orchill-manag
   .option("-t, --target <target>", "project, agents, claude, or codex", "project")
   .option("-C, --cwd <path>", "Project directory", process.cwd())
   .option("--json", "Output machine-readable JSON")
-  .action(async (opts: {registry?: string; target: string; cwd: string; json?: boolean}) => {
+  .action(async (name: string | undefined, opts: {registry?: string; target: string; cwd: string; json?: boolean}) => {
     const {registry} = await getRegistry(opts.registry);
     const cwd = path.resolve(opts.cwd);
+    const resolved = name ? resolveName(registry, name) : {};
+    let selected = registry.skills;
+    if (resolved.skill) selected = [resolved.skill];
+    else if (resolved.category) selected = registry.skills.filter(s => s.category === resolved.category);
+    else if (name) throw new Error(`Unknown skill or category: ${name}. Run "orchill list".`);
     const results = [];
-    for (const skill of registry.skills) {
+    for (const skill of selected) {
       const result = await verifySkillInstallation(skill.id, opts.target, cwd, skill.category);
       if (result.installed) results.push(result);
     }
