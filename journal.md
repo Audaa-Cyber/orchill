@@ -662,3 +662,12 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Files changed:** `src/safety.ts`, `tests/install.test.ts`.
 - **Status:** Fixes prepared on branch `fix/windows-cross-platform-tests`; not yet CI-verified.
 - **Verification:** Not run in this session. GitHub Actions must verify Windows and Linux behavior before merge.
+
+## 24. Project license alignment — 2026-10-29
+
+- **Decision:** The project owner selected Apache-2.0 for Orchill's own code.
+- **Implementation branch:** `chore/apache-2-license`, based on `main`; marketplace importer work was left untouched.
+- **Changes:** Updated the npm package metadata to SPDX identifier `Apache-2.0`, replaced the root MIT license text with the full Apache License 2.0 text, and added a README license section distinguishing Orchill's code license from individual catalog-skill licenses.
+- **Source of canonical license text:** https://www.apache.org/licenses/LICENSE-2.0.txt
+- **Verification status:** Repository files were updated through GitHub; CI and packaged metadata still need to verify on the resulting commit/PR. This entry does not claim the change has merged or that CI has passed.
+
