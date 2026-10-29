@@ -10,7 +10,7 @@ import { runMarketplaceImport } from "./marketplace-import.js";
 import { auditRegistry, auditSummary } from "./audit.js";
 
 const program = new Command();
-program.name("orchill").description("Find and selectively install AI agent skills.").version("0.1.0");
+program.name("orchill").description("Find and selectively install AI agent skills.").version("0.1.1");
 const registryOption = (cmd: Command) => cmd.option("-r, --registry <path>", "Path to a skills.json registry");
 
 async function getRegistry(registryPath?: string) {

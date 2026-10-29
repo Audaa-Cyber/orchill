@@ -21,6 +21,20 @@ const PROVENANCE_DIR = "provenance";
 const LICENSE_CACHE_DIR = path.join(PROVENANCE_DIR, "licenses");
 const MAX_HISTORY_DEPTH = 500;
 
+// Verified manual mappings for bundled skills whose upstream directory was
+// renamed (import used a release-branch name or a subproject path that no
+// longer matches the bundled id). Each entry was confirmed by comparing the
+// bundled SKILL.md normalized SHA-256 against the upstream file.
+const UPSTREAM_DIR_OVERRIDES = {
+  "vercel-react-best-practices": { dir: "skills/react-best-practices" },
+  "vercel-react-native-skills": { dir: "skills/react-native-skills" },
+  "vercel-react-view-transitions": { dir: "skills/react-view-transitions" },
+  "vercel-composition-patterns": { dir: "skills/composition-patterns" },
+  "design-taste-frontend": { repo: "Leonxlnx/taste-skill", dir: "skills/taste-skill" },
+  "tinybird": { dir: "skills/tinybird-best-practices" },
+  "better-auth-best-practices": { dir: "better-auth/best-practices" },
+};
+
 const normalize = (buffer) =>
   Buffer.from(buffer.toString("utf8").replace(/\r\n/g, "\n").replace(/^\uFEFF/, ""), "utf8");
 const nsha = (buffer) => createHash("sha256").update(normalize(buffer)).digest("hex");
@@ -110,10 +124,16 @@ async function hashManifest(gitDir, commit, prefix) {
   });
 }
 
+function gitBuffer(args, cwd, timeoutMs = 600_000) {
+  return spawnSync("git", args, { cwd, encoding: "buffer", timeout: timeoutMs, windowsHide: true, maxBuffer: 256 * 1024 * 1024 });
+}
+
 async function catBlob(gitDir, rev, filePath) {
-  const r = git(["cat-file", "blob", `${rev}:${filePath}`], gitDir, 120_000);
-  if (!gitOk(r)) return null;
-  return Buffer.from(r.stdout, "binary");
+  const r = gitBuffer(["cat-file", "blob", `${rev}:${filePath}`], gitDir, 120_000);
+  if (r.status !== 0) return null;
+  // Keep the exact blob bytes: re-encoding through UTF-8 text would corrupt
+  // non-ASCII content and silently break hash comparisons.
+  return Buffer.isBuffer(r.stdout) ? r.stdout : Buffer.from(r.stdout || "");
 }
 
 async function main() {
@@ -144,9 +164,22 @@ async function main() {
       record.headSha = gitText(rev);
     }
     if (!haveClone) {
-      await rm(dir, { recursive: true, force: true });
-      const shallow = git(["clone", "--quiet", "--depth", "1", url, dir]);
-      if (!gitOk(shallow)) { record.status = "clone-failed"; record.error = shallow.stderr?.trim().split("\n")[0]; record.skills = repoSkills.map(s => ({ id: s.id, status: "blocked-clone-failed" })); continue; }
+      // Windows: transient EBUSY locks (indexer/AV) can break directory removal; retry.
+      for (let attempt = 0; attempt < 3; attempt++) {
+        try { await rm(dir, { recursive: true, force: true, maxRetries: 5, retryDelay: 1500 }); break; }
+        catch (error) {
+          if (attempt === 2) throw error;
+          record.rmRetryError = String(error).split("\n")[0];
+          await new Promise(r => setTimeout(r, 2000));
+        }
+      }
+      const shallow = git(["-c", "core.longpaths=true", "clone", "--quiet", "--depth", "1", "--filter=blob:none", url, dir], null, 1_200_000);
+      if (!gitOk(shallow)) {
+        await rm(dir, { recursive: true, force: true, maxRetries: 5, retryDelay: 1500 }).catch(() => {});
+        // One retry: clone timeouts are usually transient network hiccups.
+        const retried = git(["-c", "core.longpaths=true", "clone", "--quiet", "--depth", "1", "--filter=blob:none", url, dir], null, 1_200_000);
+        if (!gitOk(retried)) { record.status = "clone-failed"; record.error = retried.stderr?.trim().split("\n")[0]; record.skills = repoSkills.map(s => ({ id: s.id, status: "blocked-clone-failed" })); continue; }
+      }
       record.headSha = gitText(git(["rev-parse", "HEAD"], dir));
     }
     record.branch = gitText(git(["rev-parse", "--abbrev-ref", "HEAD"], dir));
@@ -174,21 +207,54 @@ async function main() {
       const row = { id: skill.id, kind: skill.kind, status: "unknown" };
       record.skills.push(row);
 
-      // Find candidate upstream dirs by exact or case-insensitive basename.
-      let candidates = upstreamDirs.filter(d => d.parentId === skill.id);
-      if (candidates.length === 0) {
-        const lower = skill.id.toLowerCase();
-        const ci = upstreamDirs.filter(d => d.parentId.toLowerCase() === lower);
-        candidates = ci;
-        if (ci.length > 0) row.matchedBy = "case-insensitive-dirname";
-      }
-      if (candidates.length === 0) { row.status = "upstream-path-not-found"; continue; }
-
-      // Deduplicate identical-content candidates.
       const localPath = path.join("skills", skill.category.toLowerCase().normalize("NFKD").replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""), skill.id);
       const localSkillMd = path.join(localPath, "SKILL.md");
       if (!(await exists(localSkillMd))) { row.status = "bundled-payload-missing"; continue; }
       row.bundledSkilMdHash = nsha(await readFile(localSkillMd));
+
+      // Find candidate upstream dirs by exact or case-insensitive basename.
+      let candidates = upstreamDirs.filter(d => d.parentId === skill.id);
+      const findAliasCandidates = async () => {
+        // Some upstreams name skill directories differently from the bundled ID
+        // (the registry ID is derived from the Skills CLI command, not the folder).
+        // Fall back to identifying the upstream directory whose SKILL.md content
+        // is byte-identical to the bundled copy.
+        const matched = [];
+        for (const cand of upstreamDirs) {
+          const abs = path.join(dir, cand.fileRel);
+          let head;
+          if (await exists(abs)) head = nsha(await readFile(abs));
+          else {
+            const blob = await catBlob(dir, record.headSha, cand.fileRel);
+            if (!blob) continue;
+            head = nsha(blob);
+          }
+          if (head === row.bundledSkilMdHash) matched.push(cand);
+        }
+        return matched;
+      };
+      // Verified manual mapping takes precedence; the bundled payload alread
+      // matched the overridden upstream path byte-for-byte during review.
+      const override = UPSTREAM_DIR_OVERRIDES[skill.id] ?? UPSTREAM_DIR_OVERRIDES[`${repo}#${skill.id}`];
+      if (override?.dir) {
+        const overridden = await (async () => {
+          const parent = path.dirname(override.dir);
+          const fileRel = `${override.dir}/SKILL.md`;
+          if (override.repo && override.repo !== repo) return [];
+          if (await exists(path.join(dir, fileRel))) return [{ dirRel: override.dir, parentId: path.basename(override.dir), fileRel }];
+          const blobAtHead = await catBlob(dir, record.headSha, fileRel);
+          if (blobAtHead) return [{ dirRel: override.dir, parentId: path.basename(override.dir), fileRel }];
+          return [];
+        })();
+        if (overridden.length > 0) { candidates = overridden; row.matchedBy = "verified-manual-override"; }
+        else { row.status = "upstream-path-not-found"; row.candidates = [override.dir]; continue; }
+      }
+      if (candidates.length === 0) {
+        const alias = await findAliasCandidates();
+        if (alias.length === 0) { row.status = "upstream-path-not-found"; continue; }
+        candidates = alias;
+        row.matchedBy = "content-hash-scan";
+      }
 
       let verifiedAt = null; // revision whose SKILL.md matches
       let verifiedPathRel = null;
@@ -203,18 +269,40 @@ async function main() {
       }
 
       if (!verifiedAt) {
+        // Last resort: the directory-name-derived candidate history may be the
+        // wrong file entirely; scan every upstream SKILL.md against the bundle.
+        if (candidates.length === 1) {
+          const alias = await findAliasCandidates();
+          if (alias.length > 0) {
+            candidates = alias;
+            row.matchedBy = row.matchedBy ? row.matchedBy + "+content-hash-scan" : "content-hash-scan";
+            const abs = path.join(dir, alias[0].fileRel);
+            if (await exists(abs) && nsha(await readFile(abs)) === row.bundledSkilMdHash) {
+              verifiedAt = record.headSha;
+              verifiedPathRel = alias[0];
+            }
+          }
+        }
+      }
+
+      if (!verifiedAt) {
         // Walk path history on the primary candidate for a matching revision.
         const cand = candidates[0];
-        const fetched = git(["fetch", "--quiet", "--unshallow", url], dir, 900_000);
-        if (!gitOk(fetched)) {
-          row.status = "history-fetch-failed";
-          row.error = fetched.stderr?.trim().split("\n")[0];
-          continue;
+        const shallow = git(["rev-parse", "--is-shallow-repository"], dir);
+        if (gitText(shallow) === "true") {
+          const fetched = git(["fetch", "--quiet", "--unshallow", url], dir, 900_000);
+          if (!gitOk(fetched)) {
+            row.status = "history-fetch-failed";
+            row.error = fetched.stderr?.trim().split("\n")[0];
+            continue;
+          }
         }
         record.fullHistoryFetched = true;
-        const revs = gitText(git(["rev-list", "-n", String(MAX_HISTORY_DEPTH), "--first-parent", record.branch, "--", cand.fileRel], dir)).split("\n").filter(Boolean);
+        // Traverse full history across branches/merges: the bundled revision may
+        // sit on a release branch that --first-parent would skip.
+        const revs = gitText(git(["rev-list", "-n", String(MAX_HISTORY_DEPTH), "--all", "--", cand.fileRel], dir)).split("\n").filter(Boolean);
         row.historyRevisionsChecked = revs.length;
-        for (const rev of revs.concat(revs.length === 0 ? [] : [])) {
+        for (const rev of revs) {
           const blob = await catBlob(dir, rev, cand.fileRel);
           if (blob && nsha(blob) === row.bundledSkilMdHash) { verifiedAt = rev; verifiedPathRel = cand; break; }
         }
@@ -267,15 +355,31 @@ async function main() {
         break;
       }
       row.licenseFilesAvailable = licenseCandidates;
+      row.rootLicenseFilesAtPinnedRev = rootLicenseAtRev;
       if (licenseText) {
         const blobDir = path.join(LICENSE_CACHE_DIR, safeName(repo));
         await mkdir(blobDir, { recursive: true });
-        const outName = path.basename(licenseFileRel);
+        // Skill-scoped licenses are named per skill so concurrent skills cannot
+        // overwrite each other's captured evidence within the same repository.
+        const outName = licenseSource === "skill" ? `${skill.id}-${path.basename(licenseFileRel)}` : path.basename(licenseFileRel);
         await writeFile(path.join(blobDir, outName), licenseText);
         row.licenseEvidencePath = `provenance/licenses/${safeName(repo)}/${outName}`;
         row.licenseEvidenceUrl = `${REPO_HOST}/${repo}/blob/${verifiedAt}/${licenseFileRel}`;
         row.licenseSha256 = nsha(licenseText);
         row.licenseOrigin = `${licenseSource} license file`;
+        row.licenseEvidenceUrlsAll = [row.licenseEvidenceUrl];
+        // Repositories with several root license files (e.g. Microsoft's
+        // LICENSE + LICENSE-CODE dual licensing) need every file captured.
+        if (licenseSource === "root") {
+          for (const extra of rootLicenseFiles.slice(1)) {
+            const buf = row.matchedAtHead
+              ? await readFile(path.join(dir, extra)).catch(async () => await catBlob(dir, verifiedAt, extra))
+              : await catBlob(dir, verifiedAt, extra);
+            if (!buf) continue;
+            await writeFile(path.join(blobDir, path.basename(extra)), buf);
+            row.licenseEvidenceUrlsAll.push(`${REPO_HOST}/${repo}/blob/${verifiedAt}/${extra}`);
+          }
+        }
       } else {
         row.licenseEvidencePath = null;
         row.licenseEvidenceUrl = null;

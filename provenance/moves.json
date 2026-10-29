@@ -1,0 +1,85 @@
+{
+  "reviewedAt": "2026-10-29",
+  "moves": [
+    {
+      "from": "skills\\backend-and-apis\\better-auth-best-practices",
+      "to": "third-party-review\\backend-and-apis\\better-auth-best-practices"
+    },
+    {
+      "from": "skills\\content-and-marketing\\content-research-writer",
+      "to": "third-party-review\\content-and-marketing\\content-research-writer"
+    },
+    {
+      "from": "skills\\cloud-and-devops\\deploy-to-vercel",
+      "to": "third-party-review\\cloud-and-devops\\deploy-to-vercel"
+    },
+    {
+      "from": "skills\\documents-and-productivity\\docx",
+      "to": "third-party-review\\documents-and-productivity\\docx"
+    },
+    {
+      "from": "skills\\ui-ux\\figma",
+      "to": "third-party-review\\ui-ux\\figma"
+    },
+    {
+      "from": "skills\\ui-ux\\figma-implement-design",
+      "to": "third-party-review\\ui-ux\\figma-implement-design"
+    },
+    {
+      "from": "skills\\agent-tooling-and-workflows\\firecrawl",
+      "to": "third-party-review\\agent-tooling-and-workflows\\firecrawl"
+    },
+    {
+      "from": "skills\\documents-and-productivity\\pdf",
+      "to": "third-party-review\\documents-and-productivity\\pdf"
+    },
+    {
+      "from": "skills\\documents-and-productivity\\pptx",
+      "to": "third-party-review\\documents-and-productivity\\pptx"
+    },
+    {
+      "from": "skills\\animation-and-motion\\remotion-best-practices",
+      "to": "third-party-review\\animation-and-motion\\remotion-best-practices"
+    },
+    {
+      "from": "skills\\backend-and-apis\\tinybird",
+      "to": "third-party-review\\backend-and-apis\\tinybird"
+    },
+    {
+      "from": "skills\\cloud-and-devops\\vercel-cli-with-tokens",
+      "to": "third-party-review\\cloud-and-devops\\vercel-cli-with-tokens"
+    },
+    {
+      "from": "skills\\react-and-frontend\\vercel-composition-patterns",
+      "to": "third-party-review\\react-and-frontend\\vercel-composition-patterns"
+    },
+    {
+      "from": "skills\\react-and-frontend\\vercel-react-best-practices",
+      "to": "third-party-review\\react-and-frontend\\vercel-react-best-practices"
+    },
+    {
+      "from": "skills\\react-and-frontend\\vercel-react-native-skills",
+      "to": "third-party-review\\react-and-frontend\\vercel-react-native-skills"
+    },
+    {
+      "from": "skills\\animation-and-motion\\vercel-react-view-transitions",
+      "to": "third-party-review\\animation-and-motion\\vercel-react-view-transitions"
+    },
+    {
+      "from": "skills\\accessibility\\web-design-guidelines",
+      "to": "third-party-review\\accessibility\\web-design-guidelines"
+    },
+    {
+      "from": "skills\\react-and-frontend\\wp-block-development",
+      "to": "third-party-review\\react-and-frontend\\wp-block-development"
+    },
+    {
+      "from": "skills\\react-and-frontend\\wp-block-themes",
+      "to": "third-party-review\\react-and-frontend\\wp-block-themes"
+    },
+    {
+      "from": "skills\\documents-and-productivity\\xlsx",
+      "to": "third-party-review\\documents-and-productivity\\xlsx"
+    }
+  ]
+}
