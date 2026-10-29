@@ -25,10 +25,10 @@ try {
   assert.ok(tarball, "npm pack must produce a tarball");
   assert.ok(packed[0]?.files.some(file => file.path === "dist/cli.js"), "tarball must include dist/cli.js");
   const packageJson = JSON.parse(await readFile(path.join(root, "package.json"), "utf8")) as { version: string; bin?: Record<string, string> };
-  assert.equal(packageJson.bin?.orchill, "./dist/cli.js", "source package must declare the orchill executable");
+  assert.equal(packageJson.bin?.orchill, "dist/cli.js", "source package must use npm-normalized executable path to avoid publish-time correction");
   run(["install", "--prefix", installDir, "--no-audit", "--no-fund", path.join(packDir, tarball)], root);
   const installedPackage = JSON.parse(await readFile(path.join(installDir, "node_modules", "orchill", "package.json"), "utf8")) as { bin?: Record<string, string> };
-  assert.ok(["./dist/cli.js", "dist/cli.js"].includes(installedPackage.bin?.orchill ?? ""), "packed package metadata must preserve a valid executable mapping");
+  assert.equal(installedPackage.bin?.orchill, "dist/cli.js", "packed package metadata must preserve the normalized executable mapping");
   const executable = path.join(installDir, "node_modules", ".bin", process.platform === "win32" ? "orchill.cmd" : "orchill");
   const smoke = spawnSync(executable, ["--version"], { cwd: temp, encoding: "utf8", timeout: 15_000, windowsHide: true, shell: process.platform === "win32" });
   assert.equal(smoke.status, 0, `installed orchill --version failed: ${smoke.stderr || smoke.stdout}`);
