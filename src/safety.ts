@@ -7,12 +7,13 @@ export function safeRelativePath(value: string, label: string): string {
     value.includes("\0") ||
     path.isAbsolute(value) ||
     value.startsWith("\\") ||
-    /^[a-zA-Z]:[\\/]/.test(value)
+    /^[a-zA-Z]:/.test(value)
   ) throw new Error(`${label} must be a safe relative path.`);
-  // Treat both slash styles as separators so a registry path is checked
-  // consistently on Windows, macOS, and Linux.
-  const normalized = path.normalize(value.replace(/\\/g, "/"));
-  if (normalized === ".." || normalized.startsWith(`..${path.sep}`) || normalized.split(path.sep).includes("..")) {
+
+  // Registry paths use POSIX separators on every OS. Normalize with
+  // path.posix so callers and tests get stable results on Windows too.
+  const normalized = path.posix.normalize(value.replace(/\\/g, "/"));
+  if (normalized === ".." || normalized.startsWith("../") || normalized.split("/").includes("..")) {
     throw new Error(`${label} cannot escape its parent directory: ${value}`);
   }
   return normalized === "." ? "." : normalized;

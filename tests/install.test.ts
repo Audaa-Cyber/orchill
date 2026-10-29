@@ -87,7 +87,10 @@ test("Git sparse checkout installs only the selected skill tree", async () => {
       skillPath: "skills/demo"
     };
     const installed = await installSkill(skill, registryRoot, "project", cwd);
-    assert.equal(await readFile(path.join(installed, "SKILL.md"), "utf8"), "# Demo from Git\n");
+    // Git may check out LF-authored text as CRLF on Windows (core.autocrlf).
+    // Compare logical text content rather than platform-specific line endings.
+    const installedSkillText = (await readFile(path.join(installed, "SKILL.md"), "utf8")).replace(/\r\n/g, "\n");
+    assert.equal(installedSkillText, "# Demo from Git\n");
     assert.equal(await readFile(path.join(installed, "references", "guide.md"), "utf8"), "Nested file\n");
     await assert.rejects(() => readFile(path.join(cwd, ".agents", "skills", "unrelated", "SKILL.md"), "utf8"));
   } finally {

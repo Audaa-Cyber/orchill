@@ -653,3 +653,12 @@ The local container cannot reach GitHub due to network/DNS restrictions, so loca
 ### Still intentionally out of scope
 
 No hosted MCP integration, auto-install based on natural language, public npm release, lockfile, dependency resolver, update/uninstall commands, or full security audit has been implemented. The project is a usable CLI MVP candidate, not a security-certified or publicly released package.
+
+
+## 23. Windows test portability fixes — 2026-10-29
+
+- **Context:** The project owner ran the test suite on Windows and reported 2 failures out of 13. The Git sparse-checkout test saw CRLF instead of LF, and the safe relative-path test received Windows backslashes instead of the registry's expected slash format.
+- **Decision:** Treat registry skill paths as POSIX-style paths on every operating system. Normalize them with `path.posix.normalize` after converting backslashes, and reject drive-prefixed paths. For the sparse-checkout assertion, normalize CRLF to LF because Git's `core.autocrlf` may change working-tree line endings on Windows.
+- **Files changed:** `src/safety.ts`, `tests/install.test.ts`.
+- **Status:** Fixes prepared on branch `fix/windows-cross-platform-tests`; not yet CI-verified.
+- **Verification:** Not run in this session. GitHub Actions must verify Windows and Linux behavior before merge.
