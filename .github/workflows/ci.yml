@@ -40,7 +40,7 @@ jobs:
           npm pack --pack-destination "$RUNNER_TEMP"
           npm install --global "$RUNNER_TEMP"/orchill-*.tgz
           orchill --help
-          orchill list --all
+          node --input-type=module -e 'import {spawnSync} from "node:child_process"; const meta={_meta:{"io.modelcontextprotocol/protocolVersion":"2026-07-28","io.modelcontextprotocol/clientCapabilities":{}}}; const input=JSON.stringify({jsonrpc:"2.0",id:1,method:"server/discover",params:meta})+"\\n"+JSON.stringify({jsonrpc:"2.0",id:2,method:"tools/list",params:meta})+"\\n"; const r=spawnSync("orchill",["mcp"],{input,encoding:"utf8"}); if(r.status!==0) throw new Error(r.stderr||"MCP server failed"); const lines=r.stdout.trim().split(/\\r?\\n/).map(JSON.parse); if(lines[0].result?.supportedVersions?.[0]!=="2026-07-28" || !lines[1].result?.tools?.some(t=>t.name==="orchill_add")) throw new Error("MCP discovery/tools smoke test failed");'\n          orchill list --all
           orchill list
           set +e
           orchill audit --json > "$RUNNER_TEMP/orchill-audit.json"
