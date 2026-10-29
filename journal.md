@@ -712,3 +712,8 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Remaining external gates:** Verify npm package-name availability and ownership; configure npm trusted publishing for this repository and workflow; confirm the release version/tag; then verify a clean installation and provenance after publication. These account-side steps have not been completed from GitHub.
 - **Validation boundary:** Rebased PR CI passed for the merged code. The package has not been published to npm, and this entry does not claim a full security audit or Windows end-to-end test of the external Skills CLI importer.
 
+## 30. npm package identity metadata — 2026-10-29
+
+- **Change:** Added the canonical GitHub repository URL, README homepage, and issue tracker to `package.json` to improve package identity and satisfy npm trusted-publishing repository matching requirements.
+- **Validation:** Fresh CI must pass on this change before merge. npm package-name availability and npm account trusted-publisher configuration remain externally unverified.
+
