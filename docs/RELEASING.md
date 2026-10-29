@@ -12,11 +12,18 @@ This checklist is intentionally conservative. A green CI run is necessary, but n
 - [ ] Check the exact npm package name `orchill` for availability, ownership, and possible naming conflicts. Do not assume availability from the repository name.
 - [x] Add the canonical GitHub repository URL to `package.json`; npm trusted publishing requires repository metadata to match the source repository.
 - [ ] Confirm the package includes the compiled CLI, registry, documentation, example skill, and license, and excludes source-only files or secrets not intended for distribution.
-- [ ] Run typecheck, tests, build, CLI smoke tests, and a real `npm pack` installation test against the exact release commit.
+- [ ] Run `npm run release:preflight` against the exact release commit. It runs typecheck, tests, build, packed-package smoke test, and the strict per-skill redistribution approval gate.
+- [ ] Inspect `npm pack --dry-run` output and confirm no unintended files or unapproved third-party payloads are included.
 - [ ] Choose the first public version deliberately. The current development version is `0.1.0`; do not tag a release until the owner approves the version.
 - [ ] Configure npm trusted publishing for this GitHub repository and the `Publish to npm` workflow. The workflow uses GitHub OIDC and npm provenance; it intentionally does not use a long-lived npm token secret.
 - [ ] Create and publish a GitHub Release with a tag exactly matching the package version, such as `v0.1.0`, only after the release commit is approved.
 - [ ] Verify the published npm page, provenance, install command, and a clean-machine smoke test after publication.
+
+## Release preflight command
+
+Run `npm ci` and then `npm run release:preflight` on the exact commit intended for release. The command exits non-zero if any required check fails, including if even one registry skill lacks complete evidence-backed redistribution approval. Do not bypass this failure to publish. The current approval ledger is empty, so the strict gate is expected to block publication until the real upstream/license review is complete.
+
+The workflow repeats this gate on the release tag before `npm publish`. It also uses `npm ci` so the release build follows the committed lockfile.
 
 ## Publishing flow
 
