@@ -24,7 +24,7 @@ try {
   const tarball = packed[0]?.filename;
   assert.ok(tarball, "npm pack must produce a tarball");
   assert.ok(packed[0]?.files.some(file => file.path === "dist/cli.js"), "tarball must include dist/cli.js");
-  const packageJson = JSON.parse(await readFile(path.join(root, "package.json"), "utf8")) as { bin?: Record<string, string> };
+  const packageJson = JSON.parse(await readFile(path.join(root, "package.json"), "utf8")) as { version: string; bin?: Record<string, string> };
   assert.equal(packageJson.bin?.orchill, "./dist/cli.js", "source package must declare the orchill executable");
   run(["install", "--prefix", installDir, "--no-audit", "--no-fund", path.join(packDir, tarball)], root);
   const installedPackage = JSON.parse(await readFile(path.join(installDir, "node_modules", "orchill", "package.json"), "utf8")) as { bin?: Record<string, string> };
@@ -32,7 +32,7 @@ try {
   const executable = path.join(installDir, "node_modules", ".bin", process.platform === "win32" ? "orchill.cmd" : "orchill");
   const smoke = spawnSync(executable, ["--version"], { cwd: temp, encoding: "utf8", timeout: 15_000, windowsHide: true, shell: process.platform === "win32" });
   assert.equal(smoke.status, 0, `installed orchill --version failed: ${smoke.stderr || smoke.stdout}`);
-  assert.match(smoke.stdout.trim(), /^0\.1\.0$/, "installed executable must print the package version");
+  assert.equal(smoke.stdout.trim(), packageJson.version, "installed executable must print the package version");
   console.log("Packed npm tarball installs cleanly and exposes a working orchill executable.");
 } finally {
   await rm(temp, { recursive: true, force: true });
