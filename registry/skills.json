@@ -1425,7 +1425,8 @@
         "create",
         "datadriven",
         "aspnetcore"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "deep-research",
