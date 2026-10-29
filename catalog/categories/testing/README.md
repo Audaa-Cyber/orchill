@@ -18,7 +18,7 @@ Generated from `registry/skills.json`. Local payloads live under `skills/<catego
 | Generate Testability Wrappers | `generate-testability-wrappers` | local | [`skills/testing/generate-testability-wrappers`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/generate-testability-wrappers) | MIT |
 | Grade Tests | `grade-tests` | local | [`skills/testing/grade-tests`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/grade-tests) | MIT |
 | Playwright Skill | `playwright-skill` | local | [`skills/testing/playwright-skill`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/playwright-skill) | MIT |
-| Property Based Testing | `property-based-testing` | local | [`skills/testing/property-based-testing`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/property-based-testing) | Unknown |
+| Property Based Testing | `property-based-testing` | local | [`skills/testing/property-based-testing`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/property-based-testing) | CC-BY-SA-4.0 |
 | Run Tests | `run-tests` | local | [`skills/testing/run-tests`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/run-tests) | MIT |
 | Scaffold Dotnet Test Project | `scaffold-dotnet-test-project` | local | [`skills/testing/scaffold-dotnet-test-project`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/scaffold-dotnet-test-project) | MIT |
 | Systematic Debugging | `systematic-debugging` | local | [`skills/testing/systematic-debugging`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/testing/systematic-debugging) | MIT |
