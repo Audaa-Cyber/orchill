@@ -1835,7 +1835,7 @@
         "path": "../skills/backend-and-apis/sanity-best-practices"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from sanity-io/agent-toolkit; command: npx skills add sanity-io/agent-toolkit@sanity-best-practices. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from sanity-io/agent-toolkit; command: npx skills add sanity-io/agent-toolkit@sanity-best-practices. Verify source, pin, and license before publishing. Verified 2026-10-29 against sanity-io/agent-toolkit at commit 3ed3a143f8d3413faa7790ac0b2274fd3a8a6320; all 26 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/sanity-io/agent-toolkit/blob/3ed3a143f8d3413faa7790ac0b2274fd3a8a6320/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -1846,7 +1846,8 @@
         "backend-apis",
         "sanity",
         "practices"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "supabase-postgres-best-practices",
@@ -2486,7 +2487,7 @@
         "path": "../skills/cloud-and-devops/terraform-skill"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from antonbabenko/terraform-skill; command: npx skills add antonbabenko/terraform-skill@terraform-skill. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from antonbabenko/terraform-skill; command: npx skills add antonbabenko/terraform-skill@terraform-skill. Verify source, pin, and license before publishing. Verified 2026-10-29 against antonbabenko/terraform-skill at commit 9c1e92d962a5407c227e5566416e962a2f057240; all 9 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/antonbabenko/terraform-skill/blob/9c1e92d962a5407c227e5566416e962a2f057240/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -4447,7 +4448,7 @@
         "path": "../skills/seo/seo-aeo-best-practices"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from sanity-io/agent-toolkit; command: npx skills add sanity-io/agent-toolkit@seo-aeo-best-practices. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from sanity-io/agent-toolkit; command: npx skills add sanity-io/agent-toolkit@seo-aeo-best-practices. Verify source, pin, and license before publishing. Verified 2026-10-29 against sanity-io/agent-toolkit at commit 3ed3a143f8d3413faa7790ac0b2274fd3a8a6320; all 5 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/sanity-io/agent-toolkit/blob/3ed3a143f8d3413faa7790ac0b2274fd3a8a6320/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -4458,7 +4459,8 @@
         "seo",
         "aeo",
         "practices"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "seo-audit",
