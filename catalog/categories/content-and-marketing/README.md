@@ -24,4 +24,4 @@ Generated from `registry/skills.json`. Local payloads live under `skills/<catego
 | Product Marketing | `product-marketing` | local | [`skills/content-and-marketing/product-marketing`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/content-and-marketing/product-marketing) | MIT |
 | Slack GIF Creator | `slack-gif-creator` | git | [upstream](https://github.com/anthropics/skills.git) | Apache-2.0 |
 | Social | `social` | local | [`skills/content-and-marketing/social`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/content-and-marketing/social) | MIT |
-| X Article Publisher | `x-article-publisher` | local | [`skills/content-and-marketing/x-article-publisher`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/content-and-marketing/x-article-publisher) | Unknown |
+| X Article Publisher | `x-article-publisher` | local | [`skills/content-and-marketing/x-article-publisher`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/content-and-marketing/x-article-publisher) | MIT |
