@@ -3,7 +3,7 @@ import { Command } from "commander";
 import path from "node:path";
 import { access, copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import { loadRegistry, defaultRegistryPath } from "./registry.js";
-import { installSkill, targetRoot } from "./install.js";
+import { installSkill, targetRoot, uninstallSkill, verifySkillInstallation } from "./install.js";
 import type { Skill } from "./types.js";
 
 const program = new Command();
@@ -100,6 +100,37 @@ registryOption(program.command("install-category <category>").description("Previ
       }
     }
     if (failures) process.exitCode = 1;
+  });
+
+registryOption(program.command("verify <id>").description("Verify an installed skill and its Orchill marker"))
+  .option("-t, --target <target>", "project, agents, claude, or codex", "project")
+  .option("-C, --cwd <path>", "Project directory", process.cwd())
+  .action(async (id: string, opts: {registry?: string; target: string; cwd: string}) => {
+    const result = await verifySkillInstallation(id, opts.target, path.resolve(opts.cwd));
+    console.log(`Skill: ${result.skillId}\nDestination: ${result.destination}\nManaged by Orchill: ${result.managed ? "yes" : "no"}\nSKILL.md present: ${result.hasSkillFile ? "yes" : "no"}`);
+    if (result.problems.length) {
+      for (const problem of result.problems) console.error(`- ${problem}`);
+      process.exitCode = 1;
+    } else console.log("Verification passed.");
+  });
+registryOption(program.command("uninstall <id>").description("Remove a skill installed and marked by Orchill"))
+  .option("-t, --target <target>", "project, agents, claude, or codex", "project")
+  .option("-C, --cwd <path>", "Project directory", process.cwd())
+  .option("--yes", "Confirm removal after reviewing the destination")
+  .action(async (id: string, opts: {registry?: string; target: string; cwd: string; yes?: boolean}) => {
+    const checked = await verifySkillInstallation(id, opts.target, path.resolve(opts.cwd));
+    console.log(`Skill: ${id}\nDestination: ${checked.destination}\nManaged by Orchill: ${checked.managed ? "yes" : "no"}`);
+    if (!checked.managed) throw new Error("Refusing to uninstall a directory without a valid Orchill marker.");
+    if (!opts.yes) {
+      if (!process.stdin.isTTY) throw new Error("Non-interactive uninstall requires --yes after reviewing the destination.");
+      const readline = await import("node:readline/promises");
+      const rl = readline.createInterface({input: process.stdin, output: process.stdout});
+      const answer = await rl.question("Remove this skill directory? [y/N] ");
+      rl.close();
+      if (!/^y(es)?$/i.test(answer.trim())) { console.log("Cancelled."); return; }
+    }
+    const removed = await uninstallSkill(id, opts.target, path.resolve(opts.cwd));
+    console.log(`Uninstalled: ${removed}`);
   });
 program.command("targets").description("Show supported installation targets").action(() => {
   console.log("project  .agents/skills (recommended cross-agent project location)\nagents   .agents/skills\nclaude   .claude/skills\ncodex    .agents/skills (Codex project skills)");

@@ -1,4 +1,4 @@
-import { cp, lstat, mkdtemp, mkdir, readdir, realpath, rename, rm, stat } from "node:fs/promises";
+import { cp, lstat, mkdtemp, mkdir, readFile, readdir, realpath, rename, rm, stat, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { spawn } from "node:child_process";
@@ -84,6 +84,14 @@ export async function installSkill(skill: Skill, registryRoot: string, target: s
     const sourceInfo = await stat(source);
     if (!sourceInfo.isDirectory()) throw new Error(`Skill path is not a directory: ${source}`);
     await copyTree(source, staged);
+    const markerPath = path.join(staged, INSTALL_MARKER);
+    try {
+      await lstat(markerPath);
+      throw new Error(`Source skill reserves the protected file ${INSTALL_MARKER}; refusing to overwrite it.`);
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+    }
+    await writeFile(markerPath, JSON.stringify({ version: 1, skillId: id, target }, null, 2) + "\n", { flag: "wx" });
 
     // Recheck immediately before changing the live destination.
     try {
@@ -117,4 +125,92 @@ export async function installSkill(skill: Skill, registryRoot: string, target: s
     await rm(stageParent, { recursive: true, force: true }).catch(() => undefined);
     if (temporary) await rm(temporary, { recursive: true, force: true }).catch(() => undefined);
   }
+}
+
+
+const INSTALL_MARKER = ".orchill-install.json";
+
+interface InstallMarker {
+  version: 1;
+  skillId: string;
+  target: string;
+}
+
+export interface SkillVerification {
+  skillId: string;
+  destination: string;
+  installed: boolean;
+  managed: boolean;
+  hasSkillFile: boolean;
+  problems: string[];
+}
+
+function installDestination(id: string, target: string, cwd: string): string {
+  const safeId = safeRelativePath(id, "Skill id");
+  if (safeId !== id) throw new Error("Skill id must be a single directory name.");
+  return path.join(targetRoot(target, cwd), safeId);
+}
+
+async function readInstallMarker(destination: string, id: string): Promise<InstallMarker | undefined> {
+  const markerPath = path.join(destination, INSTALL_MARKER);
+  try {
+    const markerInfo = await lstat(markerPath);
+    if (!markerInfo.isFile() || markerInfo.isSymbolicLink()) return undefined;
+    const parsed: unknown = JSON.parse(await readFile(markerPath, "utf8"));
+    if (!parsed || typeof parsed !== "object") return undefined;
+    const marker = parsed as Partial<InstallMarker>;
+    if (marker.version !== 1 || marker.skillId !== id || typeof marker.target !== "string") return undefined;
+    return marker as InstallMarker;
+  } catch {
+    return undefined;
+  }
+}
+
+export async function verifySkillInstallation(id: string, target: string, cwd: string): Promise<SkillVerification> {
+  const projectRoot = await realpath(cwd);
+  const destination = installDestination(id, target, projectRoot);
+  const problems: string[] = [];
+  let installed = false;
+  let managed = false;
+  let hasSkillFile = false;
+
+  try {
+    const info = await lstat(destination);
+    if (info.isSymbolicLink() || !info.isDirectory()) {
+      problems.push("Installation destination is not a regular directory.");
+    } else {
+      installed = true;
+      managed = Boolean(await readInstallMarker(destination, id));
+      if (!managed) problems.push("Missing or invalid Orchill installation marker; this directory is unmanaged.");
+      try {
+        const skillFile = await lstat(path.join(destination, "SKILL.md"));
+        hasSkillFile = skillFile.isFile() && !skillFile.isSymbolicLink();
+      } catch {
+        hasSkillFile = false;
+      }
+      if (!hasSkillFile) problems.push("SKILL.md is missing or is not a regular file.");
+    }
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") {
+      problems.push("Skill is not installed.");
+    } else {
+      throw error;
+    }
+  }
+
+  return { skillId: id, destination, installed, managed, hasSkillFile, problems };
+}
+
+export async function uninstallSkill(id: string, target: string, cwd: string): Promise<string> {
+  const projectRoot = await realpath(cwd);
+  const destination = installDestination(id, target, projectRoot);
+  const root = targetRoot(target, projectRoot);
+  await ensureNoSymlinkParents(root, destination);
+  const checked = await verifySkillInstallation(id, target, projectRoot);
+  if (!checked.installed) throw new Error(`Cannot uninstall "${id}": skill is not installed.`);
+  if (!checked.managed) throw new Error(`Refusing to uninstall "${id}": no valid Orchill installation marker.`);
+  const info = await lstat(destination);
+  if (info.isSymbolicLink() || !info.isDirectory()) throw new Error(`Refusing to remove non-directory installation: ${destination}`);
+  await rm(destination, { recursive: true, force: false });
+  return destination;
 }

@@ -687,3 +687,12 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Safety:** The workflow does not publish on ordinary pushes and is deliberately blocked until the Apache-2.0 license change is merged. npm trusted publishing must be configured in the npm account separately.
 - **Verification:** Workflow and docs are committed to this branch. The release workflow has not been executed against a published release; no npm publication is claimed. CI must pass on the PR head before merge.
 
+## 27. Install lifecycle safety — 2026-10-29
+
+- **Decision:** Move forward on lifecycle management independently of the paused marketplace importer work.
+- **Implemented on `feat/install-lifecycle`:** New installs receive a `.orchill-install.json` marker. Added `orchill verify <id>` to check the installation directory, marker, and `SKILL.md`; added `orchill uninstall <id>` with interactive confirmation and a strict marker requirement so manually created or legacy directories are not removed by mistake.
+- **Tests added:** Verify/uninstall a marked installation and confirm that uninstall refuses an unmanaged directory without deleting its contents.
+- **Documentation:** README now documents the commands and clarifies that structural verification is not a cryptographic integrity or malware scan.
+- **Validation update:** The first CI attempt exposed missing exported lifecycle functions in `src/install.ts`; those functions and marker creation are now implemented, and the workflow is being expanded to smoke-test verify/uninstall. A fresh green CI run is still required. A local Windows test run has not been observed passing. Existing installs made before the marker feature are treated as unmanaged and cannot be removed by the new command until deliberately reinstalled or migrated.
+- **Next:** Check CI, fix any type/test failures, then consider lockfile-based reproducibility and update workflows.
+
