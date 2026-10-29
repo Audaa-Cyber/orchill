@@ -67,7 +67,7 @@ function validateSkill(value: unknown): asserts value is Skill {
   }
   requireNonEmptyString(s.skillPath, `Skill ${s.id}: skillPath`);
   if (s.skillPath.includes("\\") || s.skillPath.split("/").includes("..")) {
-    throw new Error(`Skill ${s.id}: skillPath must use forward slashes and cannot contain parent-directory segments.`);
+    throw new Error(`Skill ${s.id}: invalid skillPath; use forward slashes and no parent-directory segments.`);
   }
   try {
     safeRelativePath(s.skillPath, `Skill ${s.id} path`);
