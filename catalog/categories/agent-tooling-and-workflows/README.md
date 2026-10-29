@@ -14,7 +14,7 @@ Generated from `registry/skills.json`. Local payloads live under `skills/<catego
 | Firecrawl | `firecrawl` | local | [`skills/agent-tooling-and-workflows/firecrawl`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/firecrawl) | Unknown |
 | MCP Builder | `mcp-builder` | git | [upstream](https://github.com/anthropics/skills.git) | Apache-2.0 |
 | Recursive Decomposition | `recursive-decomposition` | local | [`skills/agent-tooling-and-workflows/recursive-decomposition`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/recursive-decomposition) | MIT |
-| Skill Builder | `skill-builder` | local | [`skills/agent-tooling-and-workflows/skill-builder`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/skill-builder) | Unknown |
+| Skill Builder | `skill-builder` | local | [`skills/agent-tooling-and-workflows/skill-builder`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/skill-builder) | MIT |
 | Skill Creator | `skill-creator` | git | [upstream](https://github.com/anthropics/skills.git) | Apache-2.0 |
 | Subagent Driven Development | `subagent-driven-development` | local | [`skills/agent-tooling-and-workflows/subagent-driven-development`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/subagent-driven-development) | MIT |
 | Troubleshoot Binlog Mcp | `troubleshoot-binlog-mcp` | local | [`skills/agent-tooling-and-workflows/troubleshoot-binlog-mcp`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/troubleshoot-binlog-mcp) | MIT |
