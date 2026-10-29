@@ -696,3 +696,11 @@ No hosted MCP integration, auto-install based on natural language, public npm re
 - **Validation update:** The first CI attempt exposed missing exported lifecycle functions in `src/install.ts`; those functions and marker creation are now implemented, and the workflow is being expanded to smoke-test verify/uninstall. A fresh green CI run is still required. A local Windows test run has not been observed passing. Existing installs made before the marker feature are treated as unmanaged and cannot be removed by the new command until deliberately reinstalled or migrated.
 - **Next:** Check CI, fix any type/test failures, then consider lockfile-based reproducibility and update workflows.
 
+## 28. Bulk import from Skills CLI commands — 2026-10-29
+
+- **Context:** The owner has many skills available through commands such as npx skills add Leonxlnx/taste-skill@design-taste-frontend and wants to avoid repeated agent/scope prompts.
+- **Decision:** Add an Orchill bulk-import command that parses a command list, runs the upstream Skills CLI with non-interactive flags in an isolated temporary project, stages skill folders, prepares registry metadata, and reports per-line failures. It does not alter the canonical registry or execute skill scripts.
+- **Files:** src/bulk-import.ts, tests/bulk-import.test.ts, src/cli.ts, package.json, README.md, CI workflow.
+- **Safety:** Only supported npx skills add syntax is accepted; source URLs are validated; imports are staged, symlinks rejected, and existing output directories are not overwritten. Metadata and license still require review.
+- **Verification:** GitHub Actions run 48 passed on commit `8eaef9e77d54a595ffc553b8d8b72ef52073ae86`. Typecheck, parser tests, build, CLI help smoke tests, existing CLI smoke tests, and packed-package smoke checks all passed. This verifies the Linux CI path; a real Skills CLI download and Windows end-to-end bulk import still need a user-run smoke test.
+

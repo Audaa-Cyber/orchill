@@ -5,6 +5,7 @@ import { access, copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import { loadRegistry, defaultRegistryPath } from "./registry.js";
 import { installSkill, targetRoot, uninstallSkill, verifySkillInstallation } from "./install.js";
 import type { Skill } from "./types.js";
+import { runBulkImport } from "./bulk-import.js";
 
 const program = new Command();
 program.name("orchill").description("Find and selectively install AI agent skills.").version("0.1.0");
@@ -131,6 +132,13 @@ registryOption(program.command("uninstall <id>").description("Remove a skill ins
     }
     const removed = await uninstallSkill(id, opts.target, path.resolve(opts.cwd));
     console.log(`Uninstalled: ${removed}`);
+  });
+program.command("import-commands <file>").description("Bulk-import npx skills add commands into a reviewable staging bundle")
+  .option("-o, --output <directory>", "Output directory", ".orchill-import")
+  .option("-c, --category <category>", "Imported skill category", "Imported — review required")
+  .option("--dry-run", "Parse and preview without downloading")
+  .action(async (file: string, opts: {output: string; category: string; dryRun?: boolean}) => {
+    await runBulkImport(file, opts.output, opts.category, Boolean(opts.dryRun));
   });
 program.command("targets").description("Show supported installation targets").action(() => {
   console.log("project  .agents/skills (recommended cross-agent project location)\nagents   .agents/skills\nclaude   .claude/skills\ncodex    .agents/skills (Codex project skills)");
