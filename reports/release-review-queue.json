@@ -5,7 +5,7 @@
     "critical": 39,
     "high": 170,
     "medium": 12,
-    "completeEvidence": 168,
+    "completeEvidence": 171,
     "sourceGroups": 55
   },
   "groups": [
@@ -3744,24 +3744,14 @@
       "sourceType": "local",
       "sourceGroup": "github.com/resend/resend-skills",
       "declaredLicense": "MIT",
-      "approvalRecordPresent": false,
-      "redistributionAllowed": null,
-      "upstreamUrl": "",
-      "upstreamRevision": "",
-      "licenseEvidenceUrl": "",
-      "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
-        "reviewed license",
-        "license evidence URL",
-        "explicit redistribution permission",
-        "review date",
-        "reviewer",
-        "review notes"
-      ],
+      "approvalRecordPresent": true,
+      "redistributionAllowed": true,
+      "upstreamUrl": "https://github.com/resend/resend-skills",
+      "upstreamRevision": "b2ae7b1798b70134faf679f35fc05b4331462988",
+      "licenseEvidenceUrl": "https://github.com/resend/resend-skills/blob/b2ae7b1798b70134faf679f35fc05b4331462988/LICENSE",
+      "missingEvidence": [],
       "priority": "high",
-      "recommendedAction": "Resolve missing evidence; do not infer permission from a license label."
+      "recommendedAction": "Candidate for independent release-gate review; this report alone is not approval."
     },
     {
       "id": "deep-research",
@@ -3770,24 +3760,14 @@
       "sourceType": "local",
       "sourceGroup": "github.com/sanjay3290/ai-skills",
       "declaredLicense": "Apache-2.0",
-      "approvalRecordPresent": false,
-      "redistributionAllowed": null,
-      "upstreamUrl": "",
-      "upstreamRevision": "",
-      "licenseEvidenceUrl": "",
-      "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
-        "reviewed license",
-        "license evidence URL",
-        "explicit redistribution permission",
-        "review date",
-        "reviewer",
-        "review notes"
-      ],
+      "approvalRecordPresent": true,
+      "redistributionAllowed": true,
+      "upstreamUrl": "https://github.com/sanjay3290/ai-skills",
+      "upstreamRevision": "281d88df199357e3091a3be5c743a0fca9a9ae1b",
+      "licenseEvidenceUrl": "https://github.com/sanjay3290/ai-skills/blob/281d88df199357e3091a3be5c743a0fca9a9ae1b/LICENSE",
+      "missingEvidence": [],
       "priority": "high",
-      "recommendedAction": "Resolve missing evidence; do not infer permission from a license label."
+      "recommendedAction": "Candidate for independent release-gate review; this report alone is not approval."
     },
     {
       "id": "postgres",
@@ -3822,24 +3802,14 @@
       "sourceType": "local",
       "sourceGroup": "github.com/supabase/agent-skills",
       "declaredLicense": "MIT",
-      "approvalRecordPresent": false,
-      "redistributionAllowed": null,
-      "upstreamUrl": "",
-      "upstreamRevision": "",
-      "licenseEvidenceUrl": "",
-      "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
-        "reviewed license",
-        "license evidence URL",
-        "explicit redistribution permission",
-        "review date",
-        "reviewer",
-        "review notes"
-      ],
+      "approvalRecordPresent": true,
+      "redistributionAllowed": true,
+      "upstreamUrl": "https://github.com/supabase/agent-skills",
+      "upstreamRevision": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "licenseEvidenceUrl": "https://github.com/supabase/agent-skills/blob/c9be0e931b7930f7d02126d04774d904c381e7d7/LICENSE",
+      "missingEvidence": [],
       "priority": "high",
-      "recommendedAction": "Resolve missing evidence; do not infer permission from a license label."
+      "recommendedAction": "Candidate for independent release-gate review; this report alone is not approval."
     },
     {
       "id": "vercel-composition-patterns",
