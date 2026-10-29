@@ -1186,13 +1186,14 @@
       },
       "skillPath": "skills/mcp-builder",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Pinned to upstream commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; review skill instructions before use.",
+      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Pinned to upstream commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; review skill instructions before use. License evidence: https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/mcp-builder/LICENSE.txt.",
       "targets": [
         "project",
         "claude",
         "codex",
         "agents"
-      ]
+      ],
+      "licenseEvidenceUrl": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/mcp-builder/LICENSE.txt"
     },
     {
       "id": "recursive-decomposition",
@@ -1257,13 +1258,14 @@
       },
       "skillPath": "skills/skill-creator",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use. License evidence: https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator/LICENSE.txt.",
       "targets": [
         "project",
         "claude",
         "codex",
         "agents"
-      ]
+      ],
+      "licenseEvidenceUrl": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/skill-creator/LICENSE.txt"
     },
     {
       "id": "subagent-driven-development",
@@ -1719,13 +1721,14 @@
       },
       "skillPath": "skills/claude-api",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Pinned to upstream commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; review skill instructions before use.",
+      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Pinned to upstream commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; review skill instructions before use. License evidence: https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/claude-api/LICENSE.txt.",
       "targets": [
         "project",
         "claude",
         "codex",
         "agents"
-      ]
+      ],
+      "licenseEvidenceUrl": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/claude-api/LICENSE.txt"
     },
     {
       "id": "dotnet-webapi",
@@ -2700,13 +2703,14 @@
       },
       "skillPath": "skills/internal-comms",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use. License evidence: https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/internal-comms/LICENSE.txt.",
       "targets": [
         "project",
         "claude",
         "codex",
         "agents"
-      ]
+      ],
+      "licenseEvidenceUrl": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/internal-comms/LICENSE.txt"
     },
     {
       "id": "launch",
@@ -2965,13 +2969,14 @@
       },
       "skillPath": "skills/slack-gif-creator",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use. License evidence: https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/slack-gif-creator/LICENSE.txt.",
       "targets": [
         "project",
         "claude",
         "codex",
         "agents"
-      ]
+      ],
+      "licenseEvidenceUrl": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/slack-gif-creator/LICENSE.txt"
     },
     {
       "id": "social",
@@ -3037,13 +3042,14 @@
       },
       "skillPath": "skills/algorithmic-art",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use. License evidence: https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/algorithmic-art/LICENSE.txt.",
       "targets": [
         "project",
         "claude",
         "codex",
         "agents"
-      ]
+      ],
+      "licenseEvidenceUrl": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/algorithmic-art/LICENSE.txt"
     },
     {
       "id": "shadcn",
@@ -3108,13 +3114,14 @@
       },
       "skillPath": "skills/theme-factory",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use. License evidence: https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/theme-factory/LICENSE.txt.",
       "targets": [
         "project",
         "claude",
         "codex",
         "agents"
-      ]
+      ],
+      "licenseEvidenceUrl": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/theme-factory/LICENSE.txt"
     },
     {
       "id": "agents-sdk",
@@ -4204,13 +4211,14 @@
       },
       "skillPath": "skills/web-artifacts-builder",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use. License evidence: https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/web-artifacts-builder/LICENSE.txt.",
       "targets": [
         "project",
         "claude",
         "codex",
         "agents"
-      ]
+      ],
+      "licenseEvidenceUrl": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/web-artifacts-builder/LICENSE.txt"
     },
     {
       "id": "wp-block-development",
@@ -5068,13 +5076,14 @@
       },
       "skillPath": "skills/webapp-testing",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use. License evidence: https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/webapp-testing/LICENSE.txt.",
       "targets": [
         "project",
         "claude",
         "codex",
         "agents"
-      ]
+      ],
+      "licenseEvidenceUrl": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/webapp-testing/LICENSE.txt"
     },
     {
       "id": "writing-mstest-tests",
@@ -5118,13 +5127,14 @@
       },
       "skillPath": "skills/brand-guidelines",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use. License evidence: https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/brand-guidelines/LICENSE.txt.",
       "targets": [
         "project",
         "claude",
         "codex",
         "agents"
-      ]
+      ],
+      "licenseEvidenceUrl": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/brand-guidelines/LICENSE.txt"
     },
     {
       "id": "canvas-design",
@@ -5143,13 +5153,14 @@
       },
       "skillPath": "skills/canvas-design",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use.",
+      "provenance": "Verified 2026-10-29 against official anthropics/skills at commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; this skill directory includes an Apache-2.0 LICENSE.txt. Review skill instructions before use. License evidence: https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/canvas-design/LICENSE.txt.",
       "targets": [
         "project",
         "claude",
         "codex",
         "agents"
-      ]
+      ],
+      "licenseEvidenceUrl": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/canvas-design/LICENSE.txt"
     },
     {
       "id": "design-taste-frontend",
@@ -5242,13 +5253,14 @@
       },
       "skillPath": "skills/frontend-design",
       "license": "Apache-2.0",
-      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Pinned to upstream commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; review skill instructions before use.",
+      "provenance": "Verified 2026-10-29 against the official anthropics/skills repository; this skill directory includes an Apache-2.0 LICENSE.txt. Pinned to upstream commit dbd4588f9e1033efb41dad4bef2f7947c8993d44; review skill instructions before use. License evidence: https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/LICENSE.txt.",
       "targets": [
         "project",
         "claude",
         "codex",
         "agents"
-      ]
+      ],
+      "licenseEvidenceUrl": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/LICENSE.txt"
     },
     {
       "id": "interface-review",
