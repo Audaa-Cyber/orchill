@@ -34,6 +34,9 @@ jobs:
           mkdir -p "$RUNNER_TEMP/orchill-smoke-project" "$RUNNER_TEMP/orchill-init-smoke"
           orchill install demo-focus --cwd "$RUNNER_TEMP/orchill-smoke-project"
           test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/demo-focus/SKILL.md"
+          orchill verify demo-focus --cwd "$RUNNER_TEMP/orchill-smoke-project"
+          orchill uninstall demo-focus --yes --cwd "$RUNNER_TEMP/orchill-smoke-project"
+          test ! -e "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/demo-focus"
           orchill init --cwd "$RUNNER_TEMP/orchill-init-smoke"
           test -f "$RUNNER_TEMP/orchill-init-smoke/.orchill/skills.json"
 
