@@ -938,6 +938,17 @@
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/jupyter-notebook in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/jupyter-notebook/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice."
     },
     {
+      "skillId": "landing-page-design",
+      "upstreamUrl": "https://github.com/elayadesign/ai-design-skills",
+      "upstreamRevision": "ded7efc9d5c02761c41a03caf3b78f9259ab8828",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/elayadesign/ai-design-skills/blob/ded7efc9d5c02761c41a03caf3b78f9259ab8828/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison found the single bundled file identical by Git blob SHA to skills/landing-page-design in elayadesign/ai-design-skills at commit ded7efc9d5c02761c41a03caf3b78f9259ab8828. The pinned repository MIT license permits redistribution subject to retaining its copyright and permission notice. The full license text and Elaya attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
       "skillId": "launch",
       "upstreamUrl": "https://github.com/coreyhaines31/marketingskills",
       "upstreamRevision": "0cd9b3a0ef4c411a1d690419ce843f2a1da32cce",
@@ -1860,6 +1871,17 @@
       "reviewedAt": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "ui-ux-pro-max",
+      "upstreamUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "upstreamRevision": "28b3b8dee8c976df4fa3e94aed4e092ad43fcb03",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/28b3b8dee8c976df4fa3e94aed4e092ad43fcb03/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison found all 73 files in the bundled skill directory identical by Git blob SHA to .claude/skills/ui-ux-pro-max in nextlevelbuilder/ui-ux-pro-max-skill at commit 28b3b8dee8c976df4fa3e94aed4e092ad43fcb03. The pinned repository MIT license permits redistribution subject to retaining its copyright and permission notice. The full license text and Next Level Builder attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
     },
     {
       "skillId": "using-git-worktrees",
