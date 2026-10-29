@@ -72,47 +72,39 @@ for (const id of approvals.keys()) {
 }
 
 for (const skill of registry.skills) {
-  const approval = approvals.get(skill.id);
-  if (!approval) {
-    addProblem(skill.id, `${skill.id}: no explicit redistribution approval record`);
+  const source = skill.source;
+  if (source?.type === "git") {
+    if (!source.url?.trim()) addProblem(skill.id, skill.id + ": remote source URL is missing");
+    else { try { if (new URL(source.url).protocol !== "https:") throw new Error("not HTTPS"); } catch { addProblem(skill.id, skill.id + ": remote source URL must be a valid HTTPS URL"); } }
+    if (!source.ref || !/^(?:[a-f0-9]{40}|[a-f0-9]{64})$/i.test(source.ref)) addProblem(skill.id, skill.id + ": remote source ref must be an immutable 40- or 64-character Git commit hash");
+    if (!skill.license?.trim()) addProblem(skill.id, skill.id + ": remote source must declare its license");
+    if (!skill.licenseEvidenceUrl?.trim()) addProblem(skill.id, skill.id + ": remote source licenseEvidenceUrl is missing");
+    else { try { if (new URL(skill.licenseEvidenceUrl).protocol !== "https:") throw new Error("not HTTPS"); } catch { addProblem(skill.id, skill.id + ": remote source licenseEvidenceUrl must be a valid HTTPS URL"); } }
     continue;
   }
-  const required: (keyof Approval)[] = [
-    "upstreamUrl", "upstreamRevision", "license", "licenseEvidenceUrl",
-    "reviewedAt", "reviewer", "notes"
-  ];
-  for (const field of required) {
-    if (typeof approval[field] !== "string" || !String(approval[field]).trim()) {
-      addProblem(skill.id, `${skill.id}: approval field '${field}' is missing`);
-    }
-  }
-  if (approval.redistributionAllowed !== true) {
-    addProblem(skill.id, `${skill.id}: redistributionAllowed must be true`);
-  }
+  if (source?.type !== "local") { addProblem(skill.id, skill.id + ": source type must be local or git"); continue; }
+  const approval = approvals.get(skill.id);
+  if (!approval) { addProblem(skill.id, skill.id + ": no explicit redistribution approval record for bundled local payload"); continue; }
+  const required: (keyof Approval)[] = ["upstreamUrl", "upstreamRevision", "license", "licenseEvidenceUrl", "reviewedAt", "reviewer", "notes"];
+  for (const field of required) if (typeof approval[field] !== "string" || !String(approval[field]).trim()) addProblem(skill.id, skill.id + ": approval field " + field + " is missing");
+  if (approval.redistributionAllowed !== true) addProblem(skill.id, skill.id + ": redistributionAllowed must be true");
   for (const [field, value] of [["upstreamUrl", approval.upstreamUrl], ["licenseEvidenceUrl", approval.licenseEvidenceUrl]] as const) {
-    if (value) {
-      try {
-        if (new URL(value).protocol !== "https:") throw new Error("not HTTPS");
-      } catch {
-        addProblem(skill.id, `${skill.id}: ${field} must be a valid HTTPS URL`);
-      }
-    }
+    if (!value) continue;
+    try { if (new URL(value).protocol !== "https:") throw new Error("not HTTPS"); } catch { addProblem(skill.id, skill.id + ": " + field + " must be a valid HTTPS URL"); }
   }
-  if (approval.upstreamRevision && !/^(?:[a-f0-9]{40}|[a-f0-9]{64})$/i.test(approval.upstreamRevision)) {
-    addProblem(skill.id, `${skill.id}: upstreamRevision must be an immutable 40- or 64-character Git commit hash`);
-  }
-  if (approval.reviewedAt && (!/^\d{4}-\d{2}-\d{2}$/.test(approval.reviewedAt) || Number.isNaN(Date.parse(`${approval.reviewedAt}T00:00:00Z`)) || new Date(`${approval.reviewedAt}T00:00:00Z`).toISOString().slice(0, 10) !== approval.reviewedAt)) {
-    addProblem(skill.id, `${skill.id}: reviewedAt must be a real ISO date (YYYY-MM-DD)`);
-  }
-  if (approval.license && skill.license && approval.license !== skill.license) {
-    addProblem(skill.id, `${skill.id}: approval license does not match registry license (${skill.license})`);
-  }
+  if (approval.upstreamRevision && !/^(?:[a-f0-9]{40}|[a-f0-9]{64})$/i.test(approval.upstreamRevision)) addProblem(skill.id, skill.id + ": upstreamRevision must be an immutable 40- or 64-character Git commit hash");
+  if (approval.reviewedAt && (!/^\d{4}-\d{2}-\d{2}$/.test(approval.reviewedAt) || Number.isNaN(Date.parse(approval.reviewedAt + "T00:00:00Z")) || new Date(approval.reviewedAt + "T00:00:00Z").toISOString().slice(0, 10) !== approval.reviewedAt)) addProblem(skill.id, skill.id + ": reviewedAt must be a real ISO date (YYYY-MM-DD)");
+  if (approval.license && skill.license && approval.license !== skill.license) addProblem(skill.id, skill.id + ": approval license does not match registry license (" + skill.license + ")");
 }
 
+const bundledSkills = registry.skills.filter(skill => skill.source?.type === "local");
+const remoteSources = registry.skills.filter(skill => skill.source?.type === "git");
 const summary = {
   skills: registry.skills.length,
+  bundledSkills: bundledSkills.length,
+  remoteSources: remoteSources.length,
   approvals: approvals.size,
-  approved: registry.skills.filter(skill => approvals.get(skill.id)?.redistributionAllowed === true && !problemsBySkill.has(skill.id)).length,
+  approved: bundledSkills.filter(skill => approvals.get(skill.id)?.redistributionAllowed === true && !problemsBySkill.has(skill.id)).length,
   blockers: problems.length
 };
 console.log(JSON.stringify({ summary, blockers: problems }, null, 2));
