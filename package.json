@@ -2,7 +2,7 @@
   "name": "orchill",
   "version": "0.1.0",
   "description": "A selective, safety-conscious CLI for discovering and installing AI agent skills.",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "type": "module",
   "bin": {
     "orchill": "./dist/cli.js"
