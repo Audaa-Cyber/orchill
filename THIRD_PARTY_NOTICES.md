@@ -2093,3 +2093,97 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
+
+## Expo Skills
+
+The following skill directories are copied unchanged from [expo/skills](https://github.com/expo/skills), pinned to commit [05754e71d02abe0d2d7a2fb5259ccac41f5ea59c](https://github.com/expo/skills/commit/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c). All 26 bundled files matched their corresponding upstream files by Git blob SHA.
+
+- `eas-app-stores` — 8 files
+- `expo-native-ui` — 9 files
+- `expo-upgrade` — 9 files
+
+License evidence: [LICENSE](https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/LICENSE) — MIT.
+
+```text
+The MIT License (MIT)
+
+Copyright (c) 2025-present 650 Industries, Inc. (aka Expo)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+## shadcn/ui Skill
+
+The `shadcn` skill is copied unchanged from [shadcn-ui/ui](https://github.com/shadcn-ui/ui), pinned to commit [96da9cc7f1aa10580a3741664e2a77c721206c00](https://github.com/shadcn-ui/ui/commit/96da9cc7f1aa10580a3741664e2a77c721206c00). All 21 bundled files matched their upstream files by Git blob SHA.
+
+License evidence: [LICENSE.md](https://github.com/shadcn-ui/ui/blob/96da9cc7f1aa10580a3741664e2a77c721206c00/LICENSE.md) — MIT.
+
+```text
+MIT License
+
+Copyright (c) 2023 shadcn
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+## X Article Publisher Skill
+
+The `x-article-publisher` skill is copied unchanged from [wshuyi/x-article-publisher-skill](https://github.com/wshuyi/x-article-publisher-skill), pinned to commit [eb3197d1d8579556aea5018d5c0b141d55fc2df6](https://github.com/wshuyi/x-article-publisher-skill/commit/eb3197d1d8579556aea5018d5c0b141d55fc2df6). All 4 bundled files matched their upstream files by Git blob SHA.
+
+License evidence: [LICENSE](https://github.com/wshuyi/x-article-publisher-skill/blob/eb3197d1d8579556aea5018d5c0b141d55fc2df6/LICENSE) — MIT.
+
+```text
+MIT License
+
+Copyright (c) 2024 wshuyi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
