@@ -115,3 +115,32 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 Orchill's Apache-2.0 license applies to Orchill's original code and does not replace the license above for these third-party skill payloads.
+
+## MicrosoftDocs Agent Skills
+
+The following 19 skill directories are copied unchanged from [MicrosoftDocs/Agent-Skills](https://github.com/MicrosoftDocs/Agent-Skills), pinned for this review to commit [95544200a6621ee7481b253beb115ac0be701689](https://github.com/MicrosoftDocs/Agent-Skills/commit/95544200a6621ee7481b253beb115ac0be701689). All 34 files across these directories matched the corresponding upstream files by Git blob SHA.
+
+Covered skill IDs:
+
+- `azure-app-service`
+- `azure-blob-storage`
+- `azure-cognitive-search`
+- `azure-container-apps`
+- `azure-cosmos-db`
+- `azure-databricks`
+- `azure-devops`
+- `azure-functions`
+- `azure-key-vault`
+- `azure-kubernetes-service`
+- `azure-machine-learning`
+- `azure-monitor`
+- `azure-pipelines`
+- `azure-sql-database`
+- `azure-static-web-apps`
+- `microsoft-foundry-classic`
+- `microsoft-foundry-local`
+- `microsoft-foundry-tools`
+- `microsoft-foundry`
+
+License evidence: [LICENSE at the reviewed commit](https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE). The repository identifies the license as **Creative Commons Attribution 4.0 International (CC BY 4.0)**. These copies were not modified. Attribution/source and license information are provided here; see the [full CC BY 4.0 legal code](https://creativecommons.org/licenses/by/4.0/).
+
