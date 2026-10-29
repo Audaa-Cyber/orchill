@@ -5,6 +5,7 @@ type Skill = {
   id: string;
   source?: { type?: string; url?: string; ref?: string; path?: string };
   license?: string;
+  licenseEvidenceUrl?: string;
   provenance?: string;
 };
 type Registry = { skills: Skill[] };
