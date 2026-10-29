@@ -2248,3 +2248,40 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+
+## Design Taste Frontend Skill
+
+The `design-taste-frontend` skill is copied unchanged from [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill), pinned to commit [12af471f627f866411b4bd785b19646d3672784c](https://github.com/Leonxlnx/taste-skill/commit/12af471f627f866411b4bd785b19646d3672784c). All 39 bundled files matched upstream by Git blob SHA at `skills/taste-skill/`.
+
+License evidence: [LICENSE](https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/LICENSE) — MIT.
+
+```text
+MIT License
+
+Copyright (c) 2026 Leonxlnx
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+## Hugging Face LLM Trainer Skill
+
+The `huggingface-llm-trainer` skill is copied unchanged from [huggingface/skills](https://github.com/huggingface/skills), pinned to commit [fabc634a893f62ad5c2039830397efa35fa62715](https://github.com/huggingface/skills/commit/fabc634a893f62ad5c2039830397efa35fa62715). All 19 bundled files matched upstream by Git blob SHA at `skills/huggingface-llm-trainer/`. No per-skill license file was present in the matching upstream tree; the repository-root license is Apache-2.0.
+
+License evidence: [LICENSE](https://github.com/huggingface/skills/blob/fabc634a893f62ad5c2039830397efa35fa62715/LICENSE). The complete Apache-2.0 license text and required notice terms are included in the Apache License 2.0 section above.
