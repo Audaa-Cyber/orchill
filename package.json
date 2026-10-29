@@ -32,7 +32,8 @@
     "prepublishOnly": "npm run build && npm run release:check -- --strict",
     "provenance:inventory": "tsx scripts/build-provenance-inventory.ts",
     "release:review-queue": "tsx scripts/build-release-review-queue.ts",
-    "package:smoke": "tsx scripts/smoke-packed-package.ts"
+    "package:smoke": "tsx scripts/smoke-packed-package.ts",
+    "release:preflight": "npm run typecheck && npm test && npm run build && npm run package:smoke && npm run release:check -- --strict"
   },
   "dependencies": {
     "commander": "^14.0.0"
