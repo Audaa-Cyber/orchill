@@ -55,3 +55,10 @@ npm pack
 ```
 
 These checks establish build and packaging integrity; they do not independently establish legal redistribution rights or prove that a skill is safe. Run `npm run provenance:inventory` to produce a per-skill JSON inventory (or `-- --format=csv --output=provenance-inventory.csv` for CSV), then run `npm run release:check` to report missing approval evidence. `npm publish` runs `prepublishOnly`, which uses strict mode and intentionally fails until every bundled skill has a complete approval record in `registry/release-approvals.json`. An approval requires the upstream URL, immutable commit hash, license and evidence URL, explicit redistribution permission, review date, reviewer, and notes. Do not add approvals unless the evidence has actually been reviewed.
+
+
+## Phase 2 review queue
+
+- [x] Add deterministic JSON/CSV triage reports grouped by marketplace/repository provenance and priority.
+- [ ] Verify exact upstream commit, license evidence, and redistribution rights for every bundled skill; the review queue does not itself grant approval.
+- [ ] Publish only after the strict evidence gate and packed-package install test pass.

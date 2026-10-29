@@ -6,7 +6,7 @@ This checklist is intentionally conservative. A green CI run is necessary, but n
 
 - [x] Merge the Apache-2.0 license alignment and confirm `package.json`, root `LICENSE`, and README agree.
 - [x] Merge registry-validation hardening and confirm the runtime validator, JSON Schema, and tests are aligned.
-- [x] Merge the install lifecycle safety and staged bulk-import changes after fresh CI passed. Marketplace importer PR #3 remains intentionally untouched and is not included in this release candidate.
+- [x] Merge the install lifecycle safety and staged bulk-import changes after fresh CI passed. Bulk-import marketplace support and categorized catalogue are now integrated in main. Third-party payload approvals remain a release blocker.
 - [ ] Confirm all catalog entries have verified upstream paths, immutable source refs where practical, per-skill license information, and provenance notes.
 - [ ] Review bundled skill instructions and referenced scripts. CI and license checks are not a security audit.
 - [ ] Check the exact npm package name `orchill` for availability, ownership, and possible naming conflicts. Do not assume availability from the repository name.
@@ -35,3 +35,10 @@ This checklist is intentionally conservative. A green CI run is necessary, but n
 - npm trusted publishing must be configured in npm's package settings before the workflow can publish. This repository change cannot configure npm account settings on the owner's behalf.
 - This workflow does not itself reserve or verify the npm package name.
 - Publishing a CLI does not provide a hosted MCP server or automatically integrate with hosted AI chats.
+
+
+## Phase 2 evidence review
+
+- [ ] Generate and review `reports/release-review-queue.csv` by source group and priority.
+- [ ] Keep imported third-party payloads out of npm until the strict approval gate passes.
+- [ ] Confirm the packed tarball's `orchill` executable and install it in a clean temporary project.
