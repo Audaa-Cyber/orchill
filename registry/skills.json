@@ -748,7 +748,7 @@
         "path": "../skills/net-and-build-systems/refactor-module"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from hashicorp/agent-skills; command: npx skills add hashicorp/agent-skills@refactor-module. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from hashicorp/agent-skills; command: npx skills add hashicorp/agent-skills@refactor-module. Verify source, pin, and license before publishing. Verified 2026-10-29 against hashicorp/agent-skills at commit bc6b14b77481c3cbfbb06a0166be7245ed45798c; all 1 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/hashicorp/agent-skills/blob/bc6b14b77481c3cbfbb06a0166be7245ed45798c/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -759,7 +759,8 @@
         "-net-build-systems",
         "refactor",
         "module"
-      ]
+      ],
+      "license": "MPL-2.0"
     },
     {
       "id": "resolve-project-references",
@@ -2439,7 +2440,7 @@
         "path": "../skills/cloud-and-devops/provider-resources"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from hashicorp/agent-skills; command: npx skills add hashicorp/agent-skills@provider-resources. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from hashicorp/agent-skills; command: npx skills add hashicorp/agent-skills@provider-resources. Verify source, pin, and license before publishing. Verified 2026-10-29 against hashicorp/agent-skills at commit bc6b14b77481c3cbfbb06a0166be7245ed45798c; all 3 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/hashicorp/agent-skills/blob/bc6b14b77481c3cbfbb06a0166be7245ed45798c/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2510,7 +2511,7 @@
         "path": "../skills/cloud-and-devops/terraform-style-guide"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from hashicorp/agent-skills; command: npx skills add hashicorp/agent-skills@terraform-style-guide. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from hashicorp/agent-skills; command: npx skills add hashicorp/agent-skills@terraform-style-guide. Verify source, pin, and license before publishing. Verified 2026-10-29 against hashicorp/agent-skills at commit bc6b14b77481c3cbfbb06a0166be7245ed45798c; all 2 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/hashicorp/agent-skills/blob/bc6b14b77481c3cbfbb06a0166be7245ed45798c/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -2521,7 +2522,8 @@
         "cloud-devops",
         "terraform",
         "style"
-      ]
+      ],
+      "license": "MPL-2.0"
     },
     {
       "id": "vercel-cli-with-tokens",
@@ -5282,7 +5284,7 @@
         "path": "../skills/ui-ux/interface-review"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from jakubkrehel/skills; command: npx skills add jakubkrehel/skills@interface-review. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from jakubkrehel/skills; command: npx skills add jakubkrehel/skills@interface-review. Verify source, pin, and license before publishing. Verified 2026-10-29 against jakubkrehel/skills at commit 592aedc44d7d5b3e29740984252902f3e5402a1c; all 4 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -5293,7 +5295,8 @@
         "ui-ux",
         "interface",
         "review"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "landing-page-design",
