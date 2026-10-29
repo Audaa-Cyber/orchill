@@ -1,8 +1,8 @@
 # Orchill
 
-**Find the skill you need. Install only that skill. Keep its whole folder.**
+**Discover it. Add a skill, a category, or the whole catalogue. Keep the complete folder structure.**
 
-Orchill is a CLI-first skill manager for AI-agent workflows. It searches a versioned JSON registry, filters by category, and installs a selected skill's complete directory tree into an explicit target. It does not download every skill in a collection just to find one.
+Orchill is a CLI-first skill manager for AI-agent workflows. Humans and agents use the same short commands to list categories and skills, inspect metadata, install a skill/category/catalogue, update installations, remove them, and check integrity. Installation preserves the complete category/skill directory tree.
 
 > **Catalog status:** the registry contains 201 skills across 19 categories, all with evidence-backed upstream provenance: every bundled payload is byte-identical (normalized SHA-256) to its upstream source at a pinned revision, with the actual upstream license file captured in `provenance/licenses/` and a redistribution approval recorded in `registry/release-approvals.json`. 20 third-party payloads whose upstream license evidence does not grant redistribution (proprietary, service-terms-only, or license-free upstreams) are quarantined in `third-party-review/` with reasons recorded in `registry/excluded-payloads.json` and are **not** shipped in the npm package. Local skill payloads are organized under `skills/<category-slug>/<skill-id>/` and bundled for offline installation from this checkout/package. Treat third-party skill instructions and scripts as untrusted; see [MVP readiness and release blockers](docs/MVP-READINESS.md). `npm publish` is gated on the strict release check (`npm run release:check -- --strict`), which verifies every bundled skill has a complete evidence-backed approval.
 
@@ -34,44 +34,7 @@ orchill --help
 
 To update that local global install after pulling changes, rerun `npm run build` and `npm install --global .` from the repository root. This is a local source install, not an npm registry release.
 
-## Quick start
-
-```sh
-node dist/cli.js categories
-node dist/cli.js search demo
-node dist/cli.js info demo-focus
-node dist/cli.js install demo-focus --dry-run
-node dist/cli.js install demo-focus
-```
-
-The default project target is `.agents/skills/<skill-id>/`. Other supported targets:
-
-| Target | Destination relative to project |
-|---|---|
-| `project` | `.agents/skills/` |
-| `agents` | `.agents/skills/` |
-| `claude` | `.claude/skills/` |
-| `codex` | `.agents/skills/` (Codex project skills) |
-
-Use `--cwd /path/to/project` to select a destination project. Use `--force` to replace an existing installation. Review the displayed destination before installing.
-
-## Commands
-
-- `orchill search <query>` — search ID, name, description, category, and tags.
-- `orchill list [--category <name>]` — list catalog entries.
-- `orchill categories` — show categories and counts.
-- `orchill info <id>` — inspect metadata and provenance notes.
-- `orchill audit [--json] [--strict]` — review missing metadata, invalid local skill paths, and heuristic security flags.
-- `orchill install <id> [--target project|agents|claude|codex]` — install one skill.
-- `orchill install <id> --dry-run` — preview a single install.
-- `orchill install-category <category>` — show a plan, then ask for confirmation; use `--yes` in reviewed automation.
-- `orchill targets` — show destinations.
-- `orchill registry` — show active registry.
-- `orchill init` — create a project-local empty registry template.
-
-Most commands accept `--registry /path/to/skills.json`.
-
-## Add a Git-backed skill
+## Quick start\n\n```sh\norchill list\norchill list "UI/UX Design"\norchill info demo-focus\norchill add demo-focus\norchill add "UI/UX Design"\norchill add catalogue\norchill check\n```\n\nThe default project target is `.agents/skills/<category>/<skill>/`. Every installed skill keeps its complete nested files, including `SKILL.md`, references, scripts, examples, and assets.\n\n| Target | Destination relative to project |\n|---|---|\n| `project` | `.agents/skills/<category>/<skill>/` |\n| `agents` | `.agents/skills/<category>/<skill>/` |\n| `claude` | `.claude/skills/<category>/<skill>/` |\n| `codex` | `.agents/skills/<category>/<skill>/` |\n\nUse `--cwd /path/to/project` to select a destination project. Use `--force` to replace an existing Orchill-managed installation. Review the displayed destination before installing.\n\n## Commands\n\n- `orchill list [category]` / `orchill ls [category]` — list categories, or skills inside one category.\n- `orchill list --all` — list every skill in every category.\n- `orchill info <name>` — inspect a skill or category.\n- `orchill add <name>` — install one skill or every skill in a category.\n- `orchill add catalogue` — install the entire eligible catalogue with all category and skill folders preserved.\n- `orchill update` / `orchill up` — update Orchill-managed installed skills.\n- `orchill remove <name>` / `orchill rm <name>` — remove an installed skill, category, or catalogue.\n- `orchill check` — verify installed content; use `--json` for automation.\n- `orchill audit` — review registry metadata and heuristic findings.\n- `orchill init` — create a project-local registry template.\n- `orchill import <file>` — stage Skills CLI or marketplace command imports.\n- `orchill --help` / `orchill -h` — explain the full interface, structure, targets, agent integration, safety, and automation.\n- `orchill --version` / `orchill -V` — show the installed version.\n\nNo category gets its own command. The same `list`, `info`, `add`, `update`, `remove`, and `check` commands work for every category and skill.\n\n## Add a Git-backed skill
 
 Add a registry entry only after verifying the upstream repository, exact skill directory, license, and source provenance. Example shape:
 
@@ -110,7 +73,7 @@ Default registry: `registry/skills.json`. Its format is documented by `registry/
 - Source/license metadata is only as trustworthy as the registry maintainer. Orchill does not verify signatures or prove that skill instructions are safe. `orchill audit` provides limited heuristic triage only; remote Git source content is not downloaded by the audit.
 - Review third-party `SKILL.md` and referenced scripts before allowing an agent to use them.
 - Do not treat a URL, repository name, or license field as proof that a source is safe or correctly licensed.
-- MVP currently has no update/uninstall/lockfile, dependency resolution, remote hosted catalog, MCP server, or built-in agent auto-detection.
+- MCP is available as an agent integration when configured by the host; the npm package does not automatically configure every AI client. Orchill does not execute installed skill scripts.
 - This CLI does not make skills automatically available inside hosted ChatGPT or Claude chats. Such environments need a supported local tool, filesystem, or MCP integration.
 
 ## Development
@@ -193,7 +156,7 @@ For third-party skill licensing and source provenance review, see [the provenanc
 
 ## Verify and uninstall managed installations
 
-New installations include an Orchill marker. Verify an installation with `orchill verify <id>`; remove only an Orchill-managed installation with `orchill uninstall <id>`. Uninstall prompts for confirmation; use `--yes` only after reviewing the destination. Unmanaged or legacy directories without a valid marker are deliberately not removed. Verification checks structure and the marker; it is not a cryptographic integrity or malware scan.
+New installations include an Orchill marker. Use `orchill check` to verify installations and `orchill remove <name>` to remove only Orchill-managed content. Removal prompts for confirmation; use `--yes` only after reviewing the destination. Unmanaged directories are deliberately not removed. Verification checks structure and the marker; it is not a cryptographic integrity or malware scan.
 
 
 ## Release review
