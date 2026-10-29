@@ -54,12 +54,11 @@ jobs:
         env:
           RELEASE_TAG: ${{ github.event.release.tag_name }}
 
-      - name: Install dependencies and build
-        run: |
-          npm install
-          npm run typecheck
-          npm test
-          npm run build
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Run release preflight (including strict redistribution gate)
+        run: npm run release:preflight
 
       - name: Inspect the package contents
         run: npm pack --dry-run
