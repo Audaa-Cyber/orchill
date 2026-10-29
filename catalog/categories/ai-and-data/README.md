@@ -11,7 +11,7 @@ Generated from `registry/skills.json`. Local payloads live under `skills/<catego
 | Deep Research | `deep-research` | local | [`skills/ai-and-data/deep-research`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/ai-and-data/deep-research) | Apache-2.0 |
 | Huggingface Community Evals | `huggingface-community-evals` | local | [`skills/ai-and-data/huggingface-community-evals`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/ai-and-data/huggingface-community-evals) | Apache-2.0 |
 | Huggingface Datasets | `huggingface-datasets` | local | [`skills/ai-and-data/huggingface-datasets`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/ai-and-data/huggingface-datasets) | Unknown |
-| Huggingface Llm Trainer | `huggingface-llm-trainer` | local | [`skills/ai-and-data/huggingface-llm-trainer`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/ai-and-data/huggingface-llm-trainer) | Complete terms in LICENSE.txt |
+| Huggingface Llm Trainer | `huggingface-llm-trainer` | local | [`skills/ai-and-data/huggingface-llm-trainer`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/ai-and-data/huggingface-llm-trainer) | Apache-2.0 |
 | Huggingface Trackio | `huggingface-trackio` | local | [`skills/ai-and-data/huggingface-trackio`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/ai-and-data/huggingface-trackio) | Apache-2.0 |
 | Imagegen | `imagegen` | local | [`skills/ai-and-data/imagegen`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/ai-and-data/imagegen) | Apache-2.0 |
 | Jupyter Notebook | `jupyter-notebook` | local | [`skills/ai-and-data/jupyter-notebook`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/ai-and-data/jupyter-notebook) | Apache-2.0 |
