@@ -28,7 +28,7 @@ test("installs a complete nested skill directory", async () => {
       skillPath: "."
     };
     const installed = await installSkill(skill, registryRoot, "project", cwd);
-    assert.equal((await readFile(path.join(installed, "SKILL.md"), "utf8")).replace(/\r\n/g, "\n"), "# Test skill\n");
+    assert.equal(installed, path.join(cwd, ".agents", "skills", "tests", "test-skill"));\n    assert.equal((await readFile(path.join(installed, "SKILL.md"), "utf8")).replace(/\r\n/g, "\n"), "# Test skill\n");
     assert.equal((await readFile(path.join(installed, "references", "guide.md"), "utf8")).replace(/\r\n/g, "\n"), "Nested guide\n");
     await assert.rejects(() => installSkill(skill, registryRoot, "project", cwd), /Already exists/);
     await writeFile(path.join(source, "SKILL.md"), "# Updated skill\n");
@@ -159,13 +159,13 @@ test("verifies and safely uninstalls an Orchill-managed installation", async () 
       source: { type: "local", path: "../source-skill" }, skillPath: "."
     };
     await installSkill(skill, registryRoot, "project", cwd);
-    const verified = await verifySkillInstallation(skill.id, "project", cwd);
+    const verified = await verifySkillInstallation(skill.id, "project", cwd, skill.category);
     assert.equal(verified.installed, true);
     assert.equal(verified.managed, true);
     assert.equal(verified.hasSkillFile, true);
-    const removed = await uninstallSkill(skill.id, "project", cwd);
-    assert.equal(removed, path.join(cwd, ".agents", "skills", skill.id));
-    const after = await verifySkillInstallation(skill.id, "project", cwd);
+    const removed = await uninstallSkill(skill.id, "project", cwd, skill.category);
+    assert.equal(removed, path.join(cwd, ".agents", "skills", "tests", skill.id));
+    const after = await verifySkillInstallation(skill.id, "project", cwd, skill.category);
     assert.equal(after.installed, false);
   } finally {
     await rm(temp, { recursive: true, force: true });
