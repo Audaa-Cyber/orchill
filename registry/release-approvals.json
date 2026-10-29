@@ -652,6 +652,17 @@
       "notes": "Automated content comparison on 2026-10-29 found all 5 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in cloudflare/skills at commit 49a31e0b3229ccdffe4944be9c61bc7481d1d432. The repository-root Apache-2.0 license at https://github.com/cloudflare/skills/blob/49a31e0b3229ccdffe4944be9c61bc7481d1d432/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
     },
     {
+      "skillId": "eas-app-stores",
+      "upstreamUrl": "https://github.com/expo/skills",
+      "upstreamRevision": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison found all 8 files in the bundled skill directory identical by Git blob SHA to plugins/expo/skills/eas-app-stores in expo/skills at commit 05754e71d02abe0d2d7a2fb5259ccac41f5ea59c. The upstream MIT license permits redistribution subject to retaining the copyright and permission notice. The upstream license text and Expo copyright attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
       "skillId": "eliminate-redundant-restores",
       "upstreamUrl": "https://github.com/dotnet/skills",
       "upstreamRevision": "95e7d0cb7994d47b5789baa68e13f7a2f348b956",
@@ -694,6 +705,28 @@
       "reviewedAt": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "notes": "Automated content comparison on 2026-10-29 found all 3 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
+      "skillId": "expo-native-ui",
+      "upstreamUrl": "https://github.com/expo/skills",
+      "upstreamRevision": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison found all 9 files in the bundled skill directory identical by Git blob SHA to plugins/expo/skills/expo-native-ui in expo/skills at commit 05754e71d02abe0d2d7a2fb5259ccac41f5ea59c. The upstream MIT license permits redistribution subject to retaining the copyright and permission notice. The upstream license text and Expo copyright attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
+      "skillId": "expo-upgrade",
+      "upstreamUrl": "https://github.com/expo/skills",
+      "upstreamRevision": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison found all 9 files in the bundled skill directory identical by Git blob SHA to plugins/expo/skills/expo-upgrade in expo/skills at commit 05754e71d02abe0d2d7a2fb5259ccac41f5ea59c. The upstream MIT license permits redistribution subject to retaining the copyright and permission notice. The upstream license text and Expo copyright attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
     },
     {
       "skillId": "extension-points",
@@ -1532,6 +1565,17 @@
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
     },
     {
+      "skillId": "shadcn",
+      "upstreamUrl": "https://github.com/shadcn-ui/ui",
+      "upstreamRevision": "96da9cc7f1aa10580a3741664e2a77c721206c00",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/shadcn-ui/ui/blob/96da9cc7f1aa10580a3741664e2a77c721206c00/LICENSE.md",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison found all 21 files in the bundled skill directory identical by Git blob SHA to skills/shadcn in shadcn-ui/ui at commit 96da9cc7f1aa10580a3741664e2a77c721206c00. The upstream MIT license permits redistribution subject to retaining the copyright and permission notice. The upstream license text and shadcn copyright attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
       "skillId": "social",
       "upstreamUrl": "https://github.com/coreyhaines31/marketingskills",
       "upstreamRevision": "0cd9b3a0ef4c411a1d690419ce843f2a1da32cce",
@@ -1926,6 +1970,17 @@
       "reviewedAt": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "notes": "Automated content comparison on 2026-10-29 found all 1 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
+      "skillId": "x-article-publisher",
+      "upstreamUrl": "https://github.com/wshuyi/x-article-publisher-skill",
+      "upstreamRevision": "eb3197d1d8579556aea5018d5c0b141d55fc2df6",
+      "license": "MIT",
+      "licenseEvidenceUrl": "https://github.com/wshuyi/x-article-publisher-skill/blob/eb3197d1d8579556aea5018d5c0b141d55fc2df6/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison found all 4 files in the bundled skill directory identical by Git blob SHA to skills/x-article-publisher in wshuyi/x-article-publisher-skill at commit eb3197d1d8579556aea5018d5c0b141d55fc2df6. The upstream MIT license permits redistribution subject to retaining the copyright and permission notice. The upstream license text and wshuyi copyright attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
     }
   ]
 }
