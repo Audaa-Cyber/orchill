@@ -47,6 +47,171 @@
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
     },
     {
+      "skillId": "azure-app-service",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-app-service directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "azure-blob-storage",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-blob-storage directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "azure-cognitive-search",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-cognitive-search directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "azure-container-apps",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-container-apps directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "azure-cosmos-db",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-cosmos-db directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "azure-databricks",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-databricks directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "azure-devops",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-devops directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "azure-functions",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-functions directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "azure-key-vault",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-key-vault directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "azure-kubernetes-service",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-kubernetes-service directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "azure-machine-learning",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-machine-learning directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "azure-monitor",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-monitor directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "azure-pipelines",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-pipelines directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "azure-sql-database",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-sql-database directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "azure-static-web-apps",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-static-web-apps directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
       "skillId": "binlog-failure-analysis",
       "upstreamUrl": "https://github.com/dotnet/skills",
       "upstreamRevision": "95e7d0cb7994d47b5789baa68e13f7a2f348b956",
@@ -518,6 +683,50 @@
       "reviewedAt": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "microsoft-foundry",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/microsoft-foundry directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "microsoft-foundry-classic",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/microsoft-foundry-classic directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "microsoft-foundry-local",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/microsoft-foundry-local directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
+    },
+    {
+      "skillId": "microsoft-foundry-tools",
+      "upstreamUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+      "upstreamRevision": "95544200a6621ee7481b253beb115ac0be701689",
+      "license": "CC-BY-4.0",
+      "licenseEvidenceUrl": "https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/microsoft-foundry-tools directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
     },
     {
       "skillId": "migrate-dotnet10-to-dotnet11",
