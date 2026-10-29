@@ -110,7 +110,7 @@ function validateSkill(value: unknown): asserts value is Skill {
   if (s.licenseEvidenceUrl !== undefined) {
     requireNonEmptyString(s.licenseEvidenceUrl, `Skill ${s.id}: licenseEvidenceUrl`);
     let evidenceUrl: URL;
-    try { evidenceUrl = new URL(s.licenseEvidenceUrl); } catch { throw new Error(`Skill ${s.id}: invalid licenseEvidenceUrl.`); }
+    try { evidenceUrl = new URL(String(s.licenseEvidenceUrl)); } catch { throw new Error(`Skill ${s.id}: invalid licenseEvidenceUrl.`); }
     if (evidenceUrl.protocol !== "https:" || !evidenceUrl.hostname || evidenceUrl.username || evidenceUrl.password || evidenceUrl.search || evidenceUrl.hash) throw new Error(`Skill ${s.id}: licenseEvidenceUrl must be a clean HTTPS URL.`);
   }
 
