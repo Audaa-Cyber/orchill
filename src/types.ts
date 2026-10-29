@@ -13,6 +13,7 @@ export interface Skill {
   source: SkillSource;
   skillPath: string;
   license?: string;
+  licenseEvidenceUrl?: string;
   provenance?: string;
   targets?: string[];
 }
