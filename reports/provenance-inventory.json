@@ -4,8 +4,8 @@
     "skills": 221,
     "withApprovalRecord": 171,
     "withExplicitRedistributionPermission": 171,
-    "withNoMissingEvidence": 183,
-    "requiringReview": 38
+    "withNoMissingEvidence": 0,
+    "requiringReview": 221
   },
   "skills": [
     {
@@ -26,7 +26,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "apple-crash-symbolication",
@@ -46,7 +49,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "binlog-failure-analysis",
@@ -66,7 +72,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "binlog-generation",
@@ -86,7 +95,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "build-parallelism",
@@ -106,7 +118,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "build-perf-baseline",
@@ -126,7 +141,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "build-perf-diagnostics",
@@ -146,7 +164,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "copy-to-output-directory",
@@ -166,7 +187,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "csharp-expert",
@@ -186,7 +210,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "csharp-refactoring",
@@ -206,7 +233,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "detect-static-dependencies",
@@ -226,7 +256,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "directory-build-organization",
@@ -246,7 +279,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "dotnet-aot-compat",
@@ -266,7 +302,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "dotnet-trace-collect",
@@ -286,7 +325,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "eliminate-redundant-restores",
@@ -306,7 +348,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "extension-points",
@@ -326,7 +371,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "filter-syntax",
@@ -346,7 +394,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "including-generated-files",
@@ -366,7 +417,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "incremental-build",
@@ -386,7 +440,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "item-management",
@@ -406,7 +463,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "migrate-dotnet10-to-dotnet11",
@@ -426,7 +486,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "migrate-dotnet8-to-dotnet9",
@@ -446,7 +509,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "migrate-dotnet9-to-dotnet10",
@@ -466,7 +532,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "msbuild",
@@ -486,7 +555,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "msbuild-antipatterns",
@@ -506,7 +578,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "msbuild-modernization",
@@ -526,7 +601,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "mtp-hot-reload",
@@ -546,7 +624,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "optimizing-ef-core-queries",
@@ -566,7 +647,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "platform-detection",
@@ -586,7 +670,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "property-patterns",
@@ -606,7 +693,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "refactor-module",
@@ -627,16 +717,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -657,7 +746,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "setup-local-sdk",
@@ -677,7 +769,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "technology-selection",
@@ -697,7 +792,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "template-comparison",
@@ -717,7 +815,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "template-discovery",
@@ -737,7 +838,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "template-instantiation",
@@ -757,7 +861,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "template-smart-defaults",
@@ -777,7 +884,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "template-validation",
@@ -797,7 +907,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "thread-abort-migration",
@@ -817,7 +930,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "audit-website",
@@ -837,7 +953,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 6 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in squirrelscan/skills at commit 8ce7e12d51e0a3df4a353f037e33fb53be23db7e. The repository-root MIT license at https://github.com/squirrelscan/skills/blob/8ce7e12d51e0a3df4a353f037e33fb53be23db7e/LICENSE permits redistribution subject to its terms. Required upstream license text, source attribution, and any share-alike notice are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "web-design-guidelines",
@@ -858,16 +977,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -888,7 +1006,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 8 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "demo-focus",
@@ -909,15 +1030,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -938,7 +1058,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 1 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "executing-plans",
@@ -958,7 +1081,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 3 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "find-skills",
@@ -978,7 +1104,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 1 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in vercel-labs/skills at commit 92a9a34ac3bf88e695e468b90c7bf32f163d32c8. The repository-root MIT license at https://github.com/vercel-labs/skills/blob/92a9a34ac3bf88e695e468b90c7bf32f163d32c8/LICENSE permits redistribution subject to its terms. Required upstream license text, source attribution, and any share-alike notice are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "firecrawl",
@@ -999,16 +1128,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -1029,7 +1157,10 @@
       "reviewDate": "",
       "reviewer": "",
       "reviewNotes": "",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "recursive-decomposition",
@@ -1049,7 +1180,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 9 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in massimodeluisa/recursive-decomposition-skill at commit e0a8b0418a1e40e3ae774ad1d06834db2696ee26. The repository-root MIT license at https://github.com/massimodeluisa/recursive-decomposition-skill/blob/e0a8b0418a1e40e3ae774ad1d06834db2696ee26/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "skill-builder",
@@ -1070,16 +1204,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -1100,7 +1233,10 @@
       "reviewDate": "",
       "reviewer": "",
       "reviewNotes": "",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "subagent-driven-development",
@@ -1120,7 +1256,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 14 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "troubleshoot-binlog-mcp",
@@ -1140,7 +1279,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "using-git-worktrees",
@@ -1160,7 +1302,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 1 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "using-superpowers",
@@ -1180,7 +1325,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 8 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "writing-plans",
@@ -1200,7 +1348,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 1 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "analytics",
@@ -1220,7 +1371,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 5 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce. The repository-root MIT license at https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "create-datadriven-aspnetcore",
@@ -1240,7 +1394,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "deep-research",
@@ -1260,7 +1417,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 6 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in sanjay3290/ai-skills at commit 281d88df199357e3091a3be5c743a0fca9a9ae1b. The repository-root Apache-2.0 license at https://github.com/sanjay3290/ai-skills/blob/281d88df199357e3091a3be5c743a0fca9a9ae1b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "huggingface-community-evals",
@@ -1280,7 +1440,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 6 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in huggingface/skills at commit fabc634a893f62ad5c2039830397efa35fa62715. The repository-root Apache-2.0 license at https://github.com/huggingface/skills/blob/fabc634a893f62ad5c2039830397efa35fa62715/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "huggingface-datasets",
@@ -1301,16 +1464,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -1332,15 +1494,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -1361,7 +1522,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 4 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in huggingface/skills at commit fabc634a893f62ad5c2039830397efa35fa62715. The repository-root Apache-2.0 license at https://github.com/huggingface/skills/blob/fabc634a893f62ad5c2039830397efa35fa62715/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "imagegen",
@@ -1381,7 +1545,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.system/imagegen in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.system/imagegen/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "jupyter-notebook",
@@ -1401,7 +1568,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/jupyter-notebook in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/jupyter-notebook/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "sentry",
@@ -1421,7 +1591,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/sentry in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/sentry/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "remotion-best-practices",
@@ -1442,16 +1615,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -1473,15 +1645,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -1503,16 +1674,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -1533,7 +1703,10 @@
       "reviewDate": "",
       "reviewer": "",
       "reviewNotes": "",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "dotnet-webapi",
@@ -1553,7 +1726,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "neon-postgres",
@@ -1573,7 +1749,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 5 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in neondatabase/agent-skills at commit 9df568a3f88a361ea33db00453ff754d07b3b3e1. The repository-root Apache-2.0 license at https://github.com/neondatabase/agent-skills/blob/9df568a3f88a361ea33db00453ff754d07b3b3e1/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "postgres",
@@ -1594,15 +1773,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -1623,7 +1801,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 23 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in resend/resend-skills at commit b2ae7b1798b70134faf679f35fc05b4331462988. The repository-root MIT license at https://github.com/resend/resend-skills/blob/b2ae7b1798b70134faf679f35fc05b4331462988/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "sanity-best-practices",
@@ -1643,7 +1824,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 26 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in sanity-io/agent-toolkit at commit 3ed3a143f8d3413faa7790ac0b2274fd3a8a6320. The repository-root MIT license at https://github.com/sanity-io/agent-toolkit/blob/3ed3a143f8d3413faa7790ac0b2274fd3a8a6320/LICENSE permits redistribution subject to its terms. Required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "supabase-postgres-best-practices",
@@ -1663,7 +1847,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 36 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in supabase/agent-skills at commit c9be0e931b7930f7d02126d04774d904c381e7d7. The repository-root MIT license at https://github.com/supabase/agent-skills/blob/c9be0e931b7930f7d02126d04774d904c381e7d7/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "target-authoring",
@@ -1683,7 +1870,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "template-authoring",
@@ -1703,7 +1893,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "tinybird",
@@ -1724,16 +1917,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -1754,7 +1946,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 1 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in wrsmith108/varlock-claude-skill at commit 348a435345b7ddafb4d1002d41d9e2ef3f5b6992. The repository-root MIT license at https://github.com/wrsmith108/varlock-claude-skill/blob/348a435345b7ddafb4d1002d41d9e2ef3f5b6992/LICENSE permits redistribution subject to its terms. Required upstream license text, source attribution, and any share-alike notice are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-app-service",
@@ -1774,7 +1969,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-app-service directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-blob-storage",
@@ -1794,7 +1992,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-blob-storage directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-cognitive-search",
@@ -1814,7 +2015,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-cognitive-search directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-container-apps",
@@ -1834,7 +2038,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-container-apps directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-cosmos-db",
@@ -1854,7 +2061,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-cosmos-db directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-databricks",
@@ -1874,7 +2084,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-databricks directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-devops",
@@ -1894,7 +2107,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-devops directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-functions",
@@ -1914,7 +2130,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-functions directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-key-vault",
@@ -1934,7 +2153,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-key-vault directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-kubernetes-service",
@@ -1954,7 +2176,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-kubernetes-service directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-machine-learning",
@@ -1974,7 +2199,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-machine-learning directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-monitor",
@@ -1994,7 +2222,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-monitor directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-pipelines",
@@ -2014,7 +2245,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-pipelines directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-sql-database",
@@ -2034,7 +2268,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-sql-database directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "cloudflare",
@@ -2054,7 +2291,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 140 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in cloudflare/skills at commit 49a31e0b3229ccdffe4944be9c61bc7481d1d432. The repository-root Apache-2.0 license at https://github.com/cloudflare/skills/blob/49a31e0b3229ccdffe4944be9c61bc7481d1d432/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "cloudflare-deploy",
@@ -2074,7 +2314,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/cloudflare-deploy in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/cloudflare-deploy/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "deploy-to-vercel",
@@ -2095,16 +2338,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -2125,7 +2367,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 5 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in cloudflare/skills at commit 49a31e0b3229ccdffe4944be9c61bc7481d1d432. The repository-root Apache-2.0 license at https://github.com/cloudflare/skills/blob/49a31e0b3229ccdffe4944be9c61bc7481d1d432/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "netlify-deploy",
@@ -2145,7 +2390,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/netlify-deploy in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/netlify-deploy/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "provider-resources",
@@ -2166,15 +2414,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -2195,7 +2442,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/render-deploy in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/render-deploy/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "terraform-skill",
@@ -2215,7 +2465,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 9 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in antonbabenko/terraform-skill at commit 9c1e92d962a5407c227e5566416e962a2f057240. The repository-root Apache-2.0 license at https://github.com/antonbabenko/terraform-skill/blob/9c1e92d962a5407c227e5566416e962a2f057240/LICENSE permits redistribution subject to its terms. Required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "terraform-style-guide",
@@ -2236,16 +2489,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -2267,16 +2519,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -2297,7 +2548,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 2 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in cloudflare/skills at commit 49a31e0b3229ccdffe4944be9c61bc7481d1d432. The repository-root Apache-2.0 license at https://github.com/cloudflare/skills/blob/49a31e0b3229ccdffe4944be9c61bc7481d1d432/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "content-research-writer",
@@ -2318,16 +2572,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -2348,7 +2601,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 4 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce. The repository-root MIT license at https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "copy-editing",
@@ -2368,7 +2624,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 5 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce. The repository-root MIT license at https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "copywriting",
@@ -2388,7 +2647,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 5 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce. The repository-root MIT license at https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "cro",
@@ -2408,7 +2670,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 4 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce. The repository-root MIT license at https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "internal-comms",
@@ -2428,7 +2693,10 @@
       "reviewDate": "",
       "reviewer": "",
       "reviewNotes": "",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "launch",
@@ -2448,7 +2716,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 4 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce. The repository-root MIT license at https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "marketing-ideas",
@@ -2468,7 +2739,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 4 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce. The repository-root MIT license at https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "marketing-psychology",
@@ -2488,7 +2762,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 2 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce. The repository-root MIT license at https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "microbenchmarking",
@@ -2508,7 +2785,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "microsoft-foundry",
@@ -2528,7 +2808,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/microsoft-foundry directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "microsoft-foundry-classic",
@@ -2548,7 +2831,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/microsoft-foundry-classic directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "microsoft-foundry-local",
@@ -2568,7 +2854,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/microsoft-foundry-local directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "microsoft-foundry-tools",
@@ -2588,7 +2877,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/microsoft-foundry-tools directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "pricing",
@@ -2608,7 +2900,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 6 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce. The repository-root MIT license at https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "product-marketing",
@@ -2628,7 +2923,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 3 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce. The repository-root MIT license at https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "slack-gif-creator",
@@ -2648,7 +2946,10 @@
       "reviewDate": "",
       "reviewer": "",
       "reviewNotes": "",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "social",
@@ -2668,7 +2969,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 11 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce. The repository-root MIT license at https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "x-article-publisher",
@@ -2689,16 +2993,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -2719,7 +3022,10 @@
       "reviewDate": "",
       "reviewer": "",
       "reviewNotes": "",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "shadcn",
@@ -2740,16 +3046,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -2770,7 +3075,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 3 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in wshobson/agents at commit 0874a27b17a22e2b7c2e2bcd725768e0803cad06. The repository-root MIT license at https://github.com/wshobson/agents/blob/0874a27b17a22e2b7c2e2bcd725768e0803cad06/LICENSE permits redistribution subject to its terms. Required upstream license text, source attribution, and any share-alike notice are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "theme-factory",
@@ -2790,7 +3098,10 @@
       "reviewDate": "",
       "reviewer": "",
       "reviewNotes": "",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "agents-sdk",
@@ -2810,7 +3121,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 21 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in cloudflare/skills at commit 49a31e0b3229ccdffe4944be9c61bc7481d1d432. The repository-root Apache-2.0 license at https://github.com/cloudflare/skills/blob/49a31e0b3229ccdffe4944be9c61bc7481d1d432/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "check-bin-obj-clash",
@@ -2830,7 +3144,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "code-review",
@@ -2850,7 +3167,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 1 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in getsentry/skills at commit d12f250460ffd961f549dbebf7eeb0cf4afd4c2e. The repository-root Apache-2.0 license at https://github.com/getsentry/skills/blob/d12f250460ffd961f549dbebf7eeb0cf4afd4c2e/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "convert-to-cpm",
@@ -2870,7 +3190,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "differential-review",
@@ -2890,7 +3213,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 7 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in trailofbits/skills at commit 2be6433b39e009cd2b6fd3be1895f6b1faa5af9a. The repository-root CC-BY-SA-4.0 license at https://github.com/trailofbits/skills/blob/2be6433b39e009cd2b6fd3be1895f6b1faa5af9a/LICENSE permits redistribution subject to its terms. Required upstream license text, source attribution, and any share-alike notice are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "dump-collect",
@@ -2910,7 +3236,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "gh-address-comments",
@@ -2930,7 +3259,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/gh-address-comments in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/gh-address-comments/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "gh-fix-ci",
@@ -2950,7 +3282,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/gh-fix-ci in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/gh-fix-ci/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "hf-cli",
@@ -2970,7 +3305,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 1 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in huggingface/skills at commit fabc634a893f62ad5c2039830397efa35fa62715. The repository-root Apache-2.0 license at https://github.com/huggingface/skills/blob/fabc634a893f62ad5c2039830397efa35fa62715/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "migrate-nullable-references",
@@ -2990,7 +3328,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "migrate-static-to-wrapper",
@@ -3010,7 +3351,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "modern-python",
@@ -3030,7 +3374,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 14 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in trailofbits/skills at commit 2be6433b39e009cd2b6fd3be1895f6b1faa5af9a. The repository-root CC-BY-SA-4.0 license at https://github.com/trailofbits/skills/blob/2be6433b39e009cd2b6fd3be1895f6b1faa5af9a/LICENSE permits redistribution subject to its terms. Required upstream license text, source attribution, and any share-alike notice are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "receiving-code-review",
@@ -3050,7 +3397,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 1 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "requesting-code-review",
@@ -3070,7 +3420,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 2 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "verification-before-completion",
@@ -3090,7 +3443,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 1 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "docx",
@@ -3111,15 +3467,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -3140,7 +3495,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/linear in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/linear/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "notion-knowledge-capture",
@@ -3160,7 +3518,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/notion-knowledge-capture in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/notion-knowledge-capture/LICENSE.txt identifies the MIT license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "openai-docs",
@@ -3180,7 +3541,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/openai-docs in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/openai-docs/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "pdf",
@@ -3201,15 +3565,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -3231,15 +3594,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -3261,15 +3623,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -3290,7 +3651,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 1 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in emilkowalski/skills at commit a81dbca07f2217b7103e510c0f13f8d5b017afc9. The repository-root MIT license at https://github.com/emilkowalski/skills/blob/a81dbca07f2217b7103e510c0f13f8d5b017afc9/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "android-tombstone-symbolication",
@@ -3310,7 +3674,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "dotnet-maui-doctor",
@@ -3330,7 +3697,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "eas-app-stores",
@@ -3351,15 +3721,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -3381,15 +3750,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -3411,15 +3779,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -3440,7 +3807,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 46 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in conorluddy/ios-simulator-skill at commit e38b3ad5cc2585140c91b9c0f974124c3add31dc. The repository-root MIT license at https://github.com/conorluddy/ios-simulator-skill/blob/e38b3ad5cc2585140c91b9c0f974124c3add31dc/LICENSE.md permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "maui-app-lifecycle",
@@ -3460,7 +3830,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "maui-collectionview",
@@ -3480,7 +3853,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "maui-data-binding",
@@ -3500,7 +3876,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "maui-dependency-injection",
@@ -3520,7 +3899,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "maui-safe-area",
@@ -3540,7 +3922,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "maui-shell-navigation",
@@ -3560,7 +3945,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "maui-theming",
@@ -3580,7 +3968,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "swiftui-expert-skill",
@@ -3600,7 +3991,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 51 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in AvdLee/SwiftUI-Agent-Skill at commit 204dba7c67256a8b707ee3fbc5759a824191974f. The repository-root MIT license at https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/204dba7c67256a8b707ee3fbc5759a824191974f/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "eval-performance",
@@ -3620,7 +4014,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "web-perf",
@@ -3640,7 +4037,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 2 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in cloudflare/skills at commit 49a31e0b3229ccdffe4944be9c61bc7481d1d432. The repository-root Apache-2.0 license at https://github.com/cloudflare/skills/blob/49a31e0b3229ccdffe4944be9c61bc7481d1d432/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "azure-static-web-apps",
@@ -3660,7 +4060,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding skills/azure-static-web-apps directory in MicrosoftDocs/Agent-Skills at commit 95544200a6621ee7481b253beb115ac0be701689. The repository-root LICENSE at https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE identifies Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution is allowed subject to attribution, a license link, and indicating changes; the copied files were unchanged. Attribution and license information are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "convert-blazor-server-to-webapp",
@@ -3680,7 +4083,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "vercel-composition-patterns",
@@ -3701,15 +4107,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -3731,15 +4136,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -3761,15 +4165,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -3790,7 +4193,10 @@
       "reviewDate": "",
       "reviewer": "",
       "reviewNotes": "",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "wp-block-development",
@@ -3811,16 +4217,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -3842,16 +4247,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -3873,16 +4277,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -3903,7 +4306,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/security-best-practices in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/security-best-practices/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "security-threat-model",
@@ -3923,7 +4329,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to skills/.curated/security-threat-model in openai/skills at commit 49f948faa9258a0c61caceaf225e179651397431. The skill-specific LICENSE.txt at https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.curated/security-threat-model/LICENSE.txt identifies the Apache-2.0 license and is included in the copied skill directory. Redistribution is permitted under that license subject to its terms. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "semgrep-rule-creator",
@@ -3943,7 +4352,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 5 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in trailofbits/skills at commit 2be6433b39e009cd2b6fd3be1895f6b1faa5af9a. The repository-root CC-BY-SA-4.0 license at https://github.com/trailofbits/skills/blob/2be6433b39e009cd2b6fd3be1895f6b1faa5af9a/LICENSE permits redistribution subject to its terms. Required upstream license text, source attribution, and any share-alike notice are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "variant-analysis",
@@ -3963,7 +4375,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 18 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in trailofbits/skills at commit 2be6433b39e009cd2b6fd3be1895f6b1faa5af9a. The repository-root CC-BY-SA-4.0 license at https://github.com/trailofbits/skills/blob/2be6433b39e009cd2b6fd3be1895f6b1faa5af9a/LICENSE permits redistribution subject to its terms. Required upstream license text, source attribution, and any share-alike notice are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "programmatic-seo",
@@ -3983,7 +4398,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 4 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce. The repository-root MIT license at https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "schema",
@@ -4003,7 +4421,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 3 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce. The repository-root MIT license at https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "seo-aeo-best-practices",
@@ -4023,7 +4444,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 5 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in sanity-io/agent-toolkit at commit 3ed3a143f8d3413faa7790ac0b2274fd3a8a6320. The repository-root MIT license at https://github.com/sanity-io/agent-toolkit/blob/3ed3a143f8d3413faa7790ac0b2274fd3a8a6320/LICENSE permits redistribution subject to its terms. Required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "seo-audit",
@@ -4043,7 +4467,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 9 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in coreyhaines31/marketingskills at commit 0cd9b3a0ef4c411a1d690419ce843f2a1da32cce. The repository-root MIT license at https://github.com/coreyhaines31/marketingskills/blob/0cd9b3a0ef4c411a1d690419ce843f2a1da32cce/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "assertion-quality",
@@ -4063,7 +4490,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "clr-activation-debugging",
@@ -4083,7 +4513,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "code-testing",
@@ -4103,7 +4536,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "code-testing-agent",
@@ -4123,7 +4559,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "code-testing-extensions",
@@ -4143,7 +4582,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "coverage-analysis",
@@ -4163,7 +4605,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "crap-score",
@@ -4183,7 +4628,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "find-bugs",
@@ -4203,7 +4651,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 1 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in getsentry/skills at commit d12f250460ffd961f549dbebf7eeb0cf4afd4c2e. The repository-root Apache-2.0 license at https://github.com/getsentry/skills/blob/d12f250460ffd961f549dbebf7eeb0cf4afd4c2e/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "find-untested-sources",
@@ -4223,7 +4674,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "generate-testability-wrappers",
@@ -4243,7 +4697,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "grade-tests",
@@ -4263,7 +4720,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "playwright-skill",
@@ -4283,7 +4743,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 6 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in lackeyjb/playwright-skill at commit dd47a6a023e249eb1b36e9e943eab89d0900865d. The repository-root MIT license at https://github.com/lackeyjb/playwright-skill/blob/dd47a6a023e249eb1b36e9e943eab89d0900865d/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "property-based-testing",
@@ -4303,7 +4766,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 9 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in trailofbits/skills at commit 2be6433b39e009cd2b6fd3be1895f6b1faa5af9a. The repository-root CC-BY-SA-4.0 license at https://github.com/trailofbits/skills/blob/2be6433b39e009cd2b6fd3be1895f6b1faa5af9a/LICENSE permits redistribution subject to its terms. Required upstream license text, source attribution, and any share-alike notice are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "run-tests",
@@ -4323,7 +4789,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "scaffold-dotnet-test-project",
@@ -4343,7 +4812,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "systematic-debugging",
@@ -4363,7 +4835,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 11 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "test-analysis-extensions",
@@ -4383,7 +4858,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "test-anti-patterns",
@@ -4403,7 +4881,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "test-driven-development",
@@ -4423,7 +4904,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 2 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in obra/superpowers at commit 2ce8aa15d05bd57213e6f746f953aafb7ded7a8b. The repository-root MIT license at https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "test-gap-analysis",
@@ -4443,7 +4927,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "test-smell-detection",
@@ -4463,7 +4950,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "test-tagging",
@@ -4483,7 +4973,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "test-value-evidence",
@@ -4503,7 +4996,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "testability-obstacle",
@@ -4523,7 +5019,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "webapp-testing",
@@ -4543,7 +5042,10 @@
       "reviewDate": "",
       "reviewer": "",
       "reviewNotes": "",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "writing-mstest-tests",
@@ -4563,7 +5065,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "brand-guidelines",
@@ -4583,7 +5088,10 @@
       "reviewDate": "",
       "reviewer": "",
       "reviewNotes": "",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "canvas-design",
@@ -4603,7 +5111,10 @@
       "reviewDate": "",
       "reviewer": "",
       "reviewNotes": "",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "design-taste-frontend",
@@ -4624,16 +5135,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -4655,15 +5165,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -4685,15 +5194,14 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes"
+        "reviewNotes"
       ]
     },
     {
@@ -4714,7 +5222,10 @@
       "reviewDate": "",
       "reviewer": "",
       "reviewNotes": "",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     },
     {
       "id": "interface-review",
@@ -4735,16 +5246,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -4766,16 +5276,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -4797,16 +5306,15 @@
       "reviewer": "",
       "reviewNotes": "",
       "missingEvidence": [
-        "approval record",
-        "upstream repository URL",
-        "immutable upstream commit SHA",
+        "upstreamUrl",
+        "upstreamRevision (full commit SHA)",
         "reviewed license",
-        "license evidence URL",
+        "licenseEvidenceUrl",
         "explicit redistribution permission",
-        "review date",
+        "reviewDate",
         "reviewer",
-        "review notes",
-        "registry license declaration"
+        "reviewNotes",
+        "registry declared license"
       ]
     },
     {
@@ -4827,7 +5335,10 @@
       "reviewDate": "2026-10-29",
       "reviewer": "OpenAI GPT-6 (automated evidence review)",
       "reviewNotes": "Automated content comparison on 2026-10-29 found all 39 files in the bundled skill directory identical by Git blob SHA to the corresponding upstream directory in ConardLi/garden-skills at commit 2b9a89340b70f632d31c0f1c69fce94a7912423e. The repository-root MIT license at https://github.com/ConardLi/garden-skills/blob/2b9a89340b70f632d31c0f1c69fce94a7912423e/LICENSE permits redistribution subject to its terms. The required upstream license text and source attribution are included in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice or a substitute for maintainer sign-off.",
-      "missingEvidence": []
+      "missingEvidence": [
+        "upstreamUrl must be a valid HTTPS URL",
+        "licenseEvidenceUrl must be a valid HTTPS URL"
+      ]
     }
   ]
 }
