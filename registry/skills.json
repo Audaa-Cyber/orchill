@@ -3016,7 +3016,7 @@
         "path": "../skills/content-and-marketing/x-article-publisher"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from wshuyi/x-article-publisher-skill; command: npx skills add wshuyi/x-article-publisher-skill@x-article-publisher. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from wshuyi/x-article-publisher-skill; command: npx skills add wshuyi/x-article-publisher-skill@x-article-publisher. Verified 2026-10-29 against wshuyi/x-article-publisher-skill at commit eb3197d1d8579556aea5018d5c0b141d55fc2df6; all 4 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/wshuyi/x-article-publisher-skill/blob/eb3197d1d8579556aea5018d5c0b141d55fc2df6/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -3027,7 +3027,8 @@
         "content-marketing",
         "article",
         "publisher"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "algorithmic-art",
@@ -3066,7 +3067,7 @@
         "path": "../skills/design-systems-and-components/shadcn"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from shadcn-ui/ui; command: npx skills add shadcn-ui/ui@shadcn. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from shadcn-ui/ui; command: npx skills add shadcn-ui/ui@shadcn. Verified 2026-10-29 against shadcn-ui/ui at commit 96da9cc7f1aa10580a3741664e2a77c721206c00; all 21 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/shadcn-ui/ui/blob/96da9cc7f1aa10580a3741664e2a77c721206c00/LICENSE.md.",
       "targets": [
         "project",
         "claude",
@@ -3076,7 +3077,8 @@
       "tags": [
         "design-systems-components",
         "shadcn"
-      ]
+      ],
+      "license": "MIT"
     },
     {
       "id": "tailwind-design-system",
@@ -3742,7 +3744,7 @@
         "path": "../skills/mobile-development/eas-app-stores"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from expo/skills; command: npx skills add expo/skills@eas-app-stores. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from expo/skills; command: npx skills add expo/skills@eas-app-stores. Verified 2026-10-29 against expo/skills at commit 05754e71d02abe0d2d7a2fb5259ccac41f5ea59c; all 8 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -3767,7 +3769,7 @@
         "path": "../skills/mobile-development/expo-native-ui"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from expo/skills; command: npx skills add expo/skills@expo-native-ui. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from expo/skills; command: npx skills add expo/skills@expo-native-ui. Verified 2026-10-29 against expo/skills at commit 05754e71d02abe0d2d7a2fb5259ccac41f5ea59c; all 9 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/LICENSE.",
       "targets": [
         "project",
         "claude",
@@ -3791,7 +3793,7 @@
         "path": "../skills/mobile-development/expo-upgrade"
       },
       "skillPath": ".",
-      "provenance": "Imported with Skills CLI from expo/skills; command: npx skills add expo/skills@expo-upgrade. Verify source, pin, and license before publishing.",
+      "provenance": "Imported with Skills CLI from expo/skills; command: npx skills add expo/skills@expo-upgrade. Verified 2026-10-29 against expo/skills at commit 05754e71d02abe0d2d7a2fb5259ccac41f5ea59c; all 9 bundled file(s) matched upstream by Git blob SHA. License evidence: https://github.com/expo/skills/blob/05754e71d02abe0d2d7a2fb5259ccac41f5ea59c/LICENSE.",
       "targets": [
         "project",
         "claude",
