@@ -27,11 +27,14 @@ export function buildProvenanceInventory(registry: Registry, ledger: ApprovalFil
     const reviewer = approval?.reviewer?.trim() ?? "";
     const reviewNotes = approval?.notes?.trim() ?? "";
     const missingEvidence: string[] = [];
+    const isFirstPartyExample = skill.id === "demo-focus" && skill.source?.type === "local" && skill.source.path === "../skills/examples/demo-focus" && skill.provenance === "Bundled Orchill example; not a third-party skill.";
     if (isRemote) {
       if (!upstreamUrl) missingEvidence.push("registrySourceUrl");
       if (!/^(?:[a-f0-9]{40}|[a-f0-9]{64})$/i.test(upstreamRevision)) missingEvidence.push("upstreamRevision (full commit SHA)");
       if (!skill.license) missingEvidence.push("registry declared license");
       if (!licenseEvidenceUrl) missingEvidence.push("licenseEvidenceUrl");
+    } else if (isFirstPartyExample) {
+      if (!skill.license?.trim()) missingEvidence.push("registry declared license");
     } else {
       if (!upstreamUrl) missingEvidence.push("upstreamUrl");
       if (!/^(?:[a-f0-9]{40}|[a-f0-9]{64})$/i.test(upstreamRevision)) missingEvidence.push("upstreamRevision (full commit SHA)");
