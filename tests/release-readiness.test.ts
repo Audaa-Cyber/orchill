@@ -88,3 +88,22 @@ test("strict release check blocks remote skills without an immutable upstream re
     assert.match(result.stdout, /immutable 40- or 64-character Git commit hash/);
   } finally { await rm(root, { recursive: true, force: true }); }
 });
+
+
+test("strict release check does not demand third-party approval for the explicit first-party demo example", async () => {
+  const root = await fixture({ version: 1, approvals: [] }, [{
+    id: "demo-focus", name: "Demo Focus", description: "First-party example", category: "Examples",
+    skillPath: ".", source: { type: "local", path: "../skills/examples/demo-focus" },
+    license: "MIT", provenance: "Bundled Orchill example; not a third-party skill."
+  }]);
+  try {
+    const result = spawnSync(process.execPath, ["--import", tsxLoader, checker, "--strict"], { cwd: root, encoding: "utf8" });
+    assert.equal(result.status, 0, result.stderr);
+    const report = JSON.parse(result.stdout) as { summary: { approved: number; firstPartyExamples: number; blockers: number } };
+    assert.equal(report.summary.approved, 1);
+    assert.equal(report.summary.firstPartyExamples, 1);
+    assert.equal(report.summary.blockers, 0);
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
