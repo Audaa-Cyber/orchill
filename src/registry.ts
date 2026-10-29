@@ -41,6 +41,7 @@ export async function loadRegistry(file = defaultRegistryPath): Promise<{ regist
   }
   if (!isRecord(parsed)) throw new Error("Registry root must be an object.");
   rejectUnknownKeys(parsed, ROOT_KEYS, "Registry");
+  if (parsed.$schema !== undefined) requireNonEmptyString(parsed.$schema, "Registry $schema");
   if (parsed.version !== 1 || !Array.isArray(parsed.skills)) {
     throw new Error("Unsupported registry format; expected version 1 and a skills array.");
   }
