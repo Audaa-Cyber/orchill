@@ -31,7 +31,8 @@
     "release:check": "tsx scripts/check-release-readiness.ts",
     "prepublishOnly": "npm run build && npm run release:check -- --strict",
     "provenance:inventory": "tsx scripts/build-provenance-inventory.ts",
-    "release:review-queue": "tsx scripts/build-release-review-queue.ts"
+    "release:review-queue": "tsx scripts/build-release-review-queue.ts",
+    "package:smoke": "tsx scripts/smoke-packed-package.ts"
   },
   "dependencies": {
     "commander": "^14.0.0"
