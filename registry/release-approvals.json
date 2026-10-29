@@ -322,6 +322,17 @@
       "notes": "Automated content comparison on 2026-10-29 found every file in this local skill directory identical by Git blob SHA to the corresponding upstream directory in dotnet/skills at commit 95e7d0cb7994d47b5789baa68e13f7a2f348b956. The repository-root MIT license at https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE grants distribution rights subject to preserving the copyright and permission notice. The bundled package includes the required notice in THIRD_PARTY_NOTICES.md. Automated evidence review only; not legal advice."
     },
     {
+      "skillId": "clawsec-clawhub-checker",
+      "upstreamUrl": "https://github.com/prompt-security/clawsec",
+      "upstreamRevision": "e46beec4f559e15c57d250023298391253e9ce43",
+      "license": "AGPL-3.0",
+      "licenseEvidenceUrl": "https://github.com/prompt-security/clawsec/blob/e46beec4f559e15c57d250023298391253e9ce43/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-29",
+      "reviewer": "OpenAI GPT-6 (automated evidence review)",
+      "notes": "Automated content comparison found all 11 files in the bundled skill directory identical by Git blob SHA to skills/clawsec-clawhub-checker in prompt-security/clawsec at commit e46beec4f559e15c57d250023298391253e9ce43. The pinned AGPL-3.0 license permits redistribution subject to its terms and preserving license/notice obligations; the full license text and upstream attribution are included in THIRD_PARTY_NOTICES.md. The copied payload is unchanged. Automated evidence review only; not legal advice or a substitute for maintainer sign-off."
+    },
+    {
       "skillId": "cloudflare",
       "upstreamUrl": "https://github.com/cloudflare/skills",
       "upstreamRevision": "49a31e0b3229ccdffe4944be9c61bc7481d1d432",
