@@ -12,7 +12,7 @@ Keep the full development catalogue in the repository, but do not distribute thi
 ## Current findings
 The approval ledger is intentionally empty. The report marks every skill as needing evidence; a registry license label does not equal approval. The 209 local payloads are the primary redistribution concern. Remote Git entries also need accurate source/revision/license metadata and a clear distribution decision.
 
-The release-review queue groups imported skills using the recorded Skills CLI repository hint or marketplace plugin provenance. This is a triage aid only: a command string is not proof that the copied payload matches that repository, that the import came from the stated commit, or that the exact skill and bundled assets may be redistributed. The queue currently has 55 source groups and no `unknown-origin` group based on those hints. After the dotnet and MicrosoftDocs batches below, 100 entries have complete evidence and 121 still require review. Verify exact content and immutable revisions before recording any approval.
+The release-review queue groups imported skills using the recorded Skills CLI repository hint or marketplace plugin provenance. This is a triage aid only: a command string is not proof that the copied payload matches that repository, that the import came from the stated commit, or that the exact skill and bundled assets may be redistributed. The queue currently has 55 source groups and no `unknown-origin` group based on those hints. After the dotnet and MicrosoftDocs batches below, 113 entries have complete evidence and 108 still require review. Verify exact content and immutable revisions before recording any approval.
 
 ## Verified batch: dotnet/skills
 
@@ -24,7 +24,15 @@ This is an **automated evidence review**, not legal advice or a claim that a hum
 
 On 2026-10-29, an automated source-and-license review covered 19 imported skills from [MicrosoftDocs/Agent-Skills](https://github.com/MicrosoftDocs/Agent-Skills), pinned to commit `95544200a6621ee7481b253beb115ac0be701689`. All 34 files across those 19 local skill directories matched the corresponding upstream file paths and Git blob SHAs exactly. The repository-root [LICENSE at the pinned commit](https://github.com/MicrosoftDocs/Agent-Skills/blob/95544200a6621ee7481b253beb115ac0be701689/LICENSE) identifies Creative Commons Attribution 4.0 International (CC BY 4.0). The copies are unchanged; the package notices identify the source and license and link to the full license terms.
 
-This is an **automated evidence review**, not legal advice or a claim that a human maintainer has signed off. A maintainer should confirm the record before publishing. Together with the dotnet batch, 100 entries have complete recorded evidence; 121 remain blocked.
+This is an **automated evidence review**, not legal advice or a claim that a human maintainer has signed off. A maintainer should confirm the record before publishing. At this stage, the dotnet and MicrosoftDocs batches together had 100 entries with complete recorded evidence.
+
+## Verified batch: openai/skills
+
+On 2026-10-29, an automated source-and-license review covered 13 imported skills from [openai/skills](https://github.com/openai/skills), pinned to commit `49f948faa9258a0c61caceaf225e179651397431`. All 432 files across those 13 local skill directories matched the corresponding upstream file paths and Git blob SHAs exactly. Each skill has its own `LICENSE.txt` inside the copied directory: 12 use Apache-2.0 and `notion-knowledge-capture` uses MIT. The per-skill license files are included in the package, and `THIRD_PARTY_NOTICES.md` links to the exact evidence.
+
+Two additional imported skills, `figma` and `figma-implement-design`, are explicitly marked **proprietary / redistribution not approved pending review**. Their license files state that use is governed by Figma Developer Terms and describe the materials as a beta feature; they do not grant a standard open-source license. They have no approval records and remain critical blockers. Do not include them in a public release unless the applicable terms are reviewed and redistribution is confirmed, or they are removed from the published package.
+
+This is an **automated evidence review**, not legal advice or a claim that a human maintainer has signed off. The maintainer should confirm the records before publication. Across the three reviewed source batches, 113 entries have complete evidence and 108 remain unresolved.
 
 ## Publication policy
 Do not publish a release containing local third-party payloads until the strict evidence gate and clean packed-package install test pass. Apache-2.0 applies to Orchill's own code, not automatically to imported skills.
