@@ -28,7 +28,8 @@ test("installs a complete nested skill directory", async () => {
       skillPath: "."
     };
     const installed = await installSkill(skill, registryRoot, "project", cwd);
-    assert.equal(installed, path.join(cwd, ".agents", "skills", "tests", "test-skill"));\n    assert.equal((await readFile(path.join(installed, "SKILL.md"), "utf8")).replace(/\r\n/g, "\n"), "# Test skill\n");
+    assert.equal(installed, path.join(cwd, ".agents", "skills", "tests", "test-skill"));
+    assert.equal((await readFile(path.join(installed, "SKILL.md"), "utf8")).replace(/\r\n/g, "\n"), "# Test skill\n");
     assert.equal((await readFile(path.join(installed, "references", "guide.md"), "utf8")).replace(/\r\n/g, "\n"), "Nested guide\n");
     await assert.rejects(() => installSkill(skill, registryRoot, "project", cwd), /Already exists/);
     await writeFile(path.join(source, "SKILL.md"), "# Updated skill\n");
@@ -176,10 +177,10 @@ test("refuses to uninstall an unmanaged directory", async () => {
   const temp = await mkdtemp(path.join(os.tmpdir(), "orchill-unmanaged-test-"));
   try {
     const cwd = path.join(temp, "project");
-    const destination = path.join(cwd, ".agents", "skills", "user-skill");
+    const destination = path.join(cwd, ".agents", "skills", "tests", "user-skill");
     await mkdir(destination, { recursive: true });
     await writeFile(path.join(destination, "SKILL.md"), "# User-owned skill\\n");
-    await assert.rejects(() => uninstallSkill("user-skill", "project", cwd), /no valid Orchill installation marker/);
+    await assert.rejects(() => uninstallSkill("user-skill", "project", cwd, "Tests"), /no valid Orchill installation marker/);
     assert.equal(await readFile(path.join(destination, "SKILL.md"), "utf8"), "# User-owned skill\\n");
   } finally {
     await rm(temp, { recursive: true, force: true });
