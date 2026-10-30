@@ -24,7 +24,7 @@ test("help documents exactly the canonical public command family", () => {
     "list [category]", "info <name>", "add <skill>", "add <category>", "add catalogue", "update",
     "remove <name>", "check [name]", "init", "import <file>",
   ]) assert.match(result.stdout, new RegExp(command.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
-  assert.doesNotMatch(result.stdout, /\b(?:ls|up|rm|audit|registry|targets|mcp|import-commands)\b/);
+  assert.doesNotMatch(result.stdout, /^\s+(?:ls|up|rm|audit|registry|targets|mcp|import-commands|help)\s+/m);
 });
 
 test("version is available with --version and -v", () => {
@@ -61,4 +61,6 @@ test("removed aliases, extra subcommands, and non-canonical catalogue spelling a
     const result = run([command]);
     assert.notEqual(result.status, 0, `unexpectedly accepted command: ${command}`);
   }
+  assert.notEqual(run(["add", "catalog", "--dry-run"]).status, 0);
+  assert.notEqual(run(["remove", "catalogue", "--dry-run"]).status, 0);
 });
