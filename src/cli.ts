@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { Command } from "commander";
 import path from "node:path";
-import { access, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { loadRegistry, defaultRegistryPath } from "./registry.js";
 import { installSkill, targetRoot, uninstallSkill, verifySkillInstallation } from "./install.js";
 import type { Skill, Registry } from "./types.js";
@@ -282,12 +282,12 @@ ${end}`;
   let existing = "";
   try { existing = await readFile(instructions, "utf8"); }
   catch (error) { if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error; }
-  if (existing.includes(begin) && existing.includes(end)) {
+  if (existing?.includes(begin) && existing.includes(end)) {
     console.log(`Orchill project setup already exists: ${skillsDir}`);
     console.log(`Agent instructions already contain the Orchill section: ${instructions}`);
     return;
   }
-  if (existing.includes(begin) || existing.includes(end)) throw new Error(`Incomplete Orchill-managed section in ${instructions}; repair it manually to preserve existing instructions.`);
+  if (existing?.includes(begin) || existing?.includes(end)) throw new Error(`Incomplete Orchill-managed section in ${instructions}; repair it manually to preserve existing instructions.`);
   const updated = existing ? `${existing.replace(/\s*$/, "")}\n\n${managed}\n` : `# Instructions for AI coding agents\n\n${managed}\n`;
   await writeFile(instructions, updated, {flag: existing ? "w" : "wx"});
   console.log(`Prepared ${skillsDir}`);
