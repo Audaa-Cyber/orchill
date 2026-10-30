@@ -145,7 +145,7 @@ registryOption(program.command("add <name>").description("Install a skill, categ
     const resolved = resolveName(registry, name);
     let skills: Skill[];
     let label: string;
-    if (name.trim().toLowerCase() === "catalogue" || name.trim().toLowerCase() === "catalog") {
+    if (name.trim().toLowerCase() === "catalogue") {
       skills = registry.skills;
       label = "Full catalogue";
     } else if (resolved.skill) {
