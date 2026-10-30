@@ -56,7 +56,7 @@ test("init creates project skill directory and appends instructions without repl
   }
 });
 
-test("removed aliases and extra subcommands are not accepted", () => {
+test("removed aliases, extra subcommands, and non-canonical catalogue spelling are rejected", () => {
   for (const command of ["ls", "up", "rm", "audit", "registry", "targets", "mcp", "import-commands", "help"]) {
     const result = run([command]);
     assert.notEqual(result.status, 0, `unexpectedly accepted command: ${command}`);
