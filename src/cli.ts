@@ -133,7 +133,7 @@ registryOption(program.command("info <name>").description("Show details for a sk
     throw new Error(`Unknown skill or category: ${name}. Run "orchill list".`);
   });
 
-registryOption(program.command("add <name>").description("Install a skill, category, or the full catalogue"))
+registryOption(program.command("add <skill>").description("Install a skill, category, or the full catalogue"))
   .option("-t, --target <target>", "project, agents, claude, or codex", "project")
   .option("-C, --cwd <path>", "Project directory", process.cwd())
   .option("--force", "Replace existing Orchill-managed installations")
