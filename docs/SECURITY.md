@@ -22,9 +22,9 @@ Orchill installs files; it does not run skill scripts. Skills are instructions a
 - Existing installs require explicit `--force`; replacement is staged and the prior install is restored if the swap fails.
 - Category installs show a plan and require confirmation unless `--yes` is passed.
 
-## Catalog audit command
+## Catalog review tooling
 
-Run `orchill audit` to check missing license/provenance metadata, local skill paths, missing `SKILL.md` files, source symlinks, and a small set of review-worthy instruction or script patterns. Use `orchill audit --json` for machine-readable findings and `orchill audit --strict` to fail on any finding. Heuristic matches can be false positives; no finding is not proof of safety. Git-backed entries are not downloaded or scanned by this command.
+The public CLI intentionally exposes only the documented commands in `orchill --help`; catalog review is handled by repository release-review tooling rather than a separate CLI command. Run the repository's release checks before packaging. Heuristic findings require human review and are not proof that a skill is safe or correctly licensed.
 
 ## Known gaps before a security-focused release
 
