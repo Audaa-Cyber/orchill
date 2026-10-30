@@ -59,21 +59,35 @@ Use `--cwd /path/to/project` to select a destination project. Use `--force` to r
 
 ## Commands
 
-- `orchill list [category]` / `orchill ls [category]` — list categories, or skills inside one category.
-- `orchill list --all` — list every skill in every category.
+- `orchill list` — list categories.
+- `orchill list <category>` — list skills in a category.
+- `orchill list --all` — list every skill across categories.
 - `orchill info <name>` — inspect a skill or category.
-- `orchill add <name>` — install one skill or every skill in a category.
-- `orchill add catalogue` — install the entire eligible catalogue with all category and skill folders preserved.
-- `orchill update` / `orchill up` — update Orchill-managed installed skills.
-- `orchill remove <name>` / `orchill rm <name>` — remove an installed skill, category, or catalogue.
-- `orchill check` — verify installed content; use `--json` for automation.
-- `orchill audit` — review registry metadata and heuristic findings.
-- `orchill init` — create a project-local registry template.
-- `orchill import <file>` — stage Skills CLI or marketplace command imports.
-- `orchill --help` / `orchill -h` — explain the full interface, structure, targets, agent integration, safety, and automation.
-- `orchill --version` / `orchill -V` — show the installed version.
+- `orchill add <skill>` — install one skill.
+- `orchill add <category>` — install every eligible skill in a category.
+- `orchill add catalogue` — install the entire eligible catalogue, preserving the complete folder hierarchy.
+- `orchill update` — update Orchill-managed installed skills.
+- `orchill remove <name>` — remove an installed skill or category.
+- `orchill check` — check all installed skills.
+- `orchill check <name>` — check one skill or category.
+- `orchill init` — prepare the current project for Orchill.
+- `orchill import <file>` — import supported skill command lists for review.
+- `orchill --help` — show help.
+- `orchill --version` — show the installed version.
 
-No category gets its own command. The same `list`, `info`, `add`, `update`, `remove`, and `check` commands work for every category and skill.
+### What does `orchill init` do?
+
+Install the npm package once on your machine, then initialize each project where you want to use Orchill:
+
+```sh
+npm install -g orchill
+cd my-project
+orchill init
+```
+
+Initialization creates `.agents/skills/` and adds a clearly marked Orchill section to `AGENTS.md`, telling compatible coding agents where skills live and how to use the supported CLI safely. If `AGENTS.md` already exists, Orchill preserves its current content and appends the managed section. Re-running `orchill init` is safe and does not duplicate the section.
+
+`orchill init` is project setup only: it does not install skills, install the whole catalogue, replace the registry, or automatically configure every AI client. After initialization, use `orchill list` to browse and `orchill add <skill>`, `orchill add <category>`, or `orchill add catalogue` to install what you need. Initialization is per project, not per terminal session or every CLI invocation.
 
 ## Add a Git-backed skill
 
@@ -102,7 +116,7 @@ For a Git source, `skillPath` identifies the directory in the source repository.
 
 ## Registry
 
-Default registry: `registry/skills.json`. Its format is documented by `registry/skills.schema.json`. You can use a separate registry with `--registry`; `orchill init` creates an empty project-local template. Orchill validates required fields and duplicate IDs at load time.
+Default registry: `registry/skills.json`. Its format is documented by `registry/skills.schema.json`. You can use a separate registry with `--registry`; `orchill init` prepares project-level skill discovery and agent instructions. Orchill validates required fields and duplicate IDs at load time.
 
 ## Security model and limitations
 
@@ -111,10 +125,10 @@ Default registry: `registry/skills.json`. Its format is documented by `registry/
 - Skill IDs and relative paths are validated; destination parent symlinks are rejected.
 - Existing installs are not overwritten unless `--force` is supplied.
 - Category installation prints the complete plan and asks for confirmation unless `--yes` is passed.
-- Source/license metadata is only as trustworthy as the registry maintainer. Orchill does not verify signatures or prove that skill instructions are safe. `orchill audit` provides limited heuristic triage only; remote Git source content is not downloaded by the audit.
+- Source/license metadata is only as trustworthy as the registry maintainer. Orchill does not verify signatures or prove that skill instructions are safe. The project has separate internal review tooling; it is not part of the public CLI command interface.
 - Review third-party `SKILL.md` and referenced scripts before allowing an agent to use them.
 - Do not treat a URL, repository name, or license field as proof that a source is safe or correctly licensed.
-- MCP is available as an agent integration when configured by the host; the npm package does not automatically configure every AI client. Orchill does not execute installed skill scripts.
+- Installing the npm package makes the CLI available but does not automatically configure every AI client. Run `orchill init` in each project and follow any additional host-specific discovery setup. Orchill does not execute installed skill scripts.
 - This CLI does not make skills automatically available inside hosted ChatGPT or Claude chats. Such environments need a supported local tool, filesystem, or MCP integration.
 
 ## Development
@@ -153,7 +167,7 @@ The importer supplies non-interactive upstream CLI flags and uses Codex only as 
 
 ## Bulk-import agent plugin marketplace commands
 
-The same `orchill import-commands` command also accepts slash-command lists for agent plugin marketplaces. For example, create `marketplace-commands.txt`:
+The `orchill import` command also accepts slash-command lists for agent plugin marketplaces. For example, create `marketplace-commands.txt`:
 
 ```text
 /plugin marketplace add dotnet/skills
