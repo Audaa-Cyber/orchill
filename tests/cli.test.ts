@@ -21,7 +21,7 @@ test("help documents exactly the canonical public command family", () => {
   const result = run(["--help"]);
   assert.equal(result.status, 0, result.stderr);
   for (const command of [
-    "list [category]", "info <name>", "add <name>", "update",
+    "list [category]", "info <name>", "add <skill>", "add <category>", "add catalogue", "update",
     "remove <name>", "check [name]", "init", "import <file>",
   ]) assert.match(result.stdout, new RegExp(command.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   assert.doesNotMatch(result.stdout, /\b(?:ls|up|rm|audit|registry|targets|mcp|import-commands)\b/);
