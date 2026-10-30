@@ -2,7 +2,7 @@
   "version": 1,
   "generatedFrom": "registry/skills.json",
   "categoryCount": 19,
-  "skillCount": 201,
+  "skillCount": 202,
   "categories": [
     {
       "name": ".NET & Build Systems",
@@ -19,7 +19,7 @@
     {
       "name": "Agent Tooling & Workflows",
       "slug": "agent-tooling-and-workflows",
-      "count": 14,
+      "count": 15,
       "index": "catalog/categories/agent-tooling-and-workflows/README.md"
     },
     {

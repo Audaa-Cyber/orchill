@@ -1,6 +1,6 @@
 # Agent Tooling & Workflows
 
-**14 skills** · [All categories](../../CATALOG.md)
+**15 skills** · [All categories](../../CATALOG.md)
 
 Generated from `registry/skills.json`. Local payloads live under `skills/<category-slug>/<skill-id>/`; Git-backed skills remain remote.
 
@@ -18,5 +18,6 @@ Generated from `registry/skills.json`. Local payloads live under `skills/<catego
 | Subagent Driven Development | `subagent-driven-development` | local | [`skills/agent-tooling-and-workflows/subagent-driven-development`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/subagent-driven-development) | MIT |
 | Troubleshoot Binlog Mcp | `troubleshoot-binlog-mcp` | local | [`skills/agent-tooling-and-workflows/troubleshoot-binlog-mcp`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/troubleshoot-binlog-mcp) | MIT |
 | Using Git Worktrees | `using-git-worktrees` | local | [`skills/agent-tooling-and-workflows/using-git-worktrees`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/using-git-worktrees) | MIT |
+| Using Orchill | `orchill-cli` | local | [`skills/agent-tooling-and-workflows/orchill-cli`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/orchill-cli) | Apache-2.0 |
 | Using Superpowers | `using-superpowers` | local | [`skills/agent-tooling-and-workflows/using-superpowers`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/using-superpowers) | MIT |
 | Writing Plans | `writing-plans` | local | [`skills/agent-tooling-and-workflows/writing-plans`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/writing-plans) | MIT |

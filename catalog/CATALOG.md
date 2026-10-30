@@ -2,13 +2,13 @@
 
 > Generated from `registry/skills.json`. Do not edit manually; update the registry and run `npm run catalog:generate`.
 
-**201 skills · 19 categories**
+**202 skills · 19 categories**
 
 ## Categories
 
 - [.NET & Build Systems](categories/net-and-build-systems/README.md) — 40 skills
 - [Accessibility](categories/accessibility/README.md) — 1 skills
-- [Agent Tooling & Workflows](categories/agent-tooling-and-workflows/README.md) — 14 skills
+- [Agent Tooling & Workflows](categories/agent-tooling-and-workflows/README.md) — 15 skills
 - [AI & Data](categories/ai-and-data/README.md) — 10 skills
 - [Backend & APIs](categories/backend-and-apis/README.md) — 10 skills
 - [Cloud & DevOps](categories/cloud-and-devops/README.md) — 23 skills
@@ -83,6 +83,7 @@
 | Agent Tooling & Workflows | [Subagent Driven Development](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/subagent-driven-development) | `subagent-driven-development` | local | [`skills/agent-tooling-and-workflows/subagent-driven-development`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/subagent-driven-development) |
 | Agent Tooling & Workflows | [Troubleshoot Binlog Mcp](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/troubleshoot-binlog-mcp) | `troubleshoot-binlog-mcp` | local | [`skills/agent-tooling-and-workflows/troubleshoot-binlog-mcp`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/troubleshoot-binlog-mcp) |
 | Agent Tooling & Workflows | [Using Git Worktrees](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/using-git-worktrees) | `using-git-worktrees` | local | [`skills/agent-tooling-and-workflows/using-git-worktrees`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/using-git-worktrees) |
+| Agent Tooling & Workflows | [Using Orchill](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/orchill-cli) | `orchill-cli` | local | [`skills/agent-tooling-and-workflows/orchill-cli`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/orchill-cli) |
 | Agent Tooling & Workflows | [Using Superpowers](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/using-superpowers) | `using-superpowers` | local | [`skills/agent-tooling-and-workflows/using-superpowers`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/using-superpowers) |
 | Agent Tooling & Workflows | [Writing Plans](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/writing-plans) | `writing-plans` | local | [`skills/agent-tooling-and-workflows/writing-plans`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/agent-tooling-and-workflows/writing-plans) |
 | AI & Data | [Analytics](https://github.com/Audaa-Cyber/orchill/tree/main/skills/ai-and-data/analytics) | `analytics` | local | [`skills/ai-and-data/analytics`](https://github.com/Audaa-Cyber/orchill/tree/main/skills/ai-and-data/analytics) |

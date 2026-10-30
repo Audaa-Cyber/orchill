@@ -1,10 +1,10 @@
 {
   "generatedFrom": "registry\\skills.json",
   "summary": {
-    "skills": 201,
-    "withApprovalRecord": 201,
-    "withExplicitRedistributionPermission": 201,
-    "withNoMissingEvidence": 201,
+    "skills": 202,
+    "withApprovalRecord": 202,
+    "withExplicitRedistributionPermission": 202,
+    "withNoMissingEvidence": 202,
     "requiringReview": 0
   },
   "skills": [
@@ -1066,6 +1066,26 @@
       "reviewDate": "2026-10-29",
       "reviewer": "Orchill provenance review (automated upstream verification, automated license classification)",
       "reviewNotes": "Upstream skills/using-git-worktrees in obra/superpowers. Bundled SKILL.md is byte-identical (CRLF/BOM-normalized SHA-256 8cfb86f121269e8f) to the upstream file at immutable commit 2ce8aa15d05b (repository HEAD at review). Bundled-directory comparison: 1/1 upstream files byte-identical (CRLF/BOM-normalized SHA-256), 0 import-extra files. License evidence captured from the pinned revision: https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/LICENSE. Captured text retained at provenance/licenses/obra--superpowers/LICENSE; license text SHA-256 a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400. Redistribution of verbatim copies is granted by the captured MIT text; the license file travels with this record in provenance/licenses/ and attribution metadata is preserved in the shipped provenance directory.",
+      "missingEvidence": []
+    },
+    {
+      "id": "orchill-cli",
+      "name": "Using Orchill",
+      "category": "Agent Tooling & Workflows",
+      "sourceType": "local",
+      "localPath": "../skills/agent-tooling-and-workflows/orchill-cli",
+      "registrySourceUrl": "",
+      "registrySourceRef": "",
+      "declaredLicense": "Apache-2.0",
+      "provenanceNotes": "First-party Orchill integration skill authored and maintained in this repository; not a third-party skill.",
+      "approvalRecordPresent": true,
+      "redistributionAllowed": true,
+      "upstreamUrl": "https://github.com/Audaa-Cyber/orchill",
+      "upstreamRevision": "a4d73120ad7f0e836c11c265e5693ddbce724859",
+      "licenseEvidenceUrl": "https://github.com/Audaa-Cyber/orchill/blob/a4d73120ad7f0e836c11c265e5693ddbce724859/LICENSE",
+      "reviewDate": "2026-10-30",
+      "reviewer": "Orchill provenance review (automated upstream verification, automated license classification)",
+      "reviewNotes": "First-party integration skill authored for Orchill in this repository (first shipped 59d5f8e, last content change a4d73120ad7f); not a third-party skill, so no external upstream tracing applies. Copyright and licensing follow the project Apache-2.0 LICENSE at the recorded repository revision.",
       "missingEvidence": []
     },
     {

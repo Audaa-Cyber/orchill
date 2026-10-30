@@ -3151,6 +3151,30 @@
       ]
     },
     {
+      "id": "orchill-cli",
+      "name": "Using Orchill",
+      "description": "Use Orchill to discover, inspect, install, update, remove, import, initialize, and verify reusable AI-agent skills. Use when a task may benefit from a skill in the Orchill catalogue.",
+      "category": "Agent Tooling & Workflows",
+      "tags": [
+        "orchill",
+        "agents",
+        "documentation"
+      ],
+      "source": {
+        "type": "local",
+        "path": "../skills/agent-tooling-and-workflows/orchill-cli"
+      },
+      "skillPath": ".",
+      "license": "Apache-2.0",
+      "provenance": "First-party Orchill integration skill authored and maintained in this repository; not a third-party skill.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
       "id": "platform-detection",
       "name": "Platform Detection",
       "description": "Agent skill for Platform Detection workflows. Review the skill instructions for its exact scope and usage.",

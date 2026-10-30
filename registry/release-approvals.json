@@ -1422,6 +1422,17 @@
       "notes": "Upstream plugins/dotnet-data/skills/optimizing-ef-core-queries in dotnet/skills. Bundled SKILL.md is byte-identical (CRLF/BOM-normalized SHA-256 a4c0d87d624f3ac1) to the upstream file at immutable commit 95e7d0cb7994 (repository HEAD at review). Bundled-directory comparison: 1/1 upstream files byte-identical (CRLF/BOM-normalized SHA-256), 0 import-extra files. License evidence captured from the pinned revision: https://github.com/dotnet/skills/blob/95e7d0cb7994d47b5789baa68e13f7a2f348b956/LICENSE. Captured text retained at provenance/licenses/dotnet--skills/LICENSE; license text SHA-256 cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310. Redistribution of verbatim copies is granted by the captured MIT text; the license file travels with this record in provenance/licenses/ and attribution metadata is preserved in the shipped provenance directory."
     },
     {
+      "skillId": "orchill-cli",
+      "upstreamUrl": "https://github.com/Audaa-Cyber/orchill",
+      "upstreamRevision": "a4d73120ad7f0e836c11c265e5693ddbce724859",
+      "license": "Apache-2.0",
+      "licenseEvidenceUrl": "https://github.com/Audaa-Cyber/orchill/blob/a4d73120ad7f0e836c11c265e5693ddbce724859/LICENSE",
+      "redistributionAllowed": true,
+      "reviewedAt": "2026-10-30",
+      "reviewer": "Orchill provenance review (automated upstream verification, automated license classification)",
+      "notes": "First-party integration skill authored for Orchill in this repository (first shipped 59d5f8e, last content change a4d73120ad7f); not a third-party skill, so no external upstream tracing applies. Copyright and licensing follow the project Apache-2.0 LICENSE at the recorded repository revision."
+    },
+    {
       "skillId": "platform-detection",
       "upstreamUrl": "https://github.com/dotnet/skills",
       "upstreamRevision": "95e7d0cb7994d47b5789baa68e13f7a2f348b956",

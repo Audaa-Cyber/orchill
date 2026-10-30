@@ -2,7 +2,7 @@
 
 This directory is the human-browsable catalogue generated from the canonical registry at [`registry/skills.json`](../registry/skills.json).
 
-- **201 skills** across **19 categories**
+- **202 skills** across **19 categories**
 - [Browse all skills](CATALOG.md)
 - [Category manifest](categories.json)
 - [Browse category folders](categories/)
@@ -11,7 +11,7 @@ This directory is the human-browsable catalogue generated from the canonical reg
 
     └── net-and-build-systems/README.md  # .NET & Build Systems (40)
     └── accessibility/README.md  # Accessibility (1)
-    └── agent-tooling-and-workflows/README.md  # Agent Tooling & Workflows (14)
+    └── agent-tooling-and-workflows/README.md  # Agent Tooling & Workflows (15)
     └── ai-and-data/README.md  # AI & Data (10)
     └── backend-and-apis/README.md  # Backend & APIs (10)
     └── cloud-and-devops/README.md  # Cloud & DevOps (23)
