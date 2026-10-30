@@ -10,6 +10,7 @@ import { runMarketplaceImport } from "./marketplace-import.js";
 
 const VERSION = "0.1.1";
 const program = new Command();
+program.addHelpCommand(false);
 program
   .name("orchill")
   .description("Discover, inspect, install, update, and remove AI-agent skills.")
