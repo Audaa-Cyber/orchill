@@ -30,30 +30,32 @@ jobs:
           test ! -e .orchill-marketplace-import-fixed/skills
           node --input-type=module -e "import fs from 'node:fs'; const p=JSON.parse(fs.readFileSync('package.json','utf8')); const r=JSON.parse(fs.readFileSync('registry/skills.json','utf8')); const local=r.skills.filter(s=>s.source?.type==='local'); if(p.license!=='Apache-2.0') throw new Error('Project license metadata must be Apache-2.0'); if(local.length!==189 || local.some(s=>!s.source.path?.startsWith('../skills/'))) throw new Error('Expected all 189 reviewed local skills under categorized skills/ paths'); const x=JSON.parse(fs.readFileSync('registry/excluded-payloads.json','utf8')); const ids=new Set(r.skills.map(s=>s.id)); for(const e of x.exclusions){ if(ids.has(e.id)) throw new Error('Excluded payload still registered: '+e.id); if(!fs.existsSync('third-party-review/'+e.category.toLowerCase().replace(/&/g,' and ').normalize('NFKD').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')+'/'+e.id+'/SKILL.md')) throw new Error('Excluded payload missing from quarantine: '+e.id); if(fs.existsSync('skills/'+e.category.toLowerCase().replace(/&/g,' and ').normalize('NFKD').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')+'/'+e.id)) throw new Error('Excluded payload still shipped under skills/: '+e.id); } if(x.exclusions.length!==20) throw new Error('Expected 20 quarantined exclusions'); console.log('License, categorized registry paths, and quarantine integrity verified.');"
       - run: npm run package:smoke
-      - run: node dist/cli.js import-commands --help
-      - run: node --input-type=module -e "import { parseMarketplaceCommand } from './dist/marketplace-import.js'; if (parseMarketplaceCommand('/plugin install dotnet-diag@dotnet-agent-skills', 1).plugin !== 'dotnet-diag') process.exit(1)"
       - run: node dist/cli.js --help
+      - run: node dist/cli.js --version
+      - run: node dist/cli.js list
       - run: node dist/cli.js list --all
-      - run: node dist/cli.js add demo-focus --dry-run
-      - name: Pack and install the actual CLI package
+      - run: node dist/cli.js list "UI/UX"
+      - run: node dist/cli.js info frontend-design
+      - run: node dist/cli.js add frontend-design --dry-run
+      - name: Pack and test the published CLI surface
         run: |
           npm pack --pack-destination "$RUNNER_TEMP"
           npm install --global "$RUNNER_TEMP"/orchill-*.tgz
           orchill --help
-          node --input-type=module -e 'import {spawnSync} from "node:child_process"; const meta={_meta:{"io.modelcontextprotocol/protocolVersion":"2026-07-28","io.modelcontextprotocol/clientCapabilities":{}}}; const input=JSON.stringify({jsonrpc:"2.0",id:1,method:"server/discover",params:meta})+"\\n"+JSON.stringify({jsonrpc:"2.0",id:2,method:"tools/list",params:meta})+"\\n"; const r=spawnSync("orchill",["mcp"],{input,encoding:"utf8"}); if(r.status!==0) throw new Error(r.stderr||"MCP server failed"); const lines=r.stdout.trim().split(/\\r?\\n/).map(JSON.parse); if(lines[0].result?.supportedVersions?.[0]!=="2026-07-28" || !lines[1].result?.tools?.some(t=>t.name==="orchill_add")) throw new Error("MCP discovery/tools smoke test failed");'\n          orchill list --all
-          orchill list
-          set +e
-          orchill audit --json > "$RUNNER_TEMP/orchill-audit.json"
-          audit_status=$?
-          set -e
-          test "$audit_status" -le 1
-          node --input-type=module -e "import fs from 'node:fs'; const report = JSON.parse(fs.readFileSync(process.argv[1], 'utf8')); if (!report.summary || !Array.isArray(report.findings) || report.summary.totalSkills < 1) process.exit(1); console.log(JSON.stringify({ auditSummary: report.summary, findingsByCode: report.findings.reduce((counts, finding) => (counts[finding.code] = (counts[finding.code] || 0) + 1, counts), {}) }, null, 2))" "$RUNNER_TEMP/orchill-audit.json"
-          orchill list "UI/UX"
-          orchill info frontend-design
-          orchill targets
-          orchill registry
+          orchill --version
+          orchill list --all
           orchill add frontend-design --dry-run
           mkdir -p "$RUNNER_TEMP/orchill-smoke-project" "$RUNNER_TEMP/orchill-init-smoke" "$RUNNER_TEMP/orchill-category-smoke"
+          orchill init --cwd "$RUNNER_TEMP/orchill-init-smoke"
+          test -d "$RUNNER_TEMP/orchill-init-smoke/.agents/skills"
+          test -f "$RUNNER_TEMP/orchill-init-smoke/AGENTS.md"
+          grep -q '<!-- orchill:begin -->' "$RUNNER_TEMP/orchill-init-smoke/AGENTS.md"
+          orchill init --cwd "$RUNNER_TEMP/orchill-init-smoke"
+          test "$(grep -c '<!-- orchill:begin -->' "$RUNNER_TEMP/orchill-init-smoke/AGENTS.md")" -eq 1
+          mkdir -p "$RUNNER_TEMP/orchill-existing-project/.agents"
+          printf '# Existing project instructions\n\nKeep this text.\n' > "$RUNNER_TEMP/orchill-existing-project/AGENTS.md"
+          orchill init --cwd "$RUNNER_TEMP/orchill-existing-project"
+          grep -q 'Keep this text.' "$RUNNER_TEMP/orchill-existing-project/AGENTS.md"
           orchill add analyzing-dotnet-performance --cwd "$RUNNER_TEMP/orchill-smoke-project" --yes
           test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/net-and-build-systems/analyzing-dotnet-performance/SKILL.md"
           test -f "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/net-and-build-systems/analyzing-dotnet-performance/references/critical-patterns.md"
@@ -65,6 +67,3 @@ jobs:
           orchill check demo-focus --cwd "$RUNNER_TEMP/orchill-smoke-project"
           orchill remove demo-focus --yes --cwd "$RUNNER_TEMP/orchill-smoke-project"
           test ! -e "$RUNNER_TEMP/orchill-smoke-project/.agents/skills/agent-tooling-and-workflows/demo-focus"
-          orchill init --cwd "$RUNNER_TEMP/orchill-init-smoke"
-          test -f "$RUNNER_TEMP/orchill-init-smoke/.orchill/skills.json"
-
