@@ -129,7 +129,7 @@ Default registry: `registry/skills.json`. Its format is documented by `registry/
 - Review third-party `SKILL.md` and referenced scripts before allowing an agent to use them.
 - Do not treat a URL, repository name, or license field as proof that a source is safe or correctly licensed.
 - Installing the npm package makes the CLI available but does not automatically configure every AI client. Run `orchill init` in each project and follow any additional host-specific discovery setup. Orchill does not execute installed skill scripts.
-- This CLI does not make skills automatically available inside hosted ChatGPT or Claude chats. Such environments need a supported local tool, filesystem, integration supported by that environment.
+- This CLI does not make skills automatically available inside hosted ChatGPT or Claude chats. Such environments need a supported local tool or filesystem integration.
 
 ## Development
 
