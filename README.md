@@ -11,7 +11,7 @@ You need [Node.js 22 or newer](https://nodejs.org/).
 Open a terminal (PowerShell on Windows, or Terminal on macOS/Linux) and run:
 
 ```sh
-npm install -g orchill@0.1.1
+npm install -g orchill@0.1.2
 ```
 
 This installs the published Orchill CLI on your machine. Check that it works:
