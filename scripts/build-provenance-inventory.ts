@@ -75,7 +75,7 @@ async function main(): Promise<void> {
   };
   let output: string;
   if (format === "json") {
-    output = JSON.stringify({ generatedFrom: path.relative(root, registryPath), summary, skills: rows }, null, 2) + "\n";
+    output = JSON.stringify({ generatedFrom: path.relative(root, registryPath).split(path.sep).join("/"), summary, skills: rows }, null, 2) + "\n";
   } else {
     const columns: (keyof ProvenanceInventoryRow)[] = [
       "id", "name", "category", "sourceType", "localPath", "registrySourceUrl", "registrySourceRef",
