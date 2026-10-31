@@ -52,5 +52,15 @@
   "homepage": "https://github.com/Audaa-Cyber/orchill#readme",
   "bugs": {
     "url": "https://github.com/Audaa-Cyber/orchill/issues"
-  }
+  },
+  "keywords": [
+    "ai-agents",
+    "agent-skills",
+    "skills-manager",
+    "developer-tools",
+    "cli",
+    "codex",
+    "claude",
+    "skill-catalogue"
+  ]
 }
