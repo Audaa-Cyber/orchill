@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { Command } from "commander";
+import { readFileSync } from "node:fs";
 import path from "node:path";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { loadRegistry, defaultRegistryPath } from "./registry.js";
@@ -8,7 +9,8 @@ import type { Skill, Registry } from "./types.js";
 import { runBulkImport } from "./bulk-import.js";
 import { runMarketplaceImport } from "./marketplace-import.js";
 
-const VERSION = "0.1.1";
+const packageMetadata = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8")) as { version: string };
+const VERSION = packageMetadata.version;
 const program = new Command();
 program.addHelpCommand(false);
 program
