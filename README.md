@@ -2,6 +2,34 @@
 
 **Discover it. Add a skill, a category, or the whole catalogue. Keep the complete folder structure.**
 
+Orchill is a command-line tool for finding and managing skills for AI coding agents.
+
+## Install Orchill
+
+You need [Node.js 22 or newer](https://nodejs.org/).
+
+Open a terminal (PowerShell on Windows, or Terminal on macOS/Linux) and run:
+
+```sh
+npm install -g orchill@0.1.1
+```
+
+This installs the published Orchill CLI on your machine. Check that it works:
+
+```sh
+orchill --version
+orchill --help
+```
+
+To start using Orchill in a project, open that project's folder and run:
+
+```sh
+cd my-project
+orchill init
+orchill list
+```
+
+
 Orchill is a CLI-first skill manager for AI-agent workflows. Humans and agents use the same short commands to list categories and skills, inspect metadata, install a skill/category/catalogue, update installations, remove them, and check integrity. Installation preserves the complete category/skill directory tree.
 
 > **Catalog status:** the registry contains 408 skills across 19 categories, all with evidence-backed upstream provenance: every bundled payload is byte-identical (normalized SHA-256) to its upstream source at a pinned revision, with the actual upstream license file captured in `provenance/licenses/` and a redistribution approval recorded in `registry/release-approvals.json`. 20 third-party payloads whose upstream license evidence does not grant redistribution (proprietary, service-terms-only, or license-free upstreams) are quarantined in `third-party-review/` with reasons recorded in `registry/excluded-payloads.json` and are **not** shipped in the npm package. Local skill payloads are organized under `skills/<category-slug>/<skill-id>/` and bundled for offline installation from this checkout/package. Treat third-party skill instructions and scripts as untrusted; see [MVP readiness and release blockers](docs/MVP-READINESS.md). `npm publish` is gated on the strict release check (`npm run release:check -- --strict`), which verifies every bundled skill has a complete evidence-backed approval.
@@ -77,10 +105,9 @@ Use `--cwd /path/to/project` to select a destination project. Use `--force` to r
 
 ### What does `orchill init` do?
 
-Install the npm package once on your machine, then initialize each project where you want to use Orchill:
+Install Orchill once on your machine using the command in [Install Orchill](#install-orchill), then initialize each project where you want to use it:
 
 ```sh
-npm install -g orchill
 cd my-project
 orchill init
 ```
