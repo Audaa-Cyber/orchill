@@ -1,0 +1,1423 @@
+{
+  "total": 177,
+  "imported": 177,
+  "failed": 0,
+  "records": [
+    {
+      "line": 1,
+      "command": "local-clone staging: 13c-metabolic-flux from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "13c-metabolic-flux",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 2,
+      "command": "local-clone staging: adaptyv from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "adaptyv",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 3,
+      "command": "local-clone staging: aeon from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "aeon",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 4,
+      "command": "local-clone staging: alphagenome from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "alphagenome",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 5,
+      "command": "local-clone staging: analytical-method-validation from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "analytical-method-validation",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 6,
+      "command": "local-clone staging: anndata from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "anndata",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 7,
+      "command": "local-clone staging: arbor from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "arbor",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 8,
+      "command": "local-clone staging: arboreto from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "arboreto",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 9,
+      "command": "local-clone staging: astropy from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "astropy",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 10,
+      "command": "local-clone staging: autoskill from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "autoskill",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 11,
+      "command": "local-clone staging: benchling-integration from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "benchling-integration",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 12,
+      "command": "local-clone staging: bgpt-paper-search from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "bgpt-paper-search",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 13,
+      "command": "local-clone staging: bids from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "bids",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 14,
+      "command": "local-clone staging: biopython from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "biopython",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 15,
+      "command": "local-clone staging: bioservices from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "bioservices",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 16,
+      "command": "local-clone staging: bulk-rnaseq from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "bulk-rnaseq",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 17,
+      "command": "local-clone staging: cantera from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "cantera",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 18,
+      "command": "local-clone staging: cellprofiler from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "cellprofiler",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 19,
+      "command": "local-clone staging: cellxgene-census from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "cellxgene-census",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 20,
+      "command": "local-clone staging: cirq from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "cirq",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 21,
+      "command": "local-clone staging: citation-management from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "citation-management",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 22,
+      "command": "local-clone staging: clinical-decision-support from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "clinical-decision-support",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 23,
+      "command": "local-clone staging: clinical-reports from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "clinical-reports",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 24,
+      "command": "local-clone staging: cobrapy from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "cobrapy",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 25,
+      "command": "local-clone staging: consciousness-council from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "consciousness-council",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 26,
+      "command": "local-clone staging: dask from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "dask",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 27,
+      "command": "local-clone staging: database-lookup from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "database-lookup",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 28,
+      "command": "local-clone staging: datalad from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "datalad",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 29,
+      "command": "local-clone staging: datamol from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "datamol",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 30,
+      "command": "local-clone staging: deepchem from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "deepchem",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 31,
+      "command": "local-clone staging: deepspot-m from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "deepspot-m",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 32,
+      "command": "local-clone staging: deeptools from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "deeptools",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 33,
+      "command": "local-clone staging: depmap from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "depmap",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 34,
+      "command": "local-clone staging: dhdna-profiler from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "dhdna-profiler",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 35,
+      "command": "local-clone staging: diffdock from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "diffdock",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 36,
+      "command": "local-clone staging: dnanexus-integration from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "dnanexus-integration",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 37,
+      "command": "local-clone staging: esm from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "esm",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 38,
+      "command": "local-clone staging: etetoolkit from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "etetoolkit",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 39,
+      "command": "local-clone staging: exa-search from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "exa-search",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 40,
+      "command": "local-clone staging: experimental-design from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "experimental-design",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 41,
+      "command": "local-clone staging: exploratory-data-analysis from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "exploratory-data-analysis",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 42,
+      "command": "local-clone staging: fictiv from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "fictiv",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 43,
+      "command": "local-clone staging: flowio from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "flowio",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 44,
+      "command": "local-clone staging: flowkit from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "flowkit",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 45,
+      "command": "local-clone staging: fluidsim from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "fluidsim",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 46,
+      "command": "local-clone staging: folklore-variant-evidence from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "folklore-variant-evidence",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 47,
+      "command": "local-clone staging: generate-image from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "generate-image",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 48,
+      "command": "local-clone staging: geniml from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "geniml",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 49,
+      "command": "local-clone staging: genomic-coordinates from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "genomic-coordinates",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 50,
+      "command": "local-clone staging: genomic-intelligence from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "genomic-intelligence",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 51,
+      "command": "local-clone staging: geomaster from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "geomaster",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 52,
+      "command": "local-clone staging: geopandas from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "geopandas",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 53,
+      "command": "local-clone staging: get-available-resources from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "get-available-resources",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 54,
+      "command": "local-clone staging: gget from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "gget",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 55,
+      "command": "local-clone staging: ginkgo-cloud-lab from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "ginkgo-cloud-lab",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 56,
+      "command": "local-clone staging: glycoengineering from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "glycoengineering",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 57,
+      "command": "local-clone staging: gtars from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "gtars",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 58,
+      "command": "local-clone staging: histolab from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "histolab",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 59,
+      "command": "local-clone staging: hugging-science from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "hugging-science",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 60,
+      "command": "local-clone staging: hypogenic from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "hypogenic",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 61,
+      "command": "local-clone staging: hypothesis-generation from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "hypothesis-generation",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 62,
+      "command": "local-clone staging: imaging-data-commons from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "imaging-data-commons",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 63,
+      "command": "local-clone staging: infographics from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "infographics",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 64,
+      "command": "local-clone staging: iso-standards-readiness from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "iso-standards-readiness",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 65,
+      "command": "local-clone staging: lab-hardware-cad from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "lab-hardware-cad",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 66,
+      "command": "local-clone staging: labarchive-integration from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "labarchive-integration",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 67,
+      "command": "local-clone staging: lamindb from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "lamindb",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 68,
+      "command": "local-clone staging: latchbio-integration from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "latchbio-integration",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 69,
+      "command": "local-clone staging: latex-posters from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "latex-posters",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 70,
+      "command": "local-clone staging: liteparse from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "liteparse",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 71,
+      "command": "local-clone staging: literature-review from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "literature-review",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 72,
+      "command": "local-clone staging: mageck from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "mageck",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 73,
+      "command": "local-clone staging: marine-carbonate-chemistry from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "marine-carbonate-chemistry",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 74,
+      "command": "local-clone staging: markdown-mermaid-writing from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "markdown-mermaid-writing",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 75,
+      "command": "local-clone staging: market-research-reports from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "market-research-reports",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 76,
+      "command": "local-clone staging: markitdown from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "markitdown",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 77,
+      "command": "local-clone staging: matchms from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "matchms",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 78,
+      "command": "local-clone staging: matlab from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "matlab",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 79,
+      "command": "local-clone staging: matplotlib from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "matplotlib",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 80,
+      "command": "local-clone staging: medchem from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "medchem",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 81,
+      "command": "local-clone staging: modal from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "modal",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 82,
+      "command": "local-clone staging: molecular-dynamics from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "molecular-dynamics",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 83,
+      "command": "local-clone staging: molfeat from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "molfeat",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 84,
+      "command": "local-clone staging: ncats-arax from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "ncats-arax",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 85,
+      "command": "local-clone staging: networkx from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "networkx",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 86,
+      "command": "local-clone staging: neurokit2 from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "neurokit2",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 87,
+      "command": "local-clone staging: neuropixels-analysis from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "neuropixels-analysis",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 88,
+      "command": "local-clone staging: nextflow from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "nextflow",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 89,
+      "command": "local-clone staging: nmrglue from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "nmrglue",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 90,
+      "command": "local-clone staging: nwb-conversion from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "nwb-conversion",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 91,
+      "command": "local-clone staging: omero-integration from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "omero-integration",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 92,
+      "command": "local-clone staging: onekgpd from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "onekgpd",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 93,
+      "command": "local-clone staging: ontology-term-resolution from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "ontology-term-resolution",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 94,
+      "command": "local-clone staging: open-notebook from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "open-notebook",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 95,
+      "command": "local-clone staging: openpiv from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "openpiv",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 96,
+      "command": "local-clone staging: opentrons-integration from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "opentrons-integration",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 97,
+      "command": "local-clone staging: optimize-for-gpu from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "optimize-for-gpu",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 98,
+      "command": "local-clone staging: pacsomatic from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pacsomatic",
+      "licenseFound": true,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 99,
+      "command": "local-clone staging: paper-lookup from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "paper-lookup",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 100,
+      "command": "local-clone staging: paperclip from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "paperclip",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 101,
+      "command": "local-clone staging: paperzilla from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "paperzilla",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 102,
+      "command": "local-clone staging: parallel-web from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "parallel-web",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 103,
+      "command": "local-clone staging: pathml from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pathml",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 104,
+      "command": "local-clone staging: pathogen-variant-surveillance from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pathogen-variant-surveillance",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 105,
+      "command": "local-clone staging: pathway-enrichment from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pathway-enrichment",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 106,
+      "command": "local-clone staging: peer-review from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "peer-review",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 107,
+      "command": "local-clone staging: pennylane from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pennylane",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 108,
+      "command": "local-clone staging: phylogenetics from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "phylogenetics",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 109,
+      "command": "local-clone staging: pi-agent from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pi-agent",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 110,
+      "command": "local-clone staging: pkpd-modeling from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pkpd-modeling",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 111,
+      "command": "local-clone staging: polars from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "polars",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 112,
+      "command": "local-clone staging: polars-bio from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "polars-bio",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 113,
+      "command": "local-clone staging: pptx-posters from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pptx-posters",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 114,
+      "command": "local-clone staging: primekg from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "primekg",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 115,
+      "command": "local-clone staging: primer-design from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "primer-design",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 116,
+      "command": "local-clone staging: protocolsio-integration from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "protocolsio-integration",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 117,
+      "command": "local-clone staging: pufferlib from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pufferlib",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 118,
+      "command": "local-clone staging: pybamm from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pybamm",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 119,
+      "command": "local-clone staging: pycalphad from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pycalphad",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 120,
+      "command": "local-clone staging: pydeseq2 from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pydeseq2",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 121,
+      "command": "local-clone staging: pydicom from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pydicom",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 122,
+      "command": "local-clone staging: pyhealth from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pyhealth",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 123,
+      "command": "local-clone staging: pylabrobot from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pylabrobot",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 124,
+      "command": "local-clone staging: pymatgen from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pymatgen",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 125,
+      "command": "local-clone staging: pymc from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pymc",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 126,
+      "command": "local-clone staging: pymoo from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pymoo",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 127,
+      "command": "local-clone staging: pyopenms from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pyopenms",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 128,
+      "command": "local-clone staging: pysam from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pysam",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 129,
+      "command": "local-clone staging: pytdc from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pytdc",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 130,
+      "command": "local-clone staging: pytorch-lightning from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pytorch-lightning",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 131,
+      "command": "local-clone staging: pyzotero from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "pyzotero",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 132,
+      "command": "local-clone staging: qiime2-amplicon from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "qiime2-amplicon",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 133,
+      "command": "local-clone staging: qiskit from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "qiskit",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 134,
+      "command": "local-clone staging: qutip from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "qutip",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 135,
+      "command": "local-clone staging: rdkit from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "rdkit",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 136,
+      "command": "local-clone staging: relion from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "relion",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 137,
+      "command": "local-clone staging: relsa-severity-assessment from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "relsa-severity-assessment",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 138,
+      "command": "local-clone staging: research-grants from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "research-grants",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 139,
+      "command": "local-clone staging: research-lookup from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "research-lookup",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 140,
+      "command": "local-clone staging: rowan from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "rowan",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 141,
+      "command": "local-clone staging: scanpy from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "scanpy",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 142,
+      "command": "local-clone staging: scholar-evaluation from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "scholar-evaluation",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 143,
+      "command": "local-clone staging: scientific-brainstorming from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "scientific-brainstorming",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 144,
+      "command": "local-clone staging: scientific-critical-thinking from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "scientific-critical-thinking",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 145,
+      "command": "local-clone staging: scientific-schematics from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "scientific-schematics",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 146,
+      "command": "local-clone staging: scientific-slides from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "scientific-slides",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 147,
+      "command": "local-clone staging: scientific-visualization from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "scientific-visualization",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 148,
+      "command": "local-clone staging: scientific-writing from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "scientific-writing",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 149,
+      "command": "local-clone staging: scikit-bio from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "scikit-bio",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 150,
+      "command": "local-clone staging: scikit-learn from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "scikit-learn",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 151,
+      "command": "local-clone staging: scikit-survival from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "scikit-survival",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 152,
+      "command": "local-clone staging: scvelo from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "scvelo",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 153,
+      "command": "local-clone staging: scvi-tools from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "scvi-tools",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 154,
+      "command": "local-clone staging: seaborn from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "seaborn",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 155,
+      "command": "local-clone staging: shap from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "shap",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 156,
+      "command": "local-clone staging: simpy from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "simpy",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 157,
+      "command": "local-clone staging: stable-baselines3 from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "stable-baselines3",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 158,
+      "command": "local-clone staging: statistical-analysis from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "statistical-analysis",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 159,
+      "command": "local-clone staging: statistical-power from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "statistical-power",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 160,
+      "command": "local-clone staging: statsmodels from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "statsmodels",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 161,
+      "command": "local-clone staging: sympy from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "sympy",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 162,
+      "command": "local-clone staging: tamarind from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "tamarind",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 163,
+      "command": "local-clone staging: tellurium from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "tellurium",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 164,
+      "command": "local-clone staging: tiledbvcf from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "tiledbvcf",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 165,
+      "command": "local-clone staging: timesfm-forecasting from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "timesfm-forecasting",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 166,
+      "command": "local-clone staging: torch-geometric from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "torch-geometric",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 167,
+      "command": "local-clone staging: torchdrug from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "torchdrug",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 168,
+      "command": "local-clone staging: transformers from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "transformers",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 169,
+      "command": "local-clone staging: treatment-plans from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "treatment-plans",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 170,
+      "command": "local-clone staging: umap-learn from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "umap-learn",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 171,
+      "command": "local-clone staging: uncertainty-and-units from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "uncertainty-and-units",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 172,
+      "command": "local-clone staging: usfiscaldata from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "usfiscaldata",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 173,
+      "command": "local-clone staging: vaex from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "vaex",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 174,
+      "command": "local-clone staging: venue-templates from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "venue-templates",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 175,
+      "command": "local-clone staging: waypoint-bio from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "waypoint-bio",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 176,
+      "command": "local-clone staging: what-if-oracle from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "what-if-oracle",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    },
+    {
+      "line": 177,
+      "command": "local-clone staging: zarr-python from K-Dense-AI/scientific-agent-skills",
+      "status": "imported",
+      "id": "zarr-python",
+      "licenseFound": false,
+      "note": "staged manually from a local clone because the Skills CLI remote fetch of this repository fails in this environment"
+    }
+  ]
+}

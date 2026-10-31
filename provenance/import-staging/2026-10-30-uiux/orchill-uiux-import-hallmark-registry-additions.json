@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "id": "hallmark",
+      "name": "hallmark",
+      "description": "Design skill for websites and new pages that look designed, not generated. Use when the user asks to build or design something new, or names Hallmark. Never use it on an existing design unless the user names Hallmark, as in `/hallmark redesign <path>`.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/hallmark"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from nutlope/hallmark; command: npx skills add nutlope/hallmark --skill hallmark. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    }
+  ]
+}

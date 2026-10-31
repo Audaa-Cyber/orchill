@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "id": "no-ai-slop",
+      "name": "no-ai-slop",
+      "description": "Edit drafts into sharper, more human writing while preserving the writer's personal voice, or detect AI-slop patterns without rewriting. Use when the user wants a draft clearer, more direct, more opinionated, or less AI-sounding, or asks whether writing reads as AI.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/no-ai-slop"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from petergyang/no-ai-slop; command: npx skills add petergyang/no-ai-slop --skill no-ai-slop. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "swiftui-ui-patterns",
+      "name": "swiftui-ui-patterns",
+      "description": "Best practices and example-driven guidance for building SwiftUI views and components, including navigation hierarchies, custom view modifiers, and responsive layouts with stacks and grids. Use when creating or refactoring SwiftUI UI, designing tab architecture with TabView, composing screens with VStack/HStack, managing @State or @Binding, building declarative iOS interfaces, or needing component-specific patterns and examples.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/swiftui-ui-patterns"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from dimillian/skills; command: npx skills add dimillian/skills --skill swiftui-ui-patterns. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "apple-design",
+      "name": "apple-design",
+      "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/apple-design"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from emilkowalski/skills; command: npx skills add emilkowalski/skills --skill apple-design. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    }
+  ]
+}

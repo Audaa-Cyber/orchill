@@ -55,8 +55,10 @@ function readRegistrySkills(registry) {
   for (const s of registry.skills) {
     if (s.source?.type !== "local" || s.id === "demo-focus") continue;
     const cli = (s.provenance ?? "").match(/Imported with Skills CLI from ([^;\s]+)\s*;/);
+    const manual = (s.provenance ?? "").match(/Imported from ([^;\s]+)\s*;/);
     const mkt = (s.provenance ?? "").match(/marketplace plugin ([^;\]]+)\s*;/);
     if (cli) skills.push({ id: s.id, category: s.category, repo: cli[1], kind: "skills-cli" });
+    else if (manual) skills.push({ id: s.id, category: s.category, repo: manual[1], kind: "manual-clone" });
     else if (mkt) skills.push({ id: s.id, category: s.category, repo: "dotnet/skills", plugin: mkt[1].replace(/@dotnet-agent-skills$/, ""), kind: "marketplace" });
     else skills.push({ id: s.id, category: s.category, repo: null, kind: "unmapped" });
   }
@@ -144,6 +146,7 @@ async function main() {
 
   const byRepo = new Map();
   for (const s of skills) {
+    if (!s.repo) continue; // First-party/unmapped skills are tracked via unmappedIds; no upstream to clone.
     if (!byRepo.has(s.repo)) byRepo.set(s.repo, []);
     byRepo.get(s.repo).push(s);
   }
@@ -334,17 +337,31 @@ async function main() {
       const rootLicenseFiles = await listLicenseFiles(dir);
       const rootLicenseAtRev = row.matchedAtHead ? rootLicenseFiles : (await hashManifest(dir, verifiedAt, "") ?? [])
         .map(e => path.basename(e.path)).filter(n => LICENSE_FILE_STRICT.test(n));
-      licenseCandidates.push(...skillDirFiles.map(n => ({ scope: "skill", file: n })));
+      // Ancestor directories between the skill and the repository root can
+      // carry their own license files (e.g. nested plugin roots in
+      // monorepo-style skill collections); the nearest ancestor governs.
+      const ancestorScopes = [];
+      const ancestorParts = skillDirPrefix.split("/").filter(Boolean);
+      for (let cut = ancestorParts.length - 1; cut >= 1 && ancestorScopes.length === 0; cut--) {
+        const ancRel = ancestorParts.slice(0, cut).join("/");
+        let ancFiles;
+        if (row.matchedAtHead) ancFiles = await listLicenseFiles(path.join(dir, ancRel));
+        else ancFiles = (await hashManifest(dir, verifiedAt, `${ancRel}/`) ?? [])
+          .map(e => path.basename(e.path)).filter(n => LICENSE_FILE_PATTERN.test(n) && n.toUpperCase() !== "README").sort();
+        for (const n of ancFiles) ancestorScopes.push({ file: n, dir: ancRel });
+      }
+      licenseCandidates.push(...ancestorScopes.map(c => ({ scope: "ancestor", file: c.file, dir: c.dir })));
       licenseCandidates.push(...rootLicenseFiles.map(n => ({ scope: "root", file: n })));
       row.licenseFilesAvailable = licenseCandidates;
       row.rootLicenseFilesAtPinnedRev = rootLicenseAtRev;
 
       // Capture license text. Precedence: license inside the pinned upstream
-      // skill directory governs that skill; root license files otherwise.
+      // skill directory, then the nearest ancestor directory license, then
+      // root license files.
       let licenseText = null, licenseSource = null, licenseFileRel = null;
-      for (const cand of [{ scope: "skill", file: skillDirFiles[0], dir: skillDirPrefix }, { scope: "root", file: rootLicenseFiles[0] }, ...skillDirFiles.slice(1).map(f => ({ scope: "skill", file: f, dir: skillDirPrefix })), ...rootLicenseFiles.slice(1).map(f => ({ scope: "root", file: f }))]) {
+      for (const cand of [{ scope: "skill", file: skillDirFiles[0], dir: skillDirPrefix }, ...ancestorScopes.map(c => ({ scope: "ancestor", file: c.file, dir: c.dir })), { scope: "root", file: rootLicenseFiles[0] }, ...skillDirFiles.slice(1).map(f => ({ scope: "skill", file: f, dir: skillDirPrefix })), ...rootLicenseFiles.slice(1).map(f => ({ scope: "root", file: f }))]) {
         if (!cand?.file) continue;
-        const rel = cand.scope === "skill" ? `${cand.dir}/${cand.file}` : cand.file;
+        const rel = cand.dir ? `${cand.dir}/${cand.file}` : cand.file;
         const buf = row.matchedAtHead
           ? await readFile(path.join(dir, rel)).catch(async () => await catBlob(dir, verifiedAt, rel))
           : await catBlob(dir, verifiedAt, rel);
@@ -361,7 +378,7 @@ async function main() {
         await mkdir(blobDir, { recursive: true });
         // Skill-scoped licenses are named per skill so concurrent skills cannot
         // overwrite each other's captured evidence within the same repository.
-        const outName = licenseSource === "skill" ? `${skill.id}-${path.basename(licenseFileRel)}` : path.basename(licenseFileRel);
+        const outName = licenseSource === "root" ? path.basename(licenseFileRel) : `${skill.id}-${path.basename(licenseFileRel)}`;
         await writeFile(path.join(blobDir, outName), licenseText);
         row.licenseEvidencePath = `provenance/licenses/${safeName(repo)}/${outName}`;
         row.licenseEvidenceUrl = `${REPO_HOST}/${repo}/blob/${verifiedAt}/${licenseFileRel}`;

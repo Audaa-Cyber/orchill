@@ -2,7 +2,7 @@
   "version": 1,
   "generatedFrom": "registry/skills.json",
   "categoryCount": 19,
-  "skillCount": 202,
+  "skillCount": 408,
   "categories": [
     {
       "name": ".NET & Build Systems",
@@ -115,7 +115,7 @@
     {
       "name": "UI/UX",
       "slug": "ui-ux",
-      "count": 8,
+      "count": 214,
       "index": "catalog/categories/ui-ux/README.md"
     }
   ]

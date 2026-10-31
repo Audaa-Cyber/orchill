@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "id": "planning-and-task-breakdown",
+      "name": "planning-and-task-breakdown",
+      "description": "Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/planning-and-task-breakdown"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill planning-and-task-breakdown. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "security-and-hardening",
+      "name": "security-and-hardening",
+      "description": "Hardens code against vulnerabilities. Use when auditing an input handler for vulnerabilities, when handling user input, authentication, data storage, or external integrations, or when checking a login flow is safe against the OWASP Top Ten. Use when building any feature that accepts untrusted data, manages user sessions, or interacts with third-party services. Use when auditing dependencies for known vulnerabilities, triaging package-manager audit findings, or assessing supply-chain risk in a new package. Use when personal data or privacy compliance (GDPR, CCPA) is involved.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/security-and-hardening"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill security-and-hardening. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "shipping-and-launch",
+      "name": "shipping-and-launch",
+      "description": "Prepares production launches. Use when preparing to deploy to production, or when asking what needs to be in place before shipping. Use when you need a pre-launch checklist, when setting up monitoring, when planning a staged rollout, or when you need a rollback strategy.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/shipping-and-launch"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill shipping-and-launch. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "source-driven-development",
+      "name": "source-driven-development",
+      "description": "Grounds every implementation decision in official documentation. Use when you want to verify an approach against the official docs before implementing it, or when you want authoritative, source-cited code free from outdated patterns. Use when building with any framework or library where correctness matters.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/source-driven-development"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill source-driven-development. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "spec-driven-development",
+      "name": "spec-driven-development",
+      "description": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when drafting a PRD or requirements document with objectives and scope, or when requirements are unclear, ambiguous, or only exist as a vague idea. Use when a single requirement spans several independently testable capabilities and needs decomposing into a capability map of modules before specifying.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/spec-driven-development"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill spec-driven-development. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "test-driven-development",
+      "name": "test-driven-development",
+      "description": "Drives development with tests using the red-green-refactor loop. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality. Use when asked to add tests to a function, fix a bug in it or change its behavior, even when the code is pasted inline and the request does not mention tests.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/test-driven-development"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill test-driven-development. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "using-agent-skills",
+      "name": "using-agent-skills",
+      "description": "Discovers and invokes agent skills. Use when starting a session, or when you need to decide which skill or workflow applies to the piece of work at hand. This is the meta-skill that governs how all other skills are discovered and invoked.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/using-agent-skills"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill using-agent-skills. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    }
+  ]
+}

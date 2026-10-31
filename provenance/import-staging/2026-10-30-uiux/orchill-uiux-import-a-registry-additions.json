@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "id": "api-and-interface-design",
+      "name": "api-and-interface-design",
+      "description": "Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/api-and-interface-design"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill api-and-interface-design. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "browser-testing-with-devtools",
+      "name": "browser-testing-with-devtools",
+      "description": "Tests in real browsers via Chrome DevTools MCP. Use when building or debugging anything that runs in a browser. Use when you need to inspect the DOM, capture console errors, analyze network requests, profile performance, or verify visual output with real runtime data. Requires the chrome-devtools MCP server to be configured.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/browser-testing-with-devtools"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill browser-testing-with-devtools. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "ci-cd-and-automation",
+      "name": "ci-cd-and-automation",
+      "description": "Automates CI/CD pipeline setup. Use when setting up or modifying build and deployment pipelines. Use when you need to automate quality gates, configure test runners in CI, or establish deployment strategies.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/ci-cd-and-automation"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill ci-cd-and-automation. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "code-review-and-quality",
+      "name": "code-review-and-quality",
+      "description": "Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch. Use when asked to review a diff or a pull request, even when the diff is pasted inline.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/code-review-and-quality"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill code-review-and-quality. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "code-simplification",
+      "name": "code-simplification",
+      "description": "Simplifies code for clarity. Use when refactoring code for clarity without changing behavior. Use when code works but is harder to read, maintain, or extend than it should be. Use when reviewing code that has accumulated unnecessary complexity. Use when asked to simplify, clean up, or reduce the nesting of a function or module that already works, even when the code is pasted inline and nothing else needs to change.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/code-simplification"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill code-simplification. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "constraint-driven-development",
+      "name": "constraint-driven-development",
+      "description": "Establishes a project's quality bar as a written contract and stops agents quietly lowering it. Interviews the user on which dimensions matter, supplies sane default thresholds when they have no number in mind, records everything in CONSTRAINTS.md, and watches the diff for a weakened bar — new @ts-ignore or eslint-disable suppressions, skipped or deleted tests, assertions stripped out, unimplemented stubs, thresholds edited down. Use when no quality bar is written down, when the user says \"set up constraints\" or \"define our standards\", when the user wants dimensions they care about — accessibility, web performance, coverage — set up as enforced constraints, when an agent keeps silencing checks or skipping tests to get to green, when you need a coverage or performance threshold and don't know what number to pick, or when an agent writes more code than anyone will read.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/constraint-driven-development"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill constraint-driven-development. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "context-engineering",
+      "name": "context-engineering",
+      "description": "Optimizes agent context setup. Use when starting a new session, when agent output quality degrades, when switching between tasks, or when you need to configure rules files and context for a project.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/context-engineering"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill context-engineering. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "debugging-and-error-recovery",
+      "name": "debugging-and-error-recovery",
+      "description": "Guides systematic root-cause debugging. Use when tests fail, builds break, something that worked yesterday broke, behavior doesn't match expectations, or you encounter any unexpected error. Use when you need to figure out what broke and why — a systematic approach to finding and fixing the root cause rather than guessing.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/debugging-and-error-recovery"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill debugging-and-error-recovery. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    },
+    {
+      "id": "deprecation-and-migration",
+      "name": "deprecation-and-migration",
+      "description": "Manages deprecation and migration. Use when removing old systems, APIs, or features. Use when migrating users from one implementation to another. Use when migrating a database schema in production, such as renaming or dropping a column without downtime (expand/contract). Use when deciding whether to maintain or sunset existing code.",
+      "category": "UI/UX",
+      "source": {
+        "type": "local",
+        "path": "./skills/deprecation-and-migration"
+      },
+      "skillPath": ".",
+      "provenance": "Imported with Skills CLI from addyosmani/agent-skills; command: npx skills add addyosmani/agent-skills --skill deprecation-and-migration. Verify source, pin, and license before publishing.",
+      "targets": [
+        "project",
+        "claude",
+        "codex",
+        "agents"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "total": 3,
+  "imported": 3,
+  "failed": 0,
+  "records": [
+    {
+      "line": 1,
+      "command": "npx skills add petergyang/no-ai-slop --skill no-ai-slop",
+      "status": "imported",
+      "id": "no-ai-slop",
+      "licenseFound": false
+    },
+    {
+      "line": 2,
+      "command": "npx skills add dimillian/skills --skill swiftui-ui-patterns",
+      "status": "imported",
+      "id": "swiftui-ui-patterns",
+      "licenseFound": false
+    },
+    {
+      "line": 3,
+      "command": "npx skills add emilkowalski/skills --skill apple-design",
+      "status": "imported",
+      "id": "apple-design",
+      "licenseFound": false
+    }
+  ]
+}

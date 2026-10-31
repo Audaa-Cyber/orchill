@@ -1,0 +1,70 @@
+{
+  "total": 9,
+  "imported": 9,
+  "failed": 0,
+  "records": [
+    {
+      "line": 1,
+      "command": "npx skills add addyosmani/agent-skills --skill documentation-and-adrs",
+      "status": "imported",
+      "id": "documentation-and-adrs",
+      "licenseFound": false
+    },
+    {
+      "line": 2,
+      "command": "npx skills add addyosmani/agent-skills --skill doubt-driven-development",
+      "status": "imported",
+      "id": "doubt-driven-development",
+      "licenseFound": false
+    },
+    {
+      "line": 3,
+      "command": "npx skills add addyosmani/agent-skills --skill frontend-ui-engineering",
+      "status": "imported",
+      "id": "frontend-ui-engineering",
+      "licenseFound": false
+    },
+    {
+      "line": 4,
+      "command": "npx skills add addyosmani/agent-skills --skill git-workflow-and-versioning",
+      "status": "imported",
+      "id": "git-workflow-and-versioning",
+      "licenseFound": false
+    },
+    {
+      "line": 5,
+      "command": "npx skills add addyosmani/agent-skills --skill idea-refine",
+      "status": "imported",
+      "id": "idea-refine",
+      "licenseFound": false
+    },
+    {
+      "line": 6,
+      "command": "npx skills add addyosmani/agent-skills --skill incremental-implementation",
+      "status": "imported",
+      "id": "incremental-implementation",
+      "licenseFound": false
+    },
+    {
+      "line": 7,
+      "command": "npx skills add addyosmani/agent-skills --skill interview-me",
+      "status": "imported",
+      "id": "interview-me",
+      "licenseFound": false
+    },
+    {
+      "line": 8,
+      "command": "npx skills add addyosmani/agent-skills --skill observability-and-instrumentation",
+      "status": "imported",
+      "id": "observability-and-instrumentation",
+      "licenseFound": false
+    },
+    {
+      "line": 9,
+      "command": "npx skills add addyosmani/agent-skills --skill performance-optimization",
+      "status": "imported",
+      "id": "performance-optimization",
+      "licenseFound": false
+    }
+  ]
+}

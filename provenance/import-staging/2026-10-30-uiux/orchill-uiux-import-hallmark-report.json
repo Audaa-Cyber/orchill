@@ -1,0 +1,14 @@
+{
+  "total": 1,
+  "imported": 1,
+  "failed": 0,
+  "records": [
+    {
+      "line": 1,
+      "command": "npx skills add nutlope/hallmark --skill hallmark",
+      "status": "imported",
+      "id": "hallmark",
+      "licenseFound": true
+    }
+  ]
+}

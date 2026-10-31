@@ -12,7 +12,7 @@ import { createHash } from "node:crypto";
 import { cp, mkdirSync, readFileSync, readdirSync, renameSync, rmSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
-const REVIEW_DATE = "2026-10-29";
+const REVIEW_DATE = "2026-10-31";
 const REVIEWER = "Orchill provenance review (automated upstream verification, automated license classification)";
 const PINNED_ANTHROPIC_COMMIT = "dbd4588f9e1033efb41dad4bef2f7947c8993d44";
 
@@ -95,7 +95,21 @@ const anthropicGitEntries = new Set(registry.skills
 const isBlocked = (id) => Object.hasOwn(BLOCKED_REASONS, id);
 
 const approvals = [];
-const exclusions = [];
+const freshExclusions = [];
+// The quarantine ledger is append-only history: payloads recorded there are no
+// longer in the registry, so a rebuild must preserve the existing records
+// (freshly derived records win by id for skills that are still registered).
+const exclusionsById = new Map();
+let previousMoves = [];
+let previousMovesReviewedAt = "";
+try {
+  for (const record of JSON.parse(readFileSync("registry/excluded-payloads.json", "utf8")).exclusions ?? []) {
+    exclusionsById.set(record.id, record);
+  }
+  const parsedMoves = JSON.parse(readFileSync("provenance/moves.json", "utf8"));
+  previousMoves = parsedMoves.moves ?? [];
+  previousMovesReviewedAt = parsedMoves.reviewedAt ?? "";
+} catch { /* no existing ledgers yet */ }
 const keptSkills = [];
 const payloadMoves = [];
 
@@ -104,7 +118,7 @@ for (const skill of registry.skills) {
 
   // 1. Excluded third-party payloads.
   if (isBlocked(skill.id)) {
-    exclusions.push({
+    freshExclusions.push({
       id: skill.id,
       name: skill.name ?? skill.id,
       category: skill.category,
@@ -137,6 +151,24 @@ for (const skill of registry.skills) {
       reviewedAt: REVIEW_DATE,
       reviewer: REVIEWER,
       notes: "First-party bundled example authored for Orchill (not third-party). No upstream tracing required; copyright and licensing follow the project's Apache-2.0 LICENSE at the recorded repository revision."
+    });
+    continue;
+  }
+
+  // 2b. First-party integration skill authored in this repository.
+  if (skill.id === "orchill-cli") {
+    const revision = (git(["rev-list", "-n", "1", "HEAD", "--", "skills/agent-tooling-and-workflows/orchill-cli"]) || "a4d73120ad7f0e836c11c265e5693ddbce724859");
+    skill.license = "Apache-2.0";
+    approvals.push({
+      skillId: skill.id,
+      upstreamUrl: "https://github.com/Audaa-Cyber/orchill",
+      upstreamRevision: revision,
+      license: "Apache-2.0",
+      licenseEvidenceUrl: `https://github.com/Audaa-Cyber/orchill/blob/${revision}/LICENSE`,
+      redistributionAllowed: true,
+      reviewedAt: REVIEW_DATE,
+      reviewer: REVIEWER,
+      notes: "First-party integration skill authored for Orchill in this repository (content pinned at the recorded revision); not a third-party skill, so no external upstream tracing applies. Copyright and licensing follow the project's Apache-2.0 LICENSE at the recorded repository revision."
     });
     continue;
   }
@@ -198,10 +230,16 @@ for (const skill of registry.skills) {
   });
 
   // Amend the readable provenance string to record the verified revision.
-  skill.provenance = `${skill.provenance ?? ""} Provenance verified ${REVIEW_DATE}: bundled SKILL.md matches ${fact.repo} ${fact.upstreamSkillPath} at commit ${fact.upstreamRevision.slice(0, 12)}; license ${license} reviewed from captured upstream license files.`;
+  // Rebuilds replace any previously recorded provenance-verified tail so the
+  // step stays idempotent.
+  skill.provenance = (skill.provenance ?? "").replace(/ ?Provenance verified [\d-]+: bundled SKILL\.md matches .*?reviewed from captured upstream license files\./g, "");
+  skill.provenance = `${skill.provenance} Provenance verified ${REVIEW_DATE}: bundled SKILL.md matches ${fact.repo} ${fact.upstreamSkillPath} at commit ${fact.upstreamRevision.slice(0, 12)}; license ${license} reviewed from captured upstream license files.`;
 }
 
-// Sort approvals/exclusions deterministically and rewrite ledgers.
+// Merge freshly derived exclusions with the preserved historical records and
+// sort deterministically before rewriting the ledgers.
+for (const excluded of freshExclusions) exclusionsById.set(excluded.id, excluded);
+const exclusions = [...exclusionsById.values()];
 approvals.sort((a, b) => a.skillId.localeCompare(b.skillId));
 exclusions.sort((a, b) => a.id.localeCompare(b.id));
 registry.skills = keptSkills.sort((a, b) => a.id.localeCompare(b.id));
@@ -211,9 +249,16 @@ writeFileSync("registry/excluded-payloads.json", JSON.stringify({ version: 1, ex
 writeFileSync("registry/skills.json", JSON.stringify(registry, null, 2) + "\n");
 
 // Relocate excluded payload directories out of the shipped skills/ tree.
+// Records already relocated by a previous review are validated in place.
 for (const excluded of exclusions) {
   const source = path.join("skills", categorySlug(excluded.category), excluded.id);
   const destination = path.join("third-party-review", categorySlug(excluded.category), excluded.id);
+  if (statSync(destination, { throwIfNoEntry: false })?.isDirectory()) {
+    if (!statSync(path.join(destination, "SKILL.md"), { throwIfNoEntry: false })) {
+      throw new Error(`Quarantined payload missing SKILL.md: ${destination}`);
+    }
+    continue;
+  }
   if (!statSync(source, { throwIfNoEntry: false }) || !statSync(source).isDirectory()) {
     throw new Error(`Excluded payload directory missing: ${source}`);
   }
@@ -225,7 +270,12 @@ for (const excluded of exclusions) {
   payloadMoves.push({ from: source, to: destination });
 }
 
-writeFileSync("provenance/moves.json", JSON.stringify({ reviewedAt: REVIEW_DATE, moves: payloadMoves }, null, 2) + "\n");
+// Payload relocation history is append-only; the reviewedAt date only advances
+// when this run actually relocated payloads.
+writeFileSync("provenance/moves.json", JSON.stringify({
+  reviewedAt: payloadMoves.length > 0 ? REVIEW_DATE : previousMovesReviewedAt,
+  moves: [...previousMoves, ...payloadMoves],
+}, null, 2) + "\n");
 
 console.log(`Approvals: ${approvals.length}; exclusions: ${exclusions.length}; registry skills kept: ${keptSkills.length}; payload moves: ${payloadMoves.length}`);
 for (const excluded of exclusions) console.log(`  EXCLUDED ${excluded.id} (${excluded.payloadMovedTo})`);

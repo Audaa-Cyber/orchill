@@ -1,0 +1,56 @@
+{
+  "total": 7,
+  "imported": 7,
+  "failed": 0,
+  "records": [
+    {
+      "line": 1,
+      "command": "npx skills add addyosmani/agent-skills --skill planning-and-task-breakdown",
+      "status": "imported",
+      "id": "planning-and-task-breakdown",
+      "licenseFound": false
+    },
+    {
+      "line": 2,
+      "command": "npx skills add addyosmani/agent-skills --skill security-and-hardening",
+      "status": "imported",
+      "id": "security-and-hardening",
+      "licenseFound": false
+    },
+    {
+      "line": 3,
+      "command": "npx skills add addyosmani/agent-skills --skill shipping-and-launch",
+      "status": "imported",
+      "id": "shipping-and-launch",
+      "licenseFound": false
+    },
+    {
+      "line": 4,
+      "command": "npx skills add addyosmani/agent-skills --skill source-driven-development",
+      "status": "imported",
+      "id": "source-driven-development",
+      "licenseFound": false
+    },
+    {
+      "line": 5,
+      "command": "npx skills add addyosmani/agent-skills --skill spec-driven-development",
+      "status": "imported",
+      "id": "spec-driven-development",
+      "licenseFound": false
+    },
+    {
+      "line": 6,
+      "command": "npx skills add addyosmani/agent-skills --skill test-driven-development",
+      "status": "imported",
+      "id": "test-driven-development",
+      "licenseFound": false
+    },
+    {
+      "line": 7,
+      "command": "npx skills add addyosmani/agent-skills --skill using-agent-skills",
+      "status": "imported",
+      "id": "using-agent-skills",
+      "licenseFound": false
+    }
+  ]
+}

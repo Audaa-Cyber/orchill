@@ -1,0 +1,70 @@
+{
+  "total": 9,
+  "imported": 9,
+  "failed": 0,
+  "records": [
+    {
+      "line": 1,
+      "command": "npx skills add addyosmani/agent-skills --skill api-and-interface-design",
+      "status": "imported",
+      "id": "api-and-interface-design",
+      "licenseFound": false
+    },
+    {
+      "line": 2,
+      "command": "npx skills add addyosmani/agent-skills --skill browser-testing-with-devtools",
+      "status": "imported",
+      "id": "browser-testing-with-devtools",
+      "licenseFound": false
+    },
+    {
+      "line": 3,
+      "command": "npx skills add addyosmani/agent-skills --skill ci-cd-and-automation",
+      "status": "imported",
+      "id": "ci-cd-and-automation",
+      "licenseFound": false
+    },
+    {
+      "line": 4,
+      "command": "npx skills add addyosmani/agent-skills --skill code-review-and-quality",
+      "status": "imported",
+      "id": "code-review-and-quality",
+      "licenseFound": false
+    },
+    {
+      "line": 5,
+      "command": "npx skills add addyosmani/agent-skills --skill code-simplification",
+      "status": "imported",
+      "id": "code-simplification",
+      "licenseFound": false
+    },
+    {
+      "line": 6,
+      "command": "npx skills add addyosmani/agent-skills --skill constraint-driven-development",
+      "status": "imported",
+      "id": "constraint-driven-development",
+      "licenseFound": false
+    },
+    {
+      "line": 7,
+      "command": "npx skills add addyosmani/agent-skills --skill context-engineering",
+      "status": "imported",
+      "id": "context-engineering",
+      "licenseFound": false
+    },
+    {
+      "line": 8,
+      "command": "npx skills add addyosmani/agent-skills --skill debugging-and-error-recovery",
+      "status": "imported",
+      "id": "debugging-and-error-recovery",
+      "licenseFound": false
+    },
+    {
+      "line": 9,
+      "command": "npx skills add addyosmani/agent-skills --skill deprecation-and-migration",
+      "status": "imported",
+      "id": "deprecation-and-migration",
+      "licenseFound": false
+    }
+  ]
+}
